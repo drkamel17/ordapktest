@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAP (Oedeme Aigu du Poumon) - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-lung"></i> OAP (Oedeme Aigu du Poumon)</h1>
+        
+        <h2>Definition</h2>
+        <p>Inondation alveolaire par transsudat secondaire a une elevation de la pression hydrostatique.</p>
+
+        <h2>Prise en Charge IAO</h2>
+        <ul>
+            <li><strong>Constantes :</strong> PAS, PAD, FC, FR, T°C, SpO2, Dextro</li>
+            <li><strong>ECG</strong></li>
+        </ul>
+
+        <h2>Signes de Gravite</h2>
+        <ul>
+            <li><strong>SpO2 < 90%</strong></li>
+            <li><strong>Hypercapnie</strong> (PaCO2 >= 45 mmHg)</li>
+            <li><strong>Acidose</strong> (pH <= 7,35)</li>
+            <li><strong>Hypotension</strong></li>
+            <li><strong>Troubles de conscience</strong></li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>SAUV</strong></li>
+        </ul>
+
+        <h2>Bilan</h2>
+        <ul>
+            <li><strong>NFS</strong></li>
+            <li><strong>Ionogramme</strong></li>
+            <li><strong>GDS</strong> si signes de gravite</li>
+            <li><strong>Troponine</strong> systematique</li>
+            <li><strong>BNP</strong> :
+                <ul>
+                    <li>BNP < 100 ng/L : remet en cause le diagnostic</li>
+                    <li>BNP > 400 ng/L : renforce le diagnostic</li>
+                </ul>
+            </li>
+            <li><strong>RX thorax face</strong></li>
+            <li><strong>Echocardiographie</strong> en urgence (envisager)</li>
+        </ul>
+
+        <h2>Traitement</h2>
+        
+        <h3>Mesures symptomatiques</h3>
+        <div class="posology">
+            <p><strong>Position assise</strong> (jambes pendantes de preference)</p>
+            <p><strong>O2 masque a haute concentration</strong> a adapter a SpO2 (objectif 94-96%)</p>
+        </div>
+
+        <h3>Traitement de la congestion (PAS > 100 mmHg)</h3>
+        <div class="posology">
+            <p><span class="drug-name">Dinitrate d'isosorbide</span> (<span class="drug-commercial">Risordan</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> bolus de 3 mg/5 min</li>
+                <li><strong>Puis :</strong> 3 a 5 mg/h IVSE</li>
+                <li><strong>Augmentation :</strong> par paliers de 1 mg/h</li>
+                <li><strong>Dose max :</strong> 10 mg/h</li>
+            </ul>
+        </div>
+
+        <h3>Diuretiques</h3>
+        <div class="posology">
+            <p><span class="drug-name">Furosemide</span> (<span class="drug-commercial">Lasilix</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 20 a 40 mg IVD</li>
+                <li><strong>Ou :</strong> dose journaliere si traitement par diuretique</li>
+            </ul>
+            <p><strong>Si HTA persistante (PAS > 140 mmHg) :</strong></p>
+            <p><span class="drug-name">Nicardipine</span> (<span class="drug-commercial">Loxen</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 1 a 2 mg/h IVSE</li>
+                <li><strong>Augmentation :</strong> par paliers de 1 mg/h</li>
+            </ul>
+        </div>
+
+        <h3>VNI si SpO2 < 90% ou hypercapnie ou acidose</h3>
+        <div class="posology">
+            <p><strong>VSAI + PEP</strong></p>
+            <ul>
+                <li><strong>Session :</strong> 30 min par heure</li>
+                <li><strong>PEP :</strong> 5 cmH2O (debuter) - max 10 cmH2O</li>
+                <li><strong>AI :</strong> 10 a 20 cmH2O (commencer par 10, augmenter par 5)</li>
+                <li><strong>FiO2 :</strong> 40 a 100% selon SpO2 (cible 94-96%)</li>
+                <li><strong>Trigger :</strong> minimum 1 L/min</li>
+            </ul>
+            <p><strong>CI :</strong></p>
+            <ul>
+                <li>Pneumothorax</li>
+                <li>Indication a intubation (F9)</li>
+            </ul>
+        </div>
+
+        <h2>Prise en charge des facteurs precipitants</h2>
+        <ul>
+            <li><strong>Fibrillation auriculaire</strong> (P51)</li>
+            <li><strong>Sepsis</strong> (P24)</li>
+            <li><strong>SCA</strong> (P133)</li>
+        </ul>
+
+        <h2>References</h2>
+        <ul>
+            <li>ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure. Eur J Heart 2016 ; 18 : 891-975.</li>
+            <li>Mebazaa A et al. Recommendations on prehospital early hospital management of acute heart failure. Eur J Heart Failure 2015 ; 17 : 544-58.</li>
+        </ul>
+    </div>
+</body>
+</html>

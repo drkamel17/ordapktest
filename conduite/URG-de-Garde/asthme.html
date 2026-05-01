@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthme - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 15px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .dosage { background-color: #e8f5e9; padding: 10px; margin: 10px 0; border-radius: 5px; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        th { background-color: #3498db; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-wind"></i> Asthme</h1>
+        <p><strong>L. Hamza - Actualisation : 9/9/2018</strong></p>
+        
+        <h2>Definition</h2>
+        <p>L'asthme est une maladie inflammatoire chronique des bronches associant hyperactivite, inflammation, epaississement bronchique.</p>
+
+        <h2>Presence d'au Moins un Signe de Gravite</h2>
+        <div class="warning">
+            <ul>
+                <li>Troubles de la conscience</li>
+                <li>Collapsus</li>
+                <li>Crise ressentie par le malade comme inhabituelle</li>
+                <li>Difficultes a parler</li>
+                <li>Agitation, sueurs, cyanose</li>
+                <li>FR > 30 cycles/min</li>
+                <li>DEP < 150 L/min ou DEP < 30 % de la valeur normale (cf. infra)</li>
+                <li>Normo- ou hypercapnie</li>
+                <li>Antecedent d'hospitalisation pour asthme</li>
+                <li>Antecedent de recours a une ventilation mecanique</li>
+                <li>Age > 70 ans</li>
+                <li>Prise recente de corticoides oraux</li>
+                <li>Consommation importante de beta-2-mimetiques</li>
+                <li>Pneumopathie infectieuse</li>
+            </ul>
+        </div>
+
+        <h2>Prise en Charge IAO - Bilan</h2>
+        <ul>
+            <li>PAS, PAD, FC, FR, T°C, SpO2, Dextro</li>
+            <li>Peak-flow (debit expiratoire de pointe [DEP])</li>
+            <li>ECG</li>
+            <li>1 voie veineuse</li>
+            <li>NFS, iono, glycemie</li>
+            <li>GDS: recherche normo- ou hypercapnie</li>
+            <li>RX thorax</li>
+        </ul>
+
+        <h3>Orientation</h3>
+        <ul>
+            <li><strong>SAUV:</strong> Presence d'au moins un signe de gravite</li>
+            <li><strong>Box:</strong> Pas de signe de gravite</li>
+        </ul>
+
+        <h2>Traitement de Premiere Intention</h2>
+        <h3>Oxygene - Masque a oxygene</h3>
+        <div class="dosage">
+            <p>Regler le debit pour obtenir une SpO2 comprise entre <strong>94 et 98 %</strong></p>
+        </div>
+
+        <h3>Nebulisation</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Terbutaline (Bricanyl):</strong> 10 mg</li>
+                <li><strong>Bromure d'Ipratropium (Atrovent):</strong> 0,5 mg</li>
+                <li><strong>Gaz vecteur:</strong> O2 6-8 L/min</li>
+                <li><strong>A renouveler toutes les 20 minutes la premiere heure</strong> puis toutes les 3 heures selon l'evolution</li>
+            </ul>
+        </div>
+
+        <h3>Methylprednisolone (Solumedrol)</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Posologie:</strong> 1 mg/kg IVD maximum 80 mg</li>
+            </ul>
+        </div>
+
+        <h3>Si Presence de Signes de Gravite</h3>
+        <div class="important">
+            <ul>
+                <li><strong>Sulfate de magnesium (MgSO4):</strong> 2 g en 20 min IVL</li>
+                <li><strong>Si pneumopathie:</strong> Amoxicilline (Clamoxyl) 1 g x 3/jour</li>
+            </ul>
+        </div>
+
+        <h3>Si Presence de Troubles de la Conscience</h3>
+        <ul>
+            <li><strong>Intubation endotracheale (F9)</strong></li>
+            <li><strong>Induction par Ketalar (Ketalar) 2 mg/kg IVD + Celocurine 1 mg/kg IVD</strong></li>
+        </ul>
+
+        <h3>Instabilite Hemodynamique</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Adrenaline en IVSE:</strong> commencer a 1 mg/h, augmenter de 0,5 mg/h par palier de 0,5 mg/h</li>
+            </ul>
+        </div>
+
+        <h2>Orientation et Suivi</h2>
+        <h3>Pas d'amelioration dans l'heure</h3>
+        <ul>
+            <li><strong>Reanimation</strong></li>
+        </ul>
+
+        <h3>DEP > 60 % de la theorique a 3 heures</h3>
+        <ul>
+            <li><strong>Retour a domicile</strong></li>
+            <li><strong>Continuer le traitement</strong></li>
+        </ul>
+
+        <h3>50 % < DEP < 60 % de la theorique a 3 heures</h3>
+        <ul>
+            <li><strong>Surveillance 3 heures supplementaires</strong></li>
+        </ul>
+
+        <h3>DEP < 50 % de la theorique a 3 heures</h3>
+        <ul>
+            <li><strong>Hospitalisation</strong></li>
+        </ul>
+
+        <h2>Ordonnance de Sortie</h2>
+        <ul>
+            <li><strong>Solupred:</strong> 0,5 mg/kg pendant 1 semaine puis arret brutal</li>
+            <li><strong>Ventoline:</strong> 1 a 2 bouffees en cas de besoin</li>
+            <li><strong>Sere tide 500 ou Symbicort 400:</strong> 1 bouffee matin et soir pendant 1 mois</li>
+            <li>Ou <strong>Symbicort 200:</strong> 2 bouffees matin et soir (chez le patient eduque, possibilite de prendre 1 bouffee supplementaire de Symbicort 200 si besoin a la place de Ventoline jusqu'a 4 fois par jour)</li>
+            <li>Si surinfection: <strong>Amoxicilline 1 g x 3/j pendant 6 jours</strong></li>
+        </ul>
+
+        <h2>Valeurs Theoriques du Peak-Flow (L/min)</h2>
+        <table>
+            <tr>
+                <th colspan="7">Hommes non asthmatiques - Taille (cm)</th>
+            </tr>
+            <tr><th>Age</th><th>160</th><th>167</th><th>175</th><th>183</th><th>190</th></tr>
+            <tr><td>15</td><td>530</td><td>542</td><td>555</td><td>566</td><td>577</td></tr>
+            <tr><td>20</td><td>570</td><td>580</td><td>588</td><td>600</td><td>612</td></tr>
+            <tr><td>30</td><td>606</td><td>618</td><td>632</td><td>642</td><td>652</td></tr>
+            <tr><td>40</td><td>608</td><td>620</td><td>635</td><td>647</td><td>657</td></tr>
+            <tr><td>50</td><td>587</td><td>600</td><td>613</td><td>622</td><td>635</td></tr>
+            <tr><td>60</td><td>554</td><td>570</td><td>578</td><td>589</td><td>600</td></tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="6">Femmes non asthmatiques - Taille (cm)</th>
+            </tr>
+            <tr><th>Age</th><th>152</th><th>160</th><th>167</th><th>175</th></tr>
+            <tr><td>15</td><td>441</td><td>453</td><td>464</td><td>474</td></tr>
+            <tr><td>25</td><td>470</td><td>484</td><td>496</td><td>505</td></tr>
+            <tr><td>35</td><td>473</td><td>488</td><td>498</td><td>508</td></tr>
+            <tr><td>45</td><td>449</td><td>470</td><td>480</td><td>490</td></tr>
+            <tr><td>55</td><td>433</td><td>446</td><td>456</td><td>466</td></tr>
+        </table>
+
+        <div class="success">
+            <p><strong>Reference:</strong> Recommandations formalisees d'experts sur la prise en charge de l'exacerbation severe d'asthme SFMU/SRLF, 2018.</p>
+        </div>
+    </div>
+</body>
+</html>

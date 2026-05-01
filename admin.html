@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Admin - Gestion des En attente</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    .header {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 { margin: 0; color: #333; font-size: 1.8rem; }
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .btn-retour { background: #666; color: white; text-decoration: none; display: inline-block; }
+    .btn-logout { background: #f44336; color: white; }
+    .section {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #333;
+      border-bottom: 2px solid #667eea;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    .section.or { border-left: 4px solid #ff9800; }
+    .section.com { border-left: 4px solid #9C27B0; }
+    .pending-card {
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px 0;
+    }
+    .pending-card.ord { border-color: #ff9800; background: #fff3e0; }
+    .pending-card.com { border-color: #9C27B0; background: #f3e5f5; }
+    .pending-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .pending-title { font-weight: 600; font-size: 1.1em; }
+    .pending-user { color: #666; font-size: 0.9em; }
+    .medicament-list {
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+    .med-input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin: 3px 0;
+    }
+    .btn-confirm { background: #4CAF50; color: white; }
+    .btn-reject { background: #f44336; color: white; }
+    .btn-modify { background: #2196F3; color: white; margin-right: 10px; }
+    .comment-msg {
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+    .no-data { text-align: center; color: #999; padding: 30px; }
+    .password-modal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .password-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 400px;
+    }
+    .password-box input {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1.1em;
+      margin: 15px 0;
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 10px; }
+      .header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 15px;
+      }
+      .header h1 { font-size: 1.3rem; }
+      .btn { padding: 8px 14px; font-size: 0.9rem; }
+      .section { padding: 12px; }
+      .section h2 { font-size: 1.1rem; }
+      .pending-card { padding: 10px; }
+      .password-box input { font-size: 1rem; padding: 10px; }
+    }
+
+    @media (max-width: 480px) {
+      .header h1 { font-size: 1.1rem; }
+      .btn { padding: 6px 10px; font-size: 0.85rem; }
+      .section { padding: 10px; margin-bottom: 10px; }
+      .pending-card { padding: 8px; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="password-modal" class="password-modal">
+  <div class="password-box">
+    <h2><i class="fas fa-lock"></i> Accès Admin</h2>
+    <p>Entrez le mot de passe admin:</p>
+    <input type="password" id="admin-pass" placeholder="Mot de passe">
+    <button class="btn btn-confirm" onclick="verifyPassword()" style="width:100%">Valider</button>
+  </div>
+</div>
+
+<div class="container" id="main-content" style="display:none;">
+  <div class="header">
+    <h1><i class="fas fa-cogs"></i> Panel Admin</h1>
+    <div>
+      <a href="commentaire/index.html" class="btn" style="background: #9C27B0; color: white; margin-right: 10px;">
+        <i class="fas fa-comments"></i> Gérer les Commentaires
+      </a>
+      <a href="index.html" class="btn btn-retour"><i class="fas fa-home"></i> Retour</a>
+      <button class="btn btn-logout" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Quitter</button>
+    </div>
+  </div>
+
+  <!-- Section Ordonnances en attente -->
+  <div class="section ord">
+    <h2><i class="fas fa-prescription-bottle"></i> Ordonnances en attente</h2>
+    <div id="ordonnances-list"></div>
+  </div>
+
+  <!-- Section Commentaires en attente -->
+  <div class="section com">
+    <h2><i class="fas fa-comments"></i> Commentaires en attente</h2>
+    <div id="commentaires-list"></div>
+  </div>
+</div>
+
+<script>
+let adminPassword = null;
+
+function verifyPassword() {
+  const pass = document.getElementById('admin-pass').value;
+  if (pass === 'DAOUDI') {
+    adminPassword = pass;
+    sessionStorage.setItem('adminPassword', pass);
+    document.getElementById('password-modal').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    chargerDonnees();
+  } else {
+    alert('Mot de passe incorrect');
+  }
+}
+
+// Vérifier si déjà connecté
+if (sessionStorage.getItem('adminPassword') === 'DAOUDI') {
+  adminPassword = 'DAOUDI';
+  document.getElementById('password-modal').style.display = 'none';
+  document.getElementById('main-content').style.display = 'block';
+  window.addEventListener('load', chargerDonnees);
+}
+
+function logout() {
+  sessionStorage.removeItem('adminPassword');
+  adminPassword = null;
+  location.reload();
+}
+
+async function chargerDonnees() {
+  await chargerOrdonnancesPending();
+  await chargerCommentairesPending();
+}
+
+async function chargerOrdonnancesPending() {
+  try {
+    const response = await fetch('/api/save-supabase?pending=true');
+    const result = await response.json();
+    const container = document.getElementById('ordonnances-list');
+    
+    if (result.success && result.users && result.users.length > 0) {
+      let html = '';
+      result.users.forEach(user => {
+        const username = user.suggested_by || user.id.replace('pending_', '');
+        let ordHTML = '';
+        
+        if (user.data) {
+          Object.keys(user.data).forEach((titre, index) => {
+            const meds = user.data[titre];
+            let medsInputs = '';
+            if (Array.isArray(meds)) {
+              meds.forEach((m, mIndex) => {
+                medsInputs += `<input type="text" class="med-input" id="ord_${index}_${mIndex}_med" value="${m.medicament}" placeholder="Médicament">`;
+                medsInputs += `<input type="text" class="med-input" id="ord_${index}_${mIndex}_pos" value="${m.posologie}" placeholder="Posologie">`;
+                medsInputs += `<input type="text" class="med-input" id="ord_${index}_${mIndex}_qte" value="${m.quantite}" placeholder="Quantité">`;
+              });
+            }
+            
+            ordHTML += `
+              <div style="background:white; padding:10px; border-radius:5px; margin:10px 0;">
+                <strong>${titre}</strong>
+                <div>${medsInputs}</div>
+                <button class="btn btn-modify" onclick="modifierOrdonnance('${user.id}', '${titre}', ${index})" style="margin-top:10px;">Enregistrer Modifications</button>
+              </div>
+            `;
+          });
+        }
+        
+        html += `
+          <div class="pending-card ord">
+            <div class="pending-header">
+              <span class="pending-title">Utilisateur: ${username}</span>
+            </div>
+            <div class="pending-user">ID: ${user.id}</div>
+            ${ordHTML}
+            <button class="btn btn-confirm" onclick="confirmerOrdonnance('${user.id}')" style="margin-right:10px;">Confirmer</button>
+            <button class="btn btn-reject" onclick="rejeterOrdonnance('${user.id}')">Rejeter</button>
+          </div>
+        `;
+      });
+      container.innerHTML = html;
+    } else {
+      container.innerHTML = '<div class="no-data">Aucune ordonnance en attente</div>';
+    }
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+async function chargerCommentairesPending() {
+  try {
+    const response = await fetch('/api/commentaires?pending=true');
+    const result = await response.json();
+    const container = document.getElementById('commentaires-list');
+    
+    if (result.success && result.pending && result.pending.length > 0) {
+      let html = '';
+      result.pending.forEach(c => {
+        const date = new Date(c.created_at).toLocaleDateString('fr-FR');
+        html += `
+          <div class="pending-card com">
+            <div class="pending-header">
+              <span class="pending-title">${c.nom}</span>
+              <span style="background:#9C27B0; color:white; padding:3px 10px; border-radius:12px; font-size:0.8em;">${c.situation}</span>
+            </div>
+            <div class="pending-user">${date}</div>
+            <div class="comment-msg">${c.message}</div>
+            <button class="btn btn-confirm" onclick="confirmerCommentaire('${c.id}')" style="margin-right:10px;">Confirmer</button>
+            <button class="btn btn-reject" onclick="rejeterCommentaire('${c.id}')">Rejeter</button>
+          </div>
+        `;
+      });
+      container.innerHTML = html;
+    } else {
+      container.innerHTML = '<div class="no-data">Aucun commentaire en attente</div>';
+    }
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+async function confirmerOrdonnance(userId) {
+  try {
+    const response = await fetch('/api/save-supabase', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'confirm', password: adminPassword, data: {}, pendingKey: userId })
+    });
+    const result = await response.json();
+    if (result.success) { alert('Ordonnance confirmée!'); chargerOrdonnancesPending(); }
+    else { alert('Erreur: ' + result.message); }
+  } catch (e) { alert('Erreur'); }
+}
+
+async function rejeterOrdonnance(userId) {
+  if (!confirm('Voulez-vous rejeter cette ordonnance?')) return;
+  try {
+    const response = await fetch('/api/save-supabase', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'reject', password: adminPassword, pendingKey: userId })
+    });
+    const result = await response.json();
+    if (result.success) { alert('Ordonnance rejetée!'); chargerOrdonnancesPending(); }
+    else { alert('Erreur: ' + result.message); }
+  } catch (e) { alert('Erreur'); }
+}
+
+async function modifierOrdonnance(userId, titre, index) {
+  try {
+    const response = await fetch('/api/save-supabase?pending=true');
+    const result = await response.json();
+    const user = result.users.find(u => u.id === userId);
+    if (!user || !user.data[titre]) { alert('Non trouvé'); return; }
+    
+    const meds = user.data[titre];
+    const medsModifies = meds.map((m, mIndex) => ({
+      medicament: document.getElementById(`ord_${index}_${mIndex}_med`).value,
+      posologie: document.getElementById(`ord_${index}_${mIndex}_pos`).value,
+      quantite: document.getElementById(`ord_${index}_${mIndex}_qte`).value
+    }));
+    
+    const saveResponse = await fetch('/api/save-supabase', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'modify', password: adminPassword, pendingId: userId, titre: titre, nouveauxMedicaments: medsModifies })
+    });
+    
+    const saveResult = await saveResponse.json();
+    if (saveResult.success) { alert('Modifications enregistrées!'); chargerOrdonnancesPending(); }
+    else { alert('Erreur: ' + saveResult.message); }
+  } catch (e) { alert('Erreur'); }
+}
+
+async function confirmerCommentaire(commentId) {
+  try {
+    const response = await fetch('/api/commentaires', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'confirm', password: adminPassword, commentId: commentId })
+    });
+    const result = await response.json();
+    if (result.success) { alert('Commentaire confirmé!'); chargerCommentairesPending(); }
+    else { alert('Erreur: ' + result.message); }
+  } catch (e) { alert('Erreur'); }
+}
+
+async function rejeterCommentaire(commentId) {
+  if (!confirm('Voulez-vous rejeter ce commentaire?')) return;
+  try {
+    const response = await fetch('/api/commentaires', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'reject', password: adminPassword, commentId: commentId })
+    });
+    const result = await response.json();
+    if (result.success) { alert('Commentaire rejeté!'); chargerCommentairesPending(); }
+    else { alert('Erreur: ' + result.message); }
+  } catch (e) { alert('Erreur'); }
+}
+</script>
+
+</body>
+</html>

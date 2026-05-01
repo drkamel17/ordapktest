@@ -1,0 +1,172 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.certificat {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+    text-decoration: underline;
+    font-size: 20px;
+}
+p {
+    line-height: 1.5;
+    color: #555;
+}
+.editable-area {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    min-height: 20px;
+    resize: vertical;
+    overflow: hidden;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.search-box {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.lock-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+.lock-button:hover {
+    opacity: 0.8;
+}
+#suggestions {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 200px;
+    z-index: 1000;
+}
+.suggestion-item {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+.print-button {
+    text-align: center;
+    margin-top: 20px;
+}
+.print-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.print-button button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour l'affichage des termes sauvegardés */
+#savedTermsDiv {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 300px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+}
+
+#savedTermsDiv h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+#savedTermsDiv ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+#savedTermsDiv li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#savedTermsDiv li:last-child {
+    border-bottom: none;
+}
+
+@media print {
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        border: none !important;
+        background: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    input[type="text"]:focus,
+    input[type="date"]:focus,
+    textarea:focus {
+        border: none !important;
+        outline: none !important;
+    }
+    input::placeholder,
+    textarea::placeholder {
+        color: transparent !important;
+    }
+.print-button {
+        display: none;
+    }
+
+    /* Masquer les contrôles d'impression et de sauvegarde */
+    .print-button div[style*="align-items: center"],
+    .print-button button {
+        display: none !important;
+    }
+    body {
+        background-color: white;
+    }
+    .certificat {
+        border: none;
+        box-shadow: none;
+        margin-top: 0;
+    }
+    .editable-area {
+        border: none !important;
+    }
+    #savedTermsDiv {
+        display: none !important;
+    }
+}

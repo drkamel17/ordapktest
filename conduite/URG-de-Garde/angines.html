@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angines - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css-all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .drug { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-notes-medical"></i> Angines</h1>
+        <p><strong>P11 - S. Guinemer - Actualisation : 4/9/2018</strong></p>
+        
+        <h2>Definition</h2>
+        <p>Inflammation des amygdales palatines d'origine infectieuse (virales ou bacteriennes).<br/>
+        Diagnostics differenciels : MNI (infection EBV), diphterie, angine de Vincent.</p>
+        
+        <h2>Prise en Charge IAO</h2>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>FC, T°C, SpO2, PAS, PAD</li>
+            <li>Examen de la gorge</li>
+            <li>Recherche de signes de gravite</li>
+        </ul>
+        
+        <h3>Orientation</h3>
+        <div class="success">
+            <p><strong>Box</strong></p>
+        </div>
+        
+        <h2>Traitement</h2>
+        
+        <h3>Antibiotherapie</h3>
+        <div class="drug">
+            <strong>Amoxicilline (Clamoxyl) :</strong> 1 g x 2/j pendant 6 jours
+            <br/><br/>
+            Si CI penicilline : <strong>Azithromycine (Zythromax) :</strong> 500 mg/j en une prise pendant 3 jours
+        </div>
+        
+        <h3>Si echec de l'amoxicilline</h3>
+        <div class="drug">
+            <strong>Amoxicilline-Acide clavulanique (Augmentin) :</strong> 1 g x 2 pendant 6 jours
+        </div>
+        
+        <h2>Score de Mac Isaac</h2>
+        <p>Le score de Mac Isaac permet d'evaluer la probabilite d'une infection a streptocoque beta-hemolytique du groupe A (EBGRA)</p>
+        
+        <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+            <tr>
+                <th>Critere</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Fievre > 38°C</td>
+                <td>+1 pt</td>
+            </tr>
+            <tr>
+                <td>Absence de toux</td>
+                <td>+1 pt</td>
+            </tr>
+            <tr>
+                <td>Adenopathies cervicales sensibles</td>
+                <td>+1 pt</td>
+            </tr>
+            <tr>
+                <td>Atteintes amygdales</td>
+                <td>+1 pt</td>
+            </tr>
+            <tr>
+                <td>Age >= 45 ans</td>
+                <td>-1 pt</td>
+            </tr>
+        </table>
+        
+        <h2>Streptatest</h2>
+        <p><strong>TDR : test de detection rapide du streptocoque sur les amygdales</strong></p>
+        
+        <div class="warning">
+            <ul>
+                <li><strong>Si TDR + et/ou score de Mac Isaac >= 2 :</strong> antibiotiques</li>
+                <li><strong>Si TDR - et quel que soit le score de Mac Isaac :</strong> pas d'antibiotiques</li>
+                <li><strong>Si TDR indisponible et Mac Isaac < 2 :</strong> pas d'antibiotiques</li>
+            </ul>
+        </div>
+        
+        <h2>Angines speciales</h2>
+        
+        <h3>Angine pseudomembraneuse</h3>
+        <p>MNI : traitement symptomatique, repos, antalgique (paracetamol)</p>
+        
+        <h3>Angine erythemateuse ou erythematopultacee</h3>
+        <div class="drug">
+            <strong>Corticotherapie dans les formes severes :</strong>
+            <br/><strong>Prednisone (Cortancyl) :</strong> 0,5 mg/kg/j en une prise
+        </div>
+        
+        <h3>Diphterie</h3>
+        <div class="important">
+            <p><strong>Avis infectieux urgent</strong></p>
+        </div>
+        
+        <h2>Orientation</h2>
+        <div class="warning">
+            <p><strong>Le traitement est ambulatoire</strong></p>
+        </div>
+        
+        <h3>Hospitalisation et avis ORL si :</h3>
+        <ul>
+            <li>Sepsis et complication locale (angine aphagiante, phlegmon, trismus)</li>
+            <li>Complications neurologiques centrales (MNI)</li>
+            <li>Importante splenomegalie (MNI)</li>
+            <li>Thrombopenie < 50 000 (MNI)</li>
+        </ul>
+        
+        <h2>Si suspicion MNI</h2>
+        <ul>
+            <li>BHC</li>
+            <li>NFS : atypie lymphocytaire, thrombopenie</li>
+            <li>Si splenomegalie clinique : echo abdominale a la recherche d'un hematome de rate</li>
+        </ul>
+        
+        <h2>References</h2>
+        <ul>
+            <li>Rhinopharyngite aigue et angine aigue de l'adulte. Recommandations HAS. Novembre 2016.</li>
+            <li>Pilly E. Maladies infectieuses et Tropicales. 26e edition. 2018.</li>
+        </ul>
+    </div>
+</body>
+</html>

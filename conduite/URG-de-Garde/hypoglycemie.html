@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypoglycemie - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-tint"></i> Hypoglycemie</h1>
+        
+        <h2>Definition</h2>
+        <p>Glycemie capillaire < 0,70 g/L avec signes cliniques ou < 0,60 g/L meme asymptomatique.</p>
+
+        <h2>Prise en Charge IAO</h2>
+        <ul>
+            <li><strong>Constantes :</strong> PAS, PAD, FC, FR, T°C, SpO2</li>
+            <li><strong>Dextro</strong></li>
+        </ul>
+
+        <h2>Signes de Gravite</h2>
+        <ul>
+            <li><strong>Troubles neuroglycopeniques</strong> : confusion, convulsions, coma</li>
+            <li><strong>Troubles sympathiques</strong> : sueurs, tachycardie, paleur</li>
+            <li><strong>Coma</strong></li>
+            <li><strong>Severite associee</strong> : IDM, alcool, insuffisance renale, personne agee sans sulfamides hypoglycemiants</li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>Box si :</strong> hypoglycemie simple</li>
+            <li><strong>SAUV si :</strong> coma ou hypoglycemie severe</li>
+        </ul>
+
+        <h2>Traitement</h2>
+        
+        <h3>Patient conscient - hypoglycemie sous antidiabetiques oraux</h3>
+        <div class="posology">
+            <ul>
+                <li><strong>Prise de 3 sucres</strong> (3 x 5 g = 15 g) avec un verre d'eau ou jus de fruit</li>
+                <li><strong>Recontroler la glycemie</strong> environ 20 minutes apres</li>
+                <li><strong>Ne pas donner de collation supplementaire</strong></li>
+            </ul>
+        </div>
+
+        <h3>Patient conscient - hypoglycemie severe</h3>
+        <div class="posology">
+            <p><strong>Hospitalisation</strong></p>
+            <ul>
+                <li><strong>Perfusion G5%</strong> : 1 500 mL/jour</li>
+                <li><strong>Surveillance Dextro/6h</strong></li>
+            </ul>
+        </div>
+
+        <h3>Coma - hypoglycemie severe</h3>
+        <div class="posology">
+            <p><span class="drug-name">Glucos 30%</span> (ou <span class="drug-commercial">Glucosan</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 2 ampoules en IVL</li>
+                <li><strong>Voie :</strong> IVL (intravenous lent)</li>
+            </ul>
+            <p><strong>PUIS :</strong></p>
+            <p><span class="drug-name">Glucos 10%</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 500 mL IVSE</li>
+                <li><strong>Poser une voie veineuse peripherique</strong></li>
+            </ul>
+            <p><strong>Apres reprise de conscience :</strong></p>
+            <ul>
+                <li>Donner un sucre lent : par exemple, 3 petits-beurres ou un demi-pain</li>
+            </ul>
+        </div>
+
+        <h2>Orientation</h2>
+        
+        <h3>Patient conscient - sortie possible si :</h3>
+        <ul>
+            <li>Veiller a ce qu'il ait du sucre sur lui</li>
+            <li>Diminuer de 2 a 4 UI la dose d'insuline ayant precede le malaise si pas de cause retrouvee</li>
+            <li>Ne laisser sortir que lorsque la glycemie est normale pendant une heure</li>
+            <li>S'assurer que le patient a compris les conseils</li>
+        </ul>
+
+        <h3>Hypoglycemie severe - sortie possible si :</h3>
+        <ul>
+            <li>Veiller a ce que le patient ait du sucre sur lui</li>
+            <li>Ne laisser sortir que lorsque la glycemie est normale pendant une heure</li>
+            <li>En l'absence d'une comorbidite associee (IDM, alcool, insuffisance renale, personne agee sans sulfamides hypoglycemiants)</li>
+            <li>Demander un avis specialise en cas de doute</li>
+        </ul>
+
+        <h2>References</h2>
+        <ul>
+            <li>Prise en charge de l'hypoglycemie chez le diabétique. Protocole URG' de Garde 2019-2020.</li>
+        </ul>
+    </div>
+</body>
+</html>

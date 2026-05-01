@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accidents Transfusionnels - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .drug { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-blood"></i> Accidents Transfusionnels</h1>
+        <p><strong>Protocole P4 - F. Adnet - Mise a jour: 20/8/2018</strong></p>
+        
+        <h2>Definition</h2>
+        <p>Complications liees a une transfusion de produits sanguins. Types principaux:</p>
+        
+        <h2>1. Accidents Hemolytiques</h2>
+        <ul>
+            <li><strong>Incompatibilites ABO:</strong> gravite immediate, rares</li>
+            <li><strong>Incompatibilites non ABO:</strong> moins graves</li>
+            <li><strong>Incompatibilites RAI:</strong> frequentes</li>
+        </ul>
+        
+        <h2>2. Accidents Infectieux</h2>
+        <ul>
+            <li>Graves: 1/3 deces, frequents avec transfusion de plaquettes</li>
+            <li>Typiquement: signes de 1 a 2 heures apres le debut de la transfusion (jusqu'a 6h)</li>
+        </ul>
+        
+        <h2>3. Reaction Allergique</h2>
+        <ul>
+            <li>Frequente avec transfusion de plaquettes</li>
+            <li>Urticaire, prurit, vomissements</li>
+            <li>Rares: choc anaphylactique, oedeme de Quincke</li>
+            <li>Plus frequents chez patients transfuses de moelle osseuse ou deficit immunitaire acquis: concentrats globulaires ou plaquettes irradies</li>
+        </ul>
+        
+        <h2>4. OAP Cardiogenique (TACO)</h2>
+        <ul>
+            <li>Patients ages</li>
+            <li>Transfusion en SAUV</li>
+            <li>Insuffisants cardiaques ou renaux</li>
+            <li>Survenue jusqu'a 24h apres la transfusion</li>
+        </ul>
+        
+        <h2>5. OAP Lesionnel (TRALI)</h2>
+        <ul>
+            <li>Rarissime, grave</li>
+            <li>Toux + dyspnee</li>
+            <li>1 a 3 heures apres le debut de la transfusion</li>
+        </ul>
+        
+        <h2>6. Accidents Metaboliques</h2>
+        <ul>
+            <li>Rares (intoxication par citrates)</li>
+            <li>Paresthesies, tremblements</li>
+            <li>Troubles digestifs, troubles du rythme cardiaque</li>
+        </ul>
+        
+        <h2>Prise en Charge IAO</h2>
+        <div class="warning">
+            <h3>Bilan</h3>
+            <ul>
+                <li>Dextro, FR, PAS, PAD, FC, T°C, SpO2, BU</li>
+                <li>ECG obligatoire</li>
+            </ul>
+            <h3>Orientation</h3>
+            <ul>
+                <li>SAUV si signes de gravite</li>
+            </ul>
+        </div>
+        
+        <h2>Precautions Transfusionnelles</h2>
+        <ul>
+            <li>Controle ultime au lit du malade</li>
+            <li>Compatibilite ABO</li>
+            <li>Surveillance pendant les 15 premieres minutes et jusqu'a 2 heures apres la fin de la transfusion</li>
+            <li>Conserver les poches au moins 2 heures apres la transfusion</li>
+            <li>Patients insuffisants cardiaques ou insuffisants renaux: surveillance USIC</li>
+        </ul>
+        
+        <h2>Prise en Charge</h2>
+        
+        <h3>Reaction allergique</h3>
+        <ul>
+            <li>Urticaire (P148)</li>
+            <li>Oedeme de Quincke (P9)</li>
+        </ul>
+        
+        <h3>Frissons - hyperthermie (38-40°C)</h3>
+        <div class="important">
+            <ul>
+                <li>Arreter la transfusion</li>
+                <li>Bilan complet</li>
+                <li>Antipyretique: <strong>Paracetamol 1 g IVL</strong></li>
+            </ul>
+        </div>
+        
+        <h3>OAP (souvent revele par une toux)</h3>
+        <div class="important">
+            <ul>
+                <li>Arreter la transfusion</li>
+                <li>Diuretique (P113)</li>
+                <li>Oxygenotherapie au masque haute concentration</li>
+            </ul>
+        </div>
+        
+        <h3>Frissons - hypothermie - cephalee - douleur lombaire puis choc</h3>
+        <div class="important">
+            <ul>
+                <li>Arreter la transfusion</li>
+                <li>Bilan complet</li>
+                <li>Oxygenotherapie au masque haute concentration</li>
+            </ul>
+        </div>
+        
+        <h2>Bilan a Realiser</h2>
+        <ul>
+            <li>NFS, plaquettes</li>
+            <li>TP, TCA</li>
+            <li>Iono, creat</li>
+            <li>Bilirubine: augmentee en cas d'hemolyse</li>
+            <li>Haptoglobine: baisse en cas d'hemolyse</li>
+            <li>LDH: augmente en cas d'hemolyse</li>
+            <li>Rx thorax: recherche d'OAP</li>
+            <li>D-dimeres: augmentes si CIVD (P27)</li>
+            <li>Fibrinogene: &lt; 1 g/L si CIVD (P27)</li>
+            <li>Hemocultures</li>
+            <li>Prelever 1 tube sec et 1 EDTA pour Coombs direct</li>
+        </ul>
+        
+        <h2>Traitement Symptomatique</h2>
+        <div class="warning">
+            <p><strong>Dans tous les cas:</strong></p>
+            <ul>
+                <li>Arreter la transfusion</li>
+                <li>Appel hematologue de garde</li>
+            </ul>
+        </div>
+        
+        <p><strong>Si choc:</strong></p>
+        <div class="drug">
+            Noradrenaline: 1 mg/h IVSE, augmenter par palier de 0,5 mg/h
+        </div>
+        
+        <p><strong>Antibiotherapie systematique tant qu'une origine infectieuse n'a pas ete eliminee:</strong></p>
+        <ul>
+            <li>En l'absence de choc: <strong>Tazocilline IV, 4 g x 3/j</strong></li>
+            <li>Avec un choc: <strong>Tienam, 1 g x 3/j et Amiklin, 15 mg/kg/j IVL</strong></li>
+        </ul>
+        
+        <h2>Orientation</h2>
+        <ul>
+            <li>Reanimation si signe de gravite</li>
+        </ul>
+    </div>
+</body>
+</html>

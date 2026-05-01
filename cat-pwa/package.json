@@ -1,0 +1,17 @@
+{
+  "name": "cat-medical-app",
+  "version": "1.0.0",
+  "description": "C-A-T - Medical App",
+  "main": "index.html",
+  "scripts": {
+    "serve": "npx serve .",
+    "build": "npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/android": "^6.0.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

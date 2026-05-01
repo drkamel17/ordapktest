@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicalcul - Table de Lund et Browder ~ Brûlés</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .age-selector {
+            background: #e8f4fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+        }
+
+        .age-selector h3 {
+            color: #0000FF;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            border: 2px solid #3498db;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .radio-option:hover {
+            background: #3498db;
+            color: white;
+        }
+
+        .radio-option input[type="radio"] {
+            margin-right: 8px;
+            width: 18px;
+            height: 18px;
+        }
+
+        .checkbox-section {
+            margin: 15px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            accent-color: #3498db;
+        }
+
+        .checkbox-group label {
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        .auto-checkbox {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .calculator-section {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: #e8f4fd;
+            border-radius: 10px;
+        }
+
+        .calculate-btn {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .result-display {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 15px 0;
+        }
+
+        .result-display input {
+            border: 2px solid #3498db;
+            padding: 8px 12px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            width: 80px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .additional-info {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+
+        .interpretation {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+
+        .references {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .references a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            margin: 10px 0;
+        }
+
+        .footer-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #f39c12;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content-card {
+                padding: 20px;
+            }
+            
+            .radio-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .checkbox-group {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Surface brulée - Table de Lund et Browder</h1>
+            <p>Brûlés</p>
+        </div>
+
+        <div class="content-card">
+            <form name="Form" id="Form">
+                <div class="age-selector">
+                    <h3>Age approximatif</h3>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input name="vItemAge" id="vItemAge.0" type="radio" value="0" onclick="f_Calculer()">
+                            0 - 12 mois
+                        </label>
+                        <label class="radio-option">
+                            <input name="vItemAge" id="vItemAge.1" type="radio" value="1" onclick="f_Calculer()">
+                            1 - 4 ans
+                        </label>
+                        <label class="radio-option">
+                            <input name="vItemAge" id="vItemAge.2" type="radio" value="2" onclick="f_Calculer()">
+                            5 - 9 ans
+                        </label>
+                        <label class="radio-option">
+                            <input name="vItemAge" id="vItemAge.3" type="radio" value="3" onclick="f_Calculer()">
+                            10 - 14 ans
+                        </label>
+                        <label class="radio-option">
+                            <input name="vItemAge" id="vItemAge.4" type="radio" value="4" onclick="f_Calculer()">
+                            15 ans
+                        </label>
+                        <label class="radio-option">
+                            <input name="vItemAge" id="vItemAge.5" type="radio" value="5" onclick="f_Calculer()" checked="checked">
+                            Adulte
+                        </label>
+                    </div>
+                </div>
+
+                <h3 style="color: #0000FF; margin-bottom: 20px; text-align: center;">
+                    Régions brûlées (2ème et 3ème degrés)
+                </h3>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vTeteAuto" id="vTeteAuto" type="checkbox" onclick="vTete1.checked = vTeteAuto.checked; vTete2.checked = vTeteAuto.checked; f_Calculer()">
+                        <label for="vTeteAuto" class="auto-checkbox"><strong>Tête</strong> - par moitié</label>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px;">
+                        <div class="checkbox-group">
+                            <input name="vTete1" id="vTete1" type="checkbox" onclick="f_Calculer()">
+                            <label for="vTete1">1er Moitié</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vTete2" id="vTete2" type="checkbox" onclick="f_Calculer()">
+                            <label for="vTete2">2ème Moitié</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vCou" id="vCou" type="checkbox" onclick="f_Calculer()">
+                        <label for="vCou"><strong>Cou</strong></label>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vTroncAntAuto" id="vTroncAntAuto" type="checkbox" onclick="vTroncAnt1.checked = vTroncAntAuto.checked; vTroncAnt2.checked = vTroncAntAuto.checked; vTroncAnt3.checked = vTroncAntAuto.checked; vTroncAnt4.checked = vTroncAntAuto.checked; f_Calculer()">
+                        <label for="vTroncAntAuto" class="auto-checkbox"><strong>Tronc (Antérieur)</strong> - par quart</label>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px;">
+                        <div class="checkbox-group">
+                            <input name="vTroncAnt1" id="vTroncAnt1" type="checkbox" onclick="f_Calculer()">
+                            <label for="vTroncAnt1">1er quart</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vTroncAnt2" id="vTroncAnt2" type="checkbox" onclick="f_Calculer()">
+                            <label for="vTroncAnt2">2ème quart</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vTroncAnt3" id="vTroncAnt3" type="checkbox" onclick="f_Calculer()">
+                            <label for="vTroncAnt3">3ème quart</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vTroncAnt4" id="vTroncAnt4" type="checkbox" onclick="f_Calculer()">
+                            <label for="vTroncAnt4">4ème quart</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vTroncPostAuto" id="vTroncPostAuto" type="checkbox" onclick="vTroncPost1.checked = vTroncPostAuto.checked; vTroncPost2.checked = vTroncPostAuto.checked; vTroncPost3.checked = vTroncPostAuto.checked; vTroncPost4.checked = vTroncPostAuto.checked; f_Calculer()">
+                        <label for="vTroncPostAuto" class="auto-checkbox"><strong>Tronc (Postérieur)</strong> - par quart</label>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px;">
+                        <div class="checkbox-group">
+                            <input name="vTroncPost1" id="vTroncPost1" type="checkbox" onclick="f_Calculer()">
+                            <label for="vTroncPost1">1er quart</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vTroncPost2" id="vTroncPost2" type="checkbox" onclick="f_Calculer()">
+                            <label for="vTroncPost2">2ème quart</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vTroncPost3" id="vTroncPost3" type="checkbox" onclick="f_Calculer()">
+                            <label for="vTroncPost3">3ème quart</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vTroncPost4" id="vTroncPost4" type="checkbox" onclick="f_Calculer()">
+                            <label for="vTroncPost4">4ème quart</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vBrasAuto" id="vBrasAuto" type="checkbox" onclick="vBrasD.checked = vBrasAuto.checked; vBrasG.checked = vBrasAuto.checked; f_Calculer()">
+                        <label for="vBrasAuto" class="auto-checkbox"><strong>Bras</strong></label>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px;">
+                        <div class="checkbox-group">
+                            <input name="vBrasD" id="vBrasD" type="checkbox" onclick="f_Calculer()">
+                            <label for="vBrasD">Droit</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vBrasG" id="vBrasG" type="checkbox" onclick="f_Calculer()">
+                            <label for="vBrasG">Gauche</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vAvBrasAuto" id="vAvBrasAuto" type="checkbox" onclick="vAvBrasD.checked = vAvBrasAuto.checked; vAvBrasG.checked = vAvBrasAuto.checked; f_Calculer()">
+                        <label for="vAvBrasAuto" class="auto-checkbox"><strong>Avant-Bras</strong></label>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px;">
+                        <div class="checkbox-group">
+                            <input name="vAvBrasD" id="vAvBrasD" type="checkbox" onclick="f_Calculer()">
+                            <label for="vAvBrasD">Droit</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vAvBrasG" id="vAvBrasG" type="checkbox" onclick="f_Calculer()">
+                            <label for="vAvBrasG">Gauche</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vMainsAuto" id="vMainsAuto" type="checkbox" onclick="vMainD.checked = vMainsAuto.checked; vMainG.checked = vMainsAuto.checked; f_Calculer()">
+                        <label for="vMainsAuto" class="auto-checkbox"><strong>Mains</strong></label>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px;">
+                        <div class="checkbox-group">
+                            <input name="vMainD" id="vMainD" type="checkbox" onclick="f_Calculer()">
+                            <label for="vMainD">Droite</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vMainG" id="vMainG" type="checkbox" onclick="f_Calculer()">
+                            <label for="vMainG">Gauche</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vFessesAuto" id="vFessesAuto" type="checkbox" onclick="vFesseD.checked = vFessesAuto.checked; vFesseG.checked = vFessesAuto.checked; f_Calculer()">
+                        <label for="vFessesAuto" class="auto-checkbox"><strong>Fesses</strong></label>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px;">
+                        <div class="checkbox-group">
+                            <input name="vFesseD" id="vFesseD" type="checkbox" onclick="f_Calculer()">
+                            <label for="vFesseD">Droit</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vFesseG" id="vFesseG" type="checkbox" onclick="f_Calculer()">
+                            <label for="vFesseG">Gauche</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vOGE" id="vOGE" type="checkbox" onclick="f_Calculer()">
+                        <label for="vOGE"><strong>Organes Génitaux</strong></label>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vCuissesAuto" id="vCuissesAuto" type="checkbox" onclick="vCuisseD.checked = vCuissesAuto.checked; vCuisseG.checked = vCuissesAuto.checked; f_Calculer()">
+                        <label for="vCuissesAuto" class="auto-checkbox"><strong>Cuisses</strong></label>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px;">
+                        <div class="checkbox-group">
+                            <input name="vCuisseD" id="vCuisseD" type="checkbox" onclick="f_Calculer()">
+                            <label for="vCuisseD">Droite</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vCuisseG" id="vCuisseG" type="checkbox" onclick="f_Calculer()">
+                            <label for="vCuisseG">Gauche</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vJambesAuto" id="vJambesAuto" type="checkbox" onclick="vJambeD.checked = vJambesAuto.checked; vJambeG.checked = vJambesAuto.checked; f_Calculer()">
+                        <label for="vJambesAuto" class="auto-checkbox"><strong>Jambes</strong></label>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px;">
+                        <div class="checkbox-group">
+                            <input name="vJambeD" id="vJambeD" type="checkbox" onclick="f_Calculer()">
+                            <label for="vJambeD">Droite</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vJambeG" id="vJambeG" type="checkbox" onclick="f_Calculer()">
+                            <label for="vJambeG">Gauche</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vPiedsAuto" id="vPiedsAuto" type="checkbox" onclick="vPiedD.checked = vPiedsAuto.checked; vPiedG.checked = vPiedsAuto.checked; f_Calculer()">
+                        <label for="vPiedsAuto" class="auto-checkbox"><strong>Pieds</strong></label>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 10px;">
+                        <div class="checkbox-group">
+                            <input name="vPiedD" id="vPiedD" type="checkbox" onclick="f_Calculer()">
+                            <label for="vPiedD">Droit</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input name="vPiedG" id="vPiedG" type="checkbox" onclick="f_Calculer()">
+                            <label for="vPiedG">Gauche</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="calculator-section">
+                    <button type="button" class="calculate-btn" onclick="f_Calculer()">Calculer</button>
+                    
+                    <div class="result-display">
+                        Surface brûlée : 
+                        <input name="Resultat" type="text" id="Resultat" style="width:80px" readonly="readonly"> %
+                    </div>
+                </div>
+
+                <div class="additional-info">
+                    <p><strong>Vous pouvez calculer la quantité de remplissage,</strong></p>
+                    <br>
+                    <p>Pour un adulte: <a href="Medicalcul - Remplissage brûlés graves (adulte) ~ Brûlés.html">Brûlés graves (adultes) : Remplissage</a></p>
+                    <br>
+                    <p>Pour un enfant: <a href="Medicalcul - Remplissage brûlés graves (enfant) ~ Brûlés.html">Brûlés graves (enfants) : Remplissage</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="interpretation">
+            <strong>Interprétation :</strong><br>
+            • Surface > 10% : brûlé à hospitaliser dans un centre "Grand Brûlés".<br>
+            • Surface > 20% (adulte) ou 10% (enfant) : brûlé grave à hospitalier en "Réanimation Grand Brûlé".
+        </div>
+
+        <div class="references">
+            <strong>Références :</strong><br>
+            • R. Le Floch *, J.-F. Arnould, A. Pilorget, E. Naux. Prise en charge initiale du patient brûlé. Congrès national d'anesthésie et de réanimation 2008. Les Essentiels, p. 507-537.<br>
+            • Lund CC, Browder NC. The estimation of areas of burns. Surg Gynecol & Obst 1944 ; 79 : 352-8.
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="index.html">[Racine]</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        // Calcul de la surface brûlée selon la table de Lund et Browder
+        function f_Calculer() {
+            var vTeteVal = [9.5, 8.5, 6.5, 5.5, 4.5, 3.5];
+            var vCuisseVal = [5.5, 6.5, 8, 8.5, 9, 9.5];
+            var vJambeVal = [5, 5, 5.5, 6, 6.5, 7];
+            var Age = f_GetRadioValue('vItemAge')*1;
+            var Res = 0;
+            if(document.Form.vTete1.checked) Res += vTeteVal[Age];
+            if(document.Form.vTete2.checked) Res += vTeteVal[Age];
+            if(document.Form.vCou.checked) Res += 2;
+            if(document.Form.vTroncAnt1.checked) Res += 3.25;
+            if(document.Form.vTroncAnt2.checked) Res += 3.25;
+            if(document.Form.vTroncAnt3.checked) Res += 3.25;
+            if(document.Form.vTroncAnt4.checked) Res += 3.25;
+            if(document.Form.vTroncPost1.checked) Res += 3.25;
+            if(document.Form.vTroncPost2.checked) Res += 3.25;
+            if(document.Form.vTroncPost3.checked) Res += 3.25;
+            if(document.Form.vTroncPost4.checked) Res += 3.25;
+            if(document.Form.vBrasD.checked) Res += 4;
+            if(document.Form.vBrasG.checked) Res += 4;
+            if(document.Form.vAvBrasD.checked) Res += 3;
+            if(document.Form.vAvBrasG.checked) Res += 3;
+            if(document.Form.vMainD.checked) Res += 2.5;
+            if(document.Form.vMainG.checked) Res += 2.5;
+            if(document.Form.vFesseD.checked) Res += 2.5;
+            if(document.Form.vFesseG.checked) Res += 2.5;
+            if(document.Form.vOGE.checked) Res += 1;
+            if(document.Form.vCuisseD.checked) Res += vCuisseVal[Age];
+            if(document.Form.vCuisseG.checked) Res += vCuisseVal[Age];
+            if(document.Form.vJambeD.checked) Res += vJambeVal[Age];
+            if(document.Form.vJambeG.checked) Res += vJambeVal[Age];
+            if(document.Form.vPiedD.checked) Res += 3.5;
+            if(document.Form.vPiedG.checked) Res += 3.5;
+
+            document.Form.Resultat.value = Res;
+
+            try { 
+                // Simuler la fonction Android si elle existe
+                if (typeof MSSAndroidFunction !== 'undefined') {
+                    MSSAndroidFunction.storeHistory("lundbrowder.html", "Table de Lund et Browder", "brules", "Surface brûlée (%):", Res); 
+                }
+            } catch(e) {
+                console.log("Fonction Android non disponible");
+            }
+        }
+
+        // Fonction pour récupérer la valeur d'un groupe de radio buttons
+        function f_GetRadioValue(radioGroupName) {
+            var radios = document.getElementsByName(radioGroupName);
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    return radios[i].value;
+                }
+            }
+            return 0; // Valeur par défaut
+        }
+
+        // Initialiser le calcul au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            f_Calculer();
+        });
+    </script>
+</body>
+</html>

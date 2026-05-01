@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embolie Pulmonaire - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-lung"></i> Embolie Pulmonaire</h1>
+        
+        <h2>Definition</h2>
+        <p>Obliteration brusque du tronc de l'artere pulmonaire ou une de ses branches, le plus souvent due a la migration d'un thrombus.</p>
+
+        <h2>Signes de Gravite</h2>
+        <ul>
+            <li><strong>SpO2 < 95%</strong></li>
+            <li><strong>Signes de detresse respiratoire</strong></li>
+            <li><strong>Signes de choc</strong></li>
+            <li><strong>FC > 110/min</strong></li>
+            <li><strong>PAS < 90 mmHg</strong> ou baisse de PAS > 40 mmHg</li>
+            <li><strong>sPESI >= 1</strong></li>
+            <li><strong>Dilation du ventricule droit</strong></li>
+        </ul>
+
+        <h2>Bilan</h2>
+        <ul>
+            <li><strong>Constantes :</strong> TA, FC, PAS, PAD, FR, SpO2, T°C</li>
+            <li><strong>ECG</strong></li>
+            <li><strong>GDS</strong> (hypoxie, hypocapnie)</li>
+            <li><strong>Ionogramme</strong> (insuffisance renale)</li>
+            <li><strong>NFS</strong></li>
+            <li><strong>TP, TCA</strong></li>
+            <li><strong>BNP</strong> (signe de gravite)</li>
+            <li><strong>Troponine</strong></li>
+            <li><strong>Angioscanner thoracique</strong></li>
+            <li><strong>Scintigraphie pulmonaire</strong> (si CI angioscanner)</li>
+            <li><strong>Echo-doppler veineux</strong></li>
+        </ul>
+
+        <h2>Score de Geneva Revise (S6)</h2>
+        <ul>
+            <li>Age > 65 ans: 1 point</li>
+            <li>TVP ou EP precedente: 2 points</li>
+            <li>FC > 100/min: 1 point</li>
+            <li>PAS < 100 mmHg: 2 points</li>
+            <li>SpO2 < 95%: 2 points</li>
+            <li>Douleur jambe unilaterale: 2 points</li>
+            <li>Hemoptysie: 2 points</li>
+            <li>Chirurgie recente ou immobilisation: 1 point</li>
+            <li>Cancer evolutif: 1 point</li>
+        </ul>
+
+        <h2>Score de Wells (S11)</h2>
+        <ul>
+            <li>Signes de TVP: 3 points</li>
+            <li>EP probable ou plus: 3 points</li>
+            <li>FC >= 100/min: 1,5 points</li>
+            <li>Immobilisation ou chirurgie recente: 1,5 points</li>
+            <li>Cancer evolutif: 1 point</li>
+            <li>Hemoptysie: 1 point</li>
+            <li>Prise de contraceptifs oraux: 1 point</li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>SAUV si :</strong> SpO2 < 95%, signes de detresse, FC > 110/min, signes de choc</li>
+            <li><strong>Box si :</strong> bonne tolerance hemodynamique, SpO2 > 95%</li>
+        </ul>
+
+        <h2>Strategie diagnostique</h2>
+        <ul>
+            <li><strong>Probabilite faible :</strong> D-dimeres < 500 µg/L (elimine diagnostic)</li>
+            <li><strong>Si D-dimeres > 500 µg/L :</strong> angioscanner thoracique</li>
+            <li><strong>Probabilite forte :</strong> commencer traitement sans attendre confirmation</li>
+        </ul>
+
+        <h2>Traitement</h2>
+        
+        <h3>Anticoagulation hospitaliere (si sPESI >= 1)</h3>
+        <div class="posology">
+            <p><span class="drug-name">Tinzaparine</span> (<span class="drug-commercial">Innohep</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 175 UI/kg en 1 injection/jour SC</li>
+            </ul>
+            <p><strong>OU :</strong></p>
+            <p><span class="drug-name">Enoxaparine</span> (<span class="drug-commercial">Lovenox</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 100 UI/kg x 2/jour SC (0,01 mL = 1 mg = 100 UI)</li>
+            </ul>
+            <p><strong>OU :</strong></p>
+            <p><span class="drug-name">Heparine non fractionnee</span></p>
+            <ul>
+                <li><strong>Dose de charge :</strong> 80 UI/kg bolus IVD</li>
+                <li><strong>Entretien :</strong> 400 a 500 UI/kg/jour IVSE</li>
+            </ul>
+        </div>
+
+        <h3>Traitement ambulatoire possible (si sPESI = 0)</h3>
+        <div class="posology">
+            <p><span class="drug-name">Rivaroxaban</span> (<span class="drug-commercial">Xarelto</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 15 mg x 2/jour pendant 7 jours</li>
+                <li><strong>Puis :</strong> 5 mg x 2/jour</li>
+            </ul>
+            <p><strong>OU :</strong></p>
+            <p><span class="drug-name">Apixaban</span> (<span class="drug-commercial">Eliquis</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 10 mg x 2/jour pendant 7 jours</li>
+                <li><strong>Puis :</strong> 5 mg x 2/jour</li>
+            </ul>
+        </div>
+
+        <h3>Fibrinolyse (si choc ou sPESI >= 1 avec dilatation du VD)</h3>
+        <div class="posology">
+            <p><span class="drug-name">rtPA</span> (<span class="drug-commercial">Actilyse</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 100 mg en 2 heures IVSE</li>
+                <li><strong>Contre-indications :</strong>参见F5</li>
+            </ul>
+            <p><strong>Si CI fibrinolyse :</strong> discuter embolectomie (appel chirurgie cardiaque)</p>
+        </div>
+
+        <h2>Cas particuliers</h2>
+        <ul>
+            <li><strong>Insuffisance renale :</strong> scintigraphie au lieu de angioscanner</li>
+            <li><strong>Probabilite forte et examen indisponible :</strong> commencer traitement, programmer imagerie le lendemain</li>
+        </ul>
+
+        <h2>References</h2>
+        <ul>
+            <li>2014 ESC Guidelines on the diagnosis and management of acute pulmonary embolism. Eur Heart J September 17, 2014.</li>
+            <li>Righini M et al. Age-Adjusted D-Dimer cut-off levels to rule out pulmonary embolism. JAMA 2014 ; 311 : 117-22.</li>
+            <li>Agrelli G. N Engl J Med 2013 ; 369 : 799-808.</li>
+        </ul>
+    </div>
+</body>
+</html>

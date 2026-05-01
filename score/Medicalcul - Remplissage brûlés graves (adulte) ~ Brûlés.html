@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Medicalcul - Remplissage brûlés graves (adulte) ~ Brûlés</title>
+
+<meta name="viewport" content="width=device-width">
+<script type="text/javascript" src="./Medicalcul - Remplissage brûlés graves (adulte) ~ Brûlés_files/_scripts.js.تنزيل"></script>
+<!-- <script type="text/javascript">f_ChooseCss();</script> -->
+<link rel="stylesheet" href="./Medicalcul - Remplissage brûlés graves (adulte) ~ Brûlés_files/styles.css">
+
+<script type="text/javascript">
+// ===========================================================================================
+// Fonction de calcul de la page
+function f_Calculer()
+{
+	// calcul du résultat
+	var vVol = 2*document.Form.vPoids.value*document.Form.vSurface.value;
+
+	// Affichage du résultat
+	document.Form.ResH1.value = Math.round(document.Form.vPoids.value*2000)/100;
+	document.Form.ResH8.value = Math.round(vVol*100)/100;
+	document.Form.ResH16.value = Math.round(vVol*100)/100;
+	document.Form.ResD8.value = Math.round(100*vVol/8)/100;
+	document.Form.ResD16.value = Math.round(100*vVol/16)/100;
+
+	try { MSSAndroidFunction.storeHistory("rempbruleadulte.html", "Remplissage brûlés graves (adulte)", "brules", "1ère heure (ml):~Sur 8h (ml):~soit (ml/h):~Sur 16h (ml):~soit (ml/h):", document.Form.ResH1.value+"~"+document.Form.ResH8.value+"~"+document.Form.ResD8.value+"~"+document.Form.ResH16.value+"~"+document.Form.ResD16.value); } catch(e) {}
+}
+// ======================================================================================
+</script>
+<style>.BDTLL_status {
+    cursor: pointer;
+    display: inline;
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3BhZ2VzL2NvbXBvbmVudHMvdG9vbHRpcC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixXQUFXO0lBQ1gsWUFBWTtBQUNoQiIsInNvdXJjZXNDb250ZW50IjpbIi5CRFRMTF9zdGF0dXMge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBkaXNwbGF5OiBpbmxpbmU7XG4gICAgbWFyZ2luLXJpZ2h0OiAzcHg7XG4gICAgd2lkdGg6IDE2cHg7XG4gICAgaGVpZ2h0OiAxNnB4O1xufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.BDTLL_icon_ok {
+    background-image: url(data:image/png;base64,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);
+}
+</style>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    
+    .header {
+        background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .header img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .content {
+        padding: 30px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .form-group label {
+        min-width: 150px;
+        font-weight: bold;
+        color: #2c3e50;
+    }
+    
+    .form-group input[type="number"] {
+        padding: 8px 12px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 80px;
+    }
+    
+    .note {
+        background: #f8f9fa;
+        border-left: 4px solid #3498db;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .calculate-btn {
+        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px 0;
+        display: block;
+        margin: 20px auto;
+    }
+    
+    .calculate-btn:hover {
+        background: linear-gradient(135deg, #2980b9 0%, #2573a7 100%);
+    }
+    
+    .results {
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .result-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px;
+        background: white;
+        border-radius: 3px;
+        border-left: 4px solid #28a745;
+    }
+    
+    .result-value {
+        font-weight: bold;
+        color: #28a745;
+        font-size: 18px;
+    }
+    
+    .interpretation, .references {
+        margin: 20px 0;
+        line-height: 1.6;
+    }
+    
+    .interpretation h3, .references h3 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+    }
+    
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background: #2c3e50;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .footer a {
+        color: #3498db;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <img src="./Medicalcul - Remplissage brûlés graves (adulte) ~ Brûlés_files/zzimgspe_brules.png" alt="Brûlés">
+        <h1>Brûlés graves (adultes) : Remplissage</h1>
+        <p>Calculateur de remplissage pour brûlés graves chez l'adulte</p>
+    </div>
+    
+    <div class="content">
+        <form name="Form">
+            <div class="form-group">
+                <label for="vPoids">Poids :</label>
+                <input name="vPoids" type="number" lang="en" id="vPoids" onchange="f_Calculer()" style="width:80px" placeholder="kg">
+                <span>kg</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="vSurface">Surface brûlée :</label>
+                <input name="vSurface" type="number" lang="en" id="vSurface" onchange="f_Calculer()" style="width:80px" placeholder="%">
+                <span>%</span>
+            </div>
+            
+            <div class="note">
+                <strong>Note :</strong> Vous pouvez calculer la surface brûlée à l'aide de la 
+                <a href="Medicalcul - Table de Lund et Browder ~ Brûlés.html">table de Lund et Browder</a> ou de 
+                la <a href="Medicalcul - Surface brûlée, Règle de Wallace ~ Brûlés.html">règle de Wallace</a>.
+            </div>
+            
+            <button type="button" class="calculate-btn" onclick="f_Calculer()">Calculer</button>
+            
+            <div class="results">
+                <h3>Résultats :</h3>
+                <p>Volumes à passer...</p>
+                
+                <div class="result-item">
+                    <span>Sur la 1<sup>ère</sup> heure :</span>
+                    <span class="result-value"><input name="ResH1" type="text" id="ResH1" style="border:none; background:transparent; text-align:right; font-weight:bold; color:#28a745;" readonly="readonly"> ml</span>
+                </div>
+                
+                <div class="result-item">
+                    <span>Sur les 8 heures suivantes :</span>
+                    <span class="result-value"><input name="ResH8" type="text" id="ResH8" style="border:none; background:transparent; text-align:right; font-weight:bold; color:#28a745;" readonly="readonly"> ml, soit <input name="ResD8" type="text" id="ResD8" style="border:none; background:transparent; text-align:right; font-weight:bold; color:#28a745;" readonly="readonly"> ml/h - 8h</span>
+                </div>
+                
+                <div class="result-item">
+                    <span>Sur les 16 heures suivantes :</span>
+                    <span class="result-value"><input name="ResH16" type="text" id="ResH16" style="border:none; background:transparent; text-align:right; font-weight:bold; color:#28a745;" readonly="readonly"> ml, soit <input name="ResD16" type="text" id="ResD16" style="border:none; background:transparent; text-align:right; font-weight:bold; color:#28a745;" readonly="readonly"> ml/h - 16h</span>
+                </div>
+            </div>
+        </form>
+        
+        <div class="interpretation">
+            <h3>Interprétation</h3>
+            <p>Cette formule est valable pour un adulte ou un enfant de plus de 40kg. Pour un enfant de moins de 40kg, se référer au remplissage d'un enfant.</p>
+            <p>Tous les volumes indiqués sont pour des <em>cristalloïdes, Ringer</em>-Lactate de préférence.</p>
+            <p>Il est recommandé de passer 20ml/kg dans la première heure chez tout brûlé grave (>25%), mais cette thérapeutique n'est pas univoque.</p>
+            <p>Les volumes à passer sont, selon la loi de Parkland, de 2ml/kg/% SBT dans les 8 heures, puis de 2ml/kg/% SBT sur 16h. Ces volumes sont seulement une indication, et certaines études indiqueraient que les augmenter serait délétère. Il n'y a pas de bénéfice à dépasser ces doses chez un patient stable, mais il faut évidemment prendre en compte les lésions associées et l'état hémodynamique du patient.</p>
+        </div>
+        
+        <div class="references">
+            <h3>Références</h3>
+            <p>C. Vinsonneau, M. Benyamina. Prise en charge initiale du grand brûlé. Réanimation, Volume 18, Issue 8, December 2009, Pages 679-686.</p>
+            <p>C.R. Baxter, T. Shires. Physiological response to crystalloïd resuscitation of severe burns. Ann N Y Acad Sci, 150 (1968), pp. 874–894.</p>
+            <p>R. Le Floch *, J.-F. Arnould, A. Pilorget, E. Naux. Prise en charge initiale du patient brûlé. Congrès national d'anesthésie et de réanimation 2008. Les Essentiels, p. 507-537.</p>
+            <p>Mette M. Berger, Jean-Pierre Revelly, Pierre-Nicolas Carron, Marc-André Bernath. Surréanimation liquidienne pré et intrahospitalière des patients brûlés : fréquente et néfaste. Rev Med Suisse 2010;6:2410-2415.</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+            <div class="footer-links">
+                <a href="index.html">[Racine]</a>
+            </div>
+          
+        </div>
+</div>
+
+
+
+</body></html>

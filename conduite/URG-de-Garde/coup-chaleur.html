@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coup de Chaleur - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .drug { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-temperature-high"></i> Coup de Chaleur</h1>
+        <p><strong>P64 - SFMU - Urgences medicales</strong></p>
+        
+        <h2>Definition</h2>
+        <p>Hyperthermie severe (> 39°C) avec alteration de la conscience, suite a exposition a une chaleur environnementale elevee, sans necessarily de solaire.</p>
+        
+        <h2>Prise en Charge IAO</h2>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>TC, PAS, PAD, FC, FR, SpO2</li>
+            <li>Glasgow</li>
+            <li>Recherche de signes de gravite</li>
+        </ul>
+        
+        <h3>Orientation</h3>
+        <div class="important">
+            <p><strong>SAUV</strong> toujours</p>
+        </div>
+        
+        <h2>Clinique</h2>
+        <div class="warning">
+            <ul>
+                <li>TC > 39°C (generalement > 40°C)</li>
+                <li>Peau chaude et seche</li>
+                <li>Troubles de la conscience (confusion, agitation, coma)</li>
+                <li>Convulsions possibles</li>
+                <li>Tachycardie, hypotension</li>
+                <li>Aucune sudation</li>
+            </ul>
+        </div>
+        
+        <h2>Prise en Charge Medicale</h2>
+        
+        <h3>Mise en condition</h3>
+        <ul>
+            <li>Scope</li>
+            <li>Voie veineuse</li>
+            <li>TA continue</li>
+            <li>Temperature centrale continue</li>
+        </ul>
+        
+        <h3>Refroidissement urgent</h3>
+        <div class="important">
+            <p><strong>Refroidissement urgent en moins de 30 minutes</strong></p>
+        </div>
+        
+        <h4>Methodes de refroidissement</h4>
+        <div class="drug">
+            <ul>
+                <li>Immersion dans eau glacee (cible : TC 39°C en 15-30 min)</li>
+                <li>Pack de glace sur axe (cou, aisselles, aines)</li>
+                <li>Couverture refrigerante</li>
+                <li>Serum physiologique froid IV</li>
+                <li>Aspersion cutanee + ventilation</li>
+            </ul>
+        </div>
+        
+        <h3>Surveillance</h3>
+        <ul>
+            <li>Temperature centrale toutes les 5 minutes</li>
+            <li>Objectif : TC < 39°C en 30 minutes</li>
+        </ul>
+        
+        <h2>Complications</h2>
+        <div class="warning">
+            <ul>
+                <li>Rhabdomyolyse (CPK)</li>
+                <li>Insuffisance renale aigue (creatinine)</li>
+                <li>Coagulopathie (TP, TCA, fibrinogene)</li>
+                <li>Troubles hepatiques (BHC)</li>
+                <li>Hyperkaliemie (iono)</li>
+            </ul>
+        </div>
+        
+        <h2>Bilan</h2>
+        <ul>
+            <li>NFS</li>
+            <li>Iono, creatinine</li>
+            <li>CPK</li>
+            <li>TP, TCA, fibrinogene</li>
+            <li>BHC</li>
+            <li>GDS, lactate</li>
+        </ul>
+        
+        <h2>Traitement</h2>
+        
+        <h3>Si convulsions</h3>
+        <div class="drug">
+            <strong>Midazolam (Hypnovel) :</strong> 0,1 mg/kg IVD
+            <br/>ou <strong>Diazepam (Valium) :</strong> 10 mg IVD
+        </div>
+        
+        <h3>Si rhabdomyolyse</h3>
+        <div class="warning">
+            <p>Prevention de l'insuffisance renale : remplissage, surveillance diurese</p>
+        </div>
+        
+        <h2>References</h2>
+        <ul>
+            <li>SFMU - Urgences medicales</li>
+        </ul>
+    </div>
+</body>
+</html>

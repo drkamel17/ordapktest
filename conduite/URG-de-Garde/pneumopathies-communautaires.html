@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pneumopathies Communautaires - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; }
+        body { font-family: "Inter", sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; }
+        .container { background: var(--card-bg); border-radius: 16px; padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; }
+        .back-link { display: inline-block; padding: 10px 20px; background: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .dosage { background: #e8f5e9; padding: 10px; margin: 10px 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-lungs"></i> Pneumopathies Communautaires</h1>
+        
+        <h2>Definition</h2>
+        <p>Infection aigue du parenchyme pulmonaire acquise en dehors de l'hopital. Mortalite elevee chez le sujet age.</p>
+
+        <h2>Signes de Gravite - CRB-65</h2>
+        <div class="warning">
+            <ul>
+                <li><strong>Confusion</strong></li>
+                <li><strong>FR >= 30/min</strong></li>
+                <li><strong>PAS < 90 mmHg ou PAD <= 60 mmHg</strong></li>
+                <li>Age > 65 ans</li>
+            </ul>
+        </div>
+
+        <h2>Prise en Charge IAO</h2>
+        <h3>Bilan</h3>
+        <ul>
+            <li>PAS, PAD, FC, FR, T°C, SpO2</li>
+            <li>RX thorax</li>
+            <li>NFS, CRP</li>
+            <li>Iono, creat</li>
+            <li>GDS</li>
+        </ul>
+
+        <h3>Orientation</h3>
+        <ul>
+            <li><strong>SAUV:</strong> CRB-65 = 3-4</li>
+            <li><strong>Hospitalisation:</strong> CRB-65 = 1-2</li>
+            <li><strong>Ambulatoire:</strong> CRB-65 = 0</li>
+        </ul>
+
+        <h2>Traitement</h2>
+        <h3>Ambulatoire - Sans Comorbidite</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Amoxicilline:</strong> 1 g x 3/jour per os pendant 7 jours</li>
+            </ul>
+        </div>
+
+        <h3>Ambulatoire - Avec Comorbidite</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Amoxicilline - Acide clavulanique:</strong> 1 g x 3/jour per os pendant 7 jours</li>
+                <li>OU <strong>Ceftriaxone:</strong> 1 g/jour IM pendant 3 jours + Azithromycine: 500 mg x 1/jour per os</li>
+            </ul>
+        </div>
+
+        <h3>Hospitalisation</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Ceftriaxone:</strong> 1 g/jour IV</li>
+                <li>+ <strong>Azithromycine:</strong> 500 mg/jour IV ou per os</li>
+            </ul>
+        </div>
+
+        <h3>SAUV - Forme Severe</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Cefepime:</strong> 2 g x 3/jour IVSE</li>
+                <li>OU <strong>piperacilline-tazobactam:</strong> 4 g x 3/jour IVSE</li>
+                <li>+ <strong>Azithromycine:</strong> 500 mg/jour IV</li>
+            </ul>
+        </div>
+
+        <h2>Surveillance</h2>
+        <ul>
+            <li>Reevaluation a 48-72 heures</li>
+            <li>RX de controle si non amelioration</li>
+        </ul>
+
+        <div class="success">
+            <p><strong>Reference:</strong> SPILF 2019</p>
+        </div>
+    </div>
+</body>
+</html>

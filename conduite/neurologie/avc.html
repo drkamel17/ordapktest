@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVC - Conduite a Tenir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #34495e; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .danger { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-user-injured"></i> AVC</h1>
+        
+        <h2>Clinique</h2>
+        <p>Troubles neurologiques : aphasie, dysarthrie, cefalee (drapeau rouge), flou visuel, paralysie faciale peripherique ou centrale, deficit moteur, hemiplegie ou hemiparesthesie.</p>
+        <p>Diagnostic differentiel : Crise epileptique => perte des urines, morsure de la langue..</p>
+        
+        <h2>CAT</h2>
+        <ul>
+            <li>O2/VVP</li>
+            <li>Dextro/T</li>
+            <li>TA>18/10 ne pas abaisser TA avant faire une TDM</li>
+            <li>Sauf si TA 220/120 on abaisse progressivement</li>
+            <li>ECG pour eliminer IDM</li>
+            <li>Evacuation pour un scanner cerebral</li>
+        </ul>
+        
+        <div class="danger">
+            <strong>20% : hyperdensite => AVC hemorragique</strong>
+            <ul>
+                <li>Evacuation Neurochirurgie</li>
+            </ul>
+        </div>
+        
+        <div class="success">
+            <strong>80% : hypodensite => AVC ischemique</strong>
+            <ul>
+                <li>Hospitalisation au moins 24_48h</li>
+                <li>Si TDM normale a refaire 48_72h</li>
+                <li>Mannitol 100cc/8h</li>
+            </ul>
+            <p class="danger">SGI est CI risque d'oedeme cerebral</p>
+            <ul>
+                <li>Matelas antiescarres</li>
+                <li>O2 : 3l/min sauf si SaO2 correcte</li>
+                <li>Rehydratation SSI/8h 1flc</li>
+                <li>Si fievre : Perfalgan/8h 1flc</li>
+                <li>Si Gly >2g : Insulineotherapie 10UI en Sc</li>
+                <li>Arreter l'alimentation orale pas avant 2j</li>
+                <li>Si hypoK :1g KCl</li>
+                <li>Si hypoNa : 3g NaCl 1g/flc</li>
+                <li>Si risque d'infection nosocomiale traitement preventif : Claforan 1g/12h ou Augmentin 1g/12h</li>
+                <li>Si TA >220/120=>1cc Loxen dilue SG5% ou Loxen a la SAP 1cc/h, reajuster toutes les 30mn</li>
+                <li>ECG : si Troubles de rythme => Avis cardiologie</li>
+                <li>Sonde urinaire</li>
+            </ul>
+        </div>
+        
+        <h2>Traitement</h2>
+        <ul>
+            <li>SOMAZINA (Neuroprotecteur) amp 500mg en IVL 250cc SSI 1amp/j</li>
+            <li>Relais per os 40gtt/min 3_5ml 2_3/j pdt 6mois_2ans ou 400mg/j 2ml 3/j</li>
+            <li>Aspegic 300mg/j pdt 48h (3cp de 100mg en une seule prise a heure fixe), puis 100mg/j 1st/j</li>
+            <li>Atrovastatine 40mg</li>
+            <li>Lovenox 0.4/j</li>
+            <li>Controle TDM apres 48h</li>
+        </ul>
+        
+        <h2>Bilan</h2>
+        <ul>
+            <li>FNS/Gly</li>
+            <li>Uree/Creat</li>
+            <li>CT/TG</li>
+            <li>TP</li>
+            <li>Hepatique</li>
+            <li>Lipidique</li>
+            <li>TSH</li>
+            <li>Ionogramme</li>
+        </ul>
+        
+        <p>Consulter => Cardio/Neuro/Kinesitherapie</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>C-A-T - Medical App</title>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .header { text-align: center; margin-bottom: 40px; }
+        .header i { font-size: 3em; color: #2563eb; }
+        .header h1 { margin: 10px 0; font-size: 1.8em; }
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .cta-button {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background: #f8fafc;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            color: #1e293b;
+            border: 1px solid #e2e8f0;
+            gap: 12px;
+        }
+        .cta-button:hover {
+            background: white;
+            border-color: #2563eb;
+            color: #2563eb;
+        }
+        .cta-button i { font-size: 1.3em; color: #2563eb; }
+    </style>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-user-doctor"></i>
+            <h1>C-A-T - Medical App</h1>
+            <p>Scores Médicaux, Médicaments Dz, Ordonnances Types et Conduite à Tenir</p>
+        </div>
+        <div class="buttons-grid">
+            <a href="https://ordapk.vercel.app/score/" class="cta-button" target="_blank">
+                <i class="fas fa-calculator"></i>
+                <span>Scores Médicaux</span>
+            </a>
+            <a href="https://ordapk.vercel.app/medicamentdz/" class="cta-button" target="_blank">
+                <i class="fas fa-pills"></i>
+                <span>Médicaments Dz</span>
+            </a>
+            <a href="https://shortlien.vercel.app/ordapk" class="cta-button" target="_blank">
+                <i class="fas fa-notes-medical"></i>
+                <span>Ordonnance Type</span>
+            </a>
+            <a href="https://ordapk.vercel.app/conduite/" class="cta-button" target="_blank">
+                <i class="fas fa-stethoscope"></i>
+                <span>Conduite a Tenir</span>
+            </a>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(console.error);
+        }
+    </script>
+</body>
+</html>

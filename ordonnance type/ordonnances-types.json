@@ -1,0 +1,36 @@
+{
+  "Onychomycose": [
+    {
+      "quantite": "3mois",
+      "posologie": "1app 2/sem le matin pdt 3mois",
+      "medicament": "Loceryl sol/Mycoster 8% (vernis)"
+    },
+    {
+      "quantite": "03 mois",
+      "posologie": "1cp/j pdt 3 mois",
+      "medicament": "Terbinafine 250mg"
+    },
+    {
+      "quantite": "03 mois",
+      "posologie": "1app 1/j le soir",
+      "medicament": "Lamisil crème"
+    }
+  ],
+  "Herpès labial (répétition)": [
+    {
+      "quantite": "03 tubes",
+      "posologie": "1app 4_5/j",
+      "medicament": "Ciclovir pmd"
+    },
+    {
+      "quantite": "01fl",
+      "posologie": "1app 3/j",
+      "medicament": "Hexomedine sol"
+    },
+    {
+      "quantite": "05 jours",
+      "posologie": "5/j pdt 5j",
+      "medicament": "Aciclovir cp 200mg"
+    }
+  ]
+}

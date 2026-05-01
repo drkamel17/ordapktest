@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asthme - Conduite a Tenir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e67e22; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .checkbox { list-style: none; padding-left: 0; }
+        .checkbox li { padding: 8px 0; border-bottom: 1px solid #eee; }
+        .checkbox li:before { content: "☑ "; color: var(--primary-color); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-wind"></i> Asthme - Crise d'asthme</h1>
+        
+        <h2>Clinique</h2>
+        <ul>
+            <li>Dyspnee expiratoire + rales sibilants</li>
+            <li>Affection pulmonaire chronique qui touche les personnes de tous les ages.</li>
+            <li>Causee par l'inflammation et la contracture des muscles autour des voies respiratoires.</li>
+            <li><strong>Symptomes:</strong> Toux, sifflement, essoufflement, oppression thoracique.</li>
+            <li>Ces symptomes peuvent etre legers ou graves et peuvent apparaitre et disparaitre au fil du temps.</li>
+        </ul>
+        
+        <h2>CAT - Conduite a Tenir</h2>
+        <ul>
+            <li>VVP / Scope</li>
+            <li>TA / T° / SaO2 / FC / FR</li>
+            <li>Position demi assise</li>
+            <li><strong>Seance de Nebulisation:</strong> 20min
+                <ul>
+                    <li>Salbutamol 1cc + 3cc SSI</li>
+                    <li>Solumedrol 40mg en IVD</li>
+                    <li>Ou HHC 200mg en IVD</li>
+                </ul>
+            </li>
+            <li>Si pas de reponse apres 20min: 2eme Seance de Nebulisation</li>
+            <li>Apres 3 seances si pas de reponse ou aggravation:
+                <ul>
+                    <li>Chaque 1h => une seance de Nebulisation</li>
+                    <li>+ 0.5mg Atrovant (1cc + 3cc de SSI)</li>
+                </ul>
+            </li>
+            <li>Si pas de reponse: seance de Nebulisation + Sulfate de Mg diluee dans 100cc SG 5%
+                <ul>
+                    <li>1g (1amp ou 1/2amp) en 15min</li>
+                </ul>
+            </li>
+            <li>Si pas de reponse => <strong>Avis pneumologie</strong></li>
+        </ul>
+        
+        <h2>Bilan: 🩸</h2>
+        <ul class="checkbox">
+            <li>FNS / VS / CRP</li>
+            <li>TLT: Pneumonie</li>
+        </ul>
+        
+        <h2>Crise moderee</h2>
+        <ul>
+            <li>Seance de Nebulisation Salbutamol 1cc + 3cc SSI / 6h</li>
+            <li>+ Solumedrol / 8h 40mg</li>
+            <li>Ou HHC / 8h 200mg</li>
+        </ul>
+        
+        <div class="important">
+            <strong>Si crise severe ou pause respiratoire => Avis Rea</strong><br>
+            Si non Salbutamol en IV + Sulfate de Mg en 15min => Evacuation Rea ou Pneumologie
+        </div>
+        
+        <h2>Si fievre</h2>
+        <ul>
+            <li>Perfalgan / 8h</li>
+            <li>Pneumonie: Amoxicilline inj 1g / 8h</li>
+            <li>Ou Augmentin ou Claforan inj / 12h</li>
+        </ul>
+        
+        <div class="success">
+            <strong>Traitement de fond:</strong>
+            <ul>
+                <li>1️⃣ Ventoline pour les crises</li>
+                <li>2️⃣ CTC inhalee +/_ CTC locale=> spray nasal si Rhinite allergique +/_ AH</li>
+                <li>1️⃣ Ventoline spray 2bouffees 3/j pdt 7j</li>
+                <li>2️⃣ Solupred cp 20mg 1mg/kg 2cp/j 1/j matin au milieu de repas pdt 5j</li>
+            </ul>
+        </div>
+        
+        <h2>Enfant 👶</h2>
+        <ul>
+            <li>3 seances d'aerosol de 20min d'intervalle: max6
+                <ul>
+                    <li>Salbutamol 0.03cc/kg dilues dans 3cc SSI9%</li>
+                    <li>Mini 0.03 Max 1cc si >30kg</li>
+                </ul>
+            </li>
+            <li>Si pas de reponse: +/- inj Solumedrol 2mg/kg en IM (Mini 20mg Max 60mg)</li>
+        </ul>
+        
+        <div class="success">
+            <strong>Traitement de sortie - Enfant:</strong>
+            <ul>
+                <li>1️⃣ Ventoline spray 2bouffees 3/j pdt 7j (Nb des bouffees: Poids/2 chaque 6h)</li>
+                <li>2️⃣ Celestene 10gtt/kg le matin apres repas pdt 5j</li>
+                <li>Ou Solupred cp 5_20mg 1mg/kg pdt 5j</li>
+                <li>Ou Physiolone sirop 1ddp 14ml/j en monodose</li>
+            </ul>
+            
+            <strong>Traitement de fond: 3mois</strong>
+            <ul>
+                <li>>2ans: Budecort spray 200ug 1bouffee 2/j</li>
+                <li><2ans: Flixotide</li>
+                <li><9mois: Pulmicort 0.5mg</li>
+            </ul>
+            <em>Controle => Pediatricien</em>
+        </div>
+    </div>
+</body>
+</html>

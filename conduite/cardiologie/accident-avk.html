@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident aux AVK - Conduite a Tenir</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background-color: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #e74c3c; border-bottom: 3px solid #e74c3c; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-btn { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; margin-bottom: 20px; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 10px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Retour a la liste</a>
+        <h1>Accident aux AVK</h1>
+        
+        <h2>Clinique</h2>
+        <ul>
+            <li>Syndrome hemorragique</li>
+        </ul>
+        
+        <h2>Bilan :</h2>
+        <ul>
+            <li>TP</li>
+            <li>INR</li>
+            <li>Rechercher une Insuffisance Hepatique / Renale</li>
+            <li>Arret de Sintrom</li>
+            <li>Traitement par Vit K 1amp (5mg) en per Os</li>
+        </ul>
+        
+        <h2>Si hemorragies grave + INR>10</h2>
+        <ul>
+            <li>Vit K 10mg</li>
+            <li>Perfusion de plasma frais congele</li>
+        </ul>
+        
+        <h2>Surveillance</h2>
+        <ul>
+            <li>Surveillance de TP et INR</li>
+            <li>Si dans l'intervalle => Avis Hematologie</li>
+            <li>Chaque Pathologie => INR cible</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>INR augmente</strong> : Risque hemorragique => Diminuer AVK<br>
+            <strong>INR diminue</strong> : Risque de Thrombose => Augmenter AVK
+        </div>
+        
+        <h2>Conduite selon INR</h2>
+        <ul>
+            <li>INR (2-3) : Surdosage asymptomatique</li>
+            <li>INR (3-4) : Ajustement de posologie</li>
+            <li>INR (4-6) : On saute une prise d'AVK</li>
+            <li>INR (6-10) : Arret du traitement => 1-2mg de Vit K en per os</li>
+            <li>>10 : Arret du traitement => 5mg de Vit K</li>
+        </ul>
+        
+        <div class="important">
+            <strong>Toujours controle INR le lendemain</strong>
+        </div>
+    </div>
+</body>
+</html>

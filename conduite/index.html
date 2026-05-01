@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Conduite a Tenir - Medecine</title>
+    <meta name="description" content="Guide des conduites a tenir medicales par specialite">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #9b59b6;
+            --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-muted: #7f8c8d;
+        }
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-gradient);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--text-main);
+        }
+        .container {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 700px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+        .beta-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            background-color: #f39c12;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-bottom: 20px;
+        }
+        
+        /* Search styles */
+        .search-container {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+        .search-input {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+        .search-input:focus {
+            border-color: var(--primary-color);
+        }
+        .search-results {
+            margin-top: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+            display: none;
+        }
+        .search-results.active {
+            display: block;
+        }
+        .search-result-item {
+            padding: 10px 12px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+        .search-result-item:hover {
+            background-color: #f5f5f5;
+        }
+        .search-result-item a {
+            text-decoration: none;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .search-result-item a:hover {
+            color: var(--primary-color);
+        }
+        .search-result-item .specialty-tag {
+            font-size: 0.75em;
+            padding: 2px 6px;
+            background-color: #ecf0f1;
+            border-radius: 4px;
+            color: #7f8c8d;
+        }
+        .no-results {
+            padding: 15px;
+            text-align: center;
+            color: var(--text-muted);
+        }
+        
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 25px 20px;
+            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .cta-button:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(155, 89, 182, 0.2);
+        }
+        .cta-button i {
+            font-size: 1.8em;
+            color: var(--primary-color);
+        }
+        .coming-soon {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 15px; }
+            h1 { font-size: 1.3rem; }
+            .subtitle { font-size: 0.9rem; }
+            .buttons-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .cta-button { padding: 12px; font-size: 0.9rem; }
+            .cta-button i { font-size: 1.4em; }
+        }
+        
+        @media (max-width: 480px) {
+            .buttons-grid { grid-template-columns: 1fr; gap: 8px; }
+            .cta-button { padding: 10px; font-size: 0.85rem; }
+            h1 { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <a href="../index.html" style="display: inline-block; margin-bottom: 20px; color: #3498db; text-decoration: none; font-weight: 600;">
+            <i class="fas fa-arrow-left"></i> Retour a la page d'accueil
+        </a>
+        
+        <h1><i class="fas fa-stethoscope"></i> Conduite a Tenir</h1>
+        <p class="subtitle">Guide medical par specialite</p>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Rechercher une pathologie...">
+            <div id="searchResults" class="search-results"></div>
+        </div>
+        
+        <div class="buttons-grid">
+            <a href="URG-de-Garde/index.html" class="cta-button">
+                <i class="fas fa-clock"></i>
+                URG de Garde
+            </a>
+            
+            <a href="ordonnances/index.html" class="cta-button">
+                <i class="fas fa-file-prescription"></i>
+                Ordonnances
+            </a>
+            
+            <a href="cat-consultation/index.html" class="cta-button">
+                <i class="fas fa-stethoscope"></i>
+                CAT Consultation
+            </a>
+			
+            <a href="cardiologie/index.html" class="cta-button">
+                <i class="fas fa-heartbeat"></i>
+                Cardiologie
+            </a>
+            
+            <a href="endocrinologie/index.html" class="cta-button">
+                <i class="fas fa-dna"></i>
+                Endocrinologie
+            </a>
+            
+            <a href="dermatologie/index.html" class="cta-button">
+                <i class="fas fa-user-md"></i>
+                Dermatologie
+            </a>
+            
+            <a href="urologie/index.html" class="cta-button">
+                <i class="fas fa-kidney"></i>
+                Urologie
+            </a>
+            
+            <a href="infectiologie/index.html" class="cta-button">
+                <i class="fas fa-virus"></i>
+                Infectiologie
+            </a>
+            
+            <a href="ophtalmologie/index.html" class="cta-button">
+                <i class="fas fa-eye"></i>
+                Ophtalmologie
+            </a>
+            
+            <a href="medecine-interne/index.html" class="cta-button">
+                <i class="fas fa-user-injured"></i>
+                Medecine Interne
+            </a>
+            
+            <a href="pneumologie/index.html" class="cta-button">
+                <i class="fas fa-lungs"></i>
+                Pneumologie
+            </a>
+            
+            <a href="rhumatologie/index.html" class="cta-button">
+                <i class="fas fa-bone"></i>
+                Rhumatologie
+            </a>
+            
+            <a href="ecg/index.html" class="cta-button">
+                <i class="fas fa-heart-pulse"></i>
+                ECG
+            </a>
+            
+            <a href="neurologie/index.html" class="cta-button">
+                <i class="fas fa-brain"></i>
+                Neurologie
+            </a>
+              
+            <a href="gastrologie/index.html" class="cta-button">
+                <i class="fas fa-stomach"></i>
+                Gastrologie
+            </a>
+            
+            <a href="reanimation/index.html" class="cta-button">
+                <i class="fas fa-user-injured"></i>
+                Reanimation
+            </a>
+            
+            <a href="pediatrie/index.html" class="cta-button">
+                <i class="fas fa-baby"></i>
+                Pediatric
+            </a>
+            
+            <a href="gynecologie/index.html" class="cta-button">
+                <i class="fas fa-venus"></i>
+                Gynecologie
+            </a>
+            
+            <a href="hematologie/index.html" class="cta-button">
+                <i class="fas fa-blood"></i>
+                Hematologie
+            </a>
+            
+            <a href="orl/index.html" class="cta-button">
+                <i class="fas fa-ear"></i>
+                ORL
+            </a>
+            
+            <a href="medicaments-urgence/index.html" class="cta-button">
+                <i class="fas fa-pills"></i>
+                Medicaments Urgence
+            </a>
+                 
+            <a href="autres/index.html" class="cta-button">
+                <i class="fas fa-ellipsis"></i>
+                Autres
+            </a>
+        </div>
+        
+        <p style="text-align: center; margin-top: 30px; color: var(--text-muted);">
+            <i class="fas fa-info-circle"></i> Autres specialites a venir...
+        </p>
+    </div>
+    
+    <script>
+    const specialties = {
+        'cardiologie': 'Cardiologie',
+        'endocrinologie': 'Endocrinologie',
+        'dermatologie': 'Dermatologie',
+        'urologie': 'Urologie',
+        'infectiologie': 'Infectiologie',
+        'ophtalmologie': 'Ophtalmologie',
+        'medecine-interne': 'Medecine Interne',
+        'pneumologie': 'Pneumologie',
+        'rhumatologie': 'Rhumatologie',
+        'ecg': 'ECG',
+        'neurologie': 'Neurologie',
+        'gastrologie': 'Gastrologie',
+        'reanimation': 'Reanimation',
+        'pediatrie': 'Pediatrie',
+        'gynecologie': 'Gynecologie',
+        'hematologie': 'Hematologie',
+        'orl': 'ORL',
+        'medicaments-urgence': 'Medicaments Urgence',
+        'urgence': 'Urgence',
+        'URG-de-Garde': 'URG de Garde',
+        'ordonnances': 'Ordonnances',
+        'cat-consultation': 'CAT Consultation',
+        'autres': 'Autres'
+    };
+    
+    let pages = [];
+    
+    // Charger les pages depuis le fichier JSON
+    fetch('pages-index.json')
+        .then(response => response.json())
+        .then(data => {
+            pages = data;
+        })
+        .catch(error => console.error('Erreur chargement index:', error));
+    
+    // Fonction de normalisation (supprime accents + minuscules)
+    function normalizeText(text) {
+        return text.toLowerCase()
+                   .normalize('NFD')
+                   .replace(/[\u0300-\u036f]/g, '');
+    }
+    
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    
+    searchInput.addEventListener('input', function() {
+        const query = this.value.trim();
+        
+        if (query.length < 2) {
+            searchResults.classList.remove('active');
+            searchResults.innerHTML = '';
+            return;
+        }
+        
+        const normalizedQuery = normalizeText(query);
+        
+        const results = pages.filter(page => 
+            normalizeText(page.title).includes(normalizedQuery)
+        ).slice(0, 20);
+        
+        if (results.length === 0) {
+            searchResults.innerHTML = '<div class="no-results">Aucun résultat trouvé</div>';
+        } else {
+            searchResults.innerHTML = results.map(result => `
+                <div class="search-result-item">
+                    <a href="${result.path}">
+                        <span>${result.title}</span>
+                        <span class="specialty-tag">${specialties[result.specialty] || result.specialty}</span>
+                    </a>
+                </div>
+            `).join('');
+        }
+        
+        searchResults.classList.add('active');
+    });
+    
+    document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+            searchResults.classList.remove('active');
+        }
+    });
+    </script>
+</body>
+</html>

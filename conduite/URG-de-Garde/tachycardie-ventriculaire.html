@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tachycardie Ventriculaire - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css-all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .dosage { background-color: #e8f4f8; padding: 15px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-bolt"></i> Tachycardie Ventriculaire (TV)</h1>
+        <p><strong>Protocole P139 - Mise a jour: 2018</strong></p>
+        
+        <h2>DÉFINITION</h2>
+        <p>Tachycardie à QRS larges (> 120 ms) à fréquence > 100/min, régulière ou légèrement irregulière, avec dissociation atrio-ventriculaire.</p>
+        
+        <h2>PRISE EN CHARGE IAO</h2>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>PAS, PAD, FC, T°C, SpO2</li>
+            <li>Dextro</li>
+            <li>ECG</li>
+        </ul>
+
+        <h3>Signes de Gravité</h3>
+        <ul>
+            <li>Hypotension (PAS < 90 mmHg)</li>
+            <li>Douleur thoracique</li>
+            <li>Dyspnée</li>
+            <li>Troubles de la conscience</li>
+            <li>FC > 200/min</li>
+        </ul>
+
+        <h3>Orientation</h3>
+        <ul>
+            <li><strong>SAUV :</strong> TV avec signes de gravité</li>
+            <li><strong>Box :</strong> TV stable bien tolérée</li>
+        </ul>
+
+        <h2>TRAITEMENT</h2>
+        
+        <h3>Si instabilité</h3>
+        <div class="important">
+            <p><strong>CHOC ÉLECTRIQUE IMMÉDIAT</strong></p>
+            <ul>
+                <li><strong>Dose :</strong> 100-150 J (biphasique)</li>
+                <li>Urgence vitale</li>
+            </ul>
+        </div>
+
+        <h3>Si stabilité</h3>
+        <div class="dosage">
+            <p><span class="drug-name">Amiodarone</span> (<span class="drug-commercial">Cordarone</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 300 mg IVL sur 20-30 min</li>
+                <li><strong>Entretien :</strong> 900 mg IVSE sur 24h</li>
+            </ul>
+        </div>
+
+        <h3>Si TV polymorphe</h3>
+        <div class="dosage">
+            <p><span class="drug-name">Magnésium</span> (<span class="drug-commercial">MgSO4</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 2 g IVL sur 15 min</li>
+                <li><strong>Renouvelable :</strong> 1 fois</li>
+            </ul>
+        </div>
+
+        <h2>PRISE EN CHARGE MÉDICALE</h2>
+        
+        <h3>Monitorage</h3>
+        <ul>
+            <li>Scope, PANI, SpO2</li>
+            <li>Voie veineuse</li>
+        </ul>
+
+        <h3>Bilan</h3>
+        <ul>
+            <li>Iono, créatinine, glycémie</li>
+            <li>BNP, troponine</li>
+            <li>Écho-coeur</li>
+        </ul>
+
+        <h2>ORIENTATION</h2>
+        <ul>
+            <li><strong>Réanimation :</strong> Si choc électrique</li>
+            <li><strong>USIC :</strong> Surveillance</li>
+        </ul>
+
+        <h2>RÉFÉRENCES</h2>
+        <ul>
+            <li>ESC Guidelines for the management of arrhythmias. 2017.</li>
+        </ul>
+    </div>
+</body>
+</html>

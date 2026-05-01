@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECG - Conduite a Tenir</title>
+    <meta name="description" content="Conduites a tenir en ECG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #2ecc71; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 700px; width: 100%; }
+        h1 { text-align: center; color: var(--primary-color); margin-bottom: 5px; }
+        .subtitle { text-align: center; color: var(--text-muted); margin-bottom: 30px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        .buttons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+        .cta-button { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 15px; background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border: 2px solid #e0e0e0; border-radius: 10px; text-decoration: none; color: var(--text-main); font-weight: 600; transition: all 0.3s ease; text-align: center; font-size: 0.95em; }
+        .cta-button:hover { border-color: var(--primary-color); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(46, 204, 113, 0.2); }
+        .cta-button i { font-size: 1.3em; color: var(--primary-color); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour aux specialites</a>
+        
+        <h1><i class="fas fa-heartbeat"></i> ECG</h1>
+        <p class="subtitle">Electrocardiogramme - Conduites a tenir</p>
+        
+        <div class="buttons-grid">
+            <a href="interpretation-generale.html" class="cta-button"><i class="fas fa-eye"></i> Interpretation generale</a>
+            <a href="interpretation-specifique.html" class="cta-button"><i class="fas fa-search-plus"></i> Interpretation specifique</a>
+            <a href="onde-p.html" class="cta-button"><i class="fas fa-wave-square"></i>Onde P</a>
+            <a href="pr.html" class="cta-button"><i class="fas fa-long-arrow-alt-right"></i> PR</a>
+            <a href="qrs.html" class="cta-button"><i class="fas fa-chart-line"></i> QRS</a>
+            <a href="segment-st.html" class="cta-button"><i class="fas fa-slash"></i> Segment ST</a>
+            <a href="onde-t.html" class="cta-button"><i class="fas famountain"></i>Onde T</a>
+            <a href="hypertrophie.html" class="cta-button"><i class="fas fa-heart"></i> Hypertrophie</a>
+            <a href="blocs.html" class="cta-button"><i class="fas fa-ban"></i> Blocs</a>
+            <a href="ischemie.html" class="cta-button"><i class="fas fa-tint"></i> Ischemie</a>
+            <a href="infarctus.html" class="cta-button"><i class="fas fa-exclamation-triangle"></i> Infarctus</a>
+            <a href="arythmies.html" class="cta-button"><i class="fas fa-heart-broken"></i> Arythmies</a>
+        </div>
+    </div>
+</body>
+</html>

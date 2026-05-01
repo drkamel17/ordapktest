@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypocalcemie - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-bone"></i> Hypocalcemie</h1>
+        
+        <h2>Definition</h2>
+        <p>Calcémie corrigée &lt; 2,25 mM. Hypocalcémie aiguë symptomatique ou [Ca] corrigée &lt; 1,875 mM.</p>
+        <p>Calcul de la calcémie corrigée : [Ca]cor = [Ca]mesurée / [(protidémie (g/L)/160) + 0,55]</p>
+
+        <h2>Signes de Gravite</h2>
+        <div class="warning">
+            <strong>Critères de gravité :</strong>
+            <ul>
+                <li>[Ca]cor &lt; 1,75 mM</li>
+                <li>Hypomagnésémie (&lt; 7 mM)</li>
+                <li>Signes cliniques quelle que soit la calcémie</li>
+                <li>Troubles ECG : allongement du QTc</li>
+            </ul>
+        </div>
+
+        <h2>Prise en Charge IAO</h2>
+        <h3>Entretien IVSE</h3>
+        <ul>
+            <li>5 ampoules dans 500 mL de G5 % : 50 mL/h</li>
+        </ul>
+        <h3>Bilan</h3>
+        <ul>
+            <li>T°C, TA, FC, Dextro</li>
+            <li>ECG</li>
+            <li>Précautions : précipite avec le bicarbonate de sodium</li>
+            <li>Toxicité potentialisée avec digitaliques</li>
+            <li>Sous Scope (risque d'arythmie)</li>
+        </ul>
+        <h3>Orientation</h3>
+        <ul>
+            <li><strong>SAUV</strong> si : PEC des troubles associés, [Ca]cor &lt; 1,75 mM, hypomagnésémie (&lt; 7 mM), signes cliniques quelle que soit la calcémie, troubles ECG (allongement QTc)</li>
+            <li><strong>Box</strong> sinon</li>
+            <li><strong>Sepsi</strong> (P24)</li>
+            <li><strong>Insuffisance rénale aiguë</strong> (P75)</li>
+        </ul>
+
+        <h2>Traitement</h2>
+        <h3>Définition</h3>
+        <ul>
+            <li>NLGluconate de calcium 10 % : 1 ampoule diluée dans 100 mL de G5 % sur 10 minutes</li>
+        </ul>
+        <h3>PUIS</h3>
+        <ul>
+            <li>Entretien IVSE : 5 ampoules dans 500 mL de G5 % : 50 mL/h</li>
+            <li>Hypomagnésémie (&lt; 7 mM) : sulfate de magnésium 10 % : 3 ampoules sur 24 heures (perfusion séparée)</li>
+        </ul>
+
+        <h2>Prise en Charge Médicale</h2>
+        <h3>Acidose métabolique (P7)</h3>
+        <ul>
+            <li>Surveillance au cours des 48 premières heures</li>
+            <li>Monitorage Scope ECG</li>
+            <li>Scope, PANI</li>
+            <li>Doser calcémie toutes les 6 à 12 h puis toutes les 24 h</li>
+            <li>ECG 24 h dès [Ca] ≥ 2 mM corrigée</li>
+        </ul>
+        <h3>Examens urgents</h3>
+        <ul>
+            <li>Surveillance fonction rénale toutes les 24 h</li>
+            <li>Relai par calcium et vitamine D PO</li>
+            <li>Ne pas retarder le traitement spécifique</li>
+            <li>Ionogramme, créat : insuffisance rénale</li>
+            <li>Calcémie, phosphorémie, magnésémie : hypomagnésémie</li>
+            <li>GDS : acidose métabolique</li>
+            <li>NFS, plaquettes</li>
+            <li>BHC</li>
+            <li>Albumine à prendre entre les repas</li>
+            <li>GDS veineux : alcalose</li>
+            <li>Hypocalcémie chronique : correction d'une hypomagnésémie, d'une hyperphosphatémie</li>
+        </ul>
+        <h3>Recharge calcique</h3>
+        <ul>
+            <li>Carbonate de calcium PO : 2 000 mg/j, en 2 à 4 fois</li>
+            <li>Vitamine D PO : 1,25(OH)D3, 0,5 à 1 mg/j</li>
+        </ul>
+        <h3>Traitement étiologique</h3>
+        <ul>
+            <li>NLTraitement étiologique</li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li>Si [Ca]cor &lt; 1,75 mM ou signes cliniques ou ECG : réanimation</li>
+            <li>Si [Ca]cor &lt; 2 mM sans signes cliniques ou ECG : UHCD</li>
+        </ul>
+    </div>
+</body>
+</html>

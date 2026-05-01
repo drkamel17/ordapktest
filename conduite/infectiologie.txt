@@ -1,0 +1,1053 @@
+INFECTIEUX 
+Dr.KHERBA_N 
+INFECTIEUX  
+Accident d’exposition au sang 
+Brucellose  
+Coqueluche  
+Diphtérie  
+Fièvre boutonneuse FBM 
+Leptospirose  
+Mononucléose infectieuse MNI  
+Morsure d’un animal  
+Morsure du serpent  
+Morsure humaine  
+Oreillons  
+Piqûre d’araignée  
+Piqûre de Meduse 
+Piqûre de mille pattes  
+Piqûre de Tique 
+Rongeurs  
+Rougeole  
+Rubéole  
+Sueurs nocturnes  
+Syphilis  
+Tétanos 
+Toxoplasmose  
+Tuberculose  
+Varicelle  
+Viroses  
+Zona 
+Accident d'exposition au sang 
+◾
+️Soins d’urgence : laver au savon pdt au (-) 
+5min puis désinfecter par un antiseptique 
+alcool, Dakin.. 
+◾
+️Connaître le statut vaccinal/évaluer le risque 
+infectieux 
+◾
+️Selon le type d’AES : calibre d’aiguille, aiguille 
+creusée ou pleine, profondeur de blessure.. 
+◾
+️Faire les sérologies pour la source/victime : 
+1
+️
+⃣HVB=> victime  
+▪
+️Si correctement vacciné + titrage >10U=> Rien  
+▪
+️Si non vacciné + titrage <10U=> Demande une 
+sérologie de la source 
+(si (-)= Rien /si (+)=> Demander une sérologie 
+HVB pour victime (J1-8 M1M3M6) + ALAT/ALAT.. 
++ Traitement post exposition par Ig et Vaccin 
+contre HVB 
+2
+️
+⃣HVC tout dépend de la source : 
+▪
+️Si séro (-)=> Rien 
+▪
+️Si séro (+)=> Demander une séro HVC (même 
+schéma que pour HVB) + ALAT/ALAT  
+▪
+️Pas de Traitement post exposition  
+3
+️
+⃣VIH selon la source :  
+▪
+️Si séro (-)=> Rien 
+▪
+️Si séro (+)=> Demande une séro VIH 
++ Traitement post exposition par Arv pdt 1mois  
+➡
+️ Déclaration de l’accident du travail 
+Brucellose  
+�
+�Clinique : 
+▪
+️Triade : fièvre ondulante, douleurs diffuses, 
+sueurs nocturnes à odeur de paille pourrie.. 
+▪
+️Ostéo_articulaire et neurologique puis les 
+autres localisations.. 
+▪
+️Consommation de produits laitiers non 
+pasteurisés  
+▪
+️BEG 
+▪
+️Examen : SPM, HPM, ADP 
+▪
+️FNS : leucopénies<6000 
+▪
+️CRP/VS ↗️ 
+▪
+️Transaminases ↗️2×N 
+▪
+️Hémoculture (Pic fébrile) 
+▪
+️Sérologie de Wright 
+➡
+️Orientation infectieux  
+✅
+️CAT : 
+▪
+️Déclaration obligatoire  
+◾
+️Traitement : en fonction des stades et formes 
+cliniques  
+▪
+️Doxycycline (CI chez la femme enceinte et 
+enfants <8ans) 
+▪
+️Gentamycine  
+▪
+️Aminosides 
+▪
+️Rifamycine 300 3cp le matin à jeun  
+▪
+️Doxycycline : Dotur 200mg/j cp 100mg 1cp 2/j 
+ou 200mg 1cp/j pdt 6sem 42j le soir 
+▪
+️Gentamycine 3mg/kg/j 80mg inj pdt 14j 
+▪
+️Rénal/Hépatique avant puis chaque 7j 
+▪
+️Surveillance clinique après 1 et 3mois 
+◾
+️Enfant 👶 : <8ans 
+Aminoside + Rifamycine  
+Ou Amoxicilline + Rifamycine  
+Ou Bactrim + Gentamycine 
+Coqueluche  
+�
+�Clinique : 
+Infection respiratoire bactérienne peu ou pas 
+fébrile de l’arbre respiratoire supérieur, mais 
+d’évolution longue et hautement contagieuse 
+Toux en quintes, difficultés respiratoires et 
+parfois de vomissements.. 
+✅
+️CAT : 
+◾
+️Hospitalisation : Isolement  
+◾
+️O2 thérapie, Aérosol  
+▪
+️Si voie rauque : Adrénaline/SSI  
+▪
+️Si râles sibilants : Salbutamol/SSI 
+▪
+️ATB : Claforan + Zeclar  
+▪
+️Ration de base 
+◾
+️Si Hyponatrémie + GB> 30.000 : Maligne 
+➡
+️ Hospitalisation en Réanimation 
+Diphtérie  
+�
+�Clinique:  
+◾
+️Angine diphtérique (Pseudo membraneuse)  
+◾
+️Fausses membranes: 
+▪
+️Adhérentes (difficile à détacher) 
+▪
+️Hémorragiques (si vous les détacher) 
+▪
+️Envahissantes la luette  
+▪
+️Confluentes 
+◾
+️Pâleur, abattement, asthénie, fièvre modérée, 
+AEG, pâleur, tachycardie, ADP sous angulo
+mandibulaire , nez très souvent infecté, coryza 
+unilatérale.. 
+◾
+️Cas similaire, absence ou retard de 
+vaccination  
+Prélèvement de gorge sur les FM sur écouvillon 
+sec (examen direct + culture) 
+✅
+️Traitement: 
+▪
+️Sérothérapie:1000Ui × poids  
+▪
+️Sérum AD=> Adulte: 80.000_100.000ui 
+▪
+️Enfant: 20.000_50.000ui 
+▪
+️Vaccination  
+◾
+️ATB: 
+▪
+️Pénicilline G inj 
+Adulte: 100.000Ui/kg/j 
+Enfant: 50.000Ui/kg/j 
+Ou Erythromycine Adulte 3g/j 2_3/j 
+Enfant 50mg/kg/j 
+▪
+️Extencilline  
+>27kg: 1.2Mui en IM 
+<27kg: 600.000ui en IM 
+▪
+️Amoxicilline/8h 
+✅
+️Traitement symptomatique:  
+▪
+️Perfalgan/6h si fièvre  
+▪
+️CTC si détresse  
+▪
+️Déclaration obligatoire  
+▪
+️Éviction 30j 
+Fièvre boutonneuse FBM 
+�
+�Clinique : 
+▪
+️Fièvre, myalgies, frissons, céphalées  
+▪
+️Tâche noire : cuir chevelu, aine, pli inter fessier 
+Non douloureuse, ADP indolore, conjonctivite, 
+escarres multiples..  
+▪
+️Éruption respectant le visage  
+Maculeuses puis maculopapuleuses 
+◾
+️Bilan :🩸 
+▪
+️FNS : Leuco thrombopénie puis 
+Hyperleucocytose à PNN  
+▪
+️VS↗️ 
+▪
+️ASAT/ALAT/LDH ↗️ 
+▪
+️Sérologie de Weil et Félix  
+✅
+️Traitement : 
+▪
+️Doxycycline 200mg/j 1 ou 2_4/j 
+▪
+️Enfant <45kg : 5mg/kg dose unique  
+▪
+️<7ans ou grossesse : Josamycine !! 
+▪
+️Maligne : Doxycycline 200mg/j en IV 10j 
+Ou Phénicolés Ou Fluroquinolones 
+Leptospirose  
+�
+�Clinique :  
+Leptospirose ictéro hémorragique 
+Ictère : flamboyant orangée, hépatomégalie 
+Syndrome : Infectieux, méningé, rénal, 
+hémorragique (hémorragie sous conjonctivale) 
+◾
+️Bilan :🩸 
+▪
+️FNS : Hyperleucocytose/Thrombopénie  
+▪
+️Transaminases ↗️ 
+▪
+️Bilirubine ↗️ conjugué ++ 
+▪
+️Créat ↗️ 
+▪
+️CPK LDL↗️ 
+▪
+️CU : protéinurie, leucocyturie, hématurie  
+▪
+️PCR 
+✅
+️Traitement : ATB pdt 7_10j 
+◾
+️Peu sévère : VO 
+Amoxicilline 1g 2/j 
+Ou Doxycycline 100mg 2/j 
+Ou Azithromycine 1g suivi de 500mg 1/j pdt 2j 
+◾
+️Sévère : IV 
+Amoxicilline 1g 3/j 
+Ou Pénicilline G 1.5 Mui 4/j 
+Ou Ceftriaxone 1g/j 
+Ou Cefotaxime 1g/6h 
+Mononucléose infectieuse MNI 
+�
+�Clinique : 
+▪
+️Fièvre, myalgies, céphalées, asthénie  
+▪
+️Angine érythémato pultacée ou fausses 
+membranes 
+▪
+️ADP, splénomégalie, hépatomégalie  
+▪
+️Éruption cutanée érythémateuse polymorphe  
+◾
+️Bilan :🩸 
+▪
+️FNS : 
+Hyperlymphocytose/Thrombopénie/Anémie 
+hémolytique  
+▪
+️Cytolyse hépatique  
+▪
+️Sérologie MNI test 
+▪
+️TG/LDH↗️ 
+▪
+️Transaminases ↗️ 
+▪
+️Confirmation Sérologique : Sérologie EBV 
+✅
+️Traitement :  
+▪
+️Repos, pas d’éviction scolaire  
+▪
+️Symptomatique=> Antipyrétique 
+▪
+️ATB si surinfection  
+▪
+️CTC si complication ou œdème pharyngé  
+1mg/kg/j pdt 10j puis ↘️ progressive 
+Morsure d’un animal 
+✅
+️Traitement de la plaie : 
+◾
+️Proscrire toute suture ou pansement  
+ Points de rapprochement après installation 
+du SAR si plaie hémorragique ou profonde. 
+◾
+️Soins locaux : 
+Nettoyage de la profondeur à l’eau avec savon 
+Marseille puis appliquer une solution à l’alcool 
+iodée. 
+◾
+️Si Morsure d’un rat pas VAR ni SAR 
+=>Doxycycline 1/j le soir pdt 5j 
+200mg :>60kg 
+100mg :<60kg 
+⛔
+️CI chez l’enfant <8ans et femme enceinte  
+Amoxicilline 50mg/kg/j pdt 5j 
+◾
+️Adulte : Augmentin cp 1g 1cp 2/j  
+◾
+️Enfant : Augmentin sirop 1ddp 2/j  
+Préventif pdt 5j si signes d’infection 10j 
+Si allergie aux bétalactamines=> Doxycycline 
+◾
+️VAT si sujet adulte 
+1
+️
+⃣Stade I : Rien 
+2
+️
+⃣Stade II : 
+▪
+️VAR => J1J2J3J4J5J6 en sc periombilical 
+Ou Verorab Tnder en J1J7J21 (J0 :2 doses/J7 : 1 
+dose/J21 : 1dose) en IM 
+Adulte et enfant >5ans=> 2cc  
+Enfant=> 1cc (1/2amp) 
+Puis les rappels en intradermique J11J15 
+Adulte et enfant >5ans=>0.25cc en 2 Points 
+différentes  
+<5ans=>0.1cc 
+Rappels J30J90 en ID si grande lésion 
+Ou Adulte et enfant : muscle deltoïde  
+<2ans : antéro latéral de cuisse 
+3
+️
+⃣Stade III : 
+VAR + SAR + VAT 
+�
+�SAR : Dose= (40×poids)/200 
+Un flacon => 5ml 
+Une quantité de la dose est infiltrée autour la 
+plaie et le reste en IM après un test ( 0.1ml en sc 
+15min après 0.25ml en sc 15min après : 
+Si réaction (-)=> la totalité du reste en IM 
+Si réaction (+)=> 0.25ml chaque 15min jusqu’à 
+l’épuisement de la dose. 
+Ou 5ui/kg Max 15ui 
+Poids/5 Max 15cc 
+�
+�Schéma tissulaire : VAR 
+7 doses en périombilical 
+Puis rappels en ID au niveau de l’avant bras : 
+Grade II : J10 J14 J29 J90 
+Grade III : J10 J14 J24 J34 J90 
+�
+�Schéma cellulaire : Rabipure Grade II et III 
+Essens : 2 doses en J0 
+Puis rappels en IM deltoïde : J3 J7 J14 
+Zagreb : 2 doses en J0 
+Puis rappels en IM deltoïde : J7 J21 
+(<2ans à la face antérolatérale de cuisse)  
+Morsure au niveau oculaire 
+▪
+️Lavage abondant au SSI 
+▪
+️Sérothérapie : la quantité calculée 
+▪
+️Rinçage de l’œil avec SAR dilué dans SSI 0.9% 
++ Infiltration autour de l’œil en périorbitaire  
+Si reste : injecter en IM 
+▪
+️VAR +/_ VDT 
+➡
+️ Avis ophtalmologie 
+Morsure du serpent 🐍 
+✅
+️CAT : 
+▪
+️Immobiliser et surélever le membre 
+▪
+️Bandage non serré  
+▪
+️Glace locale 
+▪
+️SAV autour du plaie pour Grade 2 et 3 
+▪
+️VAT, pas de CTC 
+◾
+️SAV : 
+▪
+️Même dose quelque soit l’âge ou poids 
+▪
+️Pas de CI : immunodépression, grossesse, 
+allaitement, maladie chronique 
+�
+�Hospitalisation : tout les grades 
+Traitement symptomatique  
+◾
+️Si pas de signes généreux : 
+▪
+️Augmentin 2g/j 
+▪
+️Désinfection locale 
+▪
+️Surveillance 24h 
+◾
+️Œdème + signes généreux : 
+▪
+️Prodaf 1g en IVL 
+▪
+️Augmentin 2g/j 
+▪
+️Gentamycine 80mg/j 
+▪
+️SAV 1amp de 4ml diluée dans 100cc SSI 9% 
+passé sur 1h 
+▪
+️À répéter chaque 5h jusqu’à disparition des 
+signes  
+◾
+️Œdème + signes généreux + complications : 
+▪
+️Précédent + Héparine si CIVD 
+◾
+️Classification Algérienne : 
+▪
+️Grades 0_1 : Hospitalisation systématique, 
+Bilan, surveillance 24h, sans sérothérapie 
+▪
+️Grades 2_3 : Hospitalisation systématique, 
+Bilan, Sérothérapie AV 
+◾
+️Bilan 🩸  
+▪
+️FNS (Hyperleucocytose/Thrombopénie) 
+▪
+️Urée/Créat (IRA) 
+▪
+️Ionogramme (Hyperkalémie) 
+▪
+️GDS + Lactacidémie (Acidose métabolique) 
+▪
+️Hémostase (TP↘️) 
+▪
+️Fibrinogène/DDIMÈRES/Complexes solubles 
+(CIVD) 
+
+Morsure humaine  
+✅
+️CAT : 
+▪
+️Allonger le patient  
+▪
+️Immobilisation du membre mordu 
+▪
+️Enlever les bagues.. 
+▪
+️Bondage non serré  
+▪
+️Glace locale  
+▪
+️Désinfection locale  
+▪
+️Injection de SAV autour la lésion 
+▪
+️ATB : Augmentin  
+▪
+️Si présence des signes généreux : 
+Gentamycine 80mg/j + Augmentin  
+▪
+️SAV (sérum hétérologue mixte) : 4ml diluée 
+dans 100cc de SSI en 1h 
+A renouveler chaque 5h si besoin  
+Ou SAT 
+Oreillons  
+�
+�Clinique : 
+▪
+️Maladie virale infantile très contagieuse, âge 
+scolaire 
+▪
+️Gonflement en avant des oreilles d’un côté 
+puis se bilatéraliser, mâcher et avaler devient 
+douloureuses  
+▪
+️Tuméfaction + Douleur + Fièvre  
+✅
+️CAT :Traitement symptomatique  
+▪
+️Repos/compresses chaudes 
+▪
+️Isolement et éviction scolaire 
+⛔
+️CTC et AINS sont CI 
+1
+️
+⃣Eludril sol >6ans 3/j pdt 8j 
+Ou Hextril 0.1% sol 3/j pdt 8j 
+2
+️
+⃣Doliprane selon poids 
+▪
+️Si surinfection : 
+Zeclar cp/susp buv pdt 7j 
+1cp 2/j Si Adulte  
+1ddp 2/j Si Enfant  
+◾
+️Testicules : ↗️Volume + Douleur + Fièvre  
+▪
+️Immobiliser la bourse 
+▪
+️Paracétamol  
+▪
+️ATB si surinfection 
+Piqûre d’araignée  
+✅
+️CAT : 
+▪
+️Nettoyage au savon doux 
+▪
+️Surélévation du membre  
+▪
+️Compresse froide pdt 10_15min pour ↘️ 
+l’inflammation et la douleur  
+▪
+️Surveillance 24h 
+▪
+️Antalgique  
+▪
+️ATB si surinfection  
+▪
+️AH ou CTC : HHC 
+Piqûre de Méduse 
+▪
+️Compresse chaude 20_30min 
+▪
+️1amp SAT en IM 
+▪
+️Perfalgan ou AINS  
+✅
+️Traitement de sortie : 
+1
+️
+⃣Antihistaminique oral  
+2
+️
+⃣Corticoïde locale 
+3
+️
+⃣Fucidine pmd 
+◾
+️CTC inj si : 
+▪
+️Œdème important  
+▪
+️Urticaire généralisée 
+▪
+️Signes de choc anaphylactique  
+▪
+️Terrain allergique connu 
+▪
+️Échec du traitement (douleur persistante 
+malgré lavage, antalgique, AH) 
+Piqûre de Mille pattes 
+▪
+️Lavage abondant au SSI ou à l'eau + savon 
+▪
+️Poche de glace  
+◾
+️Si présence des signes inflammatoires: 
+œdème, gonflement au point de piqûre=> CTC 
+en IM ou IV 1mg/kg 
+▪
+️Solumedrol 40mg en IM 
+▪
+️Si fourmillements: Mg 
+▪
+️O2 thérapie  
+▪
+️Surveillance  
+▪
+️VAT/SAT 
+Piqûre de Tique 
+✅
+️Traitement préventive : 
+◾
+️Doxycycline 100mg 2cp/j en monoprise pdt 10j 
+◾
+️Bilan infectieux 
+➡
+️Orientation infectieuse si signes cliniques 
+Rongeurs 
+�
+�Aucun risque Rabique  
+✅
+️CAT : 
+▪
+️ATB 
+▪
+️Soins locaux 
+▪
+️Vérification et correction du statut Vaccinal 
+Antitétanique 
+Rougeole  
+�
+�Clinique : 
+▪
+️Fièvre, AEG, catarrhe oculo laryngo nasal : 
+larmoient, œil rouge, rhinorrhée, toux 
+▪
+️Signe de Koplick : petits points blanchâtres 
+bleutés « en grain de semoule » sur fond 
+érythémateux, inconstant et fugace au nv de 
+muqueuse jugale. 
+▪
+️Éruption maculopapuleuses  
+▪
+️Xanthème morbiliforme débute derrière les 
+oreilles avec intervalle de peau saine. 
+▪
+️Déclaration obligatoire  
+▪
+️Éviction 5j 
+✅
+️Traitement symptomatique : 
+▪
+️Antihistaminique  
+▪
+️Chlorhexidine/Eosine aqueuse 1app 2/j 
+▪
+️Paracétamol 
+Rubéole  
+�
+�Clinique :  
+▪
+️BEG, fièvre, courbatures, myalgies, arthralgies, 
+rhinorrhée, toux, conjonctivite, ADP 
+▪
+️Exanthèmes maculo papuleux, début au 
+visage pas cuir chevelu, tronc, membres 
+supérieurs puis inférieur, pas prurit  
+▪
+️Respecte la région palmoplantaire  
+▪
+️Exanthème maculopapuleux rose au niveau de 
+la face puis thorax sans atteinte de cuir chevelu 
+◾
+️Bilan :🩸 
+▪
+️FNS=> Leucopénie/Sd mononucléose : 
+Hyperlymphocytose  
+▪
+️PCR 
+▪
+️Sérologie  
+✅
+️Traitement :  
+▪
+️Repos 
+▪
+️Symptomatique : Antipyrétique  
+▪
+️Éviter le contact avec la femme enceinte🤰 
+Sueurs nocturnes  
+�
+�Signes associés : fièvre, amaigrissement, 
+toux, tachycardie, asthénie, arthralgies, ADP.. 
+◾
+️Bilan :🩸 
+▪
+️FNS=> Lymphomes 
+▪
+️TSH=> Hyperthyroïdie  
+▪
+️Glycémie à jeûne=> Hypoglycémie  
+▪
+️CRP/VS 
+▪
+️Urée/Créat  
+▪
+️Hépatique  
+▪
+️Lipidique  
+▪
+️Sérologie de Wright=> Brucellose  
+▪
+️IDR=> Tuberculose  
+▪
+️TLT 
+▪
+️ECG 
+Syphilis 
+�
+�Clinique : 
+▪
+️Syphilis primaire : chancre ou érosion indolore 
+avec ADP inguinales ++  
+▪
+️Syphilis secondaire : manifestations 
+cutanéomuqueuses (roséole, plaques 
+muqueuses génitales ou buccales..) 
+▪
+️Syphilis latente : asymptomatique, la 
+découverte est fortuite par sérologie  
+▪
+️Syphilis tertiaire : complications viscérales 
+(cardiaques neurologiques osseuses) 
+◾
+️TPHA(+)/VDRL(-)=> Syphilis traitée 
+◾
+️Extencilline 2.4MU inj IM unique  
+3inj à 8j d’intervalle  
+◾
+️Contrôle : Clinique et biologique  
+3mois, 6mois, 1an puis chaque année jusqu’à 
+(-) 
+◾
+️VDRL doit être (-) : 
+1an après traitement de Syphilis I 
+2an après traitement de Syphilis II 
+Tétanos  
+�
+�Clinique :  
+▪
+️Infection non immunisante  
+▪
+️Trismus : contraction bilatérale symétrique des 
+muscles de masséters, douloureuse sans fièvre 
+▪
+️Signe de l’abaisse langue captif  
+▪
+️Risque de fausse route : arrêt de l’alimentation 
+orale  
+▪
+️Faciès sardonique, opisthotons (contracture 
+des muscles para vertébraux), membres 
+supérieurs en flexion et inférieurs en extension  
+▪
+️Dysphagie, spasme laryngé, apnée, cyanose, 
+ventre en bois, crises tonico cloniques, 
+rétention urinaire.. 
+✅
+️Traitement : 
+◾
+️SAT : avant 72h une dose de 1ml/1500UI, soit 
+Sc ou IM, peut être doublée ou triplée si 
+blessures graves 
+Donc 1amp de 1500UI quelque soit l’âge ou 
+poids, après un test intradermique 
+▪
+️Si plaie infectée profonde : 2amp : 3000UI 
+⚠
+️Jamais SAT seul, toujours + VDT 
+▪
+️Ou HRIG (humain) : 20×poids / ERIG : 40×poids  
+Dose max : 3000Ui 
+▪
+️Immunoglobulines  
+▪
+️ATB : Peni G 4_8MUI/j 
+▪
+️Si allergie : Tétracycline 200mg/j Ou Flagyl  
+▪
+️Traitement de porte d’entrée  
+▪
+️Vaccination  
+▪
+️PEC en Réanimation 
+
+Toxoplasmose  
+◾
+️Femme enceinte Sérologie (-) : 
+▪
+️Laver les mains, fruits et légumes  
+▪
+️Viande très bien cuite  
+▪
+️Éviter les chats  
+Contrôle mensuel de la Sérologie : 
+◾
+️IgG(+) et IgM(-) :  refaire 3sem après  
+▪
+️Si IgG taux stable : Infection ancienne  
+▪
+️Si IgG taux doublé : Infection récente avec IgM 
+fugace 
+◾
+️IgG(-) et IgM(+) : séroconversion au tout début  
+Refaire 3sem après  
+Rovamycine !! 
+◾
+️IgG(+) et IgM(+) : Infection récente  
+▪
+️Avidité faible : récente  
+▪
+️Forte : ancienne  
+▪
+️Refaire 3sem après si IgG stable : ancienne  
+▪
+️Si récente => Rovamycine 9MUi/j 
+Tuberculose  
+�
+�Clinique : 
+Fièvre prolongée vespérale, amaigrissement, 
+sueurs nocturnes, toux chronique >3sem sèche 
+puis productive, asthénie profonde, hémoptysie  
+◾
+️Bilan :🩸 
+▪
+️FNS 
+▪
+️CRP 
+▪
+️Procalcitonine  
+▪
+️IDR à la tuberculine  
+▪
+️TLT de face 
+▪
+️ECB des crachats  
+▪
+️Bacilloscopie des crachats de 3j 
+▪
+️+/_ TDM thoracique 
+Varicelle  
+�
+�Clinique : 
+Maladie infectieuse virale extrêmement 
+contagieuse. Elle est responsable d'une 
+éruption de vésicules sur la peau et les 
+muqueuses, touche le cuir chevelu  
+▪
+️Éviction scolaire 10j 
+▪
+️Bain + couper les angles. 
+⛔
+️CI dessous AINS 
+✅
+️Traitement : 
+1
+️
+⃣Chlorhexidine/Eosine aqueuse 2app/j 
+2
+️
+⃣Doliprane cp 500mg 3/j 
+3
+️
+⃣Histagan cp 1cp/j la nuit pdt 5j Ou Xycare 
+5mg 
+4
+️
+⃣Fucidine pmd 
+◾
+️Pour les cicatrices: 2/j 
+▪
+️Mederma 
+▪
+️Mebo crème  
+▪
+️Avene cicalfate 
++ Écran total  
+◾
+️Enfant👶: 
+1
+️
+⃣Chlorhexidine/Eosine aqueuse 1app 2/j pdt 
+7j 
+2
+️
+⃣Histagan sirop 1cac 3/j pdt 5j 
+Ou Polaramine / Clarityne  
+Airditine: 
+<25kg=>2.5ml 
+>25kg=>5ml 
+3
+️
+⃣Paracétamol 60mg/kg/j 3/j 
+4
+️
+⃣Fucidine pmd 1app 2/j pdt 7j 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Viroses 👶 
+Rubéole/Rougeole/Varicelle  
+1
+️
+⃣Histagan sirop 1cam 2/j 
+2
+️
+⃣Chlorhexidine/Eosine aqueuse 1app 3/j 
+3
+️
+⃣Paracétamol  
+◾
+️Surinfection : 
+1
+️
+⃣Keforal sirop 1ddp 3/j 
+2
+️
+⃣Zeta crème 1app 2/j 
+3
+️
+⃣Chlorhexidine/Eosine aqueuse 1app 3/j 
+Zona 
+�
+�Clinique : 
+Éruption en bonde vésiculeuse sous forme des 
+croûtes après cicatrisation laissant des 
+séquelles, unilatérale, douloureuse, 
+démangeaisons,        
++/_ fébrile, suit le trajet d’un nerf, ADP 
+axillaires++ 
+✅
+️Traitement : 
+◾
+️Bilan :🩸Rénal avant et après le traitement à 
+cause de la néphrotoxicité de l’Aciclovir  
+Pas Aciclovir si immunocompétent <50ans 
+◾
+️Aciclovir avant 72h 
+▪
+️Immunodéprimé : âge >50ans, 
+diabétique..➡️Traitement avant 72h 
+▪
+️Immunocompétent : Traitement 
+symptomatique + Aciclovir pmd 
+1
+️
+⃣Aciclovir cp 10mg/kg 200mg 4cp 4_5/j pdt 7j 
+2
+️
+⃣Aciclovir pmd 1app 2/j 1tube 
+3
+️
+⃣Chlorhexidine/Eosine aqueuse sol 3app/j 
+4
+️
+⃣Dolyc cp 1g 1cp 3/j 
+5
+️
+⃣Neurovit B1B6B12 cp 1cp 2/j pdt 1_3mois 
+1
+️
+⃣Zovirax cp 200/400mg 1cp 2/j 
+2
+️
+⃣Zovirax pmd 1app 4/j 
+3
+️
+⃣Chlorhexidine/Eosine aqueuse 
+4
+️
+⃣Antalgique 
+5
+️
+⃣Neurovit  
+⚠
+️Éviter l’Eosine aqueuse, puisque la 
+coloration peut masquer une surinfection.. 
+◾
+️Si surinfection : 
+1
+️
+⃣Keforal cp 1g 1cp 3/j pdt 7j 
+⛔
+️Si sujet jeune=> rechercher une 
+immunodépression  
+◾
+️Bilan :🩸ID 
+▪
+️FNS 
+▪
+️Glycémie à jeûn/HBA1C  
+▪
+️Rénal  
+▪
+️Hépatique  
+▪
+️Sérologie : 
+▪
+️HCV 
+▪
+️HAV 
+▪
+️HBV 
+▪
+️HIV 
+▪
+️TPHA/VDRL 
+◾
+️Enfant 👶 : 
+1
+️
+⃣Chlorhexidine/Eosine aqueuse 
+2
+️
+⃣Deslor  
+3
+️
+⃣Doliprane 
++/_ Aciclovir gel 1app 2/j matin et nuit 

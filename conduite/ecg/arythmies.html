@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arythmies - ECG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #2ecc71; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #3498db; margin-top: 20px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-heart-broken"></i> Arythmies</h1>
+        
+        <h2>Tachycardie sinusale</h2>
+        <ul>
+            <li>FC > 100/min</li>
+            <li>Causes: Effort, stress, tabac, cafe, fievre, anemie, deshydratation, crise de panique, hyperthyroidie</li>
+        </ul>
+        
+        <h3>Conduite a tenir</h3>
+        <ul>
+            <li>O2 Therapie</li>
+            <li>1/2 amp Mg diluée dans 250cc SG5%</li>
+            <li>Bilan: FNS, TSH, DDIMERES, Ionogramme</li>
+            <li>Orientation Cardiologie</li>
+        </ul>
+        
+        <h2>TSV - Tachycardie Supraventriculaire</h2>
+        <ul>
+            <li>Absence d'onde P</li>
+            <li>Rythme regulier</li>
+            <li>QRS fin</li>
+        </ul>
+        
+        <h3>Traitement</h3>
+        <ul>
+            <li>Manœuvre vagale (Valsalva)</li>
+            <li>Massage carotidien</li>
+            <li>Si non réponse: Betabloquant ou Cordaron</li>
+        </ul>
+        
+        <div class="important">
+            <strong>TSV mal toleree:</strong> Cardioversion en urgence
+            <br>
+            <strong>Attention:</strong> Jamais Digoxine en cas de WPW
+        </div>
+        
+        <h2>ACFA - Fibrillation Auriculaire</h2>
+        <ul>
+            <li>Absence d'onde P (remplacee par tremulations)</li>
+            <li>Rythme irregulier</li>
+            <li>QRS fin</li>
+        </ul>
+        
+        <h3>Conduite a tenir</h3>
+        <ul>
+            <li><strong>Bien toleree:</strong> Diltiazem sublingual + Orientation cardiologie pour anticoagulant</li>
+            <li><strong>Mal toleree (choc, OAP):</strong> Cardioversion en urgence</li>
+        </ul>
+        
+        <h2>Flutter Atrial</h2>
+        <ul>
+            <li>Onde P replacee par tremulations</li>
+            <li>Rythme regulier</li>
+            <li>QRS fin</li>
+        </ul>
+        
+        <h2>Extrasystoles Ventriculaires (ESV)</h2>
+        <ul>
+            <li>QRS prematuré</li>
+            <li><strong>ESV maligne:</strong> Polymorphe / Regroupe / A la 2eme partie de T</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>ESV symptomatique:</strong> Orientation cardiologie en urgence
+        </div>
+        
+        <h2>TV - Tachycardie Ventriculaire</h2>
+        <ul>
+            <li>QRS large</li>
+            <li>Amplitude constante</li>
+            <li>Duree constante</li>
+        </ul>
+        
+        <h2>FV - Fibrillation Ventriculaire</h2>
+        <div class="important">
+            <strong>Urgence vitale</strong>
+            <ul>
+                <li>Defibrillation immediate</li>
+                <li>Reanimation cardio-pulmonaire</li>
+            </ul>
+        </div>
+        
+        <h2>Tachycardie Jonctionnelle</h2>
+        <ul>
+            <li>Absence des ondes P</li>
+            <li>QRS fins</li>
+            <li>CAT: Mg 1amp dans 250cc + Bisoprolol 5mg</li>
+        </ul>
+        
+        <h2>Embolie Pulmonaire</h2>
+        <div class="important">
+            <strong>Aspect S1Q3</strong>
+            <ul>
+            <li>S en DI</li>
+            <li>Q en DIII</li>
+            <li>T negative en DIII</li>
+            <li>Dosage: Troponines / DDIMERES</li>
+            <li>Angioscanner</li>
+            </ul>
+        </div>
+        
+        <h2>Trouble de Repolarisation Precoce (TRP)</h2>
+        <ul>
+            <li>Sujet jeune sans FDR</li>
+            <li>Sus-decalage concave vers le haut</li>
+            <li>Absence d'images en miroir</li>
+            <li>Presence de point "J"</li>
+            <li>QRS amples</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>Ne pas eliminer SCA uniquement sur TRP</strong>
+            <br>
+            Demander troponines + refaire ECG
+        </div>
+    </div>
+</body>
+</html>

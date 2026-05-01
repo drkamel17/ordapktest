@@ -1,0 +1,1250 @@
+CARDIOLOGIE 
+Dr.KHERBA_N 
+CARDIOLOGIE  
+Accident aux AVK  
+ACFA 
+Bradycardie sinusale  
+Dissection aortique  
+Douleur thoracique  
+Dyslipidémie 
+Embolie pulmonaire  
+Hypotension artérielle  
+IDM 
+Insuffisance aortique  
+OAP 
+Œdème des membres inférieurs  
+Pic hypertensif  
+RAA 
+SCA sans sus décalage de ST  
+Syncope  
+Tachycardie sinusale  
+Tachycardie supraventriculaire  
+TVP 
+Urgences hypertensives  
+Varices 
+Accident aux AVK 
+�
+�Clinique :  
+Syndrome hémorragique 
+◾
+️Bilan : 🩸 
+▪
+️TP 
+▪
+️INR 
+▪
+️Rechercher une IH/IR 
+▪
+️Arrêt de Sintrom 
+▪
+️Traitement par Vit K 1amp ½.5/5mg en per Os 
+▪
+️Si hémorragies grave + INR>10 : 10mg  
++ Perfusion de plasma frais congelé 
+▪
+️Surveillance de TP et IN 
+▪
+️Si dans l’intervalle=> Avis Hématologie… 
+▪
+️Chaque Pathologie=> INR cible 
+◾
+️INR↗️ : Risque hémorragique => ↘️AVK 
+◾
+️INR↘️ : Risque de Thrombose=> ↗️AVK 
+▪
+️INR (2_3): Surdosage asymptomatique 
+▪
+️INR (3_4): Ajustement de posologie  
+▪
+️INR (4_6): On saute une prise d'AVK 
+▪
+️INR (6_10): Arrêt du traitement=> 1_2mg de Vit 
+K en per os, soit 1/2 à 1amp buvable pédiatrique 
+2mg 
+▪
+️>10: Arrêt du traitement=> 5mg de Vit K, soit 
+1/2amp pour adulte 10mg 
+➡
+️Toujours contrôle INR le lendemain 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ACFA 
+▪
+️Palpitations +++ 
+Absence d’onde P=> Remplacée par des 
+trémulations + rythme irrégulier  
+Tachycardie >100btt/min 
+▪
+️Causes : valvulopathies, complications 
+thrombœmboliques, traitement par les 
+Bétabloquants ou Amiodarone en IV, 
+Anticoagulants, anémie, Hyperthyroïdie 
+▪
+️Inhibiteur calcique bradycardisant en 
+sublingual comme Diltiazem  
+◾
+️Si c'est bien toléré : cliniquement bien stable 
+pas d’hypotension PAS >90mmhg, extrémités 
+chaudes, conscience conservée  
+➡
+️ Orientation cardiologie pour instaurer un 
+traitement anticoagulant le plus tôt possible 
+(consultation cette semaine) 
+◾
+️Si c'est mal toléré : choc, OAP, syncope,  
+Hypotension, douleur thoracique => CEE 
+➡
+️ Avis cardiologie en urgence pour une 
+cardioversion en urgence 
+◾
+️Si non: 
+1
+️
+⃣Traitement ralentisseur: cible Fc 110/mn 
+250cc de SSI + Mg + 1K 
+▪
+️Bétabloquant: Bisoprolol 5mg 1cp per os 
+à répéter après 15min jusqu'à 2cp  
+▪
+️Digoxine si fonction rénale correcte:  
+1/2 amp en IVD  
+à répéter après 15min jusqu'à 2amp 
+2
+️
+⃣Traitement étiologique: 
+▪
+️Anémie: FNS 
+▪
+️Hyperthyroïdie: TSH 
+▪
+️Hypokalémie: Ionogramme sanguin  
+▪
+️Infection: CRP 
+⚠
+️Attention l'OAP 
+3
+️
+⃣Traitement de sortie: après avoir ralenti la 
+Tachycardie FA: 
+▪
+️Anticoagulant 
+▪
+️Ralentisseur du fond: Bisoprolol 5mg 
+◾
+️Bilan 🩸  
+▪
+️FNS 
+▪
+️TSH 
+▪
+️Urée/Créat  
+▪
+️Hépatique  
+▪
+️Ionogramme  
+▪
+️Troponines  
+▪
+️BNP/NT_proBNP 
+Bradycardie sinusale 
+◾
+️Rechercher:  
+▪
+️Syncope, lipothymie 
+▪
+️Cardiomyopathie ischémique ancienne  
+▪
+️Prise des médicaments: Bétabloquants, 
+antiarythmiques, Benzodiazépines 
+▪
+️Dextro 
+▪
+️Ionogramme=> Hyperkalémie  
+◾
+️ECG 
+◾
+️Si: RAS => Libérer le malade avec : 
+◾
+️Bilan🩸 
+▪
+️FNS 
+▪
+️Gly à jeûn 
+▪
+️TSH=> Hypothyroïdie 
+▪
+️Lipidique  
+▪
+️Hépatique  
+▪
+️Ionogramme sanguin  
+➡
+️Avis cardiologie / échocœur  
+◾
+️Si c'est mal tolérée: <40 + 
+Hypotension/syncope  
+▪
+️AVS 
+▪
+️Bilan d'urgence  
+▪
+️Atropine 0.5mg en Sc 
+➡
+️Evacuation 
+Dissection aortique  
+�
+�Clinique : 
+▪
+️Hypertendu=> douleur rétrosternale brutale 
+intense aigue type de déchirement, pulsatile, 
+migratrice le long de l’aorte, prolongée.. 
+▪
+️Insuffisance aortique avec OAP, Abolition du 
+pouls, souffle aortique  
+▪
+️Asymétrie de TA 
+▪
+️ECG : normal ou TDR 
+▪
+️TLT : élargissement de médiastin  
+▪
+️Image en double contours aortique  
+▪
+️Épanchement pleural gauche 
+▪
+️Aortographie et ETT : examen clé  
+▪
+️ETO : Si (+)=> Angioscan 
+✅
+️CAT :  
+▪
+️Surveillance => FC/TA 
+▪
+️Antalgiques  
+▪
+️Corriger la PA : but <100mmhg et FC< à 60/min 
+▪
+️Bétabloquant +/_ Inhibiteur calcique  
+▪
+️Esmolol 0.5_1mg/kg en bolus puis 
+50_300mg/kg/min à la SAP  
+▪
+️Loxen 5_15mg/h à la SAP à ↗️/20min avec 
+2.5mg  
+Jusqu’à atteindre le cible tensionnel  
+⛔
+️Attention aux CI de Bétabloquant  
+➡
+️Orientation pour angioscan aortique et 
+chirurgie vasculaire 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Douleur thoracique  
+◾
+️Origine cardiaque : PIED 
+▪
+️Péricardite aigue  
+▪
+️Insuffisance coronaire : IDM ou Angine de 
+poitrine  
+▪
+️Embolie pulmonaire  
+▪
+️Dissection aortique  
+◾
+️Insuffisance coronaire :  
+FDR=> HTA, diabète, dyslipidémie, obésité, âgé, 
+masculin, tabac. 
+◾
+️Angine de poitrine : 
+▪
+️Douleur constructive rétrosternale irradie vers 
+la mâchoire et le bras, à l’effort, cède au repos 
+et à la prise de trinitrine. 
+▪
+️ECG de repos est normal=> épreuve d’effort  
+▪
+️Si douleur au repos => IDM 
+◾
+️IDM : même douleur mais plus marquée, 
+atroce, 
+Dyspnée, sueurs… 
+▪
+️ECG : angle de paradée. 
+◾
+️Embolie pulmonaire : 
+▪
+️Douleur basithoracique sans irradiations 
+brutale, dyspnée, ↗️avec les mouvements 
+respiratoires, angoisse, état de choc.. 
+▪
+️Notion : post partum, post op, alitement 
+prolongé, varices, troubles de coagulation.. 
+▪
+️TLT souvent nor5 
+▪
+️ECG + DDIMÈRES  
+◾
+️Dissection aortique : 
+▪
+️Douleur précordiale intense brutale, irradie 
+vers le dos, type déchirure, antérieur ou 
+postérieur, sans position antalgique  
+▪
+️Terrain : HTA 
+▪
+️Asymétrie TA>20mmhg, pouls↘️, souffle d’IA 
+▪
+️TLT : élargissement de médiastin  
+▪
+️ECG : normal++ 
+▪
+️Confirmer le diagnostic : ETO, TDM, IRM 
+◾
+️Péricardique : 
+▪
+️Douleur précordiale constructive permanente 
+prolongée sans irradiations, semblant à l’angor 
+mais ↗️ par Toux, inspiration et changement de 
+position surtout allongée, ↘️Antéflexion et 
+assise. Dyspnée, polypnée, fièvre  
+▪
+️Péricardite aigue : 
+Notion : Syndrome grippal  
+◾
+️Épanchement pleural liquidien : 
+▪
+️Douleur latéralisée, ↗️ Toux et respiration, 
+dyspnée  
+▪
+️Abolition du murmures vésiculaires et des 
+vibrations vocales, matité à la percussion  
+▪
+️Pneumothorax : même chose mais brutale et 
+tympanisme à la percussion 
+◾
+️Pneumopathies infectieuses : 
+▪
+️Contexte infectieux, fièvre, foyer crépitant 
+localisé 
+◾
+️Pneumothorax :  
+▪
+️Douleur brutale, aigue violente en coup de 
+poignard, à l’effort  
+◾
+️RGO :  
+▪
+️Brûlure rétrosternale, ↗️penché en avant, 
+rythmée par le repas  
+◾
+️UGD : 
+▪
+️Douleur épigastrique  
+◾
+️Pancréatite aigue : 
+▪
+️Epigastrique violente transfixiante, calmée en 
+chien de fusil 
+Dyslipidémie  
+Clinique: 
+Xanthélasma: dépôt lipidique au nv de l'angle 
+interne de la paupière supérieure, arc cornéen 
+Xanthomes tendineux et tubérux 
+Xanthomes: pseudo tumeurs bénignes 
+Xanthome plans 
+Xanthomes éruptifs: vésicules de petite taille 
+jaune non inflammatoire, pas de douleur ni de 
+prurit  
+Stéatose hépatique non alcoolique  
+Splénomégalie  
+Rechercher une prise des Psychotropes (prise 
+du poids, syndrome métabolique..) 
+Prise du Tabac ou Alcool 
+Si TG   
+: Rechercher une Hypothyroïdie  
+Bilan:    
+Glycémie à jeun  
+HBA1C  
+Urée/Créat  
+Hépatique  
+TSH 
+IMC 
+Traitement: RHD+++ 
+Régime sans sucre/diminuer le poids/Activité 
+physique  
+Complément alimentaire Oméga3  
+Calculer le risque cardio_Vx  
+Refaire le bilan après 3mois si toujours    
+Traitement  
+Cholestérol    
+Triglycérides    
+Statines 
+: 
+Fibrates + Omega3 riche en 
+EPA  
+Si TG >5g/l: Lipanthyl (Fibrates) 
+Lipanor cp 100mg 1cp/j pdt 1mois 
+Stantines: selon le taux de LDL et risques 
+cardio-vasculaires 
+Embolie pulmonaire  
+�
+�Clinique : 
+▪
+️Syncope, lipothymie, tachycardie >100, 
+douleur angineuse, pouls paradoxal, cyanose, 
+dyspnée, toux.. 
+▪
+️Etat de choc : marbrures, collapsus 
+▪
+️ATCD de TVP, immobilisation, Néo, grossesse, 
+pour césarienne ou post op.. 
+◾
+️TLT : pour éliminer autre cause de dyspnée  
+◾
+️ECG :  
+▪
+️Troubles de repolarisation : T/V1V2V3 
+▪
+️Aspect S1Q3 
+▪
+️BBD 
+◾
+️Hypoxie sévère : PaO2<60%, Acidose. 
+◾
+️DDIMÈRES (-) : écarte le diagnostic  
+▪
+️Si probabilité faible => Dosage des DD si (+) 
+➡
+️Angioscanner 
+▪
+️Si doute éliminer TVP + Scintigraphie  
+▪
+️Si probabilité forte => Angioscanner si (-) 
+➡
+️Echodoppler  
+✅
+️CAT : 
+▪
+️Position demi assise/VVP 
+▪
+️O2 à fort débit  
+▪
+️Remplissage par vasopresseurs : Dobutrex/ 
+Noradrénaline 
+▪
+️HNF 500/kg/j en PSE avec TCA à h4 objectif : 
+2_3 
+▪
+️Thrombolyse si : EP + état de choc 
+▪
+️Relais AVK tardif à j4 
+▪
+️Surveillance de TCA, fibrinogène, plaquettes  
+▪
+️Si échec : embolectomie chirurgicale 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Hypotension artérielle  
+�
+�Clinique : ◾️TA <90/60mmg 
+◾
+️Rechercher : 
+▪
+️Une prise des médicaments 💊 
+▪
+️Anémie  
+▪
+️Hémorragies  
+▪
+️Hypoglycémie  
+▪
+️Hypothyroïdie  
+▪
+️Maladie neurologique  
+▪
+️Déshydratation : Hypokalémie ++  
+▪
+️Insuffisance surrénalienne 
+▪
+️Infections 
+▪
+️Troubles de rythme TDR 
+▪
+️Réaction allergique grave 
+▪
+️Grossesse  
+▪
+️Stress… 
+◾
+️Bilan :🩸 
+▪
+️FNS 
+▪
+️Gly à jeûn  
+▪
+️TP 
+▪
+️CRP/VS 
+▪
+️TSH 
+▪
+️Vit D 
+▪
+️ACTH 
+▪
+️Aldostéronémie 
+▪
+️Cortisolémie à 8h 
+▪
+️Ionogramme  
+▪
+️ECG 
+▪
+️Échocœur  
+▪
+️Si RAS➡️ Avis cardiologie 
+▪
+️PAM= (PAS+2PAD)/3 
+▪
+️PAM<6=> Plasma gel 
+▪
+️PAM>6=> SSI 500cc en IV 
+◾
+️SSI: absence d'état de choc 
+◾
+️Plasmagel: présence d'état de choc 
+◾
+️Transfusion: état de choc Hémorragique Hb<7 
+plq<100.000 
+◾
+️Dobutamine: état de choc cardiogénique + 
+pas de remplissage 
+IDM 
+�
+�Clinique : 
+▪
+️Douleur thoracique rétrosternale constructive 
+prolongée >20min, résiste aux trinitrines, irradie 
+vers le membre super gauche/cou/menton. 
+▪
+️Atypique : 
+Pâleur, cyanose, sueur, panique, agitation, 
+détresse respiratoire, vomissements, 
+épigastralgies++, HypoTA++ 
+▪
+️ECG chaque 10min=> Sus décalage  
+✅
+️CAT : 
+▪
+️Hospitalisation  
+▪
+️2VVP/O2 si SaO2 <90% 
+▪
+️TA/Dextro 
+◾
+️Bilan :🩸 
+▪
+️FNS/Gly/TP 
+▪
+️VS/CRP 
+▪
+️Hépatique  
+▪
+️Urée/Creat  
+▪
+️Ionogramme  
+◾
+️Troponines : 
+▪
+️2_10=> Diagnostic d’IDM est douteux à refaire 
+le dosage 2h après 
+▪
+️>100=> Diagnostic inclus  
+▪
+️<2=> Diagnostic exclus 
+◾
+️Soulager la douleur : 
+▪
+️Perfalgan 1flc 1g en IVD voir un dérivé 
+morphinique si douleur intense : 
+Chlorhydrate de morphine 5mg inj 1/2amp Sc 
+ou IV 
+�
+�St (-) :  
+▪
+️Si <75ans 
+◾
+️Aspegic (300mg) 3cp 100mg Ou 250mg en IV 
+◾
+️Plavix (400mg) 75mg 4cp (1cp si >75ans) 
+◾
+️Lovenox : bolus de 0.3 en IV 
+Puis 1mg/kg 2/j 15min après le bolus 
+▪
+️Si : >75ans : pas de bolus, 0.75mg/kg 2/j 
+➡
+️Evacuation cardiologie  
+◾
+️Si ST(-) : ECG/10min 
+▪
+️Sous décalage de ST/T(-)/T ample et pointue  
+▪
+️Dosage de Troponine 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Insuffisance aortique  
+�
+�Clinique : 
+▪
+️Dyspnée d’effort, lipothymie, palpitations, 
+angor, signes d’insuffisance ventriculaire 
+gauche. 
+▪
+️Palpation : choc de pointe en dôme de barre 
+▪
+️Auscultation : souffle protodiastolique au foyer 
+aortique ↗️ en position penchée en avant et à 
+l’expiration profonde, souffle aortique. 
+▪
+️Élargissement de la PA différentielle 
+▪
+️PAD<5mmhg=> IAO sévère  
+▪
+️Hyperpulstatilité artérielle : signe de Musset et 
+Duroziez. 
+◾
+️ECG : normal ou pathologique 
+(HVG/BBG/BAV..) 
+◾
+️TLT : silhouette aortique => Dilatation de Aorte 
+ascendante ou cardiomégalie 
+◾
+️ETT : Examen clé 
+OAP 
+�
+�Clinique : 
+▪
+️Affection pulmonaire secondaire à 
+l’inondation ou l’accumulation brutale de 
+liquides dans les poumons. 
+▪
+️Douleur thoracique, dyspnée, orthopnée, 
+détresse respiratoire, cyanose, difficultés de 
+parler, Hypotension, sueurs, fièvre, Toux sèche, 
+glaires blanchâtres.. 
+▪
+️Auscultation : Râles crépitents 
+▪
+️Ne supporte pas la position prolongée 
+◾
+️Rx : confirme le diagnostic 
+ Ailes du papillon       
+Presque une crise d’asthme mais pas d’ ATCD 
+d’asthme, même en présence des sibilants.. 
+▪
+️Sujet : âge >50ans, cardiopathie, HTA.. 
+▪
+️OAP sur pic hypertensif  
+▪
+️OAP sur cardiopathie avec TA normale ou ↘️ 
+✅
+️CAT : 
+▪
+️O2 8_10l/min 
+▪
+️Dextro/TA/T°/VVP/sonde vésicale (Diurèse) 
+▪
+️Position demi assise pieds pendants 
+▪
+️ECG (IDM) 
+◾
+️Bilan :🩸 
+▪
+️FNS/Gly 
+▪
+️CRP 
+▪
+️Urée/Créat Si↗️donc IR =>↗️Lasilix 120mg 
+(3_4/j) 
+▪
+️Ionogramme (Hyperkalémie) 
+◾
+️Si TA>110mmhg : 40mg Lasilix en IVD/20min 
+▪
+️20_30min si TA toujours ↗️ : 40mg Lasilix  en 
+IVD 
+▪
+️Si persistance de l’OAP jusqu’à 160 à 200mg  
+Ou Lenitral 1mg IVD Ou Risordan 2mg IVD 
+◾
+️Si non réponse : ➡️ Avis Réa  
+◾
+️Si TA<110mmhg : 
+▪
+️Rassurer le patient  
+▪
+️Position demi assise  
+▪
+️O2 8_10l/min 
+▪
+️VVP/scope/sonde vésicale 
+➡
+️Avis Réa : Dobutrex 5Ug/kg/min 
+▪
+️Si non : 1_2amp Dobutrex dans 250cc SG5% 
+Ou SSI9% jusqu’à ↗️ de TA 
+▪
+️Avec surveillance de FC et TA, jusqu’à 
+l’obtention de TA normale 
+▪
+️Donc on peut inj Lasilix 
+◾
+️Si IR: surveillance de la diurèse, si pas de 
+réponse (OAP + Anurie)=> Dialyse 
+Œdème des membres inférieurs  
+�
+�Rechercher une IC, IR, IH 
+✅
+️CAT : 
+▪
+️Prise de TA, Gly, FR, FC 
+Auscultation pulmonaire.. 
+◾
+️Bilan :🩸 
+▪
+️CRP/VS 
+▪
+️TSH 
+▪
+️TP/Facteur V 
+▪
+️Urée/Créat  
+▪
+️Hépatique : TGO, TGP  
+▪
+️ASAT/ALAT  
+▪
+️Bilirubine  
+▪
+️PAL/GGT 
+▪
+️Lipidique  
+▪
+️CU 
+▪
+️Albuminémie 
+▪
+️Protéinuries des 24h 
+▪
+️Ionogramme  
+▪
+️Sérologie  
+▪
+️Si femme enceinte : + FNS  
+▪
+️TLT 
+▪
+️ECG 
+◾
+️En fonction des résultats : 
+➡
+️Avis Cardiologie (échocœur=> IC, 
+échodoppler => AOMI ou TVP) 
+▪
+️Échographie rénale ➡️Avis Urologie  
+▪
+️Échographie AP + Sérologie hépatique  
+➡
+️Avis Gastrologie 
+Poussée hypertensive ou pic hypertensif  
+▪
+️PAS>180/170mmhg 
+▪
+️PAD>120/110mmhg 
+�
+�Clinique : 
+◾
+️Céphalée, vertiges, anxiété, confusion, 
+insomnie, douleur à la nuque, douleur 
+thoracique, palpitations, acouphènes, 
+bourdonnement d’oreilles, épistaxis, dyspnée, 
+nausées, vomissements, flou visuel.. 
+◾
+️Eliminer l’urgence Hypertensive : 
+▪
+️AVC : signes neurologiques de focalisation  
+▪
+️Dissection aortique : douleur retrosternale en 
+coup de poignard irradie vers le dos, souffles 
+aortique 
+▪
+️OAP : dyspnée, râles crépitents  
+▪
+️IDM : douleur thoracique constructive irradie 
+vers l’épaule gauche + ECG 
+▪
+️Rétinopathies Hypertensives 
+▪
+️Pré éclampsie… 
+✅
+️CAT : 
+▪
+️Prise : FC/FR/PA/SaO2/VVP 
+▪
+️O2 thérapie 3_4l/min : pas si SaO2 correcte  
+▪
+️1/2amp Mg dans 250cc de SG5% 
+Ou 1cc Mg dans 3cc de SG 5% en IVD 
+Après 30min si TA normal => Bilan HTA 
+◾
+️Bilan HTA :🩸 
+◾
+️FNS/TSH/Gly à jeûn/HbA1C  
+◾
+️Urée/Creat 
+▪
+️LDL/HDL 
+▪
+️TG/CT 
+▪
+️Uricémie  
+▪
+️Ionogramme=> Kaliémie  
+▪
+️CDU si protéines >300=> Protéinuries des 24h 
+▪
+️Microalbuminurie 
+▪
+️ECG 
+▪
+️FO 
+▪
+️Échocœur  
+◾
+️Si TA anormal : 
+▪
+️Captopril cp 25mg 1cp en per os 
+Après 1h si pas de réponse : 
+2ème cp puis 3ème cp 
+Après 1h si pas de réponse : cp inefficace  
+▪
+️Loxen inj 1cc dilué dans 3cc SG5%  
+Après 30min pas de réponse 2cc…max 
+10cc/24h en IVD. 
+✅
+️Traitement de sortie : 
+▪
+️Amlor/Lopril cp 5mg 1cp/j à heures fixe 
+▪
+️Profil TA : 3*3*3 
+3/j=> 3fois matin au réveil, 3fois soir avant 
+dormir pdt 3j 
+▪
+️RHD : régime 1/2sel, activité physique.. 
+✅
+️Traitement d'HTA: 
+�
+�Grade1️⃣ : 
+▪
+️Régime demi sel pdt 6mois 
+◾
+️Si non réponse: Bithérapie  
+Ou traitement médical systématique si le 
+patient présente un grand risque cardio_Vx 
+�
+�Grade 
+◾
+️Traitement médical systématique  
+IEC ou ARA2 + Diurétique ou Inhibiteur calcique  
+◾
+️Si non réponse: Trithérapie 
+IEC ou ARA2 + Diurétique + IC 
+◾
+️Si non réponse: 
+Antagoniste de l'Aldostérone: Spironolactone 
+RAA 
+�
+�Clinique : 
+▪
+️Maladie inflammatoire multi-systémique. Il 
+s’agit d’une complication non suppurée d’une 
+pharyngite non traitée, due au strepto 
+▪
+️2_3sem après Angine strepto 
+▪
+️Agé de 5 à 15 ans 
+▪
+️Fièvre, polyarthrite migratrice, cardite. 
+▪
+️Polyarthrite aigue : débutante par une fièvre et 
+signes digestifs.. 
+Au début par les membres inférieurs et les 
+grosses articulations=> douleur, rougeur, 
+chaleur, gonflement.. mobile et fugace 
+▪
+️Chorée de Sydenham : mouvements 
+involontaires, hypotonie disparition avec la 
+sommeil.. 
+▪
+️Érythème marginé de Besnier : Éruption non 
+prurigineuses, fugaces, plaques brunâtres.. 
+▪
+️Nodules de Meynet 
+▪
+️Cardite très fébrile 
+◾
+️Diagnostic : ASLO >400UI 
+◾
+️Bilan :🩸 
+▪
+️FNS : Hyperleucocytose/Anémie 
+inflammatoire ▪️CRP/VS ↗️ 
+✅
+️Traitement : 
+▪
+️Repos 
+▪
+️Peni G 1_2M/j 2inj/j en IM pdt 10j  
+▪
+️Si allergie : Macrolides Ou Céphalosporines  
+▪
+️CTC : Prednisone 2mg/kg/j 3_4/j 
+▪
+️Salicy : 80_100mg/kg/j 4/j 
+▪
+️Traitement de : Arthrite, Cardite, Chorée  
+▪
+️Toute Angine strepto doit être traitée par : 
+◾
+️Extencilline en IM 3inj de 21j d’intervalle  
+▪
+️>30kg : 1.2UI 
+▪
+️<30kg : 6UI 
+▪
+️Si allergie : Erythromycine per os 30mg/kg/j 10j 
+▪
+️Si y pas des critères ni majeurs ni mineurs  
+▪
+️Si présence des critères ou ASLO↗️ ou  
+Antidnas b↗️ :  
+Extencilline même dose sus citées mais chaque 
+21j 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SCA sans sus décalage de ST 
+�
+�Clinique : 
+▪
+️Douleur prolongée >20min, au repos  
+Rétrosternale constructive, irradie vers la 
+mâchoire et bras gauche, anxiété  
+▪
+️Atypique : épigastralgies  
+▪
+️ECG : peut être normal  
+◾
+️Bilan :🩸 
+▪
+️FNS/Gly a jeûne  
+▪
+️Urée/Créat  
+▪
+️Ionogramme  
+▪
+️TP/TCK 
+▪
+️Troponines +++ 
+✅
+️CAT : 
+▪
+️O2 thérapie si SaO2 <90% 
+▪
+️Antalgique en IV 
+◾
+️Aspegic: 250mg en IV ou 300mg per os (3cp) 
+◾
+️Plavix: 4cp sauf chez sujet >75ans: 1cp 
+◾
+️Lovenox: 100Ui/kg en Sc Ou 1Ui/10kg 
+▪
+️Aspirine : 150_300mg VO puis 75_100mg/j 
+▪
+️Clopidogrel : 300_600mg puis 75mg/j 
+➡
+️Évacuation cardiologie : pour coro 
+Syncope  
+�
+�Cardiaque : 
+▪
+️Hypotension orthostatique : passage en 
+position debout + preuve de l’hypotension 
+orthostatique  
+▪
+️Arythmie :  devant un ECG anormal : 
+Bradycardie Fc < 40b/min, bloc sino-auriculaire, 
+pause cardiaque 3sec, BAV2 Mobitz 2 ou 3, 
+tachycardie ventriculaire ou TSV rapide, TSV non 
+soutenue, syndrome QT long ou court  
+▪
+️Ischémie : ST(+) 
+▪
+️Autres maladies : HTAP, embolie pulmonaire, 
+Dissection aortique, sténose aortique.. 
+▪
+️Syncope vaso vagale : stress 
+▪
+️Hypoglycémie  
+▪
+️Crise épileptique, AIT  
+▪
+️Maladie de Ménière : vertige + acouphènes + 
+baisse de l’audition .. 
+✅
+️CAT : 
+▪
+️TA/T° 
+▪
+️Dextro 
+◾
+️Bilan :🩸 
+▪
+️FNS 
+▪
+️Rénal  
+▪
+️Lipidique  
+▪
+️Ionogramme 
+◾
+️ECG 
+◾
+️Échocœur  
+➡
+️ Avis cardiologie/neurologie/+/_ ORL 
+Tachycardie sinusale 
+�
+�Clinique : 
+Bénigne FC=100/min 
+Effort, stress, consommation de tabac, café,  
+Fièvre, anémie, déshydratation, crise de 
+panique, Hyperthyroïdie. 
+✅
+️CAT : 
+▪
+️O2 thérapie  
+▪
+️Mg 1/2amp diluée dans 250 SG5% 
+◾
+️Bilan :🩸 
+▪
+️FNS 
+▪
+️TSH 
+▪
+️DDIMÈRES  
+▪
+️Ionogramme  
+◾
+️ECG 
+➡
+️Orientation Cardiologie 
+Tachycardie supraventriculaire TSV 
+▪
+️TA+++ 
+▪
+️+/_ Massage carotidien  
+▪
+️Manœuvre de Valsalva (vagale) 
+◾
+️Si non réponse et TA correcte (stable) : 
+1cp de Bétabloquant ou 2amp de Cordarone en 
+perfusion de SG5% 
+Byzolex  5mg 1/4cp  
+Ou Avlocardyl 40mg 1/2cp le matin 
+➡
+️Avis cardiologie 
+◾
+️Si le malade est en état de choc (instable) : 
+➡
+️Cardioversion en urgence 
+
+
+Thrombose veineuse profonde TVP 
+Phlébite 
+�
+�Clinique :  
+Douleur, œdème (dur, résistant, prend le godet), 
+peau rouge chaude, cyanose, dilatation des 
+veines superficielles, fébricule 38°c, pouls ↗️ 
+TVP➡️ EP 
+✅
+️CAT : 
+▪
+️Hospitalisation en urgence  
+▪
+️Alitement stricte, surélévation du membre 
+▪
+️Bas de contention  
+▪
+️VVP 
+◾
+️Traitement Anticoagulant (Lovenox) en aigu 
+dose curative  
+◾
+️Traitement Anticoagulant prolongé 
+▪
+️Sintrom 4mg 1/2cp => INR(2_3) après 48_72h 
+Ou Thormbix 15mg 2/j pdt 21j puis 20mg/j 
+◾
+️Antalgique  
+◾
+️Bilan🩸 
+▪
+️FNS 
+▪
+️CRP/VS 
+▪
+️Urée/Créat  
+▪
+️TP/TCA 
+▪
+️DDIMÈRES  
+◾
+️Echodoppler veineux des MI 
+◾
+️Angioscanner  
+▪
+️Avis cardiologie  
+➡
+️Orientation Chirurgie vasculaire 
+Urgences hypertensives  
+�
+�Clinique : 
+PAS >210mmhg PAD >100mmhg 
+▪
+️Encéphalopathie hypertensive : 
+Céphalée, Coma, Convulsion, troubles visuels 
+de vigilance.. 
+▪
+️Troubles digestifs : nausées/vomissements.. 
+▪
+️Étiologies : 
+Hypertension maligne, arrêt du traitement, 
+stress, alcool, AINS, CTC, IDM, éclampsie, 
+Dissection aortique… 
+✅
+️CAT : 
+◾
+️Hospitalisation : 
+▪
+️TA/Monitoring/VVP 
+▪
+️Bilan biologique  
+▪
+️Rx thoracique  
+▪
+️ECG 
+▪
+️TDM cérébrale avant traitement  
+◾
+️Ne pas ↘️ la TA plus 25% risque d’œdème 
+cérébral  
+Loxen 1cc (1mg) dilué dans 1cc SG5% IVL pdt 
+3min 
+Si TA ↗️ : même schéma + ECG 
+Si TA↗️↗️ : Loxen 1mg 1cc en IVL toutes les 10min 
+suivie par  5mg/h Loxen en IVSE (2amp 
+ramenées à 48cc SG5%, débit=5cc/h à ↗️par 
+palier de 2.5cc mg/h chaque 15min max 15cc 
+mg/h) 
+◾
+️Réhydratation IV sérum 1000ml en 2h 
++ Traitement spécifique de la souffrance  
+◾
+️Bilan complet + profil TA 
+➡
+️Avis cardiologie 
+100%-----→ TA admission 
+25%-----→ X 
+TA – X= Nouvelle TA 
+
+Varices des membres inférieurs 
+�
+�Clinique : 
+Dilatation anormale des veines 
+✅
+️Traitement : 3mois 
+1
+️
+⃣Daflon cp 500mg 1cp 3/j 
+2
+️
+⃣Venoxyl gel 1app/j 
+▪
+️Bas de contention 
+▪
+️Surélévation des pieds 10cm de la lit 
+▪
+️Marche au moins 30min/j 
+▪
+️↘️ Le poids 
+◾
+️Éviter: talons, bains chauds, exposition au 
+soleil.. 
+◾
+️Si non réponse: Sclérothérapie ou chirurgie 
+◾
+️Selon le diamètre de la veine saphène:  
+Echodoppler des MI 
+▪
+️Si < 0,8mm➡️ hygiène de vie + bas de 
+contention  
+▪
+️Si > 0,8mm➡️ Traitement chirurgical 

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicalcul - Score d'Apgar ~ Pédiatrie</title>
+    
+    <!-- Scripts et styles personnalisés -->
+    <script type="text/javascript" src="./Medicalcul - Score d'Apgar ~ Pédiatrie_files/_scripts.js.تنزيل"></script>
+    <link rel="stylesheet" href="./Medicalcul - Score d'Apgar ~ Pédiatrie_files/styles.css">
+    
+    <script type="text/javascript">
+    // ===========================================================================================
+    // Fonction de calcul de la page
+    function f_Calculer()
+    {
+        // calcul du résultat
+        var Res = f_GetRadioValue('vFC')*1;
+        Res += f_GetRadioValue('vResp')*1;
+        Res += f_GetRadioValue('vMusc')*1;
+        Res += f_GetRadioValue('vCol')*1;
+        Res += f_GetRadioValue('vStim')*1;
+
+        // Affichage du résultat
+        document.Form.Resultat.value = Res;
+
+        try { MSSAndroidFunction.storeHistory("apgar.html", "Score d'Apgar", "pediatrie", "Score:", Res); } catch(e) {}
+    }
+    // ======================================================================================
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            font-size: 14px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header img {
+            margin-top: 10px;
+            max-width: 60px;
+            height: auto;
+        }
+        
+        .content {
+            padding: 30px;
+            line-height: 1.6;
+        }
+        
+        .score-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .score-table th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .score-table td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .score-table tr:nth-child(even) {
+            background-color: #f1f3f5;
+        }
+        
+        .score-table tr:hover {
+            background-color: #e9ecef;
+        }
+        
+        .calculation-section {
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+        }
+        
+        .result-display {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 15px 0;
+            padding: 12px;
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            display: inline-block;
+            min-width: 150px;
+        }
+        
+        .interpretation {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #856404;
+        }
+        
+        .references {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 12px;
+            color: #495057;
+        }
+        
+        .references a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .references a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+        }
+        
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .patient-info {
+            background: #e3f2fd;
+            border: 1px solid #bbdefb;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        
+        .print-info {
+            background: #f1f8e9;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 15px 0;
+            font-size: 12px;
+            color: #2e7d32;
+        }
+        
+        .radio-group {
+            margin: 8px 0;
+        }
+        
+        .btn-calculate {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px 5px;
+        }
+        
+        .btn-calculate:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-calculate:active {
+            transform: translateY(0);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                font-size: 13px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Score d'Apgar</h1>
+            <img src="./Medicalcul - Score d'Apgar ~ Pédiatrie_files/zzimgspe_pediatrie.png" alt="Pédiatrie" class="specialty-image">
+        </div>
+        
+        <div class="content">
+            <form name="Form">
+                <table class="score-table">
+                    <thead>
+                        <tr>
+                            <th>Critère</th>
+                            <th>Valeur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><strong>Battements cardiaques</strong></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vFC" id="vItem0.0" type="radio" value="0" onclick="f_Calculer()"></td>
+                            <td valign="top"><label for="vItem0.0">0 - Absents.</label></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vFC" id="vItem0.1" type="radio" value="1" onclick="f_Calculer()"></td>
+                            <td valign="top"><label for="vItem0.1">1 - Inférieurs à 100 / min.</label></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vFC" id="vItem0.2" type="radio" value="2" onclick="f_Calculer()" checked="checked"></td>
+                            <td valign="top"><label for="vItem0.2">2 - Supérieurs à 100 / mn.</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>Respiration</strong></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vResp" id="vItem1.0" type="radio" value="0" onclick="f_Calculer()"></td>
+                            <td valign="top"><label for="vItem1.0">0 - Absente.</label></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vResp" id="vItem1.1" type="radio" value="1" onclick="f_Calculer()"></td>
+                            <td valign="top"><label for="vItem1.1">1 - Quelques mouvements spontanés.</label></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vResp" id="vItem1.2" type="radio" value="2" onclick="f_Calculer()" checked="checked"></td>
+                            <td valign="top"><label for="vItem1.2">2 - Normale.</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>Tonus musculaire</strong></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vMusc" id="vItem2.0" type="radio" value="0" onclick="f_Calculer()"></td>
+                            <td valign="top"><label for="vItem2.0">0 - Hypotonie globale.</label></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vMusc" id="vItem2.1" type="radio" value="1" onclick="f_Calculer()"></td>
+                            <td valign="top"><label for="vItem2.1">1 - Flexion des membres.</label></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vMusc" id="vItem2.2" type="radio" value="2" onclick="f_Calculer()" checked="checked"></td>
+                            <td valign="top"><label for="vItem2.2">2 - Mouvements actifs spontanés.</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>Coloration</strong></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vCol" id="vItem3.0" type="radio" value="0" onclick="f_Calculer()"></td>
+                            <td valign="top"><label for="vItem3.0">0 - Cyanosé, gris.</label></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vCol" id="vItem3.1" type="radio" value="1" onclick="f_Calculer()"></td>
+                            <td valign="top"><label for="vItem3.1">1 - Cyanose des extrémités.</label></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vCol" id="vItem3.2" type="radio" value="2" onclick="f_Calculer()" checked="checked"></td>
+                            <td valign="top"><label for="vItem3.2">2 - Rose.</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><strong>Réactivité à la stimulation</strong></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vStim" id="vItem4.0" type="radio" value="0" onclick="f_Calculer()"></td>
+                            <td valign="top"><label for="vItem4.0">0 - Aucun.</label></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vStim" id="vItem4.1" type="radio" value="1" onclick="f_Calculer()"></td>
+                            <td valign="top"><label for="vItem4.1">1 - Grimaces.</label></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><input name="vStim" id="vItem4.2" type="radio" value="2" onclick="f_Calculer()" checked="checked"></td>
+                            <td valign="top"><label for="vItem4.2">2 - Vive.</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="calculation-section">
+                    <input name="Submit" type="button" onclick="f_Calculer()" value="Calculer" class="btn-calculate">
+                    
+                    <div class="result-display">
+                        Score : <input name="Resultat" type="text" id="Resultat" style="width:2.2em" readonly="readonly">
+                    </div>
+                </div>
+            </form>
+
+            <div class="interpretation">
+                <strong>Interprétation :</strong><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7 à 10: normal.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 à 7: manoeuvres de réanimation nécessaires.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 à 3: état de mort apparente.
+            </div>
+   </div>
+    <div class="footer">
+            <div class="footer-links">
+                <a href="index.html">[Racine]</a>
+            </div>
+          
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,349 @@
+ORL
+Plan ORL :
+1.	Otites 
+2.	Sinusite
+3.	Angines
+4.	Dysphagie
+5.	PFP
+6.	Vertiges périphériques
+7.	Epistaxis
+8.	ADP cervicales
+
+1.	OTITES
+-	Motif de consultation : otalgie.
+-	Chez le nrs et le petit enfant.
+-	L’otite la plus fréquente est : l’otite moyenne.
+-	Aigue (on la traite)
+-	Chronique : orientation vers le spécialiste.
+
+1.1	OMA
+-	La plus fréquente.
+-	Elle est plus fréquente chez le nrs et le petit enfant (vue son anatomie).
+-	Dans l’OMA, y’a une pression positive qui aspire le tympan → Aspect du tympan : rouge, congestif, rétrécit et tombé.
+-	Les 03 stades d’OMA :
+S1 : 
+-	Congestif, tympan rouge.
+-	Y’a la douleur (otalgie), parce que y’a une pression qui est exercée sur le tympan.
+S2 : purulent, otalgie intense ++.
+S3 : 
+-	Perforation (pus sort du tympan)
+-	Pas de douleur (sent bien)
+TRT 
+1/ ATB : en pratique, dans les 03 stades, on donne les ATB qui lise les germes responsables de l’OMA (pneumocoque « Amx », Hemophilis et Morexlla « β lactamase ») .
+Augmentin :  
+•	Sirop nrs : poids < 15 kg, 1 ddp x 03/j
+•	Sirop enfant: 15 kg < poids < 37 kg, 1 ddp x 03/j
+•	Sachet 1 g: poids > 37 kg, 1 sachet x 03/j
+•	La durée: < 02 ans = 10j, > 02 ans = 07j, adulte = 05j.
+•	Si le patient est allergique au Peni, on lui donne C2G : Zinnat « Cefoxime ».
+Zymax : 
+•	Sirop 125 mg : < 40 kg, 1 càm x 02/j
+•	Cp 250 mg: > 40 kg, 01 cp x 2/j
+•	Cp 500 mg: adulte, 01 cp x 2/j
+•	Durée : < 2 ans = 10j, > 2 ans = 07j, adulte = 05j.
+•	Si allergique aux β-lactamaines, on lui donne :
+Bactrim :
+•	Sirop 200 mg
+•	Sirop 400 mg
+•	Cp 800 mg
+30 mg/kg/j en 2 à 3 prises, Max = 1.6 g.
+EXP : un enfant qui pèse 20 kg, il nécessite : 600 mg/j.
+On lui donne : sirop 200 mg (QSP 07j), 1 ddp x 3/j.
+•	La durée : < 2 ans = 10j, > 2 ans = 07j.
+•	NB : si le patient a perdu son càm du sirop, on lui dit d’acheter une seringue de 05 ml.
+2/ Antalgique + antipyrétique : dans l’OMA, la fièvre n’est pas constante.
+Efferalgon :
+•	Sirop : poids < 30 kg.
+•	Doliprane cp 500 mg : 30 < poids < 60 kg
+•	Doliprane cp 1 g : poids > 60 kg.
+En 3 à 4 prises/j.
+3/ des gouttes auriculaires:
+S1 - S2 : le tympan est intact + otalgie.
+Otipax ou Oricalm : 2 gttes x 3/j pdt 2 à 3j.
+Ils sont CI en cas de perforation du tympan.
+S3 : tympan perforé, on donne des gttes ATB.
+•	Otofa (Rifampicine)
+•	Ou préparation collyrique.
+Pour l’adulte et l’enfant.
+•	La préparation :
+Chiboxine collyre
++ Solumédrol 20 mg 
+02 gttes x 3/j
+→ 1 Flc N° 1 pdt 05j.
+•	La durée d’ATB : 5, 7, 10j.
+NB : les gouttes sont utilisées dans l’oreille malade seulement .
+-	On préfère la préparation, car l’otalgie peut masquer la couleur du tympan à cause de son couleur.
+-	S’il y a pas d’amélioration et persistance des symptômes, on traite l’étiologie : obstruction nasale, rhinite, pharyngite..etc.
+o	Si Rhinite :
+-	Age < 6 ans : Instillation : SSI 9% fréquente, ou eau de mer.
+-	Age > 6 ans :  Pulvérisations nasales + CTC nasales : Nasacort, Rhinocort, Flixonase, Nasonex.
+-	< 12ans ….. 1 pulv/narine/j le matin
+-	>12 ans ….. 2 pulv/narine/j le matin
+o	Si Terrain allergique : on lui donne « anti-histaminique ».
+-	Age < 2 ans : Histagan ½ càm le soir
+-	Age > 2 ans : Primalan ½ càm le soir
+-	Age > 4 ans : Tifen 1 càm le soir
+-	Age > 12 ans : Telfest cp 120 mg 1cp/j le soir
+Ou Ebasta cp 10 mg 1cp/j le soir
+4/  Les complications de l’OMA :
+ 	Oto-mastoidite : urgent +++
+C’est l’inflammation de la mastoïde (le pus se collecte, et aller vers l’os mastoïdien).
+Le signe alarment c’est : le décollement du pavillon (rougeur, œdème, effacement du sillon, empâtement du sillon rétro-auriculaire, érythème).
+C’est une urgence → hospitalisation en ORL.
+On complète la PEC par une TDM du rocher, s’il existe une collection du pus, on fait :
+-	Un drainage sous anesthésie générale, et une incision dans l’os mastoïdien à fin d’éliminer le pus collecté (la mastoïdite est rare chez l’adulte, on la trouve surtout chez l’enfant).
+ 	Méningite
+ 	Abcès cérébral
+ 	PFP
+ 	Passage vers la chronicité
+ 	Thrombophlébite des sinus latéraux et caverneux
+ 	Labyrinthite
+
+1.2	Labyrinthite (otite interne)
+-	on la trouve surtout chez l’adulte
+-	pas d’OI chez l’enfant
+-	signes cliniques : vertige périphérique, otalgie, surdité et acouphène.
+-	CAT : orientation ORL, pour lui faire un drainage (parcenthèse).
+
+1.3	otite externe
+-	fréquente chez l’adulte
+-	rare chez l’enfant
+-	c’est l’inflammation du CAE +/- le pavillon.
+-	Signes cliniques : rougeur, douleur, œdème,
+-	C’est l’otite hyperalgique, parfois on trouve fermeture du CAE ou décollement du pus.
+-	Dgc est facile : l’attraction du pavillon va ↑ la douleur.
+-	TRT : 
+*Simple rougeur : trt local : gtte auriculaire.
+*S’il y a un œdème et une douleur, on donne ATB local et général :
+ATB (anti staph, anti pseudomonas) : C1G Céfacet (Céfalexine).
+Lexinal sirop : 125mg, 250mg
+Lexinal cp : 500mg, 1g
+40mg /kg/j en 2-3 /chaque 8h
+Prises max : 02g/j   Pdt 10 j.
+EXP 1: patient pèse 40kg → 400mg
+Donc : Lexinal sirop 125mg …. QSP 10j (1 càm *3/j)
+EXP 2 : patient pèse 25 kg → 1000mg
+Donc : Lexinal cp 500mg ….. QSP 10j (1 cp *2/j)
+« Chez l’adulte, le durée entre 7-10 j selon la sévérité ».
+NB : les gttes auriculaires dans l’OE sont obligatoire.
+Polydexa (2 ATB + CTC)
+CI : en cas de perforation du tympan, ou de non visualisation du tympan.
+On utilise : 
+-	Otocyne : 1 dose *2/j  ou
+-	Otofa : 2 gttes *2/j
+Si le conduit est fermé : mâche de la tille grasse, Bétadine + les gttes auriculaires = pdt 48h
+Après 48h : 
+*Si amélioration : on countinue le trt
+*Si pas d’amélioration : on refait la mache de la tille grasse et on change l’ATB :
+Ciprolon cp 500mg ….  QSP 10j (1 cp *2/j)
+(Ciprolon c’est un ATB fluoroquinolone à large spectre, avec une résistance de 1, un ATB puissant à prescription hospitalisée seulement).
+« Chez le DT et l’ID, le germe responsable est le pseudomonas, on commence d’emblée par le Ciprolon » 
+On donne un controle après 48h :
+*S’il y a une amélioration : continue le trt
+*Si pas : orientation ORL, risque d’OE maligne (otite : c’est une complication grave et sa PEC peut aller jusqu’à 30-40j).
+NB : Augmentin n’a aucune indication dans l’otite externe.
+	Dans le furoncle, on donne : Fucidine pmd, s’il y a une collection, on fait un petit drainage et une petite incision.
+
+1.4	Bouchon du cérumen :
+-	Accumulation de cérumen dans CAE.
+-	Obstacle marron noirâtre, on donne :
+Cérulyse gtte : 3gttes *5/j pdt 5j
+Orilyse gtte : 2gttes/j pdt 02j (irritant).
+-	Après 5 jours, on fait un lavage systématiquement :
+Enf < 7ans : on lui donne huile d’olive 1gtte *2/j
+-	Le lavage est indiqué à partir de 7 ans
+-	Le lavage est CI chez le DT, car il peut provoquer une OE et une irritation, on fait une aspiration.
+
+2.	SINUSITES
+-	Inflammation du sinus (frontal, éthmoïdal, maxillaire), due à l’obstacle du sinus et au défaut de communication aérienne.
+-	Signes cliniques : céphalée, douleur orbitaire, obstruction nasale, écoulement.
+-	Le dgc est clinique, TDM est indiquée an cas de doute seulement.
+-	Les germes responsables sont les mêmes qui faisons l’OMA, donc le même trt.
+-	Les pulvérisations nasales sont obligatoires.
+-	CTC par voie orale : Solupred cp 500mg, 20mg..
+1mg/kg/j en prise unique le matin,
+Pas de dose max, durée est 5j.
+Chez l’adulte, la durée est 6j.
+-	CPC : éthmoïdite, surtout chez l’enfant, elle est grave et mortelle : œdème palpébrale d’évolution rapide.
+-	Dgc ≠ : piqure d’insecte, on recherche le point de piqure, si on ne trouve rien, on l’oriente vers l’ORL en urgence, car c’est une éthmoïdite JPDC.
+-	On demande une TDM du sinus pour confirmer et graduer le dgc.
+-	TRT est selon le stade (drainage..),
+Sinusite chronique :
+-	Sinusite aigue non correctement traitée
+-	Sinusite à répétition
+-	Devant une sinusite, rhinite, ou simple obstruction nasale, le patient fait une sinusite (légère inflammation de la paroi provoque une sinusite).
+-	Son trt peut aller jusqu’à la chirurgie.
+NB : 
+-	L’éthmoidite est généralement unilatérale.
+-	Elle commence par l’angle supérieur interne de la paupière, puis une exophtalmie.
+
+3.	ANGINES
+-	C’est l’inflammation des amygdales et palatines.
+-	Signes cliniques : fièvre, odynophagie, douleur abdominale, vms .
+-	L’hypertrophie des amygdales ≠ angines, elle due soit à des angines à répétition ou elle est congénitale.
+-	L’hypertrophie sans rougeur, je cherche un autre foyer infectieux.
+-	Malade fébricule, Fº < 38.5 → On donne un trt symptomatique.
+-	Malade fébrile, Fº > 38.5 → ATB d’emblée, 
+-	Les germes incriminés : Streptocoque.
+On donne Amoxyl : angines érythémateuses ou pultacées, on prescrit Clamoxyl « il faut donner le Clamoxyl proprement dit, pas son générique ».
+Pas d’indication d’Augmentin dans les angines.
+-	Clamoxyl sirop 250mg
+-	Clamoxyl sirop 500mg
+-	Clamoxyl cp 01g
+= 50 mg/kg/j en 2 à 3/j , max 3g/j.
+-	Durée : < 2 ans = 10j, > 2 ans = 07j
+Ou :
+-	Oropen sirop 250000 UI
+-	Oropen sirop 1000000 UI
+-	Oropen sirop 1500000 UI
+50000 UI/kg/j en 2 à 3/j, QSP 10j.
+On peut asssaier la forme injectable « Gectapen » ‘peni G’, lorsque les angines sont pultacées.
+-	Gectapen inj 0.5 MUI < 30kg, 01 MUI > 30kg : 4 à 6 inj.
+Angines pultacées aphagientes, nécessite une hospitalisation de 24h : Peni G en perfusion IV :
+-	05 MUI *3/j : adulte
+-	03 MUI *3/j : enfant
+La perfusion fait en SSI ou avec Perfalgan, on soulage le patient + prescription un trt oral.
+Si le patient est allergique à la pénicilline, on lui donne C2G « Cefuroxime » Zinnat, durée : 06j.
+Si le patient est allergique aux β-lactamines, on lui donne macrolides :
+1)	Josacine 
+-	Josacine sirop 125mg
+-	Josacine sirop 250mg
+-	Josacine sirop 500mg
+50mg/kg/j, 01ddp en 02 prises.
+Durée : < 2 ans : 10j, > 2 ans : 05j.
+
+2)	Zeclar 
+-	Zeclar sirop 25mg/ml : < 20kg
+-	Zeclar sirop 50mg/ml : 20kg < poids < 40kg
+→ 1 ddp *2/j
+-	Zeclar cp 250mg : > 40kg
+-	Zeclar cp 500mg: > 60kg (adulte)
+→ 1 cp *2/j
+Durée: < 2ans: 10j, > 2ans: 07j, adulte: 06j.
+
+3)	Zomax 
+-	Zomax sirop 250mg → QSP 03j
+1 ddp/j (sans dépasser 25kg)
+-	Zomax cp 250mg → QSP 03j
+01	Cp/j ( > 30kg )
+-	Zomax cp 500mg → QSP 03j
+1 cp/j (adulte)
+	Si angine pultacée : Flagyl, parce qu’il y a le risque de surinfection des anaérobies.
+-	Flagyl sirop 125mg
+-	Flagyl cp 250mg
+-	Flagyl cp 500mg
+30 mg/kg/j en 2 à 3 prises, max : 1.5g
+Durée : 05 – 07j
+	CPC : phlegmon péri-amygdalien, abcès péri-amygdalien, collection péri-amygdalien surtout après prise d’AINS.
+AINS et Aspegic sont CI en cas d’angine.
+	A l’examen, on trouve une tuméfaction + déviation de la luette : y a le risque de la médistinite, le phlegmon nécessite une hospitalisation ‘ORL’ pour faire un drainage + incision 
+TRT : Peni V + Peni G + Flagyl
+
+4.	DYSPHONIE
+-	Altération de la voix « البحة »
+-	Chronique > 03 semaines → orientation ORL (pour nasofibroscopie).
+-	Aigue < 03 semaines : laryngite (CTC + ATB) : Augmentin + Solupred. (Généralement c’est l’Hémophilis qu’est responsable, c’est pour ça on donne l’Augmentin).
+-	Signes cliniques : rétrécissement de la lumière, dyspnée laryngée type bradypnée, inspiration difficile anormale puis expiration normale.
+-	D’abord il faut éliminer l’inhalation d’un corps étranger, par l’interrogatoire : Notion de brutalité : corps étranger JPDC.
+NB : 
+-	L’abaisse de la langue est CI, parce qu’il y a le reflexe nauséeux qui va fermer les voies aériennes sup → spasmes.
+-	Décubitus dorsal est CI.
+CAT : 
+-	Dexa en IV : 0.15 mg/kg
+-	03 nébulisation ADS, de 20 min d’intervalle (01 cc Adrénaline + 02 cc Dexa + 03 cc SSI)
+-	Oxygénothérapie en cas de désaturation seulement.
+-	S’il y a une amélioration : libérer le malade
++ TRT : CTC (Solupred 05j) + ATB (Augmentin).
+-	S’il n’y a pas d’amélioration : nubélusation/4h
+Si non, on fait une trachéotomie (parce qu’il y a le risque d’arrêt « cardiaque » respiratoire).
+
+5.	PARALYSIE FACIALE PERIPHERIQUE
+-	Atteinte du nerf facial périphérique.
+-	Signes cliniques : 
+Déviation buccale vers la coté saine, 
+Effacement du sillon naso-génien, 
+Impossibilité de souffler et de gonfler les joues.
+-	La différence entre la PF centrale et périphérique :
+	Centrale : atteinte du territoire inf → Neuro
+	Périphérique : atteinte de l’hémiface → on traite.
+Effacement des rides frontales.
+Impossibilité de fermer l’œil +++
+Impossibilité de relever les sourcils.
+Signe de Charles Bell : fermeture incomplète de l’œil et à la bascule du globe oculaire vers haut (on ne voit que le blanc de l’œil).
+-	Etiologies :
+	ORL : traumatique, post otite, parotidite.
+	Idiopathique : inflammatoire, ischémique, infectieuse.
+1)	Inflammatoire 
+Solupred 1mg/kg/j, pdt 05j à dose dégressive.
+EXP : patient pèse 60kg, on lui prescrit :
+03	cp Solupred 20mg pdt 05j
+02	cp Solupred 20mg pdt 05j
+01	cp Solupred 20mg pdt 05j
+2)	Ischémique
+Aspegic sachet 100mg/j
+Praxilene cp 200 *2/j
+3)	Infectieuse
+Aciclovir cp 200 : 01 cp *3/j
+En pratique, c’est surtout inflammatoire.
+-	Neurovit cp : 01 cp *2/j
+-	Larmes artificielles 01 gtte *4/j
+(Siccafluid, Artilect, Hyfrech, Fluidabak..)
+-	Pansement oculaire
+-	Lettre pour rééducation fonctionnelle après 48h de début chez un médecin rééducateur.
+-	Le chewing-gum est CI.
+
+6.	VERTIGE PERIPHERIQUE
+-	Rotatoire
+-	Positionnel (aggravé par le changement de la position)
+-	Nausées et/ou vms
+-	Nystagmus (au moment de la crise).
+-	Pas de perte de conscience.
+-	Au moment de la crise, il ne peut pas marcher.
+Là on lui donne : 
+Tanganil inj 500 : 02 amp en perfusion 
++ 01 amp Primperan dans 100 – 500 cc SSI.
+TRT : 
+-	Tanganil cp 500mg → 01 bte
+01 cp *3/j
+-	Betaserc cp 24mg → 01 bte
+01 cp *2/j
+(Betaserc est un trt étiologique va ↓ la pression des liquide labyrinthiques).
+
+7.	EPISTAXIS
+Leur PEC est selon leur abondance.
+1)	Grande abondance
+-	Saignement actif (nez + bouche), urgence vitale car il peut aller jusqu’au état de choc hypo-volumique (hémorragique).
+-	D’abord, on met un abord, puis Méchage de till gras (pdt 48h).
+Dicynone en IV : 02 amp (adulte)
+Dicynone en IV : 01 amp (enfant)
+(Dicynone c’est un vasoconstricteur qui lutte contre la fragilité des vx).
+-	On libère le malade avec :
+Augmentin (pour éliminer la surinfection de méchage).
+Dicynone cp 02 cp *3/j adulte, (01 cp*3/j enfant) pdt 3 à 4j.
+2)	Moyenne abondance
+-	Mouchage (pour éliminer les caillots sanguins qui consomment les facteurs de la coagulation).
+-	Compression bi-digitale pdt 10 min.
+-	Pas de CI de Dicynone.
+-	Si persistance du saignement, on fait un autre mouchage + compression bi-digitale pdt 10 min.
+-	Si arrêt : libération du malade
+-	Si persistance : méchage + Augmentin
+Le méchage est tjr bilatéral.
+3)	Faible abondance
+-	Mouchage
+-	Compression bi-digitale pdt 10 min
+-	+/- Dicynone en IV
+-	Si arret : on libère le malade avec :
+Dicynone 01 cp *2j
+HEC pmd 01 app/j
+NB : en cas de pic tentionnel, il faut ↓ la TA d’abord, car le méchage n’a rien fait avec le pic et le saignement va persister.
+
+8.	ADP CERVICALES
+-	Chroniques > 03 semaines, on l’oriente vers un spécialiste.
+-	Aigues < 03 semaines : on cherche du foyer dans la tête (teigne, plaie, furoncle, aphte, angine, otite, abcès dentaire… etc).
+-	On traite l’étiologie.
+-	Si on ne trouve rien, on traite les ADP par les macrolides (Josacine, Zeclar, Rovamycine….)
+•	Rovadal sirop 150000 UI/kg/j, en 2 à 3 : 07 – 10j.
+•	Rovamycine 1.5 MUI 01 cp*3/j : enfant > 30 kg
+•	Rovamycine 03 MUI 01 cp*3/j : adulte.
+Durée 07 – 10 j.
+-	Si n’y a pas de guérison, orientation vers ORL.

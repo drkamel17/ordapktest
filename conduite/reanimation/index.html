@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réanimation - Conduite a Tenir</title>
+    <meta name="description" content="Conduites a tenir en Réanimation">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; min-height: 100vh; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 700px; width: 100%; }
+        h1 { text-align: center; color: var(--primary-color); margin-bottom: 5px; }
+        .subtitle { text-align: center; color: var(--text-muted); margin-bottom: 30px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .buttons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+        .cta-button { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 15px; background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border: 2px solid #e0e0e0; border-radius: 10px; text-decoration: none; color: var(--text-main); font-weight: 600; transition: all 0.3s ease; text-align: center; font-size: 0.9em; }
+        .cta-button:hover { border-color: var(--primary-color); transform: translateY(-2px); box-shadow: 0 5px 15px rgba(231, 76, 60, 0.2); }
+        .cta-button i { font-size: 1.3em; color: var(--primary-color); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour aux specialites</a>
+        
+        <h1><i class="fas fa-heart-pulse"></i> Réanimation</h1>
+        <p class="subtitle">Conduites a tenir en urgence</p>
+        
+        <div class="buttons-grid">
+            <a href="arret-cardio-respiratoire.html" class="cta-button"><i class="fas fa-heart-broken"></i> ACR</a>
+            <a href="choc-anaphylactique.html" class="cta-button"><i class="fas fa-allergies"></i> Choc anaphylactique</a>
+            <a href="etat-de-choc.html" class="cta-button"><i class="fas fa-tachometer-alt"></i> État de choc</a>
+            <a href="surdosage-paracetamol.html" class="cta-button"><i class="fas fa-pills"></i> Surdosage Paracétamol</a>
+            <a href="intoxication-co.html" class="cta-button"><i class="fas fa-smog"></i> Intoxication CO</a>
+            <a href="polytraumatisme.html" class="cta-button"><i class="fas fa-user-injured"></i> Polytraumatisme</a>
+        </div>
+    </div>
+</body>
+</html>

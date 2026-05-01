@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bradycardie - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-heart-pause"></i> Bradycardie</h1>
+        
+        <h2>Definition</h2>
+        <p>Frequence cardiaque inferieure a 50 bpm.</p>
+
+        <h2>Prise en Charge IAO</h2>
+        <ul>
+            <li><strong>Constantes :</strong> PAS, PAD, FC, FR, SpO2, Dextro</li>
+            <li><strong>ECG</strong></li>
+            <li><strong>Glycemie capillaire</strong></li>
+        </ul>
+
+        <h2>Signes de Gravite</h2>
+        <ul>
+            <li><strong>Collapsus</strong></li>
+            <li><strong>Trouble de conscience</strong></li>
+            <li><strong>Syncope</strong></li>
+            <li><strong>Cause sinusale</strong> (FC > 6 L/min)</li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>SAUV</strong></li>
+        </ul>
+
+        <h2>Bilan</h2>
+        <ul>
+            <li><strong>NFS, plaquettes</strong></li>
+            <li><strong>TP, TCA</strong></li>
+            <li><strong>BHC</strong></li>
+            <li><strong>Ionogramme, creatininemie</strong></li>
+            <li><strong>Lactatemie</strong></li>
+            <li><strong>GDS veineux</strong></li>
+            <li><strong>Troponine</strong></li>
+        </ul>
+
+        <h2>Traitement</h2>
+        
+        <h3>Pas de traitement si non symptomatique</h3>
+
+        <h3>Si symptomatique (collapsus, trouble de conscience, syncope)</h3>
+        <div class="posology">
+            <p><strong>Remplissage vasculaire prudent si collapsus :</strong></p>
+            <p><span class="drug-name">Serum physiologique</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 1 000 mL en 1 heure</li>
+            </ul>
+            <p><strong>Oxygene au masque a haute concentration</strong></p>
+        </div>
+
+        <h3>1ere intention - Cause sinusale (FC > 6 L/min)</h3>
+        <div class="posology">
+            <p><span class="drug-name">Atropine</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 0,5 mg IVD</li>
+                <li><strong>Renewable :</strong> toutes les 3 minutes</li>
+                <li><strong>Dose max :</strong> 2 mg</li>
+                <li><strong>Contre-indications :</strong> transplantation cardiaque</li>
+            </ul>
+            <p><strong>Traitement de la cause :</strong></p>
+            <ul>
+                <li>Intoxication betabloquants (P87)</li>
+                <li>Intoxication digitaliques (P90)</li>
+                <li>Intoxication inhibiteurs calciques (P93)</li>
+                <li>Hypothermie (P72)</li>
+            </ul>
+        </div>
+
+        <h3>2e intention - Si echec</h3>
+        <div class="posology">
+            <p><span class="drug-name">Isoprealine</span> (<span class="drug-commercial">Isuprel</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 0,25 mg/h IVSE</li>
+                <li><strong>Augmentation :</strong> par palier de 0,25 mg/h jusqu'a FC > 60</li>
+                <li><strong>CI :</strong> ischemie myocardique</li>
+            </ul>
+            <p><strong>OU :</strong></p>
+            <p><span class="drug-name">Dopamine</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 5 µg/kg/min IVSE</li>
+                <li><strong>Augmentation :</strong> par palier de 5 µg/kg/min</li>
+                <li><strong>Dose max :</strong> 20 µg/kg/min IVSE</li>
+            </ul>
+        </div>
+
+        <h3>3e intention - Si echec</h3>
+        <div class="posology">
+            <p><span class="drug-name">Adrenaline</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 0,5 mg/h IVSE</li>
+                <li><strong>Augmentation :</strong> par palier de 0,5 mg/h</li>
+            </ul>
+            <p><strong>Entrainement electro-systolique externe</strong></p>
+        </div>
+
+        <h2>Conditionnement</h2>
+        <ul>
+            <li><strong>Scope, PANI, SpO2</strong></li>
+            <li><strong>FR, conscience, diures</strong></li>
+            <li><strong>VVP :</strong> serum physiologique en garde veine : 500 mL/jour</li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>USIC</strong> avec possibilite d'entrainement electro-systolique en urgence</li>
+        </ul>
+
+        <h2>References</h2>
+        <ul>
+            <li>Prise en charge des bradycardies. Protocole URG' de Garde 2019-2020.</li>
+        </ul>
+    </div>
+</body>
+</html>

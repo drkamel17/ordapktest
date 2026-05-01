@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Dr Daoudi">
+    <title>C-A-T - Medical App</title>
+    <meta name="description" content="Scores Médicaux, Médicaments Dz, Ordonnances Types et Conduite à Tenir">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #7c3aed;
+            --bg-gradient: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-gradient);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--text-main);
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header i {
+            font-size: 4em;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .header h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: var(--text-muted);
+            max-width: 500px;
+            margin: 0 auto 30px;
+            line-height: 1.5;
+        }
+
+        /* شبكة الأزرار الجديدة */
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8fafc;
+            color: var(--text-main);
+            text-decoration: none;
+            border-radius: 16px;
+            font-weight: 600;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
+            gap: 15px;
+        }
+
+        .cta-button i {
+            font-size: 1.5em;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px);
+            background-color: white;
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1);
+            color: var(--primary-color);
+        }
+
+        /* ألوان مخصصة لكل أيقونة لتمييزها بصرياً */
+        .btn-certif i { color: #2563eb; }
+        .btn-ord i { color: #9333ea; }
+        .btn-vaccin i { color: #16a34a; }
+        .btn-dece i { color: #dc2626; }
+        .btn-score i { color: #ea580c; }
+        .btn-med i { color: #0891b2; }
+        .btn-type i { color: #4f46e5; }
+        .btn-guide i { color: #475569; }
+        .btn-prev i { color: #0891b2; }		
+		.btn-medic i { color: #ea580c; }
+
+        /* قسم الإدارة والتعليقات بشكل منفصل تحت */
+        .admin-section {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px dashed #e2e8f0;
+        }
+
+        .admin-btn {
+            flex: 1;
+            padding: 12px;
+            font-size: 0.9em;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .features {
+            text-align: left;
+            margin-top: 40px;
+            padding: 30px;
+            background: #f1f5f9;
+            border-radius: 20px;
+        }
+
+        .features h2 {
+            margin-top: 0;
+            font-size: 1.4em;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95em;
+            color: var(--text-muted);
+        }
+
+        .feature-list i {
+            color: #10b981;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: var(--text-muted);
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+@media (max-width: 600px) {
+            .container { padding: 15px; }
+            .header h1 { font-size: 1.4em; }
+            .subtitle { font-size: 0.9em; }
+            .buttons-grid { grid-template-columns: 1fr; gap: 10px; }
+            .cta-button { padding: 12px; font-size: 0.9rem; }
+            .cta-button i { width: 35px; height: 35px; font-size: 1.1em; }
+            .admin-section { flex-direction: column; }
+            .admin-btn { width: 100%; }
+        }
+        
+        @media (max-width: 400px) {
+            .header h1 { font-size: 1.1em; }
+            .cta-button span { font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="header" style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <div style="text-align: center;">
+                <i class="fas fa-user-doctor"></i>
+                <h1>C-A-T - Medical App</h1>
+                <p class="subtitle">Scores Médicaux, Médicaments Dz, Ordonnances Types et Conduite à Tenir.</p>
+            </div>
+        </div>
+        
+<div class="buttons-grid">
+
+   
+            <a href="ordonnance type/mobile.html" class="cta-button" target="_blank">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Ordonnance Mobile</span>
+            </a>
+
+            <a href="ordonnance type/ord_type.html" class="cta-button btn-type" target="_blank">
+                <i class="fas fa-notes-medical"></i>
+                <span>Ordonnance Type</span>
+                
+            </a>
+         
+            
+            <a href="conduite/index.html" class="cta-button" target="_blank" style="position: relative;">
+                <i class="fas fa-stethoscope"></i>
+                <span>Conduite a Tenir</span>
+            </a>
+            
+            <a href="score/index.html" class="cta-button btn-score" target="_blank">
+                <i class="fas fa-calculator"></i>
+                <span>Scores Médicaux</span>
+            </a>
+			 <a href="medicaments/index.html" class="cta-button btn-medic" target="_blank">
+                <i class="fas fa-pills"></i>
+                <span>Drogue d'urgence</span>
+            </a>
+            
+            <a href="medicamentdz/index.html" class="cta-button btn-med" target="_blank">
+                <i class="fas fa-pills"></i>
+                <span>Médicaments Dz</span>
+            </a>
+            
+<a href="https://notes-sante-dz.vercel.app/" class="cta-button btn-prev" target="_blank">
+                <i class="fas fa-clipboard-check"></i>
+                <span>Prevention</span>
+            </a>
+
+            <a href="radiologie/index.html" class="cta-button" target="_blank">
+                <i class="fas fa-x-ray"></i>
+                <span>Telethorax (Dr HOURI)</span>
+            </a>
+              
+        </div>
+
+        <div class="admin-section">
+            <a href="admin.html" class="admin-btn" style="background: #fee2e2; color: #b91c1c;" target="_blank">
+                <i class="fas fa-lock"></i> Administration
+            </a>
+            <a href="commentaire/index.html" class="admin-btn" style="background: #f3e8ff; color: #7e22ce;" target="_blank">
+                <i class="fas fa-comment-dots"></i> Propositions & Commentaires
+            </a>
+        </div>
+        
+
+        
+        <p class="footer">
+            Créé par Dr Daoudi | Application médicale professionnelle
+        </p>
+    </div>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(reg => {
+    console.log('SW registered:', reg.scope);
+    if (reg.waiting) {
+      reg.waiting.postMessage('SKIP_WAITING');
+    }
+    reg.addEventListener('updatefound', () => {
+      const newWorker = reg.installing;
+      newWorker.addEventListener('statechange', () => {
+        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+          newWorker.postMessage('SKIP_WAITING');
+        }
+      });
+    });
+  }).catch(err => console.log('SW error:', err));
+}
+</script>
+</body>
+</html>

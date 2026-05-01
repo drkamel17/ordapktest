@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html><!-- DW6 --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Medicalcul - Score PAS (Pediatric Appendicitis Score) ~ Chirurgie Viscérale</title>
+
+<meta name="viewport" content="width=device-width">
+<script type="text/javascript" src="./Medicalcul - Score PAS (Pediatric Appendicitis Score) ~ Chirurgie Viscérale_files/_scripts.js.تنزيل"></script>
+<!-- <script type="text/javascript">f_ChooseCss();</script> -->
+<link rel="stylesheet" href="./Medicalcul - Score PAS (Pediatric Appendicitis Score) ~ Chirurgie Viscérale_files/styles.css">
+
+<script type="text/javascript">
+// ===========================================================================================
+// Fonction de calcul de la page
+function f_Calculer()
+{
+	// calcul du résultat
+	var Res = 0;
+	for(var i=0; i<8; i++)
+		Res += f_GetRadioValue('vItem'+i)*1;
+
+	// Affichage du résultat
+	document.Form.Resultat.value = Res;
+
+	try { MSSAndroidFunction.storeHistory(f_GetFilename(), "Score PAS (Pediatric Appendicitis Score)", "chirurgie_viscerale", "Score:", Res); } catch(e) {}
+}
+// ======================================================================================
+</script>
+<style>.BDTLL_status {
+    cursor: pointer;
+    display: inline;
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3BhZ2VzL2NvbXBvbmVudHMvdG9vbHRpcC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixXQUFXO0lBQ1gsWUFBWTtBQUNoQiIsInNvdXJjZXNDb250ZW50IjpbIi5CRFRMTF9zdGF0dXMge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBkaXNwbGF5OiBpbmxpbmU7XG4gICAgbWFyZ2luLXJpZ2h0OiAzcHg7XG4gICAgd2lkdGg6IDE2cHg7XG4gICAgaGVpZ2h0OiAxNnB4O1xufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.BDTLL_icon_ok {
+    background-image: url(data:image/png;base64,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);
+}
+</style>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+    
+    .header {
+        background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .header img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .content {
+        padding: 30px;
+    }
+    
+    .criteria-section {
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .criteria-item {
+        display: flex;
+        align-items: flex-start;
+        margin: 12px 0;
+        padding: 12px;
+        background: white;
+        border-radius: 3px;
+        border-left: 4px solid #3498db;
+        transition: all 0.3s ease;
+    }
+    
+    .criteria-item:hover {
+        background: #f0f8ff;
+        transform: translateX(5px);
+    }
+    
+    .criteria-item input[type="checkbox"] {
+        margin-right: 15px;
+        transform: scale(1.3);
+        margin-top: 3px;
+    }
+    
+    .calculate-btn {
+        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px auto;
+        display: block;
+        font-weight: bold;
+    }
+    
+    .calculate-btn:hover {
+        background: linear-gradient(135deg, #2980b9 0%, #2573a7 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .result-display {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin: 25px 0;
+        padding: 20px;
+        background: #e8f4fd;
+        border-radius: 8px;
+        border: 3px solid #3498db;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .interpretation, .references {
+        margin: 25px 0;
+        line-height: 1.7;
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        border-left: 4px solid #28a745;
+    }
+    
+    .interpretation h3, .references h3 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 8px;
+        margin-top: 0;
+    }
+    
+    .interpretation ul {
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+    
+    .interpretation li {
+        margin: 5px 0;
+    }
+    
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background: #2c3e50;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    .footer a {
+        color: #3498db;
+        text-decoration: none;
+        margin: 0 12px;
+        font-weight: bold;
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <img src="./Medicalcul - Score PAS (Pediatric Appendicitis Score) ~ Chirurgie Viscérale_files/zzimgspe_chirurgie_viscerale.png" alt="Chirurgie Viscérale">
+        <h1>Score PAS (Pediatric Appendicitis Score)</h1>
+        <p>Évaluation de la probabilité d'appendicite aiguë chez l'enfant</p>
+    </div>
+    
+    <div class="content">
+        <form name="Form" id="Form">
+            <div class="criteria-section">
+                <h3 style="color: #0000FF; margin-top: 0;">Items présents :</h3>
+                
+                <div class="criteria-item">
+                    <input name="vItem0" id="vItem0" type="checkbox" value="2" onclick="f_Calculer()">
+                    <label for="vItem0">Douleur abdominale du quadrant inférieur droit lors de la toux ou la percussion abdominale. (2 points)</label>
+                </div>
+                
+                <div class="criteria-item">
+                    <input name="vItem1" id="vItem1" type="checkbox" value="1" onclick="f_Calculer()">
+                    <label for="vItem1">Leucocytes > 10 000/mm³. (1 point)</label>
+                </div>
+                
+                <div class="criteria-item">
+                    <input name="vItem2" id="vItem2" type="checkbox" value="1" onclick="f_Calculer()">
+                    <label for="vItem2">Migration de la douleur. (1 point)</label>
+                </div>
+                
+                <div class="criteria-item">
+                    <input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="f_Calculer()">
+                    <label for="vItem3">Anorexie. (1 point)</label>
+                </div>
+                
+                <div class="criteria-item">
+                    <input name="vItem4" id="vItem4" type="checkbox" value="1" onclick="f_Calculer()">
+                    <label for="vItem4">Nausées ou vomissements. (1 point)</label>
+                </div>
+                
+                <div class="criteria-item">
+                    <input name="vItem5" id="vItem5" type="checkbox" value="2" onclick="f_Calculer()">
+                    <label for="vItem5">Sensibilité de la fosse iliaque droite. (2 points)</label>
+                </div>
+                
+                <div class="criteria-item">
+                    <input name="vItem6" id="vItem6" type="checkbox" value="1" onclick="f_Calculer()">
+                    <label for="vItem6">Fièvre. (1 point)</label>
+                </div>
+                
+                <div class="criteria-item">
+                    <input name="vItem7" id="vItem7" type="checkbox" value="1" onclick="f_Calculer()">
+                    <label for="vItem7">Polynucléaires neutrophiles > 75%. (1 point)</label>
+                </div>
+            </div>
+            
+            <button type="button" class="calculate-btn" onclick="f_Calculer()">Calculer</button>
+            
+            <div class="result-display">
+                Score : <input name="Resultat" type="text" id="Resultat" style="border:none; background:transparent; text-align:center; font-size:28px; font-weight:bold; color:#2c3e50; width:80px;" readonly="readonly">
+            </div>
+        </form>
+        
+        <div class="interpretation">
+            <h3>Interprétation</h3>
+            <p>Le score PAS (Pediatric Appendicitis Score) est un score clinico-biologique permettant d'évaluer la probilité d'une appendicite aigue dans le cadre d'une douleur abdominale chez l'enfant. Ce score n'a pas été évalué chez l'adulte. Il est très proche du score d'Alvarado, souvent utilisé de façon concomittante.</p>
+            <p>Les valeurs sont:</p>
+            <ul>
+                <li><strong>Score ≤ 5 :</strong> appendicite peu probable.</li>
+                <li><strong>Score ≥ 6 :</strong> appendicite probable.</li>
+                <li><strong>Score ≥ 7 :</strong> appendicite très probable.</li>
+            </ul>
+        </div>
+        
+        <div class="references">
+            <h3>Références</h3>
+            <p>Samuel M. Pediatric Appendicitis Score. J. Pediatr. Surg. 2002 ; 37:877-881.</p>
+        </div>
+    </div>
+    
+  <div class="footer">
+            <div class="footer-links">
+                <a href="index.html">[Racine]</a>
+            </div>
+          
+        </div>
+</div>
+
+
+
+</body></html>

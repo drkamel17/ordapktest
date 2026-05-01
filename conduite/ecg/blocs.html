@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocs - ECG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #2ecc71; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #3498db; margin-top: 20px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-ban"></i> Blocs</h1>
+        
+        <h2>Blocs auriculo-ventriculaires (BAV)</h2>
+        
+        <h3>BAV 1er degre</h3>
+        <ul>
+            <li>PR long: > 5mm</li>
+            <li>PR constant (allongement mais regulier)</li>
+            <li>Generalement benin</li>
+        </ul>
+        
+        <h3>BAV 2eme degre</h3>
+        <ul>
+            <li><strong>Mobitz 1 (Wenckebach):</strong> Allongement progressif de PR + blocage</li>
+            <li><strong>Mobitz 2:</strong> Blocage soudain (pas d'allongement progressif)</li>
+            <li>Plus grave que Mobitz 1</li>
+        </ul>
+        
+        <h3>BAV 3eme degre (total)</h3>
+        <div class="important">
+            <strong>Toutes les P sont bloquees</strong>
+            <ul>
+                <li>Rythme atrial et ventriculaire independants mais reguliers</li>
+                <li>Dissociation P-QRS</li>
+                <li>Orientation cardiologie en urgence</li>
+                <li>Possible pacemaker</li>
+            </ul>
+        </div>
+        
+        <h2>Blocs de branche</h2>
+        
+        <h3>Bloc deBranche Droit (BBD)</h3>
+        <ul>
+            <li>QRS large: = ou > 3mm</li>
+            <li>Aspect en M en V1V2</li>
+            <li>Onde S trainante en V5V6</li>
+            <li>Souvent benin</li>
+        </ul>
+        
+        <h3>Bloc de Branche Gauche (BBG)</h3>
+        <ul>
+            <li>QRS large: = ou > 3mm</li>
+            <li>Aspect en M en V5V6</li>
+            <li>Onde S trainante en V1V2</li>
+            <li><strong>Peut masquer un SCA</strong></li>
+        </ul>
+        
+        <div class="warning">
+            <strong>BBG de novo = IDM jusqu'a preuve du contraire</strong>
+            <ul>
+                <li>Comparaison avec ECG anterieur</li>
+                <li>Critères de Sgarbossa</li>
+                <li>Dosage des troponines</li>
+            </ul>
+        </div>
+        
+        <h2>Wolf-Parkinson-White (WPW)</h2>
+        <div class="important">
+            <strong>PR court &lt; 3mm</strong>
+            <ul>
+                <li>Angle ou triangle Delta</li>
+                <li>Risque de FA, FV et mort subite</li>
+                <li>Activite sportive contre-indiquee</li>
+                <li>Orientation cardiologie en urgence</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

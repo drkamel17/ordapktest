@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acidose Metabolique - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css-all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .drug { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-flask"></i> Acidose Metabolique</h1>
+        <p><strong>P7 - SFMU/SRLF - Actualisation : Janvier 2019</strong></p>
+        
+        <h2>Definition</h2>
+        <p>pH plasmatique <= 7,38 et [HCO3-] < 20 mmol/L et PCO2 < 40 mmHg.</p>
+        
+        <h2>Etiologies</h2>
+        <div class="warning">
+            <ul>
+                <li><strong>Acidocetose</strong> (glycemie > 12 mM) (P6)</li>
+                <li><strong>Lactatemie > 5 mM = acidose lactique :</strong></li>
+                <ul>
+                    <li>Convulsion (P30)</li>
+                    <li>Sepsis (P24)</li>
+                    <li>Lyse tumorale</li>
+                    <li>Intoxications : CO (P79), biguanides (P88), aspirine (P77), glycols (P92), methanol (P82)</li>
+                </ul>
+                <li><strong>Lactatemie < 5 mM :</strong> intoxications</li>
+                <li><strong>Insuffisance renale</strong> (P75)</li>
+            </ul>
+        </div>
+        
+        <h2>Prise en Charge IAO</h2>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>PAS, PAD, FC, FR, T°C, SpO2, Dextro</li>
+            <li>Cetonie</li>
+            <li>ECG</li>
+            <li>Lactatemie</li>
+        </ul>
+        
+        <h3>Orientation</h3>
+        <div class="success">
+            <p><strong>Box</strong></p>
+        </div>
+        <div class="important">
+            <p><strong>SAUV</strong> si detresse vitale</p>
+        </div>
+        
+        <h2>Prise en Charge Medicale</h2>
+        
+        <h3>Bilan initial</h3>
+        <ul>
+            <li>NFS, plaquettes, CRP</li>
+            <li>Iono</li>
+            <li>Calcul du trou anionique (TA) : TA = Na - Cl - HCO3 (mmol/L)</li>
+            <li>Valeur normale : 12 +/- 4 mmol/L</li>
+            <li>Calcul du trou anionique corrige (TAc) : TAc = Na - (Cl + HCO3) + 0,25 x (40 - Albuminemie)</li>
+            <li>Valeur normale : 12 +/- 4 mmol/L</li>
+            <li>Uree, creatinine : recherche insuffisance renale aigue</li>
+            <li>Albuminemie</li>
+            <li>Glycemie, cetonemie</li>
+            <li>GDS, lactates</li>
+        </ul>
+        
+        <h3>TA ou TAc normal</h3>
+        <div class="warning">
+            <p>Acidose hyperchloremique</p>
+            <ul>
+                <li>Accumulation d'un acide dont l'anion est le chlore</li>
+                <li>Solute de remplacement riche en chlore (serum physiologique)</li>
+            </ul>
+        </div>
+        
+        <h2>Traitement</h2>
+        
+        <h3>Etiologique</h3>
+        <p>Voir protocoles specifiques +++</p>
+        
+        <h3>Correction d'un etat de choc</h3>
+        <p>(P23) Choc hemorragique</p>
+        
+        <h3>Symptomatique</h3>
+        
+        <h4>Acidose chronique moderee (pH > 7,25, HCO3 > 15)</h4>
+        <div class="drug">
+            <strong>Eau de Vichy :</strong> 1 litre apporte 3 a 4 g de HCO3-
+            <br/><br/>
+            OU : <strong>THAM</strong> pauvre en sodium
+        </div>
+        
+        <h4>Acidose metabolique avecpertes digestives ou renales de bicarbonates</h4>
+        <div class="drug">
+            <strong>Bicarbonate de Na</strong> seulement dans les acidoses metaboliques dues a des pertes digestives ou renales de bicarbonates en cas de mauvaise tolerance clinique ou chez les patients graves presentant une acidemie profonde (pH <= 7,20, PaCO2 < 45 mmHg) associee a une insuffisance renale
+            <br/><br/>
+            <strong>Objectif :</strong> pH = 7,28 et HCO3 = 15 mM
+        </div>
+        
+        <h4>Posologie bicarbonate</h4>
+        <div class="warning">
+            <ul>
+                <li><strong>THAM :</strong> la posologie (en mmol) est calculee par la formule : 0,3 x poids (kg) x deficit basique (base excess [BE]) (mmol/L)</li>
+                <li>La moitie de la dose est perfusee en 10 minutes, le reste en 1 heure</li>
+                <li>La dose maximale est de 15 mmol/kg/j</li>
+                <li>Posologie : 1 a 2 mmol/kg en perfusion lente</li>
+                <li>Utiliser le bicarbonate a 4,2 pour mille (0,5 mmol par mL perfuse)</li>
+                <li>Le pH est controle 30 min apres l'arret de la perfusion</li>
+            </ul>
+        </div>
+        
+        <h3>Epuration extrarenale</h3>
+        <div class="important">
+            <p>Si etat de choc avec pH <= 7,15</p>
+        </div>
+        
+        <h2>Reference</h2>
+        <p>SFMU/SRLF. Diagnostic et prise en charge de l'acidose metabolique. RFE. Janvier 2019.</p>
+    </div>
+</body>
+</html>

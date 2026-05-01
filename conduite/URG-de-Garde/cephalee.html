@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cephalee - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css-all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .dosage { background-color: #e8f4f8; padding: 15px; margin: 10px 0; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-head-side-virus"></i> Cephalee</h1>
+        
+        <h2>DÉFINITION</h2>
+        <p>Douleur localisée au niveau du crane. La céphalée est un symptome fréquent qui peut révéler des pathologies graves.</p>
+
+        <h2>PRÉSENCE D'AU MOINS UN SIGNE DE GRAVITÉ</h2>
+        <div class="warning">
+            <ul>
+                <li>Céphalee soudaine debut ("en coup de tonnerre")</li>
+                <li>Fièvre élevée</li>
+                <li>Troubles de la conscience</li>
+                <li>Déficit neurologique focal</li>
+                <li>Raideur de nuque</li>
+                <li>PTD (Pétéchies)</li>
+                <li>Anticoagulation</li>
+                <li>Terrain immunodéprimé</li>
+                <li>Cancer</li>
+            </ul>
+        </div>
+
+        <h2>PRISE EN CHARGE IAO</h2>
+        <h3>Bilan</h3>
+        <ul>
+            <li>PAS, PAD, FC, FR, T°C, SpO2</li>
+            <li>Examen neurologique complet</li>
+            <li>Recherche de signes méningés</li>
+        </ul>
+
+        <h3>Orientation</h3>
+        <ul>
+            <li><strong>SAUV</strong> si signes de gravité</li>
+            <li><strong>Box</strong> sinon</li>
+        </ul>
+
+        <h2>EXAMENS COMPLÉMENTAIRES</h2>
+        <ul>
+            <li><strong>Si signes de gravité :</strong> TDM cérébrale en urgence</li>
+            <li><strong>Ponction lombaire :</strong> Si suspicion de méningite (après TDM si nécessaire)</li>
+            <li><strong>NFS, CRP, hémocultures :</strong> Si fièvre</li>
+        </ul>
+
+        <h2>TRAITEMENT</h2>
+        
+        <h3>Étiologique</h3>
+        <p>Des que le diagnostic est suspecté</p>
+
+        <h3>Antalgiques</h3>
+        <div class="dosage">
+            <p><span class="drug-name">Paracétamol</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 1 g IV</li>
+            </ul>
+        </div>
+
+        <h3>Si migraine</h3>
+        <div class="dosage">
+            <p><span class="drug-name">Paracétamol</span> + <span class="drug-name">Metoclopramide</span> (<span class="drug-commercial">Primperan</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 1 g IV + 10 mg IV</li>
+            </ul>
+            <p>OU</p>
+            <p><span class="drug-name">Triptan</span> (<span class="drug-commercial">Imigran</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 6 mg SC</li>
+                <li><strong>CI :</strong> pathologie cardiovasculaire</li>
+            </ul>
+        </div>
+
+        <h3>Si méningite bactérienne</h3>
+        <div class="important">
+            <p><strong>ANTIBIOTHÉRAPIE EN URGENCE</strong></p>
+            <ul>
+                <li>Ceftriaxone 2 g IV</li>
+                <li>+ Vancomycine 30 mg/kg/j</li>
+            </ul>
+        </div>
+
+        <h2>RÉFÉRENCES</h2>
+        <ul>
+            <li>SFMU - Protocoles d'urgence 2019</li>
+        </ul>
+    </div>
+</body>
+</html>

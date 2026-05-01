@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acces Palustre - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 15px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .dosage { background-color: #e8f5e9; padding: 10px; margin: 10px 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-bug"></i> Acces Palustre</h1>
+        <p><strong>F. Adnet - Actualisation : 20/8/2018</strong></p>
+        
+        <h2>Definition</h2>
+        <p>Maladie parasitaire (famille des Plasmodium) transmise par l'anophele femelle. L'acces palustre se caracterise par une fievre elevee, des frissons, des tremblements, une sensation de froid avec sueurs abondantes et des troubles digestifs.</p>
+
+        <h2>Signes de Gravite - Biologiques</h2>
+        <div class="warning">
+            <ul>
+                <li>Anemie profonde (Hb < 7 g.dL-1)</li>
+                <li>Hypoglycemie < 2,2 mmol.L-1</li>
+                <li>Acidose metabolique (pH < 7,35)</li>
+                <li>Parasitemie > 4 %</li>
+                <li>Hyperlactatemie > 2 mmol.L-1</li>
+                <li>Creatininemie > 265 µmol.L-1</li>
+                <li>Diurese < 400 mL/24 h malgre hydratation</li>
+                <li>Bilirubine totale > 50 µmol.L</li>
+            </ul>
+        </div>
+
+        <h2>Prise en Charge IAO</h2>
+        <h3>Bilan</h3>
+        <ul>
+            <li>Dextro, FR, PAS, PAD, FC, T°C, SpO2, BU</li>
+            <li>ECG (obligatoire)</li>
+            <li>NFS, hemostase</li>
+            <li>Iono, creatinine, CRP, glycemie</li>
+            <li>Bilan hepatique</li>
+            <li>Goutte epaisse ou QBC ou frottis/goutte epaisse a 24 heures d'intervalle (H0, H24, H48) ou TDR (test de diagnostic rapide) et frottis</li>
+        </ul>
+
+        <h3>Orientation</h3>
+        <ul>
+            <li><strong>Box:</strong> Patient conscient sans complication</li>
+            <li><strong>SAUV:</strong> Signes neurologiques</li>
+        </ul>
+
+        <h2>Pas de Signe de Gravite - Acces Palustre Non Compleque</h2>
+
+        <h3>Traitement - Artemimol-piperaquine (Eurartesim®)</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Posologie:</strong> 3 cps (adulte < 75 kg) a H0, H24, H48 (9 cps au total a jeun)</li>
+                <li>ou 4 cps (adulte > 75 kg) a H0, H24, H48 (12 cps au total)</li>
+                <li><strong>Premiere prise aux urgences</strong> - on donne les 6 (ou 8) autres comprimes au patient</li>
+            </ul>
+        </div>
+
+        <h4>Contre-indications</h4>
+        <ul>
+            <li>Grossesse et allaitement</li>
+            <li>Hypokaliemie</li>
+            <li>QTc long</li>
+        </ul>
+
+        <h3>Si Contre-indication - Malarone®</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Posologie:</strong> 4 cps en une prise unique par jour au cours d'un repas pendant 3 jours consecutifs</li>
+                <li><strong>Premiere prise aux urgences</strong> - on donne les 8 autres comprimes au patient</li>
+            </ul>
+        </div>
+
+        <h4>Contre-indications</h4>
+        <ul>
+            <li>Insuffisance renale severe (DFG < 30 mL/min)</li>
+        </ul>
+
+        <h3>Si Vomissement - Quinine IV (Quinimax®)</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Posologie:</strong> 8 mg/kg sur 4 heures IVSE dans du G5 toutes les 8 heures (a debuter 4 heures apres la fin de la perfusion precedente)</li>
+                <li><strong>Surveillance:</strong> Glycemie/4 h</li>
+            </ul>
+        </div>
+
+        <h2>Recherche de Signes de Gravite - Cliniques</h2>
+        <ul>
+            <li>Trouble de la conscience (GCS < 11)</li>
+            <li>Convulsion</li>
+            <li>Detresse respiratoire (SpO2 < 92 %)</li>
+            <li>Collapsus</li>
+            <li>Ictere</li>
+            <li>Saignement anormal</li>
+        </ul>
+
+        <h2>Acces Palustre Grave</h2>
+        <div class="important">
+            <p><strong>Definition:</strong> Presence d'au moins un signe de gravite</p>
+        </div>
+
+        <h3>Traitement en Urgence - Artesunate (Malacef®)</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Posologie:</strong> 2,4 mg/kg IVSE (3 mL/min) a H0, H12, H24, puis toutes les 24 heures pendant 7 jours</li>
+                <li><strong>A injecter seul sur voie veineuse specifique</strong></li>
+                <li>Relais par Eurartesim® des apparition des signes de gravite: 3 cps (adulte < 75 kg) a H0, H24, H48 (9 cps au total a jeun) ou 4 cps (> 75 kg) a H0, H24, H48 (12 cps au total a jeun)</li>
+            </ul>
+        </div>
+
+        <h3>A Defaut - Quinine (Quinimax®)</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Dose de charge:</strong> 16 mg/kg sur 4 heures IVSE dans du G5</li>
+                <li><strong>Entretien:</strong> 8 mg/kg sur 4 heures IVSE dans du G10 toutes les 8 heures a debuter 4 heures apres la fin de la premiere perfusion</li>
+            </ul>
+        </div>
+
+        <h3>Coma</h3>
+        <ul>
+            <li>Intubation (F9)</li>
+            <li>Remplissage vasculaire constant: 500 mL de serum physiologique en 15 min</li>
+        </ul>
+
+        <h3>Convulsion</h3>
+        <ul>
+            <li>Voir Protocole P30</li>
+        </ul>
+
+        <h2>Criteria de Prise en Charge Ambulatoire</h2>
+        <p>(Tous les criteres presents)</p>
+        <ul>
+            <li>Absence de signes de gravite</li>
+            <li>Absence de vomissement</li>
+            <li>Parasitemie < 2 %</li>
+            <li>Plaquettes > 50 000/mm3</li>
+            <li>Hb > 10 g/dL</li>
+            <li>Creatininemie < 150 µmol.L-1</li>
+            <li>Mise a disposition du traitement</li>
+            <li>Absence de facteur de risques:
+                <ul>
+                    <li>Mauvaise observance</li>
+                    <li>IsolemeNt</li>
+                    <li>Grossesse</li>
+                    <li>Splenectomie, immunodepression</li>
+                    <li>Residence a proximite d'un etablissement hospitalier</li>
+                    <li>Disponibilite immediate de l'antipaludeen prescrit</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Prise en Charge Ambulatoire - Sous ATU</h3>
+        <ul>
+            <li>Prendre le numero de telephone - information patient</li>
+            <li>Verifier la premiere prise medicamenteuse de visu - formulaire ATU</li>
+            <li>Garder le patient au minimum 2 heures apres la premiere prise medicamenteuse</li>
+            <li>Si impossibilite pour le patient = ordonnance de controle: 4 heures apres la premiere prise</li>
+        </ul>
+
+        <h2>Suivi</h2>
+        <ul>
+            <li>RDV obligatoire a J3, J7, J28</li>
+            <li>Courrier au medecin</li>
+            <li>A faire pratiquer a J3, J7, J28:
+                <ul>
+                    <li>Frottis</li>
+                    <li>Goutte epaisse</li>
+                    <li>NFS</li>
+                    <li>Plaquettes</li>
+                    <li>ALAT</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Acces Palustre Non Compleque a Vivax ou Ovale</h2>
+        <h3>Traitement</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Nivaquine (chloroquine):</strong> 10 mg/kg a J1, 10 mg/kg a J2, 5 mg/kg a J3 soit 25 mg/kg en dose totale sur 3 jours. En une prise par jour.</li>
+            </ul>
+        </div>
+
+        <h3>Suivi</h3>
+        <ul>
+            <li>Les patients doivent etre revus ensuite avec verification de l'absence de deficit en G6PD</li>
+            <li>Traitement secondaire eventuel pour eviter les rechutes: <strong>Privaquine: 15 mg/j pendant 15 jours</strong></li>
+        </ul>
+
+        <h2>Femme Enceinte</h2>
+        <h3>Au 1er Trimestre</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Malarone®:</strong> 4 cps en une prise/j pendant 3 jours</li>
+            </ul>
+        </div>
+
+        <h3>Au 2e et 3e Trimestre</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Riamet®:</strong> 4 cps en une prise a H0, H8, H24, H36, H48, H60</li>
+            </ul>
+        </div>
+
+        <h2>Surveillance</h2>
+        <ul>
+            <li>Dosage de la quininemie (normale entre 10 et 15 mg.L-1) quotidienne</li>
+            <li>Glycemie (risque d'hypoglycemie)/4 h</li>
+        </ul>
+
+        <div class="success">
+            <p><strong>Reference:</strong> Prise en charge et prevention du paludisme d'importation. Mise a jour 2017 des RPC 2007. Societe de pathologie infectieuse de langue francaise. 2017.</p>
+        </div>
+    </div>
+</body>
+</html>

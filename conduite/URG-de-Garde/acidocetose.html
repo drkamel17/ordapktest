@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acidocetose - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-user-injured"></i> Acidocetose Diabetique</h1>
+        
+        <h2>Definition</h2>
+        <p>Acidocetose est la consequence d'une carence profonde en insuline. Elle est definie par une glycemie > 11 mM, une cetonurie ou une cetonemie > 3 mM et une acidose ou HCO3 < 15 mM par litre.</p>
+
+        <h2>Prise en Charge IAO</h2>
+        <ul>
+            <li><strong>Constantes :</strong> PAS, PAD, FC, FR, ECG, T°C, SpO2, Dextro, BU</li>
+            <li><strong>Cetone capillaire</strong></li>
+            <li><strong>ECG</strong></li>
+        </ul>
+
+        <h2>Signes de Gravite</h2>
+        <ul>
+            <li><strong>Acidose severe</strong> (pH < 7,1)</li>
+            <li><strong>Kaliemie elevee</strong> ou K+ > 5,5 mM</li>
+            <li><strong>Troubles de conscience</strong></li>
+            <li><strong>Vomissements persistants</strong></li>
+            <li><strong>Douleur abdominale severe</strong></li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>SAUV</strong></li>
+        </ul>
+
+        <h2>Bilan</h2>
+        <ul>
+            <li><strong>NFS</strong></li>
+            <li><strong>Ionogramme</strong></li>
+            <li><strong>Glycemie</strong></li>
+            <li><strong>GDS veineux (pH)</strong></li>
+            <li><strong>Cetoneemie</strong></li>
+            <li><strong>CRP</strong></li>
+            <li><strong>BHC</strong></li>
+            <li><strong>Phosphoremie</strong></li>
+            <li><strong>ECBU</strong></li>
+            <li><strong>Hemorcultures</strong> si fievre</li>
+        </ul>
+
+        <h2>Traitement</h2>
+        
+        <h3>Hydratation</h3>
+        <div class="posology">
+            <p><span class="drug-name">NaCl 0,9%</span></p>
+            <ul>
+                <li><strong>1 000 mL en 1 heure IVL</strong></li>
+                <li><strong>1 000 mL en 2 heures</strong></li>
+                <li><strong>1 000 mL en 4 heures</strong></li>
+            </ul>
+            <p><strong>Choix du solute selon glycemie :</strong></p>
+            <ul>
+                <li>Si dextro > 14 mmol/L : NaCl 0,9%</li>
+                <li>Si dextro < 14 mmol/L : G5 avec 4 g de NaCl par litre</li>
+            </ul>
+        </div>
+
+        <h3>Insulinotherapie</h3>
+        <div class="posology">
+            <p><strong>Objectif glycemique :</strong> 11 mM si cetonemie > 0,5 mM</p>
+            <p><span class="drug-name">Insuline rapide</span> (<span class="drug-commercial">Novorapid, Apidra, Humalog</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 0,1 UI/h/kg IVSE</li>
+                <li><strong>Dose max :</strong> 10 UI/h</li>
+                <li><strong>Voie :</strong> IVSE</li>
+            </ul>
+            <p><strong>Arreter des que cetonemie < 0,5 mM</strong></p>
+            <p><strong>Objectif de correction de la cetonemie :</strong> 0,5 mmol/L par heure</p>
+        </div>
+
+        <h3>Recharge potassique initiale</h3>
+        <div class="posology">
+            <p><span class="drug-name">KCl</span></p>
+            <ul>
+                <li>Si signe electrique d'hyperkaliemie ou K+ > 5,5 mM : pas de KCl dans les perfusions</li>
+                <li>Si K+ < 3,5 mM : <strong>arret insuline et avis</strong></li>
+                <li>Sinon : 2 g de KCl par litre de NaCl a partir du 3e litre</li>
+            </ul>
+        </div>
+
+        <h2>Surveillance</h2>
+        <ul>
+            <li><strong>Toutes les heures :</strong> dextro, conscience, FR, pouls, tension arterielle, diurese, temperature</li>
+            <li><strong>Toutes les 4 heures :</strong> ionogramme sanguin, glycemie, reserve alcaline, ECG, cetoneemie</li>
+            <li><strong>Iono et GDS veineux</strong> a 2 heures si acidose ou apport de KCl en IVSE (a 4 heures sinon)</li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>UHCD ou USC</strong> si acidose</li>
+            <li><strong>Bilan du lendemain :</strong> iono, glycemie, cetoneemie, HbA1c</li>
+        </ul>
+
+        <h2>References</h2>
+        <ul>
+            <li>Misras et al. Diabetic ketoacidosis in adult. BMJ 2015 ; 351 : h5660.</li>
+            <li>SFMU/SRLF. Diagnostic et prise en charge des acidoses metaboliques. RFE. Janvier 2019.</li>
+        </ul>
+    </div>
+</body>
+</html>

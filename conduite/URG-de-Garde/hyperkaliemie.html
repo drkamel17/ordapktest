@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperkaliemie - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-heart-broken"></i> Hyperkaliemie</h1>
+        
+        <h2>Definition</h2>
+        <p>Kaliemie > 5,5 mmol/L. URGENCE VITALE si K+ > 6,5 mmol/L ou anomalies ECG.</p>
+        
+        <h2>Diagnostic</h2>
+        <ul>
+            <li><strong>ECG :</strong> Onde T ample et pointue, elargissement du QRS</li>
+            <li><strong>Biologie :</strong> Hyperkaliemie > 5,5 mmol/L</li>
+        </ul>
+        
+        <h2>Prise en Charge</h2>
+        
+        <h3>Stabilisation membranaire (en urgence)</h3>
+        <div class="important">
+            <p><span class="drug-name">Gluconate de calcium</span> (<span class="drug-commercial">Ca Gluconate</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 1 a 2 ampoules de 120mg IVD (10-20 mL)</li>
+                <li>Action : protection myocardique (duree 30-60 min)</li>
+            </ul>
+            <p><strong>Si insuffisance renale :</strong> a refaire si persistance</p>
+        </div>
+        
+        <h3>Transfert intracellulaire du potassium</h3>
+        <div class="posology">
+            <p><strong>Option 1 : Insuline + Glucose</strong></p>
+            <ul>
+                <li><span class="drug-name">Insuline</span> (<span class="drug-commercial">Actrapid</span>) 10 UI IV</li>
+                <li>+ <span class="drug-name">SG</span> 30% : 250 mL IV (50 g de glucose)</li>
+                <li>Action : debut en 15-30 min, pic a 60 min</li>
+            </ul>
+            <p><strong>Option 2 : Salbutamol</strong></p>
+            <ul>
+                <li><span class="drug-name">Salbutamol</span> (<span class="drug-commercial">Ventoline</span>) 10-20 mg en nebulisation</li>
+            </ul>
+        </div>
+        
+        <h3>Elimination du potassium</h3>
+        <div class="posology">
+            <p><strong>Resines echangeuses :</strong></p>
+            <ul>
+                <li><span class="drug-name">Polystyrene sulfonate de sodium</span> (<span class="drug-commercial">Kayexalate</span>)</li>
+                <li><strong>Dose :</strong> 2 comprimes dans un grand bol d'eau /12h (ou 1 dose = 15g en lavement)</li>
+            </ul>
+            <p><strong>Dialyse :</strong> si K+ > 7 mmol/L + IRCsevere ou echec therapeutique</p>
+        </div>
+        
+        <h2>Conduite a Tenir selon l'importance</h2>
+        <div class="warning">
+            <p><strong>Hyperkaliemie legere (5,5-6 mmol/L) :</strong></p>
+            <ul>
+                <li>Stabilisation membranaire si ECG pathologique</li>
+                <li>Transfert intracellulaire</li>
+                <li>Surveillance</li>
+            </ul>
+        </div>
+        <div class="important">
+            <p><strong>Hyperkaliemie severe (> 6,5 mmol/L) :</strong></p>
+            <ul>
+                <li>Urgence absolue</li>
+                <li>Calcium IV immediatement</li>
+                <li>Insuline + Glucose</li>
+                <li>Considerer dialyse</li>
+            </ul>
+        </div>
+        
+        <h2>Surveillance</h2>
+        <ul>
+            <li><strong>ECG :</strong> continu</li>
+            <li><strong>Kaliemie :</strong> toutes les 2-4 heures</li>
+            <li><strong>Diurese :</strong> toutes les heures</li>
+        </ul>
+    </div>
+</body>
+</html>

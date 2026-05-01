@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meningites - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-brain"></i> Meningites</h1>
+        
+        <h2>Definition</h2>
+        <p>Inflammation des meninges d'origine infectieuse. Distinction entre meningite bacterienne et meningite virale. Les germes varient selon l'age : pneumocoque, meningocoque, Haemophilus influenzae type b, Listeria chez l'adulte.</p>
+
+        <h2>Signes de Gravite</h2>
+        <ul>
+            <li><strong>Troubles de conscience</strong> (GCS < 11)</li>
+            <li><strong>Signes de focalisation neurologique</strong></li>
+            <li><strong>Convulsions</strong></li>
+            <li><strong>Purpura</strong></li>
+            <li><strong>Deterioration hemodynamique</strong></li>
+            <li><strong>Coagulopathie</strong></li>
+            <li><strong>LCR trouble</strong></li>
+        </ul>
+
+        <h2>Bilan</h2>
+        <ul>
+            <li><strong>Constantes :</strong> PAS, PAD, FC, FR, T°C, SpO2, Dextro</li>
+            <li><strong>ECG</strong></li>
+            <li><strong>NFS</strong></li>
+            <li><strong>Ionogramme</strong></li>
+            <li><strong>Glycemie</strong></li>
+            <li><strong>Creatininemie</strong></li>
+            <li><strong>BHC</strong></li>
+            <li><strong>Hemorcultures</strong></li>
+            <li><strong>ECBU</strong></li>
+            <li><strong>Ponction lombaire (PL)</strong> - realisation obligatoire sauf CI</li>
+            <li><strong>Scanner cerebral</strong> avant PL si signes de focalisation, convulsions, trouble de conscience</li>
+            <li><strong>Recherche antigenique</strong> (pneumocoque, meningocoque) sur LCR et urines</li>
+            <li><strong>CRP, PCT</strong></li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>Meningite bacterienne confirmee :</strong> Hospitalisation en urgence</li>
+            <li><strong>Meningite suspectee :</strong> UHCD pour bilan</li>
+            <li><strong>Formes graves :</strong> Reanimation</li>
+        </ul>
+
+        <h2>Traitement</h2>
+        
+        <h3>Corticosteroides (avant antibiotherapie)</h3>
+        <div class="posology">
+            <p><span class="drug-name">Dexamethasone</span> (<span class="drug-commercial">Decadron</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 10 mg toutes les 6 heures IV</li>
+                <li><strong>Voie :</strong> IV (intravenous)</li>
+                <li><strong>Duree :</strong> 4 jours</li>
+                <li><strong>Contre-indications :</strong> immunodepression, ATB prealable</li>
+                <li><strong>Effets secondaires :</strong> irritation gastrique, hyperglycemie</li>
+            </ul>
+        </div>
+
+        <h3>Meningite bacterienne presume - Germes Gram+ (suspicion Listeria)</h3>
+        <div class="posology">
+            <p><span class="drug-name">Amoxicilline</span> (<span class="drug-commercial">Clamoxyl</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 200 mg/kg/jour IV en 4 injections/jour</li>
+                <li><strong>Voie :</strong> IV (intravenous)</li>
+                <li><strong>Contre-indications :</strong> allergie aux penicillines</li>
+            </ul>
+            <p><strong>ET :</strong></p>
+            <p><span class="drug-name">Gentamicine</span> (<span class="drug-commercial">Gentalline</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 5 mg/kg/jour en dose unique</li>
+                <li><strong>Voie :</strong> IVSE sur 30 minutes</li>
+                <li><strong>Duree :</strong> 48 heures (arret si identification du germe)</li>
+                <li><strong>Contre-indications :</strong> insuffisance renale severe, allergie</li>
+            </ul>
+        </div>
+
+        <h3>Meningite bacterienne presume - Germes Gram- (suspicion Haemophilus)</h3>
+        <div class="posology">
+            <p><span class="drug-name">Cefotaxime</span> (<span class="drug-commercial">Claforan</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 200 mg/kg/jour IV en 4 injections/jour</li>
+                <li><strong>Voie :</strong> IV (intravenous)</li>
+                <li><strong>Contre-indications :</strong> allergie aux cephalosporines</li>
+            </ul>
+        </div>
+
+        <h3>Meningite a liquide clair - Formule bacterienne suspectee</h3>
+        <div class="posology">
+            <p><strong>Traitement probabiliste couvrant pneumocoque et HSV :</strong></p>
+            <p><span class="drug-name">Cefotaxime</span> (<span class="drug-commercial">Claforan</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 300 mg/kg/jour en 4 injections/jour</li>
+                <li><strong>Voie :</strong> IV (intravenous)</li>
+            </ul>
+            <p><strong>ET :</strong></p>
+            <p><span class="drug-name">Aciclovir</span> (<span class="drug-commercial">Zovirax</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 10 mg/kg 3 fois par jour</li>
+                <li><strong>Voie :</strong> IV sur 4 heures</li>
+                <li><strong>Contre-indications :</strong> allergie au produit, insuffisance renale severe</li>
+            </ul>
+        </div>
+
+        <h3>Si suspicion de listeriose (age > 50 ans, immunodepression, alcoolisme, comorbidites)</h3>
+        <div class="posology">
+            <p><span class="drug-name">Amoxicilline</span> (<span class="drug-commercial">Clamoxyl</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 200 mg/kg/jour en 6 injections/jour</li>
+                <li><strong>Voie :</strong> IV (intravenous)</li>
+            </ul>
+            <p><strong>ET :</strong></p>
+            <p><span class="drug-name">Gentamicine</span> (<span class="drug-commercial">Gentalline</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 5 mg/kg IVL sur 30 min</li>
+                <li><strong>Voie :</strong> IVL (intravenous lent)</li>
+                <li><strong>Rythme :</strong> 1 injection par jour</li>
+            </ul>
+        </div>
+
+        <h3>Mesures complementaires</h3>
+        <ul>
+            <li><strong>Isolement respiratoire</strong> jusqu'a 48 h d'ATB efficace (meningocoque)</li>
+            <li><strong>Surrelevation de la tete</strong> de 20-30° en cas d'hypertension intracranienne</li>
+            <li><strong>Sedation</strong> si necessaire</li>
+            <li><strong>Ventilation mechanique</strong> si besoin</li>
+            <li><strong>Bolus de mannitol</strong> si situation menaçante (mannitol 20% : 0,25-1 g/6 heures sur 30 minutes)</li>
+        </ul>
+
+        <h3>Chimioprophylaxie des sujets contacts</h3>
+        <div class="posology">
+            <p><span class="drug-name">Rifampicine</span></p>
+            <ul>
+                <li><strong>Adulte :</strong> 600 mg 2 fois par jour pendant 2 jours</li>
+                <li><strong>Enfant 1 mois a 2 ans :</strong> 10 mg/kg 2 fois par jour pendant 2 jours</li>
+                <li><strong>Enfant < 1 mois :</strong> 5 mg/kg 2 fois par jour pendant 2 jours</li>
+            </ul>
+            <p><strong>Si allergie :</strong></p>
+            <p><span class="drug-name">Ceftriaxone</span> (<span class="drug-commercial">Rocepine</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 250 mg IM en dose unique (adulte) ou 125 mg IM chez les moins de 15 ans</li>
+            </ul>
+            <p><strong>OU :</strong></p>
+            <p><span class="drug-name">Ciprofloxacine</span> (<span class="drug-commercial">Ciflox</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 500 mg PO en dose unique (adultes uniquement)</li>
+            </ul>
+        </div>
+
+        <h3>Chimioprophylaxie du sujet atteint</h3>
+        <ul>
+            <li>Inutile si traitement curatif par C3G</li>
+            <li>Indispensable si traitement par amoxicilline</li>
+        </ul>
+
+        <h3>Vaccination</h3>
+        <ul>
+            <li>Dans un delai de 10 jours pour les sujets contacts si meningocoque A, C, Y ou W135</li>
+            <li>Y compris en cas de grossesse</li>
+        </ul>
+
+        <h3>Declaration obligatoire</h3>
+        <ul>
+            <li>Declaration obligatoire a l'ARS</li>
+        </ul>
+
+        <h2>References</h2>
+        <ul>
+            <li>Conference de consensus SPILF, 2008. Actualisation 2018.</li>
+            <li>Pilly E. Maladies Infectieuses et Tropicales. 26e edition. 2018.</li>
+            <li>Instruction N° DGS/SP/2018/163 du 27 juillet 2018 relative a la prophylaxie des infections a meningocoques.</li>
+        </ul>
+    </div>
+</body>
+</html>

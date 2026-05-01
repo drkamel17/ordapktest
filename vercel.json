@@ -1,0 +1,248 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "styles/**/*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "dece/**/*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "dece/**/*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "dece/**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "dece/**/*.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "ordonnance/**/*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "ordonnance/**/*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "ordonnance/**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "ordonnance type/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "score/**/*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "score/**/*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "score/**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "score/**/*.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "medicamentdz/**/*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "medicamentdz/**/*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "medicamentdz/**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "medicamentdz/**/*.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "medicaments/**/*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "medicaments/**/*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "medicaments/**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "radiologie/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "templates/*.pdf",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "commentaire/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "conduite/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "api/config.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/save-supabase.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/commentaires.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/send-email.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/save-supabase",
+      "dest": "/api/save-supabase.js"
+    },
+    {
+      "src": "/medicaments/(.*)",
+      "dest": "/medicaments/$1"
+    },
+    {
+      "src": "/api/commentaires",
+      "dest": "/api/commentaires.js"
+    },
+    {
+      "src": "/api/send-email",
+      "dest": "/api/send-email.js"
+    },
+    {
+      "src": "/styles/(.*)",
+      "dest": "/styles/$1"
+    },
+    {
+      "src": "/dece/(.*)",
+      "dest": "/dece/$1"
+    },
+    {
+      "src": "/ordonnance/(.*)",
+      "dest": "/ordonnance/$1"
+    },
+    {
+      "src": "/score/(.*)",
+      "dest": "/score/$1"
+    },
+    {
+      "src": "/medicamentdz/(.*)",
+      "dest": "/medicamentdz/$1"
+    },
+    {
+      "src": "/radiologie/(.*)",
+      "dest": "/radiologie/$1"
+    },
+    {
+      "src": "/ordonnance%20type/(.*)",
+      "dest": "/ordonnance%20type/$1"
+    },
+    {
+      "src": "/ordonnance%20type/api/config.js",
+      "dest": "/ordonnance%20type/api/config.js"
+    },
+    {
+      "src": "/ordonnance%20type/api/save-supabase.js",
+      "dest": "/ordonnance%20type/api/save-supabase.js"
+    },
+    {
+      "src": "/(.*)\\.json",
+      "dest": "/$1.json"
+    },
+    {
+      "src": "/api/lister_dece",
+      "dest": "/api/lister_dece.js"
+    },
+    {
+      "src": "/api/supprimer_dece",
+      "dest": "/api/supprimer_dece.js"
+    },
+    {
+      "src": "/api/ajouter_dece",
+      "dest": "/api/ajouter_dece.js"
+    },
+    {
+      "src": "/api/modifier_dece",
+      "dest": "/api/modifier_dece.js"
+    },
+    {
+      "src": "/api/recuperer_donnees",
+      "dest": "/api/recuperer_donnees.js"
+    },
+    {
+      "src": "(.*)",
+      "dest": "/$1.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript; charset=utf-8"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        }
+      ]
+    }
+  ]
+}

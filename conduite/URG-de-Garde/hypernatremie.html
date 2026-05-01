@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypernatremie - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-tint"></i> Hypernatremie - Deshydratation</h1>
+        
+        <h2>Definition</h2>
+        <p>Augmentation de la natrémie (&gt; 145 mmol/L)</p>
+
+        <h2>Signes de Gravite</h2>
+        <div class="warning">
+            <strong>Critères de gravité :</strong>
+            <ul>
+                <li>Syndrome confusionnel</li>
+                <li>Coma</li>
+                <li>Hypotension</li>
+            </ul>
+        </div>
+
+        <h2>Prise en Charge IAO</h2>
+        <h3>Bilan</h3>
+        <ul>
+            <li>Dextro, FR, PAS, PAD, FC, T°C, SpO2</li>
+            <li>ECG</li>
+        </ul>
+        <h3>Calcul du déficit en eau</h3>
+        <ul>
+            <li>Formule : Déficit (en litre) = [(Na (mmol/L) – 140) × coeff. × P (kg)] / 140</li>
+            <li>Coefficient : 0,6 (homme &lt; 65 ans et enfant), 0,5 (femme &lt; 65 ans et homme &gt; 65 ans), 0,45 (femme &gt; 65 ans)</li>
+        </ul>
+        <h3>Orientation</h3>
+        <ul>
+            <li><strong>SAUV</strong> si syndrome confusionnel, coma, hypotension</li>
+            <li><strong>Box</strong> sinon</li>
+        </ul>
+
+        <h2>Prise en Charge Médicale</h2>
+        <h3>Bilan</h3>
+        <ul>
+            <li>Ionogramme, osmolalité sang, créat, glycémie</li>
+            <li>Iono urinaire : Na u &lt; 20 mmol/L (pertes extrarénales), Na u &gt; 20 mmol/L (pertes rénales)</li>
+            <li>± TDM cérébral selon contexte</li>
+        </ul>
+        <h3>Traitement</h3>
+        <ul>
+            <li>Rythme de correction de la natrémie de 1 mmol/L en 1 heure sans dépasser une correction de 10 mmol/L par 24 h</li>
+            <li>Apport de 1/3 du déficit en eau en 24 heures par la perfusion du G 5 %</li>
+            <li>Soluté : glucosé 5 %</li>
+        </ul>
+        <h3>Si hypovolémie associée</h3>
+        <ul>
+            <li>Associer sérum salé 0,9 % sous surveillance ionogramme</li>
+        </ul>
+        <h3>Si diabète insipide incontrôlable</h3>
+        <ul>
+            <li>Associer acétate de desmopressine (Minirin®) : 1 µg/j SC</li>
+        </ul>
+        <h3>Traitement étiologique</h3>
+        <ul>
+            <li>Limiter l'augmentation de la natrémie à 11 mmol/L</li>
+            <li>Doser la natrémie toutes les 12 h</li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li>Réanimation si coma ou hypotension</li>
+            <li>UHCD sinon</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Ordonnances Types - Mobile</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding-bottom: 80px;
+    }
+    .header {
+      background: white;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .sync-btn {
+      background: #ffc107;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .search-box {
+      width: 100%;
+      padding: 12px 15px;
+      margin-top: 10px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      font-size: 16px;
+      background: #f8f9fa;
+    }
+    .search-box:focus {
+      outline: none;
+      border-color: #667eea;
+      background: white;
+    }
+    .list-container {
+      padding: 10px;
+    }
+    .ord-item {
+      background: white;
+      margin-bottom: 10px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .ord-item:active {
+      transform: scale(0.98);
+    }
+    .ord-item h3 {
+      margin: 0 0 8px 0;
+      font-size: 1rem;
+      color: #333;
+    }
+    .ord-item p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #666;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .fab {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      background: #667eea;
+      color: white;
+      border: none;
+      font-size: 24px;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+    }
+    
+    /* Responsive FAB */
+    @media (max-width: 480px) {
+      .fab {
+        bottom: 80px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        right: 15px;
+      }
+    }
+    
+    @media (max-width: 360px) {
+      .fab {
+        bottom: 85px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        right: 12px;
+      }
+    }
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+    .bottom-nav a, .bottom-nav button {
+      text-align: center;
+      text-decoration: none;
+      color: #666;
+      font-size: 0.75rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .bottom-nav i {
+      font-size: 1.3rem;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .empty {
+      text-align: center;
+      color: white;
+      padding: 40px 20px;
+    }
+    #loading {
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      background: rgba(255,255,255,0.1);
+    }
+    .toolbar button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: white;
+      color: #667eea;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .toast {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 20px 40px;
+      border-radius: 10px;
+      z-index: 1000;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-top">
+      <h1>🏥 Ordonnances Types</h1>
+      <button class="sync-btn" onclick="charger()">🔄</button>
+    </div>
+    <input type="search" class="search-box" id="search" placeholder="Rechercher...">
+  </div>
+
+  <div class="list-container" id="list"></div>
+  <button class="fab" onclick="ajouter()">+</button>
+  <div class="bottom-nav">
+    <a href="../index.html"><i class="fas fa-home"></i>Accueil</a>
+    <button onclick="charger()"><i class="fas fa-sync"></i>Actualiser</button>
+    
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script>
+    let ordonnances = {};
+
+    // Charger config depuis le serveur
+    async function loadConfig() {
+      try {
+        const response = await fetch('/api/config.js');
+        const script = await response.text();
+        const match = script.match(/window\.ENV\s*=\s*(\{[^}]+\})/);
+        if (match) {
+          const env = JSON.parse(match[1]);
+          console.log('Config chargee:', env);
+          return env;
+        }
+      } catch (err) {
+        console.log('Config error:', err);
+      }
+      return { configured: false };
+    }
+
+    // Charger depuis l'API comme ord_type.js
+    async function chargerDepuisAPI() {
+      // D'abord essayer localStorage
+      const local = localStorage.getItem('ordonnancesTypes');
+      if (local) {
+        try {
+          const data = JSON.parse(local);
+          if (Object.keys(data).length > 0) {
+            console.log('Chargé depuis localStorage:', Object.keys(data).length);
+            return data;
+          }
+        } catch (e) {}
+      }
+      
+      // Essayer l'API
+      try {
+        const response = await fetch('/api/save-supabase', {
+          method: 'GET',
+          headers: { 'Content-Type': 'application/json' }
+        });
+        
+        if (response.ok) {
+          const result = await response.json();
+          console.log('Result:', result);
+          
+          if (result.success && result.data) {
+            console.log('Succes:', Object.keys(result.data).length, 'ordonnances');
+            localStorage.setItem('ordonnancesTypes', JSON.stringify(result.data));
+            return result.data;
+          }
+        }
+      } catch (error) {
+        console.log('API error:', error);
+      }
+      
+      // Fallback: charger depuis fichier JSON local
+      try {
+        const response = await fetch('ordonnances-types.json');
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Chargé depuis fichier:', Object.keys(data).length);
+          localStorage.setItem('ordonnancesTypes', JSON.stringify(data));
+          return data;
+        }
+      } catch (e) {
+        console.log('Fallback error:', e);
+      }
+      
+      showToast('Mode hors-ligne');
+      return {};
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.style.display = 'block';
+      setTimeout(() => t.style.display = 'none', 2000);
+    }
+
+    async function charger() {
+      document.getElementById('list').innerHTML = '<div id="loading">Chargement...</div>';
+      
+      ordonnances = await chargerDepuisAPI();
+      
+      // Fallback localStorage
+      if (Object.keys(ordonnances).length === 0) {
+        const local = localStorage.getItem('ordonnancesTypes');
+        if (local) {
+          ordonnances = JSON.parse(local);
+          showToast('Mode hors-ligne');
+        }
+      }
+      
+      localStorage.setItem('ordonnancesTypes', JSON.stringify(ordonnances));
+      const count = Object.keys(ordonnances).length;
+      document.getElementById('list').innerHTML = count > 0 ? '' : '<div class="empty">Vide. Cliquez + pour ajouter.</div>';
+      afficher('');
+    }
+
+    function afficher(filter) {
+      const list = document.getElementById('list');
+      // Filtrer et trier par ordre alphabétique français (majuscule = minuscule)
+      const keys = Object.keys(ordonnances)
+        .filter(k => k.toLowerCase().includes(filter.toLowerCase()))
+        .sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase(), 'fr'));
+      if (keys.length === 0) {
+        list.innerHTML = '<div class="empty">Aucune ordonnance</div>';
+        return;
+      }
+      list.innerHTML = keys.map(k => {
+        const meds = ordonnances[k] || [];
+        const preview = meds.map(m => {
+          if (typeof m === 'object') return m.medicament || '...';
+          return m;
+        }).slice(0, 3).join(', ');
+        return `
+          <div class="ord-item" onclick="voir('${encodeURIComponent(k)}')">
+            <h3>${k}</h3>
+            <p>${preview}${meds.length > 3 ? '...' : ''} (${meds.length})</p>
+          </div>
+        `;
+      }).join('');
+    }
+
+    document.getElementById('search').addEventListener('input', e => afficher(e.target.value));
+
+    function voir(titre) {
+      titre = decodeURIComponent(titre);
+      const meds = ordonnances[titre] || [];
+      
+      let html = `<div style="text-align:right;padding:10px;">
+        <button onclick="const el=document.getElementById('meds-detail');navigator.clipboard.writeText(el.textContent).then(()=>showToast('Copié!'))">📋 Copier</button>
+      </div>
+      <div id="meds-detail" style="background:white;color:#333;padding:15px;border-radius:10px;max-height:60vh;overflow-y:auto;font-size:14px;line-height:1.6;">
+        <h3 style="margin:0 0 10px 0;">🏥 ${titre}</h3>
+        <p style="color:#666;margin:0 0 15px 0;">${meds.length} médicament(s)</p>`;
+      
+      meds.forEach((m, i) => {
+        const med = typeof m === 'object' ? m : { medicament: m };
+        const nom = med.medicament || med.nom || med.name || JSON.stringify(m);
+        const poso = med.posologie || '';
+        const qte = med.quantite || '';
+        
+        html += `<div style="border-bottom:1px solid #eee;padding:10px 0;">
+          <div style="font-weight:bold;">${i+1}. ${nom}</div>`;
+        if (poso) html += `<div style="color:#007bff;">${poso}</div>`;
+        if (qte) html += `<div style="color:#28a745;">Qté: ${qte}</div>`;
+        html += `</div>`;
+      });
+      
+      html += `</div>`;
+      
+      const oldMsg = document.getElementById('message');
+      if (oldMsg) oldMsg.remove();
+      const msg = document.createElement('div');
+      msg.id = 'message';
+      msg.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.9);z-index:999;padding:20px;overflow-y:auto;';
+      msg.innerHTML = `<div style="background:#667eea;color:white;padding:15px;display:flex;justify-content:space-between;align-items:center;">
+        <span style="font-size:18px;font-weight:bold;">${titre}</span>
+        <button onclick="this.closest('#message').remove()" style="background:none;border:none;color:white;font-size:24px;cursor:pointer;">✕</button>
+      </div>
+      ${html}`;
+      msg.onclick = function(e) { if (e.target === msg) msg.remove(); };
+      document.body.appendChild(msg);
+    }
+
+    function ajouter() {
+      window.location.href = 'ord_type.html';
+    }
+
+    function exporter() {
+      const blob = new Blob([JSON.stringify(ordonnances, null, 2)], {type: 'application/json'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'ordonnances-types.json';
+      a.click();
+    }
+
+    function importer() {
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = '.json';
+      input.onchange = async e => {
+        const file = e.target.files[0];
+        if (file) {
+          const text = await file.text();
+          ordonnances = JSON.parse(text);
+          localStorage.setItem('ordonnancesTypes', JSON.stringify(ordonnances));
+          afficher(document.getElementById('search').value);
+          showToast('Importé!');
+        }
+      };
+      input.click();
+    }
+
+    // Charger au demarrage
+    charger();
+  </script>
+</body>
+</html>

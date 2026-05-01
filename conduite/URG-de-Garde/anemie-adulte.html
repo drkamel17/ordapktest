@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Anémie de l'Adulte - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css-all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; }
+        body { font-family: "Inter", sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; }
+        .container { background: var(--card-bg); border-radius: 16px; padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .drug { background: #e8f5e9; padding: 10px; margin: 10px 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        <h1><i class="fas fa-blood"></i> Anemie de l'Adulte</h1>
+        
+        <h2>Definition</h2>
+        <p>Hb < 12 g/dL chez la femme, < 13 g/dL chez l'homme. Anemie normochrome normocytaire, microcytaire ou macrocytaire.</p>
+        
+        <h2>Signes de Gravite</h2>
+        <div class="important">
+            <ul>
+                <li><strong>Hb < 7 g/dL</strong></li>
+                <li><strong>Instabilite hemodynamique</strong></li>
+                <li><strong>Trouble de conscience</strong></li>
+                <li><strong>Douleur thoracique</strong></li>
+                <li><strong>Polypnee</strong></li>
+            </ul>
+        </div>
+        
+        <h2>Prise en Charge IAO</h2>
+        <h3>Bilan</h3>
+        <ul>
+            <li>PAS, PAD, FC, T°C, SpO2</li>
+            <li>NFS avec VGM, TCMH</li>
+            <li>Reticulocytes</li>
+            <li>Ferritine, fer serique, TJFS</li>
+            <li>Bilan martial complet si suspecte carence</li>
+        </ul>
+        
+        <h3>Orientation</h3>
+        <ul>
+            <li><strong>Box</strong> : anemie chronique, Hb stable > 9 g/dL</li>
+            <li><strong>SAUV</strong> : Hb < 7 g/dL, instabilite hemodynamique</li>
+        </ul>
+        
+        <h2>Principales Etiologies</h2>
+        <h3>Anemie microcytaire (VGM < 80 fL)</h3>
+        <ul>
+            <li>Carence martiale (VGM < 75 fL, ferritine basse)</li>
+            <li>Anemie de maladie chronique (ferritine normale ou elevee)</li>
+            <li>Thalassemie (VGM tres bas, HbA2 elevee)</li>
+        </ul>
+        
+        <h3>Anemie normocytaire (VGM 80-100 fL)</h3>
+        <ul>
+            <li>Anemie de maladie chronique (inflammation)</li>
+            <li>Insuffisance renale (EPO basse)</li>
+            <li>Hemolyse</li>
+            <li>Hypothyroidie</li>
+            <li>Metrorragies</li>
+        </ul>
+        
+        <h3>Anemie macrocytaire (VGM > 100 fL)</h3>
+        <ul>
+            <li>Carence en folates (grossesse, alcoolisme)</li>
+            <li>Carence en B12 ( maladie de Biermer, resection gastrique)</li>
+            <li>Syndrome myelodysplasique</li>
+            <li>Alcoolisme chronique</li>
+        </ul>
+        
+        <h2>Traitement</h2>
+        <h3>Carence martiale</h3>
+        <div class="drug">
+            <ul>
+                <li><strong>Fer Ferreux (Ferrostoral, Tardyferon)</strong> : 50-100 mg/jour PO pendant 3-6 mois</li>
+            </ul>
+        </div>
+        
+        <h3>Si anemie severe symptomatique</h3>
+        <div class="important">
+            <ul>
+                <li><strong>Transfusion</strong> si Hb < 7 g/dL et signes de gravite ou pathologie cardiovasculaire</li>
+                <li>Culots globulaires : 1 culot = eleve Hb de 1 g/dL</li>
+            </ul>
+        </div>
+        
+        <h3>Carence en folates</h3>
+        <ul>
+            <li><strong>Acide folique</strong> : 5 mg/jour PO</li>
+        </ul>
+        
+        <h3>Carence en B12</h3>
+        <ul>
+            <li><strong>Vitamine B12</strong> : 1 mg IM/jour pendant 1 semaine puis 1 mg/mois</li>
+        </ul>
+        
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>RAD</strong> avec bilan etiologique et traitement oral</li>
+            <li><strong>Hematologie</strong> : si etiologie obscure ou hemolyse</li>
+            <li><strong>Transfusion</strong> : si severe</li>
+        </ul>
+        
+        <div class="success">
+            <strong>Reference:</strong> P31 Anemie de l'adulte
+        </div>
+    </div>
+</body>
+</html>

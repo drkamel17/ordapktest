@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arret Cardiorespiratoire - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 15px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .dosage { background-color: #e8f5e9; padding: 15px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-heart-broken"></i> Arret Cardiorespiratoire</h1>
+        
+        <h2>DÉFINITION</h2>
+        <p>Arret cardio-circulatoire avec perte de conscience et absence de respiration ou gasps. URGENCE VITALE ABSOLUE.</p>
+
+        <div class="important">
+            <p><strong>APPELER LE 15 OU DÉCLENCHER LE MSA IMMÉDIATEMENT</strong></p>
+        </div>
+
+        <h2>PRISE EN CHARGE IAO</h2>
+        
+        <h3>Vérification</h3>
+        <ul>
+            <li><strong>Sécurité des lieux :</strong> Avant toute intervention, vérifier la sécurité des lieux et des secouristes</li>
+            <li><strong>Vérifier la conscience :</strong> Stimuler le patient (secouer doucement les épaules), crier pour vérifier une réaction</li>
+            <li><strong>Si pas de réaction :</strong> Arrêt cardio-circulatoire probable</li>
+            <li><strong>Vérifier la respiration :</strong> Mettre le patient en décubitus dorsal sur plan dur, regarder si chestation mouvements, écouter et sentir l'air</li>
+        </ul>
+
+        <h3>Orientation</h3>
+        <ul>
+            <li><strong>SAUV :</strong> Toujours</li>
+        </ul>
+
+        <h2>TRAITEMENT</h2>
+        
+        <h3>Massage Cardiaque Externe (MCE)</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>Position :</strong> Patient en décubitus dorsal sur plan dur</li>
+                <li><strong>Point de compression :</strong> Partie inférieure du sternum (2 doigts au-dessus de l'appendice xiphoïde)</li>
+                <li><strong>Profondeur :</strong> 5-6 cm chez l'adulte</li>
+                <li><strong>Fréquence :</strong> 100-120 compressions/min</li>
+                <li><strong>Rapport compressions/insufflations :</strong> 30/2 (si ventilación)</li>
+            </ul>
+        </div>
+
+        <h3>Défibrillation</h3>
+        <div class="dosage">
+            <ul>
+                <li><strong>SiFV/TV sans pouls :</strong> Défibrillation immédiate</li>
+                <li><strong>Dose :</strong> 150-200 J (biphasique) ou 360 J (monophasique)</li>
+                <li><strong>Répétition :</strong> Après chaque cycle de MCE (30 compressions)</li>
+            </ul>
+        </div>
+
+        <h3>Voies médicamenteuses</h3>
+        <div class="dosage">
+            <p><span class="drug-name">Adrénaline</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 1 mg IVD (1:10 000)</li>
+                <li><strong>Première injection :</strong> Après le 3e choc si inefficacy</li>
+                <li><strong>Répétition :</strong> Toutes les 3-5 minutes</li>
+            </ul>
+        </div>
+
+        <h3>Anti-arythmiques</h3>
+        <div class="dosage">
+            <p><span class="drug-name">Amiodarone</span> (<span class="drug-commercial">Cordarone</span>)</p>
+            <ul>
+                <li><strong>Dose charge :</strong> 300 mg IVD</li>
+                <li><strong>Répétition :</strong> 150 mg si inefficacy</li>
+                <li><strong>Entretien :</strong> 900 mg IVSE sur 24 heures</li>
+            </ul>
+            <p>OU</p>
+            <p><span class="drug-name">Lidocaïne</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 1-1,5 mg/kg IVD</li>
+                <li><strong>Entretien :</strong> 1-2 mg/kg/h IVSE</li>
+            </ul>
+        </div>
+
+        <h3>Autres drogues</h3>
+        <ul>
+            <li><strong>Atropine :</strong> 0,5 mg IV si bradycardie (< 60/min), répéter hasta 3 mg</li>
+            <li><strong>Magnésium :</strong> 2 g IV si torsade de pointes ou hypomagnésémie</li>
+            <li><strong>Calcium :</strong> 10 mL gluconate 10% IV si hyperkaliémie ou antagoniste CCB</li>
+            <li><strong>Glucose :</strong> 25-50 mL glucos 30% IV si hypoglycémie</li>
+            <li><strong>Naloxone :</strong> 0,4-0,8 mg IV si intoxication aux opiacés</li>
+        </ul>
+
+        <h3>Intubation</h3>
+        <ul>
+            <li><strong>Indication :</strong> Si inefficacité des maneuvers desalvation, trouble de conscience, détresse respiratoire</li>
+            <li><strong>Agent d'induction :</strong> Kétalar 2 mg/kg IVD ou midazolam 0,2 mg/kg IVD</li>
+            <li><strong>Curare :</strong> Succinylcholine 1 mg/kg IVD</li>
+        </ul>
+
+        <h3>Causes réversibles (4H/4T)</h3>
+        <ul>
+            <li><strong>4H :</strong> Hypoxie, Hypothermie, Hypovolémie, Hypo-/hyperkaliémie</li>
+            <li><strong>4T :</strong> Tamponnade, Tunnel pneumothorax, Thrombose (coronarienne/pulmonaire), Toxiques</li>
+        </ul>
+
+        <h2>PRISE EN CHARGE MÉDICALE</h2>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>Scope, PANI, SpO2</li>
+            <li>GDS, lactates</li>
+            <li>Iono, créatinine, glycémie</li>
+            <li>NFS, TP, TCA</li>
+            <li>BNP, troponine</li>
+            <li>RX thorax</li>
+            <li>Écho-coeur si disponible</li>
+            <li>Température centrale</li>
+        </ul>
+
+        <h2>ORIENTATION</h2>
+        <ul>
+            <li><strong>Réanimation :</strong> Toujours</li>
+            <li><strong>Orientation post-ACS :</strong> Soins intensifs cardiologiques</li>
+        </ul>
+
+        <h2>RÉFÉRENCES</h2>
+        <ul>
+            <li>Recommandations ERC 2015. European Resuscitation Council.</li>
+            <li>SFEM. Guide des protocoles d'urgence. 2019.</li>
+        </ul>
+    </div>
+</body>
+</html>

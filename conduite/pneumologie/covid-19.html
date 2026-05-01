@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 - Conduite a Tenir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e67e22; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .checkbox { list-style: none; padding-left: 0; }
+        .checkbox li { padding: 8px 0; border-bottom: 1px solid #eee; }
+        .checkbox li:before { content: "☑ "; color: var(--primary-color); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-virus"></i> Covid-19</h1>
+        
+        <h2>Clinique</h2>
+        <ul>
+            <li>Fievre, Toux, myalgies, dyspnee, perte de gout et odeurs, cas similaire..</li>
+            <li><strong>FDR</strong> (HTA /diabetique /cardiopathie /age) => Hospitalisation</li>
+            <li>Pas de FDR => traitement ambulatoire</li>
+        </ul>
+        
+        <h2>Tests diagnostiques</h2>
+        <ul class="checkbox">
+            <li>Test rapide antigenique covid_19</li>
+            <li>Test RT PCR covid_19</li>
+            <li>Serologie covid_19 IgM et IgG</li>
+            <li>TDM thoracique</li>
+        </ul>
+        
+        <div class="success">
+            <strong>Traitement de sortie:</strong>
+            <ul>
+                <li>1️⃣ Augmentin cp 1g 1cp 2/j pdt 10j</li>
+                <li>Ou Zomax cp 250mg pdt 5j 2cp/j 1er jours puis 1cp/j le reste des 4j</li>
+                <li>2️⃣ Vit D amp 2 bte 1er puis 7j apres 2eme amp</li>
+                <li>3️⃣ Vit C cp 1cp/j le matin</li>
+                <li>4️⃣ Zn cp 10mg 1cp/j</li>
+                <li>5️⃣ Mg amp 1amp 2/j</li>
+            </ul>
+        </div>
+        
+        <h2>Hospitalisation</h2>
+        <ul>
+            <li>O2 / ATB / CTC / Anticoagulants / Hydroxycloroquine</li>
+        </ul>
+        
+        <div class="warning">
+            Pas de CTC avant 7j
+        </div>
+        
+        <h2>Bilan: 🩸</h2>
+        <ul class="checkbox">
+            <li>FNS / Gly / CRP / VS / Uree / Creatinine</li>
+            <li>DDimeres</li>
+            <li>ASAT / ALAT</li>
+            <li>Ionogramme</li>
+        </ul>
+        
+        <h2>Traitement hospitalisation</h2>
+        <ul>
+            <li><strong>O2 therapie</strong> 8_10l/min depend de SaO2<92% => Avis Rea</li>
+            <li><strong>ATB:</strong> si fievre >5j, CRP↗️, reapparition de fievre, Toux purulent
+                <ul>
+                    <li>Augmentin inj 1g 3/j pdt 10j</li>
+                    <li>Ou Claforan inj 1g 1g/8h pdt 10j</li>
+                    <li>Ou Ciprolon 200 2/j en perfusion pdt 10j</li>
+                </ul>
+            </li>
+            <li><strong>Anticoagulants:</strong> Lovenox si DD>500, IMC>25, alleité
+                <ul>
+                    <li>IMC<30 : 0.4 / IMC>30 : 0.6 en Sc 1/j pdt 10j</li>
+                    <li>Ou Innohep 3500Ui <30=> 1inj 7500Ui >30=> 2inj</li>
+                    <li>Pdt 10j jusqu'a 1mois si malade sous O2</li>
+                </ul>
+            </li>
+            <li>Si DD<500 : arrête Lovenox</li>
+            <li>Si DD↗️ on ↗️la dose si non => Avis Cardiologie</li>
+        </ul>
+        
+        <h2>Bilan chaque 3_5j: 🩸</h2>
+        <ul class="checkbox">
+            <li>FNS / CRP / VS</li>
+            <li>Uree / Creatinine</li>
+        </ul>
+        
+        <h2>CTC apres 7j pdt 5_10j</h2>
+        <ul>
+            <li>Solumedrol 40mg en IV/12h 2/j</li>
+            <li>Ou Dexa 4mg amp/j 0.1_0.2mg/kg/j</li>
+            <li>Ou Solupred 8mg 0.75_1.2mg/kg/j Sans depasser 32mg</li>
+        </ul>
+    </div>
+</body>
+</html>

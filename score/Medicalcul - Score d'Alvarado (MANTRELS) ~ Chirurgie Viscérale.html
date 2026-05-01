@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicalcul - Score d'Alvarado (MANTRELS) ~ Chirurgie Viscérale</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .checkbox-section {
+            margin: 15px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            accent-color: #3498db;
+        }
+
+        .checkbox-group label {
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+
+        .calculator-section {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: #e8f4fd;
+            border-radius: 10px;
+        }
+
+        .calculate-btn {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .result-display {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 15px 0;
+        }
+
+        .result-display input {
+            border: 2px solid #3498db;
+            padding: 8px 12px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            width: 80px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .interpretation {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+
+        .references {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .references a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            margin: 10px 0;
+        }
+
+        .footer-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #f39c12;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content-card {
+                padding: 20px;
+            }
+            
+            .checkbox-group {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Score d'Alvarado (MANTRELS)</h1>
+            <p>Chirurgie Viscérale</p>
+        </div>
+
+        <div class="content-card">
+            <form name="Form" id="Form">
+                <h3 style="color: #0000FF; margin-bottom: 20px; text-align: center;">
+                    Items présents :
+                </h3>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vItem0" id="vItem0" type="checkbox" value="2" onclick="f_Calculer()">
+                        <label for="vItem0">Douleur abdominale du quadrant inférieur droit.</label>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vItem1" id="vItem1" type="checkbox" value="2" onclick="f_Calculer()">
+                        <label for="vItem1">Leucocytes &gt; 10 000/mm³.</label>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vItem2" id="vItem2" type="checkbox" value="1" onclick="f_Calculer()">
+                        <label for="vItem2">Migration de la douleur.</label>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vItem3" id="vItem3" type="checkbox" value="1" onclick="f_Calculer()">
+                        <label for="vItem3">Anorexie ou corps cétoniques dans les urines.</label>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vItem4" id="vItem4" type="checkbox" value="1" onclick="f_Calculer()">
+                        <label for="vItem4">Nausées ou vomissements.</label>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vItem5" id="vItem5" type="checkbox" value="1" onclick="f_Calculer()">
+                        <label for="vItem5">Douleur à la décompression abdominale.</label>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vItem6" id="vItem6" type="checkbox" value="1" onclick="f_Calculer()">
+                        <label for="vItem6">Température &gt; 37,5°C.</label>
+                    </div>
+                </div>
+
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input name="vItem7" id="vItem7" type="checkbox" value="1" onclick="f_Calculer()">
+                        <label for="vItem7">Polynucléaires neutrophiles &gt; 75%.</label>
+                    </div>
+                </div>
+
+                <div class="calculator-section">
+                    <button type="button" class="calculate-btn" onclick="f_Calculer()">Calculer</button>
+                    
+                    <div class="result-display">
+                        Score : 
+                        <input name="Resultat" type="text" id="Resultat" style="width:80px" readonly="readonly">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="interpretation">
+            <strong>Interprétation :</strong><br>
+            • Le score d'Alvarado, parfois appelé MANTRELS (initiales en anglais des items) est un score clinico-biologique permettant d'évaluer la probilité d'une appendicite aigue dans le cadre d'une douleur abdominale. Bien que simple, son rendement est parfois contesté.<br>
+            • Les valeurs sont:<br>
+            • Score ≤ 4 : appendicite peu probable.<br>
+            • Score ≥ 5 et ≤ 6 : appendicite possible.<br>
+            • Score ≥ 7 et ≤ 8 : appendicite probable.<br>
+            • Score ≥ 9 et ≤ 10 : appendicite très probable.
+        </div>
+
+        <div class="references">
+            <strong>Références :</strong><br>
+            • Alvarado A. A practical score for the early diagnosis of acute appendicitis. Ann Emerg Med. 1986 May;15(5):557–564.<br>
+            • Kalan M, Talbot D, Cunliffe WJ, Rich AJ. Evaluation of the modified Alvarado score in the diagnosis of acute appendicitis: a prospective study. Ann R Coll Surg Engl. 1994 Nov; 76 (6): 418–419.
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="index.html">[Racine]</a>
+            </div>
+           
+        </div>
+    </div>
+
+    <script>
+        // Calcul du score d'Alvarado
+        function f_Calculer() {
+            var Res = 0;
+            for(var i=0; i<8; i++)
+                Res += f_GetRadioValue('vItem'+i)*1;
+
+            document.Form.Resultat.value = Res;
+
+            try { 
+                if (typeof MSSAndroidFunction !== 'undefined') {
+                    MSSAndroidFunction.storeHistory("alvarado.html", "Score d'Alvarado (MANTRELS)", "chirurgie_viscerale", "Score:", Res); 
+                }
+            } catch(e) {
+                console.log("Fonction Android non disponible");
+            }
+        }
+
+        // Fonction pour récupérer la valeur d'un groupe de radio buttons
+        function f_GetRadioValue(radioGroupName) {
+            var radios = document.getElementsByName(radioGroupName);
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked && radios[i].value) {
+                    return radios[i].value;
+                }
+            }
+            return 0; // Valeur par défaut
+        }
+
+        // Initialiser le calcul au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            f_Calculer();
+        });
+    </script>
+</body>
+</html>

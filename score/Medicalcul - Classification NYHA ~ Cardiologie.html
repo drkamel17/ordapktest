@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicalcul - Classification NYHA ~ Cardiologie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .classification-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .classification-table th {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .classification-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .classification-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .classification-table tr:hover {
+            background-color: #e3f2fd;
+        }
+
+        .class-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #e74c3c;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .interpretation {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+
+        .references {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .references a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            margin: 10px 0;
+        }
+
+        .footer-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #f39c12;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .content-card {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .classification-table {
+                font-size: 0.9em;
+            }
+            
+            .classification-table th,
+            .classification-table td {
+                padding: 10px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Classification NYHA</h1>
+            <p>Cardiologie</p>
+        </div>
+
+        <div class="content-card">
+            <table class="classification-table">
+                <thead>
+                    <tr>
+                        <th>Classe</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="class-number">I</td>
+                        <td>Pas de limitation de l'activité physique. Activité usuelle sans fatigue, dyspnée, palpitations ou douleurs angineuses.</td>
+                    </tr>
+                    <tr>
+                        <td class="class-number">II</td>
+                        <td>Aucun symptôme au repos, mais diminution légère de l'activité physique. L'activité usuelle entraîne soit fatigue, dyspnée, douleurs angineuses ou palpitations.</td>
+                    </tr>
+                    <tr>
+                        <td class="class-number">III</td>
+                        <td>Limitation marquée de l'activité. Confortable au repos, mais l'activité physique habituelle entraine fatigue, palpitations ou dyspnée.</td>
+                    </tr>
+                    <tr>
+                        <td class="class-number">IV</td>
+                        <td>Incapacité à réaliser le moindre effort sans gêne. Fatigue, palpitations ou dyspnée sont présents au repos. En cas d'effort, la gêne augmente.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="interpretation">
+            <strong>Interprétation :</strong><br>
+            La classification NYHA (New-York Heart Association) permet de classer la gravité des insuffisances cardiaques.
+        </div>
+
+        <div class="references">
+            <strong>Références :</strong><br>
+            The Criteria Committee of the New York Heart Association, Nomenclature and Criteria for Diagnosis of Diseases of the Heart and Great Vessels, 9th ed. Boston, MA, Little, Brown & Co; 1994, pp. 253–256.
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="index.html">[Racine]</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fonction d'initialisation
+        function f_Calculer() {
+            try {
+                if (typeof MSSAndroidFunction !== 'undefined') {
+                    MSSAndroidFunction.storeHistory("nyha.html", "Classification NYHA", "cardiologie", null, null);
+                }
+            } catch (e) {
+                console.log("Fonction Android non disponible");
+            }
+        }
+
+        // Initialiser au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            f_Calculer();
+        });
+    </script>
+</body>
+</html>

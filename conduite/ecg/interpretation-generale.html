@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpretation generale - ECG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #2ecc71; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #3498db; margin-top: 20px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-eye"></i> Interpretation generale</h1>
+        
+        <h2>Regles de base ECG</h2>
+        <ul>
+            <li><strong>Validite:</strong> 1mm = 0.04s / 1mm = 0.1mV</li>
+            <li><strong>Vitesse:</strong> 25mm/s</li>
+            <li><strong>Voltage:</strong> 10mm/mV</li>
+        </ul>
+        
+        <h3>Controles a verifier</h3>
+        <ul>
+            <li>Pas d'inversion: P(+) en D1 / P(-) en avR</li>
+            <li>QRS (V1....V6) = un seul sommet</li>
+            <li>La ligne de base: isoelectrique (pas de tribulations = parasitage)</li>
+        </ul>
+        
+        <h2>Analyse du rythme</h2>
+        <ul>
+            <li><strong>Regularite:</strong> RR constant</li>
+            <li><strong>Sinusal:</strong> P(+) en DI et DII</li>
+            <li><strong>Relation:</strong> Chaque P doit etre suivie par un QRS et chaque QRS doit precede par P</li>
+        </ul>
+        
+        <h3>Calcul de la frequence</h3>
+        <div class="success">
+            <strong> Formule:</strong> 300 / nb des grands carreaux RR
+            <br>
+            <em>Si rythme irregulier: calculer la moyenne de 3RR</em>
+        </div>
+    </div>
+</body>
+</html>

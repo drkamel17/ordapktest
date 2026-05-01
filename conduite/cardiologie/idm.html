@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDM - Conduite a Tenir</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #c0392b;
+            border-bottom: 3px solid #c0392b;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 25px;
+            border-left: 4px solid #2980b9;
+            padding-left: 10px;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .important {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .checkbox {
+            list-style: none;
+            padding-left: 0;
+        }
+        .checkbox li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← Retour a la liste</a>
+        
+        <h1>IDM - Infarctus du Myocarde</h1>
+        
+        <h2>Clinique</h2>
+        <ul>
+            <li>Douleur thoracique retrosternale constructible prolongee >20min, resiste aux trinitrines, irradie vers le membre superieur gauche/cou/menton.</li>
+            <li><strong>Atypique</strong> : Paleur, cyanose, sueur, panique, agitation, detresse respiratoire, vomissements, epigastralgies++, HypoTA++</li>
+            <li>ECG chaque 10min => Sus decalage ST</li>
+        </ul>
+        
+        <h2>CAT - Conduite a Tenir</h2>
+        <ul>
+            <li>Hospitalisation</li>
+            <li>2VVP / O2 si SaO2 <90%</li>
+            <li>TA / Dextro</li>
+        </ul>
+        
+        <h2>Bilan :🩸</h2>
+        <ul class="checkbox">
+            <li>☑ FNS / Glycemie</li>
+            <li>☑ TP</li>
+            <li>☑ VS / CRP</li>
+            <li>☑ Hepatique</li>
+            <li>☑ Uree / Creatinine</li>
+            <li>☑ Ionogramme</li>
+        </ul>
+        
+        <h2>Troponines</h2>
+        <ul>
+            <li>2-10 => Diagnostic d'IDM est douteux a refaire le dosage 2h apres</li>
+            <li>>100 => Diagnostic inclus</li>
+            <li><2 => Diagnostic exclus</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>Soulager la douleur :</strong>
+            <ul>
+                <li>Perfalgan 1flc 1g en IVD</li>
+                <li>Voir un derive morphinique si douleur intense : Chlorhydrate de morphine 5mg inj 1/2amp SC ou IV</li>
+            </ul>
+        </div>
+        
+        <h2>Traitement</h2>
+        <ul>
+            <li><strong>Antiplaquettaire :</strong>
+            <ul>
+                <li>Si <75ans : Aspegic (300mg) 3cp 100mg Ou 250mg en IV</li>
+                <li>Plavix (400mg) 75mg 4cp (1cp si >75ans)</li>
+            </ul>
+            </li>
+            <li><strong>Anticoagulant :</strong>
+            <ul>
+                <li>Lovenox : bolus de 0.3 en IV Puis 1mg/kg 2/j 15min apres le bolus</li>
+                <li>Si >75ans : pas de bolus, 0.75mg/kg 2/j</li>
+            </ul>
+            </li>
+        </ul>
+        
+        <div class="important">
+            <strong>Evacuation : Cardiologie</strong>
+        </div>
+        
+        <h2>Si ST(-) :</h2>
+        <ul>
+            <li>ECG / 10min</li>
+            <li>Sous decalage de ST / T(-) / T ample et pointue</li>
+            <li>Dosage de Troponine</li>
+        </ul>
+    </div>
+</body>
+</html>

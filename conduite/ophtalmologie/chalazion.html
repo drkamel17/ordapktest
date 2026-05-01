@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalazion - Ophtalmologie</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .container { background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 800px; overflow: hidden; }
+        .header { background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%); color: white; padding: 30px; text-align: center; }
+        .header h1 { font-size: 2em; margin-bottom: 10px; }
+        .header .subtitle { opacity: 0.9; font-size: 1.1em; }
+        .content { padding: 30px; }
+        .section { margin-bottom: 25px; }
+        .section-title { color: #9b59b6; font-size: 1.3em; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #9b59b6; }
+        .clinical-box, .treatment-box { background: #f9f9f9; border-radius: 10px; padding: 20px; margin-bottom: 15px; }
+        .clinical-box { border-left: 4px solid #e74c3c; }
+        .treatment-box { border-left: 4px solid #27ae60; }
+        .treatment-box h3 { color: #27ae60; margin-bottom: 15px; }
+        .treatment-item { margin-bottom: 12px; padding-left: 10px; }
+        .treatment-item ul { list-style: none; padding-left: 0; }
+        .treatment-item li { padding: 8px 0; border-bottom: 1px solid #eee; }
+        .treatment-item li:last-child { border-bottom: none; }
+        .note { background: #fff3cd; border-radius: 8px; padding: 15px; margin-top: 15px; font-size: 0.9em; color: #856404; }
+        .back-button { display: inline-block; background: #9b59b6; color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; margin-top: 20px; transition: background 0.3s; }
+        .back-button:hover { background: #8e44ad; }
+        .warning-box { background: #f8d7da; border-radius: 8px; padding: 15px; margin-top: 15px; border-left: 4px solid #dc3545; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Chalazion</h1>
+            <div class="subtitle">Ophtalmologie - Dr. KHERBA N</div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Clinique</h2>
+                <div class="clinical-box">
+                    <p><strong>Occlusion inflammatoire non infectieuse de glande</strong></p>
+                    <p>Se localise à l'épaisseur de la paupière</p>
+                    <ul>
+                        <li>Chronique</li>
+                        <li>Dur</li>
+                        <li>Indolore</li>
+                        <li>Pas de rougeur</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Traitement</h2>
+                <div class="treatment-box">
+                    <div class="treatment-item">
+                        <ul>
+                            <li><strong>Frakidex / Chibrocardon / Maxidrol coll</strong> - 1gtt 3/j pdt 10j</li>
+                        </ul>
+                    </div>
+                    <div class="treatment-item">
+                        <ul>
+                            <li><strong>Frakidex / Sterdex / Maxidrol pmd</strong> - 1app le soir pdt 7j</li>
+                        </ul>
+                    </div>
+                    <div class="treatment-item">
+                        <ul>
+                            <li><strong>Massage par compresse</strong> avec eau tiède pdt 10min 2-4/j</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Enfant</h2>
+                <div class="treatment-box">
+                    <div class="treatment-item">
+                        <ul>
+                            <li><strong>Maxidrol collyre</strong> - 1gtt 2/j</li>
+                        </ul>
+                    </div>
+                    <div class="treatment-item">
+                        <ul>
+                            <li><strong>Sterdex / Maxidrol pmd</strong> - 1/j</li>
+                        </ul>
+                    </div>
+                    <div class="treatment-item">
+                        <ul>
+                            <li><strong>Lavage au SSI</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="warning-box">
+                <ul>
+                    <li><strong>Si Résistance après 15j</strong> ⇒ Renouveler le traitement</li>
+                    <li><strong>Si pas de réponse</strong> ⇒ Infiltration des CTC</li>
+                    <li><strong>Si non</strong> ⇒ Chirurgie</li>
+                </ul>
+            </div>
+            
+            <a href="index.html" class="back-button">← Retour à l'index</a>
+        </div>
+    </div>
+</body>
+</html>

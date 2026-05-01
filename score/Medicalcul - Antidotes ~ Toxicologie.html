@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicalcul - Antidotes ~ Toxicologie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+
+        .antidote-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .antidote-table th {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .antidote-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .antidote-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .antidote-table tr:hover {
+            background-color: #e3f2fd;
+        }
+
+        .toxique {
+            color: #c0392b;
+            font-weight: bold;
+        }
+
+        .antidote {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .interpretation {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+
+        .references {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .references a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            margin: 10px 0;
+        }
+
+        .footer-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #f39c12;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content-card {
+                padding: 20px;
+            }
+            
+            .antidote-table {
+                font-size: 0.9em;
+            }
+            
+            .antidote-table th,
+            .antidote-table td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Antidotes</h1>
+            <p>Toxicologie</p>
+        </div>
+
+        <div class="content-card">
+            <table class="antidote-table">
+                <thead>
+                    <tr>
+                        <th>Toxique</th>
+                        <th>Antidote</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="toxique">Aluminium</td>
+                        <td class="antidote">Déféroxamine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Anti-arythmiques classe IC (Flécaïnide, Propafénone, Cibenzoline)</td>
+                        <td class="antidote">Bicarbonate de sodium (molaire) ; Adrénaline</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Anti-Vitamine K</td>
+                        <td class="antidote">Vitamine K1 ; PPSB</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Antidépresseurs tricycliques</td>
+                        <td class="antidote">Bicarbonate de sodium (molaire) ; Adrénaline</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Arsenic</td>
+                        <td class="antidote">Dimercaprol ; Acide dimercapto-succinique</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Atropine</td>
+                        <td class="antidote">Physostigmine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Baryum</td>
+                        <td class="antidote">Sulfate de Magnésium</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Belladone</td>
+                        <td class="antidote">Physostigmine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Benzodiazépines et apparentés</td>
+                        <td class="antidote">Flumazénil</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Bêta-adrénergiques (trichloréthylène, théophylline, thyroxine)</td>
+                        <td class="antidote">Propranolol ; Esmolol ; Labétalol</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Bêta-bloquants</td>
+                        <td class="antidote">Glucagon ; Adrénaline ; Isoprénaline</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Cadmium</td>
+                        <td class="antidote">Dimercaprol ; Acide dimercapto-succinique</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Carbamates (insecticides)</td>
+                        <td class="antidote">Atropine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Champignons avec syndrome cholinergique (clitocybe, inocybe)</td>
+                        <td class="antidote">Atropine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Champignons type "Amanite phalloïde"</td>
+                        <td class="antidote">N-acétylcystéine ; Pénicilline G ; Silymarine/Silibinine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Chlorate de Na et de K (méthémoglobinisant)</td>
+                        <td class="antidote">Bleu de Méthylène</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Chloroquine</td>
+                        <td class="antidote">Adrénaline ; Diazépam ; Bicarbonate de sodium (molaire)</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">CO (monoxyde de carbone)</td>
+                        <td class="antidote">Oxygène ; caisson hyperbarre</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Cocaïne</td>
+                        <td class="antidote">Labétalol</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Cyanures</td>
+                        <td class="antidote">Hydroxocobalamine ; Oxygène</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Datura</td>
+                        <td class="antidote">Physostigmine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Dichloroethane (1,1 - 1,2)</td>
+                        <td class="antidote">N-acétylcystéine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Digitaliques (digitale, laurier-rose)</td>
+                        <td class="antidote">Anticorps spécifique anti-digitalique</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Diméthylformamide</td>
+                        <td class="antidote">N-acétylcystéine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Éthylène glycol</td>
+                        <td class="antidote">Fomépizole ; Alcool éthylique</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Fer ; Sels ferreux ou ferriques</td>
+                        <td class="antidote">Déféroxamine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Fluorures</td>
+                        <td class="antidote">Gluconate de calcium</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Héparine</td>
+                        <td class="antidote">Sulfate de protamine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Herbicides urées substituées (méthémoglobinisant)</td>
+                        <td class="antidote">Bleu de méthylène</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Hyperthermie maligne</td>
+                        <td class="antidote">Dantrolène</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Isoniazide</td>
+                        <td class="antidote">Vitamine B6</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Inhibiteurs calciques</td>
+                        <td class="antidote">Insuline</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Insecticides organophosphorés</td>
+                        <td class="antidote">Atropine ; Pralidoxime</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Insuline</td>
+                        <td class="antidote">Glucose ; Glucagon</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Iode 131</td>
+                        <td class="antidote">Iodure de potassium</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Laurier-rose</td>
+                        <td class="antidote">Anticorps spécifique anti-digitalique</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Mercure</td>
+                        <td class="antidote">Acide dimercapto-succinique ; Dimercaprol</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Métaux lourds</td>
+                        <td class="antidote">Dimercaprol ; Acide dimercapto-succinique</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Méthanol</td>
+                        <td class="antidote">Fomépizole ; Alcool éthylique ; Bicarbonates de sodium (molaire) ; Folinate de calcium</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Méthémoglobinisants</td>
+                        <td class="antidote">Bleu de méthylène</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Méthotrexate</td>
+                        <td class="antidote">Folinate de calcium ; Carboxypeptidase-G2</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Monochlorobenzene</td>
+                        <td class="antidote">N-acétylcystéine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Morphinomimétiques</td>
+                        <td class="antidote">Naloxone</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Neuroleptiques (Syndromes extra pyramidaux)</td>
+                        <td class="antidote">Tropatépine ; Trihexyphénidyle</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Neuroleptiques (Syndrome malin)</td>
+                        <td class="antidote">Dantrolène</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Nitrites et Nitrates (méthémoglobinisant)</td>
+                        <td class="antidote">Bleu de méthylène</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Nitrobenzène (méthémoglobinisant)</td>
+                        <td class="antidote">Bleu de méthylène</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Opiacés</td>
+                        <td class="antidote">Naloxone</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Organophosphorés</td>
+                        <td class="antidote">Atropine ; Pralidoxime</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Paracétamol</td>
+                        <td class="antidote">N-acétylcystéine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Paraquat</td>
+                        <td class="antidote">Aucun antidote efficace connu (Charbon végétal activé à la phase initiale)</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Phénacétine (méthémoglobinisant)</td>
+                        <td class="antidote">Bleu de méthylène</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Plomb</td>
+                        <td class="antidote">Acide dimercapto-succinique ; Dimercaprol ; Calcium édétate de sodium (EDTA calcique)</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Poppers (méthémoglobinisant)</td>
+                        <td class="antidote">Bleu de méthylène</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Radium</td>
+                        <td class="antidote">Calcium édétate de sodium (EDTA calcique)</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Raticides de type AVK (Mort Aux Rats)</td>
+                        <td class="antidote">Vitamine K1 ; PPSB</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Sels d'or</td>
+                        <td class="antidote">Dimercaprol ; Acide dimercapto-succinique</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Sulfamides hypoglycémiants</td>
+                        <td class="antidote">Octréotide</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Tétrachlorure de Carbone</td>
+                        <td class="antidote">N-acétylcystéine ; Oxygène hyperbare</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Valproate ; Valpromide</td>
+                        <td class="antidote">L-carnitine</td>
+                    </tr>
+                    <tr>
+                        <td class="toxique">Vipères</td>
+                        <td class="antidote">Sérum antivenimeux contre les vipères</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="interpretation">
+            <strong>Interprétation :</strong><br>
+            Pour chaque antidote indiqué, il convient de se reporter à une base médicamenteuse ou des protocoles pour les modalités d'utilisation et les posologies. Un document rappelant brièvement le mode d'utilisation est indiqué en lien dans les références.
+        </div>
+
+        <div class="references">
+            <strong>Références :</strong><br>
+            OMéDIT Centre – Commission Anesthésiologie : guide des antidotes d'urgences 2/18 Guide réactualisé en mars 2009. Disponible sur www.omedit-centre.fr - <a href="http://www.omedit-centre.fr/fichiers/upload/Guide%20antidotes%202009.pdf">http://www.omedit-centre.fr/fichiers/upload/Guide antidotes 2009.pdf</a>.
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="index.html">[Racine]</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Inscription Historique
+        function f_Calculer() {
+            try { 
+                if (typeof MSSAndroidFunction !== 'undefined') {
+                    MSSAndroidFunction.storeHistory("antidotes.html", "Antidotes", "toxicologie", null, null); 
+                }
+            } catch(e) {
+                console.log("Fonction Android non disponible");
+            }
+        }
+
+        // Initialiser au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            f_Calculer();
+        });
+    </script>
+</body>
+</html>

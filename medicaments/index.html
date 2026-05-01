@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drogue d'Urgence - 30 Médicaments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #ea580c;
+            --bg-gradient: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg-gradient);
+            margin: 0;
+            padding: 20px;
+            color: #1e293b;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+        .med-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .med-card {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            text-decoration: none;
+            color: #1e293b;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+            gap: 15px;
+        }
+        .med-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 15px -3px rgba(234, 88, 12, 0.15);
+        }
+        .med-card i {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            width: 50px;
+            text-align: center;
+        }
+        .med-card .number {
+            font-size: 0.8em;
+            color: #64748b;
+            font-weight: 600;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .back-btn:hover {
+            background: #c2410c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-right"></i>
+            Retour
+        </a>
+        <h1><i class="fas fa-pills"></i> Drogue d'Urgence</h1>
+        <div class="med-grid">
+            <a href="page1_adrenaline.html" class="med-card">
+                <i class="fas fa-heart-pulse"></i>
+                <div>
+                    <span class="number">#01</span>
+                    <div><strong>Adrénaline</strong></div>
+                </div>
+            </a>
+            <a href="page2_dobutrex.html" class="med-card">
+                <i class="fas fa-heart-pulse"></i>
+                <div>
+                    <span class="number">#02</span>
+                    <div><strong>Dobutrex</strong></div>
+                </div>
+            </a>
+            <a href="page3_xylocaine.html" class="med-card">
+                <i class="fas fa-syringe"></i>
+                <div>
+                    <span class="number">#03</span>
+                    <div><strong>Xylocaïne</strong></div>
+                </div>
+            </a>
+            <a href="page4_solumedrol.html" class="med-card">
+                <i class="fas fa-syringe"></i>
+                <div>
+                    <span class="number">#04</span>
+                    <div><strong>Solu-Medrol</strong></div>
+                </div>
+            </a>
+            <a href="page5_heparine.html" class="med-card">
+                <i class="fas fa-syringe"></i>
+                <div>
+                    <span class="number">#05</span>
+                    <div><strong>Héparine</strong></div>
+                </div>
+            </a>
+            <a href="page6_valium.html" class="med-card">
+                <i class="fas fa-brain"></i>
+                <div>
+                    <span class="number">#06</span>
+                    <div><strong>Valium</strong></div>
+                </div>
+            </a>
+            <a href="page7_aspegic.html" class="med-card">
+                <i class="fas fa-pills"></i>
+                <div>
+                    <span class="number">#07</span>
+                    <div><strong>Aspegic</strong></div>
+                </div>
+            </a>
+            <a href="page8_rivotril.html" class="med-card">
+                <i class="fas fa-brain"></i>
+                <div>
+                    <span class="number">#08</span>
+                    <div><strong>Rivotril</strong></div>
+                </div>
+            </a>
+            <a href="page9_atropine.html" class="med-card">
+                <i class="fas fa-heart"></i>
+                <div>
+                    <span class="number">#09</span>
+                    <div><strong>Atropine</strong></div>
+                </div>
+            </a>
+            <a href="page10_gardenal.html" class="med-card">
+                <i class="fas fa-moon"></i>
+                <div>
+                    <span class="number">#10</span>
+                    <div><strong>Gardénal</strong></div>
+                </div>
+            </a>
+            <a href="page11_salbutamol.html" class="med-card">
+                <i class="fas fa-wind"></i>
+                <div>
+                    <span class="number">#11</span>
+                    <div><strong>Salbutamol</strong></div>
+                </div>
+            </a>
+            <a href="page12_lovenox.html" class="med-card">
+                <i class="fas fa-syringe"></i>
+                <div>
+                    <span class="number">#12</span>
+                    <div><strong>Lovenox</strong></div>
+                </div>
+            </a>
+            <a href="page13_isuprel.html" class="med-card">
+                <i class="fas fa-heart-pulse"></i>
+                <div>
+                    <span class="number">#13</span>
+                    <div><strong>Isuprel</strong></div>
+                </div>
+            </a>
+            <a href="page14_syntocinon.html" class="med-card">
+                <i class="fas fa-baby"></i>
+                <div>
+                    <span class="number">#14</span>
+                    <div><strong>Syntocinon</strong></div>
+                </div>
+            </a>
+            <a href="page15_actrapid.html" class="med-card">
+                <i class="fas fa-pills"></i>
+                <div>
+                    <span class="number">#15</span>
+                    <div><strong>Actrapid</strong></div>
+                </div>
+            </a>
+            <a href="page16_loxen.html" class="med-card">
+                <i class="fas fa-heart"></i>
+                <div>
+                    <span class="number">#16</span>
+                    <div><strong>Loxen</strong></div>
+                </div>
+            </a>
+            <a href="page17_burinex.html" class="med-card">
+                <i class="fas fa-tint"></i>
+                <div>
+                    <span class="number">#17</span>
+                    <div><strong>Burinex</strong></div>
+                </div>
+            </a>
+            <a href="page18_tildiem.html" class="med-card">
+                <i class="fas fa-heart"></i>
+                <div>
+                    <span class="number">#18</span>
+                    <div><strong>Tildiem</strong></div>
+                </div>
+            </a>
+            <a href="page19_methergin.html" class="med-card">
+                <i class="fas fa-baby"></i>
+                <div>
+                    <span class="number">#19</span>
+                    <div><strong>Methergin</strong></div>
+                </div>
+            </a>
+            <a href="page20_eupantol.html" class="med-card">
+                <i class="fas fa-pills"></i>
+                <div>
+                    <span class="number">#20</span>
+                    <div><strong>Eupantol</strong></div>
+                </div>
+            </a>
+            <a href="page21_nepressol.html" class="med-card">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                    <span class="number">#21</span>
+                    <div><strong>Nepressol</strong></div>
+                </div>
+            </a>
+            <a href="page22_atracrium.html" class="med-card">
+                <i class="fas fa-syringe"></i>
+                <div>
+                    <span class="number">#22</span>
+                    <div><strong>Atracrium</strong></div>
+                </div>
+            </a>
+            <a href="page23_depakine.html" class="med-card">
+                <i class="fas fa-brain"></i>
+                <div>
+                    <span class="number">#23</span>
+                    <div><strong>Dépakine</strong></div>
+                </div>
+            </a>
+            <a href="page24_morphine.html" class="med-card">
+                <i class="fas fa-syringe"></i>
+                <div>
+                    <span class="number">#24</span>
+                    <div><strong>Morphine</strong></div>
+                </div>
+            </a>
+            <a href="page25_loxapac.html" class="med-card">
+                <i class="fas fa-brain"></i>
+                <div>
+                    <span class="number">#25</span>
+                    <div><strong>Loxapac</strong></div>
+                </div>
+            </a>
+            <a href="page26_firazyr.html" class="med-card">
+                <i class="fas fa-pills"></i>
+                <div>
+                    <span class="number">#26</span>
+                    <div><strong>Firazyr</strong></div>
+                </div>
+            </a>
+            <a href="page27_celocurine.html" class="med-card">
+                <i class="fas fa-syringe"></i>
+                <div>
+                    <span class="number">#27</span>
+                    <div><strong>Célocurine</strong></div>
+                </div>
+            </a>
+            <a href="page28_digoxine.html" class="med-card">
+                <i class="fas fa-heart-pulse"></i>
+                <div>
+                    <span class="number">#28</span>
+                    <div><strong>Digoxine</strong></div>
+                </div>
+            </a>
+            <a href="page29_perfalgan.html" class="med-card">
+                <i class="fas fa-pills"></i>
+                <div>
+                    <span class="number">#29</span>
+                    <div><strong>Perfalgan</strong></div>
+                </div>
+            </a>
+            <a href="page30_anexate.html" class="med-card">
+                <i class="fas fa-syringe"></i>
+                <div>
+                    <span class="number">#30</span>
+                    <div><strong>Anexate</strong></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

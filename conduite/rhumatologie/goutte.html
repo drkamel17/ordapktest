@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goutte - Conduite a Tenir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #9b59b6; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #3498db; margin-top: 20px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-burn"></i> Goutte</h1>
+        
+        <h2>Clinique</h2>
+        <p>Maladie inflammatoire articulaire chronique frequente, liee au metabolisme de lacide urique, depot de cristaux durate dans les articulations, sa manifestation clinique la plus caracteristique est une monoarthrite aigue.</p>
+        <ul>
+            <li>Douleur articulaire intense pulsatile permanente avec hypersensibilite exacerbee par la mobilisation</li>
+            <li>Gene, crampes, survient la nuit saccentue le matin</li>
+            <li>Peau chaude rouge et luisante, fievre</li>
+            <li>Syndrome de canal carpien, Tenosynovite</li>
+        </ul>
+        
+        <h3>Crise aigue</h3>
+        <p>Douleur brutale nocturne, tumefaction, rougeur</p>
+        
+        <h3>Goutte chronique</h3>
+        <p>Crises repetes, polyarthrite, deformations articulaires, depots de tophi</p>
+        
+        <h3>Complications</h3>
+        <ul>
+            <li>Arthropathie destructrice</li>
+            <li>Nephropathies uratique, lithiase renales</li>
+        </ul>
+        
+        <h3>Diagnostic</h3>
+        <p>Radio clinique confirmer par la biologie => Dosage de acide urique >60mg (Hyperuricemie) - Peut etre normal pendant la crise</p>
+        <p>Bilan renal : Hyperuricemie peut etre une cause ou une consequence dune IR</p>
+        <p>Si Radio et bio (-) => Test a la Clochicine</p>
+        <p>Analyse de liquide synovial : tres inflammatoire a PNN + cristaux durate de Na</p>
+        <p>Radio : erosions osseuses en "coup dongle" dans la goutte avancee</p>
+        <p>Echographie +++ (signe de double contours)</p>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>FNS</li>
+            <li>Renal</li>
+            <li>Ac urique</li>
+            <li>Ionogramme</li>
+        </ul>
+        
+        <div class="success">
+            <strong>Traitement de crise :</strong>
+            <ul>
+                <li>Immobiliser larticulation</li>
+                <li>Poche de glace 15min 3-4/j</li>
+                <li>Clochicine cp 1mg pdt 2mois</li>
+                <li>J1 : 1cp 10mg puis 1h apres 0.5mg - Si bonne tolerance continue le traitement</li>
+                <li>2cp/j pdt 3j puis 1cp/j le reste</li>
+                <li>Ou Colchicine 1 mg pendant 3 jours</li>
+                <li>1er jour : 1cp puis 1/2 cp 1H apres</li>
+                <li>2eme jour : 1/2 cp 3 fois par jour</li>
+                <li>3eme jour : 1/2 cp 3 fois par jour</li>
+                <li>Puis on garde 1/2 cp pendant 6 mois</li>
+                <li>Doliprane 3/j</li>
+                <li>AINS (Naproxene/Ibuprofene)</li>
+                <li>CTC si CI aux AINS</li>
+            </ul>
+            
+            <strong>Traitement du fond :</strong>
+            <ul>
+                <li>Zyloric 100mg 1cp/j a partir de J30</li>
+                <li>J60=> arrete la Clochicine et continuer avec Zyloric jusqua 8mois</li>
+                <li>Surveillance tout 3mois par le dosage de AU qui doit etre <60mg.</li>
+                <li>Regime alimentaire hypoprotidique, reduction des purines, Hydratation et reduction du poids</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

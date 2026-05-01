@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibrillation Auriculaire - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css-all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .drug { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-heart-pulse"></i> Fibrillation Auriculaire (FA)</h1>
+        <p><strong>Protocole P51 - P. Jabre - Mise a jour: 3/10/2018</strong></p>
+        
+        <h2>Definition</h2>
+        <p>Arythmie cardiaque avec des intervalles RR irreguliers et une disparition des ondes P a l'ECG durant plus de 30 secondes.</p>
+        
+        <p><strong>4 types de FA:</strong></p>
+        <ul>
+            <li>FA diagnostiquee pour la 1re fois</li>
+            <li>FA paroxystique: se termine spontanement dans les 7 premiers jours, souvent en 48h</li>
+            <li>FA persistante: dure plus de 7 jours ou necessite une cardioversion</li>
+            <li>FA permanente: FA acceptee et aucune cardioversion prevue</li>
+        </ul>
+        
+        <h2>Prise en Charge IAO</h2>
+        <div class="warning">
+            <h3>Constantes</h3>
+            <ul>
+                <li>Dextro, PAS, PAD, FC, FR, T°C, SpO2</li>
+                <li>ECG</li>
+            </ul>
+            <h3>Orientation</h3>
+            <ul>
+                <li>SAUV si: hypotension, FC &gt; 110/min, FA avec Symptomes de mauvaise tolerance (douleur thoracique, dyspnee, syncope), FA rapide (FC &gt; 130/min)</li>
+                <li>Box si FA bien toleree</li>
+            </ul>
+        </div>
+        
+        <h2>Prise en Charge Medicale</h2>
+        
+        <h3>Monitorage</h3>
+        <ul>
+            <li>PANI, Scope, SpO2</li>
+            <li>Voie veineuse</li>
+        </ul>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>Iono, BHC, glycemie</li>
+            <li>TSH: etiologie thyroidienne</li>
+            <li>Calcemie</li>
+            <li>TP, TCA +/- INR: si traitement par AVK</li>
+            <li>NFS, plaquettes</li>
+            <li>Hemocultures: si hypo ou hyperthermie</li>
+            <li>Troponine: si douleur thoracique, signes d'ischemie a l'ECG</li>
+            <li>Rx thorax: recherche cardiomegalie, OAP</li>
+        </ul>
+        
+        <h2>Controle de la Frequence Cardiaque</h2>
+        <p>En l'absence de ralentissement spontane apres correction des facteurs favorisants (fievre, hypovolemie, acidocetose, anemie, sepsis, hypokaliemie, douleur...)</p>
+        
+        <p><strong>Objectif: FC 80-100/min</strong></p>
+        
+        <h3>Beta-bloquants</h3>
+        <div class="drug">
+            <strong>Atenolol (Tenormine):</strong> 5 a 10 mg IVL (1 mg/min) suivie par 50 mg PO 15 min plus tard
+        </div>
+        
+        <h3>Inhibiteurs calciques (FA avec FEVG preservee, pas d'insuffisance cardiaque, pas de BPCO)</h3>
+        <div class="drug">
+            <strong>Verapamil (Isoptine):</strong> 5 a 10 mg IVL en 2 min renouvelable 1 fois
+            <br/>OU: <strong>Diltiazem (Tildiem):</strong> 0,25 mg/kg IVL sur 2 minutes renouvelable 1 fois
+        </div>
+        
+        <h3>Digitaliques (FA rapide, OAP, cardiopathie, vie sedentaire (sujets ages), echec des autres)</h3>
+        <div class="warning">
+            <strong>CI:</strong> WPW, hypokaliemie, hyperkaliemie, hypercalcemie
+        </div>
+        <div class="drug">
+            <strong>Digoxine:</strong> 0,5 mg IVL toutes les 4 heures (maximum 1,5 mg/24h)
+        </div>
+        
+        <h3>Amiodarone (FA rapide apres echec bêtabloquant)</h3>
+        <div class="drug">
+            <strong>Amiodarone (Cordarone):</strong> 5 mg/kg en 60 min puis 50 mg/h IVSE
+        </div>
+        
+        <h3>Flecaïnide (FA &lt; 48h mal toleree sans hypotension, sujet jeune, pas de cardiopathie)</h3>
+        <div class="drug">
+            <strong>Flecaïnide (Flecaine):</strong> 2 mg/kg IVL sur 10 minutes
+        </div>
+        
+        <h2>Cardioversion de la FA</h2>
+        
+        <h3>Choc electrique (100-150 joules biphasique)</h3>
+        <div class="important">
+            <p><strong>Indications:</strong> FA mal toleree avec hypotension</p>
+            <ul>
+                <li>Sedation: propofol 0,5-0,8 mg/kg en IVL jusqu'a perte de conscience</li>
+                <li>Materiel d'intubation pret a l'emploi</li>
+                <li>ISR si mauvaise tolerance non due uniquement a la FA ou risque important d'inhalation (F9)</li>
+            </ul>
+        </div>
+        
+        <h2>Prevention des Accidents Thromboemboliques</h2>
+        
+        <h3>Score CHA2DS2-VASc</h3>
+        <table style="width:100%; border-collapse: collapse;">
+            <tr style="background:#f0f0f0;">
+                <th style="padding:8px; border:1px solid #ddd;">Critere</th>
+                <th style="padding:8px; border:1px solid #ddd;">Score</th>
+            </tr>
+            <tr><td style="padding:8px; border:1px solid #ddd;">Insuffisance cardiaque/dysfonction VG</td><td style="padding:8px; border:1px solid #ddd;">1</td></tr>
+            <tr><td style="padding:8px; border:1px solid #ddd;">Hypertension arterielle</td><td style="padding:8px; border:1px solid #ddd;">1</td></tr>
+            <tr><td style="padding:8px; border:1px solid #ddd;">Age &gt;= 75 ans</td><td style="padding:8px; border:1px solid #ddd;">2</td></tr>
+            <tr><td style="padding:8px; border:1px solid #ddd;">Diabete</td><td style="padding:8px; border:1px solid #ddd;">1</td></tr>
+            <tr><td style="padding:8px; border:1px solid #ddd;">AVC ou AIT ou embolie peripherique</td><td style="padding:8px; border:1px solid #ddd;">2</td></tr>
+            <tr><td style="padding:8px; border:1px solid #ddd;">Pathologie vasculaire (IDM, vasculopathie peripherique)</td><td style="padding:8px; border:1px solid #ddd;">1</td></tr>
+            <tr><td style="padding:8px; border:1px solid #ddd;">Age 65-74 ans</td><td style="padding:8px; border:1px solid #ddd;">1</td></tr>
+            <tr><td style="padding:8px; border:1px solid #ddd;">Sexe feminin (si score &gt;= 1)</td><td style="padding:8px; border:1px solid #ddd;">1</td></tr>
+        </table>
+        
+        <h3>Modalites (FA non valvulaire)</h3>
+        
+        <p><strong>Si score CHA2DS2-VASc &gt;= 1:</strong></p>
+        <div class="drug">
+            <strong>AVK (Coumadine):</strong> INR cible entre 2 et 3
+            <br/>OU: <strong>Dabigatran (Pradaxa):</strong> 150 mg x 2/j si clairance creat &gt; 30 mL/min
+            <br/>OU: <strong>Rivaroxaban (Xarelto):</strong> 20 mg x 1/j si clairance creat &gt; 15 mL/min
+        </div>
+        
+        <p><strong>FA valvulaire:</strong> AVK (Coumadine): INR cible selon type de valve</p>
+        
+        <h2>References</h2>
+        <ul>
+            <li>Recommandations formalisees d'experts SFMU, 2015. Prise en charge de la fibrillation auriculaire en medecine d'urgence.</li>
+            <li>2016, ESC. Guidelines for the management of atrial fibrillation. Eur Heart J ; Sept 2016.</li>
+            <li>HAS. Bon usage du medicament. Fibrillation auriculaire non valvulaire : quelle place pour les anticoagulants oraux ? Mai 2018.</li>
+        </ul>
+    </div>
+</body>
+</html>

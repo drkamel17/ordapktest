@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyspnee - Conduite a Tenir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e67e22; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .info { background-color: #e7f3ff; border-left: 4px solid #3498db; padding: 15px; margin: 15px 0; }
+        .checkbox { list-style: none; padding-left: 0; }
+        .checkbox li { padding: 8px 0; border-bottom: 1px solid #eee; }
+        .checkbox li:before { content: "☑ "; color: var(--primary-color); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-breath"></i> Dyspnee</h1>
+        
+        <h2>Clinique</h2>
+        <ul>
+            <li>Difficulte a respirer avec une sensation de gene ou oppression</li>
+            <li>Si cardiopathie: polypnee avec sensation de soif d'air</li>
+        </ul>
+        
+        <div class="info">
+            <strong>Valeurs normales de FR:</strong>
+            <ul>
+                <li>NN => 0_28j : 40_60/min</li>
+                <li>NRS => 28j_2ans : 30_60/min</li>
+                <li>Enfant < age de puberte : 22_30/min</li>
+                <li>Adulte : 14_22/min</li>
+            </ul>
+        </div>
+        
+        <h2>Etiologies</h2>
+        <ul>
+            <li><strong>OAP:</strong>
+                <ul>
+                    <li>Detresse respiratoire brutale, nocturne</li>
+                    <li>Polypnee superficielle rapide,angoisse +/_ douleur, agitation</li>
+                    <li>Creatilents bilateraux</li>
+                    <li>Gravite: hypoTA, cyanose</li>
+                    <li>Dyspnee, Toux ramenent une expectoration mousseuse blanchatre..</li>
+                </ul>
+            </li>
+            <li><strong>Embolie pulmonaire:</strong>
+                <ul>
+                    <li>Polypnee brutale avec douleur basithoracique violente</li>
+                    <li>+/_ cyanose, syncope..</li>
+                    <li>TVP, alitement prolonge, post op...</li>
+                    <li>Examen clinique cardio pulmonaire normal</li>
+                </ul>
+            </li>
+            <li><strong>BPCO:</strong> Fumeur, toux avec expectorations, dyspnee pas amelioree a la position assise</li>
+            <li><strong>Asthme:</strong> Terrain atopique, bradypnee expiratoire, sibilants, nocturne</li>
+            <li><strong>Pneumopathies:</strong> Syndrome infectieux, fievre, syndrome de condensation parenchymateuse</li>
+            <li><strong>Chez un sujet Obese:</strong>
+                <ul>
+                    <li>Rechercher un diabete: Signes de resistance a l'insuline</li>
+                    <li>Syndrome d'apnee de sommeil</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2>Bilan: 🩸</h2>
+        <ul class="checkbox">
+            <li>TSH</li>
+            <li>Gly a jeun / HbA1C</li>
+            <li>Lipidique</li>
+            <li>Hepatique + Echographie hepatique => Rechercher une steatose hepatique</li>
+        </ul>
+    </div>
+</body>
+</html>

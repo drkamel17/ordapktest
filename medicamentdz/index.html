@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Recherche Médicaments - DZ Pharma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .search-box {
+            background: white;
+            border-radius: 50px;
+            padding: 15px 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 1.1rem;
+            padding: 10px;
+        }
+
+        .search-box button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .search-box button:hover {
+            background: #764ba2;
+        }
+
+        .results-info {
+            color: white;
+            margin: 20px 0;
+            font-size: 1.1rem;
+        }
+
+        .med-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .med-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .med-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            gap: 20px;
+        }
+
+        .med-header-left {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            flex: 1;
+        }
+
+        .med-img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .med-img:hover {
+            transform: scale(1.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 100;
+        }
+
+        .med-header-info {
+            flex: 1;
+        }
+
+        .med-name {
+            font-size: 1.3rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .med-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-end;
+        }
+
+        .med-price {
+            background: #4caf50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .med-link {
+            background: #1976d2;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .med-link:hover {
+            background: #1565c0;
+        }
+
+        .notice-link {
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .notice-link:hover {
+            background: #f57c00;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255,255,255,0.2);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .med-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .med-field {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 10px;
+        }
+
+        .med-field label {
+            display: block;
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .med-field span {
+            color: #333;
+            font-weight: 500;
+        }
+
+        .lab-info {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .lab-info h4 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+
+        .lab-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .lab-field {
+            font-size: 0.9rem;
+        }
+
+        .lab-field strong {
+            color: #1976d2;
+        }
+
+        .no-results {
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 50px;
+        }
+
+        .loading {
+            text-align: center;
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            h1 { font-size: 1.5rem; margin-bottom: 20px; }
+            .search-box { padding: 10px 20px; border-radius: 25px; }
+            .search-input { font-size: 15px; padding: 8px 12px; }
+            .results { padding: 10px; }
+            .med-card { padding: 12px; }
+            .med-name { font-size: 1rem; }
+            .med-info { font-size: 0.9rem; }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 1.2rem; }
+            .search-input { font-size: 14px; }
+            .med-card { padding: 10px; }
+            .med-name { font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💊 Recherche Médicaments</h1>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Rechercher un médicament par nom, DCI ou laboratoire...">
+            <button onclick="searchMed()">Rechercher</button>
+        </div>
+
+        <div class="results-info" id="resultsInfo"></div>
+        <div id="results"></div>
+    </div>
+
+    <div class="modal" id="imageModal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-img" id="modalImage" src="" alt="Image agrandie">
+    </div>
+
+    <script>
+        let medsData = {};
+        let allMeds = [];
+
+        async function loadData() {
+            document.getElementById('results').innerHTML = '<div class="loading">Chargement des données...</div>';
+            
+            try {
+                const response = await fetch('data/meds.json');
+                medsData = await response.json();
+                
+                allMeds = [];
+                for (const letter in medsData) {
+                    allMeds = allMeds.concat(medsData[letter]);
+                }
+                
+                document.getElementById('results').innerHTML = '';
+                document.getElementById('resultsInfo').textContent = `${allMeds.length} médicaments disponibles`;
+            } catch (error) {
+                document.getElementById('results').innerHTML = '<div class="no-results">Erreur lors du chargement des données</div>';
+                console.error(error);
+            }
+        }
+
+        function searchMed() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            
+            if (!query) {
+                document.getElementById('resultsInfo').textContent = `${allMeds.length} médicaments disponibles`;
+                document.getElementById('results').innerHTML = '';
+                return;
+            }
+
+            const results = allMeds.filter(med => {
+                const name = (med.name || '').toLowerCase();
+                const commercialName = (med.commercial_name || '').toLowerCase();
+                const dci = (med.dci || '').toLowerCase();
+                const generic = (med.generic || '').toLowerCase();
+                const labName = (med.lab?.name || '').toLowerCase();
+                
+                return name.includes(query) || 
+                       commercialName.includes(query) || 
+                       dci.includes(query) || 
+                       generic.includes(query) ||
+                       labName.includes(query);
+            });
+
+            displayResults(results, query);
+        }
+
+        function displayResults(results, query) {
+            const resultsDiv = document.getElementById('results');
+            const infoDiv = document.getElementById('resultsInfo');
+            
+            infoDiv.textContent = `${results.length} résultat(s) pour "${query}"`;
+            
+            if (results.length === 0) {
+                resultsDiv.innerHTML = '<div class="no-results">Aucun médicament trouvé</div>';
+                return;
+            }
+
+            resultsDiv.innerHTML = results.map(med => `
+                <div class="med-card">
+                    <div class="med-header">
+                        <div class="med-header-left">
+                            ${med.img ? `<img src="${med.img}" alt="${med.commercial_name || 'Médicament'}" class="med-img" onclick="openModal('${med.img}')" onerror="this.style.display='none'">` : ''}
+                            <div class="med-header-info">
+                                <div class="med-name">${med.commercial_name || med.name || 'N/A'}</div>
+                            </div>
+                        </div>
+                        <div class="med-actions">
+                            <div class="med-price">${med.reference_rate || med.ppa || 'Prix non disponible'}</div>
+                            ${med.link ? `<a href="${med.link}" target="_blank" class="med-link">🔗 Voir sur Pharmnet</a>` : ''}
+                            ${med.notice ? `<a href="${med.notice}" target="_blank" class="notice-link">📄 Notice</a>` : ''}
+                        </div>
+                    </div>
+                    
+                    <div class="med-grid">
+                        <div class="med-field">
+                            <label>Nom complet</label>
+                            <span>${med.name || 'N/A'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>DCI</label>
+                            <span>${med.dci || 'N/A'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>Générique</label>
+                            <span>${med.generic || 'N/A'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>Forme</label>
+                            <span>${med.form || 'N/A'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>Dosage</label>
+                            <span>${med.dosage || 'N/A'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>Conditionnement</label>
+                            <span>${med.conditioning || 'N/A'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>Pays</label>
+                            <span>${med.country || 'N/A'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>Liste</label>
+                            <span>${med.list || 'N/A'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>Classe pharmacologique</label>
+                            <span>${med.class?.pharmacological || 'N/A'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>Classe thérapeutique</label>
+                            <span>${med.class?.therapeutic || 'N/A'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>Commercialisé</label>
+                            <span>${med.commercialisation ? 'Oui' : 'Non'}</span>
+                        </div>
+                        <div class="med-field">
+                            <label>Remboursable</label>
+                            <span>${med.refundable === true ? 'Oui' : med.refundable === false ? 'Non' : 'N/A'}</span>
+                        </div>
+                    </div>
+                    
+                    ${med.lab ? `
+                    <div class="lab-info">
+                        <h4>🏭 Laboratoire</h4>
+                        <div class="lab-details">
+                            <div class="lab-field"><strong>Nom:</strong> ${med.lab.name || 'N/A'}</div>
+                            ${med.lab.address ? `<div class="lab-field"><strong>Adresse:</strong> ${med.lab.address}</div>` : ''}
+                            ${med.lab.tel ? `<div class="lab-field"><strong>Téléphone:</strong> ${med.lab.tel}</div>` : ''}
+                            ${med.lab.web ? `<div class="lab-field"><strong>Site:</strong> ${med.lab.web}</div>` : ''}
+                        </div>
+                    </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        document.getElementById('searchInput').addEventListener('keyup', function(e) {
+            if (e.key === 'Enter') {
+                searchMed();
+            } else {
+                searchMed();
+            }
+        });
+
+        function openModal(imgSrc) {
+            document.getElementById('modalImage').src = imgSrc;
+            document.getElementById('imageModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        loadData();
+    </script>
+</body>
+</html>

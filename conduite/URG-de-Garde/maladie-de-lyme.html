@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maladie de Lyme - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .drug { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-bug"></i> Maladie de Lyme</h1>
+        <p><strong>P104 - A. Guenin - Actualisation : 3/9/2018</strong></p>
+        
+        <h2>Definition</h2>
+        <p>Zoonose due a une borrélie (Borrelia burgdorferi) transmise a l'homme par la tique, le plus souvent lors de promenade en foret ou de travaux agricoles et forestiers.</p>
+        
+        <h2>Prise en Charge IAO</h2>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>PAS, PAD, FC, FR, T°C, SpO2, Dextro</li>
+            <li>ECG</li>
+        </ul>
+        
+        <h3>Orientation</h3>
+        <div class="success">
+            <p><strong>Box</strong></p>
+        </div>
+        
+        <h2>Prise en Charge Medicale</h2>
+        
+        <h3>Phase primaire (erytheme migrant et piqere de tique)</h3>
+        <div class="warning">
+            <p><strong>Pas de bilan : le diagnostic est clinique</strong></p>
+            <p>Pas de serologie (50 % negatives, apparition tardive des anticorps)</p>
+            <p>Traitement probabiliste</p>
+        </div>
+        
+        <h3>Phase secondaire et tertiaire</h3>
+        <div class="warning">
+            <p><strong>Diagnostic :</strong> serologie sanguine</p>
+            <p>PCR sur liquide articulaire</p>
+            <p>Neuroborreliose : PL</p>
+            <p>Atteinte cardiaque (risque de trouble conductif et troubles du rythme) : avis cardio</p>
+        </div>
+        
+        <h2>Traitement</h2>
+        
+        <h3>Phase primaire</h3>
+        <div class="drug">
+            <strong>Amoxicilline (Clamoxyl) :</strong> 1 g x 3/j pendant 14 jours
+            <br/><br/>
+            OU : <strong>Doxycycline :</strong> 100 mg x 2/j pendant 14 jours
+        </div>
+        
+        <h3>Phase secondaire et tertiaire</h3>
+        <div class="drug">
+            <strong>Ceftriaxone (Rocephine) :</strong> 2 g/j pendant 21 jours
+            <br/><br/>
+            OU : <strong>Doxycycline :</strong> 200 mg/j pendant 21 jours
+        </div>
+        
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>Phase primaire :</strong> ambulatoire</li>
+            <li><strong>Phase secondaire et tertiaire :</strong> hospitalisation initiale</li>
+        </ul>
+        
+        <div class="success">
+            <p><strong>Reference :</strong> Recommandation de bonne pratiques. Borreliose de Lyme et autres maladies vectorielles a tiques. HAS. Juin 2018.</p>
+        </div>
+    </div>
+</body>
+</html>

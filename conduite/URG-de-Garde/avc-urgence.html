@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVC (Accident Vasculaire Cerebral) - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-brain"></i> AVC (Accident Vasculaire Cerebral)</h1>
+        
+        <h2>Definition</h2>
+        <p>Deficit neurologique sudden dorigine vasculaire. URGENCE ABSOLUE - window therapeutique de 4h30 pour thrombolyse.</p>
+        
+        <h2>Prise en Charge Initiale</h2>
+        <div class="posology">
+            <p><strong>Constantes :</strong></p>
+            <ul>
+                <li>TA (ne pas abaisser avant resultats TDM)</li>
+                <li>FC, FR, T°C</li>
+                <li>SpO2</li>
+                <li>Glycemie capillaire</li>
+            </ul>
+            <p><strong>Bilan :</strong></p>
+            <ul>
+                <li>Bilan durgence</li>
+                <li>ECG</li>
+                <li>TDM cerebral sans injection</li>
+            </ul>
+        </div>
+        
+        <h2>Diagnostic Clinique</h2>
+        <div class="important">
+            <p><strong>Troubles neurologiques :</strong></p>
+            <ul>
+                <li>Aphasie ou Dysarthrie</li>
+                <li>Cephalees, Flou visuel</li>
+                <li>Paralysie faciale centrale ou peripherique</li>
+                <li>Deficit moteur : hemiparesie ou hemiplegie</li>
+            </ul>
+        </div>
+        
+        <h2>Interpretation TDM</h2>
+        <div class="posology">
+            <p><strong>Hyperdensite :</strong> AVC hemorragique</p>
+            <p><strong>Hypodensite :</strong> AVC ischemique</p>
+            <p><strong>Normal :</strong> suspicion dAVC ischemique (a refaire 48-72h apres)</p>
+        </div>
+        
+        <h2>Conduite a Tenir</h2>
+        
+        <h3>Hospitalisation</h3>
+        <ul>
+            <li>Minimum 24 a 48h</li>
+            <li>Lettres a lastreinte de neuro-med</li>
+        </ul>
+        
+        <h3>Surveillance</h3>
+        <ul>
+            <li>TA</li>
+            <li>Glycemie si patient diabetique</li>
+        </ul>
+        
+        <h3>Traitement</h3>
+        <div class="posology">
+            <p><span class="drug-name">Mannitol</span></p>
+            <ul>
+                <li><strong>AVC ischemique :</strong> 100 mL/8h IV</li>
+                <li><strong>AVC hemorragique :</strong> 100 mL/6h IV</li>
+            </ul>
+        </div>
+        
+        <h3>Ordonnance de sortie</h3>
+        <div class="posology">
+            <p><span class="drug-name">Citicoline</span> (<span class="drug-commercial">Somazina</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 1 inj/j IM puis relais per os : 2 mL x 3/jour</li>
+            </ul>
+            <p><span class="drug-name">Aspirine</span> (<span class="drug-commercial">Aspagic</span>) 100 mg</p>
+            <ul>
+                <li><strong>AVC ischemique :</strong> 1 sachet/jour</li>
+            </ul>
+            <p><span class="drug-name">Ranitidine</span> (<span class="drug-commercial">Azantac</span>)</p>
+            <ul>
+                <li><strong>Protection gastrique :</strong> 1 comprime/jour</li>
+            </ul>
+        </div>
+        
+        <div class="warning">
+            <p><strong>AVC hemorragique :</strong> Abstention therapeutique pour la TA sauf si PAS > 220 mmHg</p>
+            <p><strong>AVC ischemique :</strong> Reduire la TA mais ne pas depasser 20% dans les premieres 24h</p>
+        </div>
+    </div>
+</body>
+</html>

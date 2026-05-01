@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brulures - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-fire"></i> Brulures</h1>
+        
+        <h2>Definition</h2>
+        <p>Les brulures se definissent en fonction de la profondeur :</p>
+        <ul>
+            <li><strong>1er degre :</strong> erytheme douloureux sans phlyctene</li>
+            <li><strong>2e degre superficiel :</strong> couleur rosee, phlyctenes douloureuses</li>
+            <li><strong>2e degre profond :</strong> blancheur, phlyctenes de grand diameter</li>
+            <li><strong>3e degre :</strong> perte de sensibilite, peau cartonnee</li>
+        </ul>
+
+        <h2>Prise en Charge IAO</h2>
+        <ul>
+            <li><strong>Constantes :</strong> T°C, TA, FC</li>
+            <li><strong>Decouvrir les lesions</strong></li>
+            <li><strong>Secher par tamponnement</strong></li>
+            <li><strong>Entourer de champs steriles</strong></li>
+        </ul>
+
+        <h2>Signes de Gravite - Brulures Graves</h2>
+        <ul>
+            <li>> 10% de la surface corporelle bruluree (SCB) au 2e degre profond ou 3e degre</li>
+            <li>> 10% SCB si > 50 ans ou < 10 ans</li>
+            <li><strong>Age < 3 ans ou > 70 ans</strong></li>
+            <li><strong>Pathologie grave preexistante</strong></li>
+            <li><strong>Localisation :</strong> face, mains, cou circulaire, perine, pieds</li>
+            <li><strong>Brulure electrique ou chimique</strong></li>
+            <li><strong>Inhalation de fumees</strong></li>
+            <li><strong>Brulure lors d'explosion, AVP ou incendie en milieu clos</strong></li>
+        </ul>
+
+        <h2>Evaluation de la gravite</h2>
+        <ul>
+            <li><strong>Surface corporelle bruluree (SCB)</strong> - regle de Wallace (adulte) : 9% par membre ou segment de membre</li>
+            <li><strong>Paume de la main = 1%</strong> (enfant)</li>
+            <li><strong>Profondeur</strong></li>
+            <li><strong>Localisation</strong></li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>Brulure simple :</strong> Box</li>
+            <li><strong>Brulure grave :</strong> SAUV</li>
+        </ul>
+
+        <h2>Bilan</h2>
+        <ul>
+            <li><strong>NFS, iono, glycemie</strong></li>
+            <li><strong>CPK</strong></li>
+            <li><strong>TP</strong></li>
+            <li><strong>BHC</strong></li>
+            <li><strong>GDS</strong></li>
+            <li><strong>Lactates</strong> (detection intoxication au cyanure)</li>
+            <li><strong>Groupe, RAI</strong></li>
+        </ul>
+
+        <h2>Traitement</h2>
+        
+        <h3>Brulures Graves - Symptomatique</h3>
+        <div class="posology">
+            <p><strong>Oter les vetements</strong> s'ils ne collent pas, oter les bagues</p>
+            <p><strong>Rechauffement externe</strong> (couverture de survie)</p>
+            <p><strong>Oxygenerapie systematique</strong> : masque haute concentration 6 L/min</p>
+            <p><strong>Intubation (F9)</strong> si :
+                <ul>
+                    <li>Detresse respiratoire</li>
+                    <li>Brulure de la tete et du cou</li>
+                    <li>Brulure > 50% SCB</li>
+                    <li>Troubles de conscience</li>
+                </ul>
+            </p>
+        </div>
+
+        <h3>Remplissage vasculaire</h3>
+        <div class="posology">
+            <p><strong>Pose voie veineuse</strong> en zone saine. A defaut, catheter intraosseux</p>
+            <p><span class="drug-name">Ringer lactate</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 4 mL/kg/% SCB/24h</li>
+                <li><strong>Moitie en 8 heures</strong>, autre moitie sur 16 heures suivantes</li>
+            </ul>
+            <p><strong>OU, en l'absence d'estimation de la SCB :</strong></p>
+            <p><span class="drug-name">Ringer lactate</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 20 mL/kg dans la premiere heure</li>
+            </ul>
+        </div>
+
+        <h3>Analgesie</h3>
+        <div class="posology">
+            <p><span class="drug-name">Morphine titree</span> (P41)</p>
+            <p><strong>ET :</strong></p>
+            <p><span class="drug-name">Ketamine</span> (<span class="drug-commercial">Ketalar</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 0,25 mg/kg en 30 min IVSE</li>
+            </ul>
+        </div>
+
+        <h3>Vaccin antitetanos</strong> si necessaire</h3>
+
+        <h3>Traitement local</h3>
+        <ul>
+            <li>Excision des phlyctenes</li>
+            <li>Rincer a l'eau du robinet</li>
+            <li>Rasage des polis sur et en peripherie de la brulure</li>
+        </ul>
+
+        <h3>Pansements</h3>
+        <ul>
+            <li>Antiseptique non alcoolise</li>
+            <li>Pansement sans colorant, non compressif</li>
+            <li>Doigts et orteils separes</li>
+            <li>Controle et renouvellement tous les 2 jours</li>
+            <li><strong>1er degre :</strong> Biafine</li>
+            <li><strong>2e degre superficiel propre :</strong> Sulfadiazine d'argent (Flammazine, Sicazine)</li>
+            <li><strong>2e degre superficiel sale ou 2e profond :</strong> avis specialise indispensable</li>
+        </ul>
+
+        <h2>Cas particuliers</h2>
+        
+        <h3>Brulures electriques (P42)</h3>
+        
+        <h3>Brulures chimiques</h3>
+        <ul>
+            <li><strong>Lavage prolonge</strong> a grande eau tide (30 min)</li>
+            <li><strong>Lesions par acide fluorhydrique :</strong>
+                <ul>
+                    <li>Hypocalcemie letale des > 2% SCB</li>
+                    <li>Gluconate de calcium 10% SC dans les zones brulures (0,5 mL/cm2 SCB)</li>
+                    <li>ou gel de gluconate de calcium a 2,5%</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Brulures par produits adherents (goudron, cire)</h3>
+        <ul>
+            <li>Ne pas chercher a enlever les produits adherents</li>
+            <li>Reanimation hydroelectrolytique et respiratoire en milieu specialise</li>
+        </ul>
+
+        <h2>Recherche de lesions associees</h2>
+        <ul>
+            <li>Polytraumatismes (P143)</li>
+            <li>Brulures profondes et circonferentielles : avis chirurgical</li>
+            <li>Intoxication au CO (P79)</li>
+            <li>Intoxication au cyanure (P91)</li>
+            <li>Imagerie : recherche traumatisme associe</li>
+        </ul>
+
+        <h2>Brulures Simples</h2>
+        <ul>
+            <li><strong>Traiter la douleur :</strong> morphiniques titres (P41)</li>
+            <li><strong>Traitement local :</strong> voir ci-dessus</li>
+            <li><strong>Vaccin antitetanos</strong> si necessaire</li>
+        </ul>
+
+        <h2>References</h2>
+        <ul>
+            <li>Prise en charge des brulures. Protocole URG' de Garde 2019-2020.</li>
+        </ul>
+    </div>
+</body>
+</html>

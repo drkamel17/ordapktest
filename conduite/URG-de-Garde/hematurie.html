@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hématurie - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .drug { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-tint"></i> Hematurie</h1>
+        <p><strong>Protocole P58 - F. Adnet - Mise a jour: 4/10/2018</strong></p>
+        
+        <h2>Definition</h2>
+        <p>Presence d'hematies dans les urines > 10 000/mL. L'hematurie est visible a partir d'une concentration de 500 000/mL.</p>
+        
+        <h2>Prise en Charge IAO</h2>
+        <div class="warning">
+            <h3>Bilan</h3>
+            <ul>
+                <li>T°C, PAS, PAD, FC, Dextro</li>
+                <li>BU</li>
+                <li>ECG</li>
+                <li>HemoCue</li>
+            </ul>
+            <h3>Orientation</h3>
+            <ul>
+                <li>Box: hematurie avec douleur, fievre ou caillots, hematurie sans douleur, hematurie microscopique isolee</li>
+                <li>SAUV: signes de choc</li>
+            </ul>
+        </div>
+        
+        <h2>Prise en Charge en Box</h2>
+        
+        <h3>Colique nephritique sans gravite (P25)</h3>
+        
+        <h3>Presence de caillots ou syndrome obstructif</h3>
+        <div class="drug">
+            <strong>Sondage double courant:</strong>
+            <br/>- Decaillotage: retirer les caillots avec une seringue de 60 mL jusqu'a l'elimination de tous les caillots
+            <br/>- Lavage vesical
+        </div>
+        
+        <h3>Retour a domicile</h3>
+        <p>Consultation urologie programmee</p>
+        
+        <h2>Prise en Charge en SAUV</h2>
+        
+        <p>Hematurie avec insuffisance renale</p>
+        <div class="warning">
+            <ul>
+                <li>Iono, NFS, proteinurie, creatininemie, uremie</li>
+                <li>Scanner abdominal sans injection</li>
+                <li>Avis urologue</li>
+            </ul>
+        </div>
+        
+        <p>Pyelonephrite sans signe de gravite</p>
+        <div class="success">
+            <strong>RAD avec antibiotique</strong> (P73)
+        </div>
+        
+        <h3>Presence caillots</h3>
+        <div class="drug">
+            <ul>
+                <li>TP, TCA</li>
+                <li>NFS</li>
+                <li>Voie veineuse</li>
+                <li>PANI, Scope, I, S</li>
+            </ul>
+        </div>
+        
+        <h3>Colique nephritique febrile et/ou infection urinaire</h3>
+        <ul>
+            <li>Scanner abdominal</li>
+            <li>TP, TCA</li>
+            <li>NFS</li>
+            <li>Sondage double courant</li>
+            <li>Sodium physiologique, 1 000 mL en 30 min si signes de choc</li>
+            <li>Avis urologie</li>
+        </ul>
+        
+        <h2>Traitement si signes de choc</h2>
+        <div class="important">
+            <div class="drug">
+                <strong>Decaillotage puis lavage vesical</strong>
+                <br/><strong>Remplissage vasculaire:</strong> serum physiologique (P24)
+                <br/><strong>Transfusion si Hb < 7 g/dL-1</strong>
+                <br/><strong>Avis urologue</strong>
+            </div>
+        </div>
+        
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>USC</strong> : surveillance</li>
+            <li><strong>Transfert urologique</strong> si needed</li>
+        </ul>
+        
+        <div class="success">
+            <p><strong>Reference:</strong> P58 Hematurie</p>
+        </div>
+    </div>
+</body>
+</html>

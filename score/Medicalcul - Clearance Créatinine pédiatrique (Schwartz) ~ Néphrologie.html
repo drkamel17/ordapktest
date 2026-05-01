@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Medicalcul - Clearance Créatinine pédiatrique (Schwartz) ~ Néphrologie</title>
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="./Medicalcul - Clearance Créatinine pédiatrique (Schwartz) ~ Néphrologie_files/_scripts.js.تنزيل"></script>
+    <link rel="stylesheet" href="./Medicalcul - Clearance Créatinine pédiatrique (Schwartz) ~ Néphrologie_files/styles.css">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            line-height: 1.4;
+        }
+        
+        .header img {
+            max-width: 100px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #e1e5e9;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+        
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+        
+        .form-row label {
+            min-width: 150px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .form-row input[type="number"], 
+        .form-row select {
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 6px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        .form-row input[type="number"]:focus, 
+        .form-row select:focus {
+            border-color: #e74c3c;
+            box-shadow: 0 0 0 2px rgba(231,76,60,0.2);
+        }
+        
+        .radio-group {
+            margin: 10px 0;
+            padding: 10px 0;
+        }
+        
+        .radio-option {
+            display: flex;
+            align-items: flex-start;
+            margin: 8px 0;
+            padding: 8px;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+        }
+        
+        .radio-option:hover {
+            background-color: #e3f2fd;
+        }
+        
+        .radio-option input[type="radio"] {
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+        
+        .radio-option label {
+            margin: 0;
+            flex-grow: 1;
+            line-height: 1.4;
+            color: #2c3e50;
+        }
+        
+        .note {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-top: 2px;
+        }
+        
+        .submit-section {
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+        }
+        
+        .calculate-btn {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        .calculate-btn:active {
+            transform: translateY(0);
+        }
+        
+        .result-section {
+            background-color: #e8f4fc;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            border: 2px dashed #3498db;
+        }
+        
+        .result-label {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .result-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #e74c3c;
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            display: inline-block;
+            min-width: 120px;
+        }
+        
+        .info-section {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .info-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .info-content {
+            color: #34495e;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            margin-top: 20px;
+        }
+        
+        .footer-links {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .form-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .form-row label {
+                min-width: auto;
+                margin-bottom: 5px;
+            }
+            
+            body {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+
+    <script type="text/javascript">
+        // ===========================================================================================
+        // Fonction de calcul de la page
+        function f_Calculer()
+        {
+            // calcul du résultat
+            var Creat = document.Form.vCreat.value*document.Form.vCrUnit.value;
+            var K = f_GetRadioValue('vAge')*1;
+            var Res = K * document.Form.vTaille.value / Creat;
+
+            // Affichage du résultat
+            document.Form.Resultat.value = Res;
+
+            try { MSSAndroidFunction.storeHistory("schwartz.html", "Clearance Créatinine pédiatrique (Schwartz)", "nephrologie", "Clearance (ml/mn):", Res); } catch(e) {}
+        }
+        // ======================================================================================
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Clearance de la créatinine,<br>version pédiatrique:<br>formule de Schwartz</h1>
+            <img src="./Medicalcul - Clearance Créatinine pédiatrique (Schwartz) ~ Néphrologie_files/zzimgspe_nephrologie.png" alt="Néphrologie">
+        </div>
+
+        <div class="content">
+            <form name="Form" id="Form">
+                <div class="form-group">
+                    <div class="form-row">
+                        <label for="vTaille">Taille :</label>
+                        <input name="vTaille" id="vTaille" type="number" lang="en" onchange="f_Calculer()" style="width:100px"> 
+                        <span>cm</span>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="vCreat">Créatininémie :</label>
+                        <input name="vCreat" type="number" lang="en" id="vCreat" style="width:100px" onchange="f_Calculer()">
+                        <select name="vCrUnit" id="vCrUnit" onchange="f_Calculer()">
+                            <option value="1">µmol/l</option>
+                            <option value="8.84">mg/l</option>
+                            <option value="88.4">mg/dl</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-row">
+                        <strong>Age et sexe</strong>
+                    </div>
+                    
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input name="vAge" id="vAgeNF" type="radio" value="36.5" onclick="f_Calculer()" checked="checked">
+                            <label for="vAgeNF">
+                                Nouvelle formule (2009).<br>
+                                <span class="note">(recommandée, tout âge et tout sexe)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-row">
+                            <strong>Ancienne formule</strong>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input name="vAge" id="vAge29" type="radio" value="29" onclick="f_Calculer()">
+                            <label for="vAge29">Nouveau né (≤ 28 jours).</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input name="vAge" id="vAge40" type="radio" value="40" onclick="f_Calculer()">
+                            <label for="vAge40">Nourrisson (28 jours - 2 ans).</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input name="vAge" id="vAge49" type="radio" value="49" onclick="f_Calculer()">
+                            <label for="vAge49">Enfant de 2 à 12 ans.</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input name="vAge" id="vAge53" type="radio" value="53" onclick="f_Calculer()">
+                            <label for="vAge53">Fille de 12 à 21 ans.</label>
+                        </div>
+                        
+                        <div class="radio-option">
+                            <input name="vAge" id="vAge62" type="radio" value="62" onclick="f_Calculer()">
+                            <label for="vAge62">Garçon de 12 à 21 ans.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submit-section">
+                    <button type="button" class="calculate-btn" onclick="f_Calculer()">Calculer</button>
+                </div>
+
+                <div class="result-section">
+                    <div class="result-label">Clearance :</div>
+                    <input name="Resultat" type="text" id="Resultat" style="width:120px; text-align:center; font-weight:bold; font-size:1.2em;" readonly="readonly"> ml/mn
+                </div>
+            </form>
+
+            <div class="info-section">
+                <div class="info-title">Interprétation:</div>
+                <div class="info-content">
+                    La formule de Schwartz permet d'estimer la clearance de la créatinine jusqu'à 21 ans. Elle n'est pas valide au delà.<br>
+                    Valeurs usuelles: 5 - 7 jours : 50,6+/-5,8 mL/min.1,73m² ; 1 - 2 mois : 64,6+/-5,8 mL/min.1,73m² ; 5 - 8 mois : 87,7+/-11,9 mL/min.1,73m² ; 9 - 12 mois : 86,9+/-8,4 mL/min.1,73m² ; &gt; 12 mois : H : 124+/-26 ; F : 109+/-13,5 mL/min.1,73m².
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-title">Références:</div>
+                <div class="info-content">
+                    Formule: Clearance = K x Taille (cm) / Créatinine. K = 36,5 (nouvelle formule 2009), 29 (nouveau-né), 40 (nourrisson), 49 (enfant &lt; 12 ans), 53 (fille 12-21 ans), 62 (garçon 12-21 ans).<br>
+                    Schwartz GJ, Haycock GB, Edelmann CM Jr, Spitzer A: A simple estimate of glomerular filtration rate in children derived from body length and plasma creatinine. Pediatrics 58:259-263, 1976.<br>
+                    Schwartz GJ, Muñoz A, Schneider MF, et al. New Equations to Estimate GFR in Children with CKD. Journal of the American Society of Nephrology : JASN. 2009;20(3):629-637.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="index.html">[Racine]</a>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>

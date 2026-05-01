@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allergies - Anaphylaxie - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-allergies"></i> Allergies - Anaphylaxie</h1>
+        
+        <h2>Definition</h2>
+        <p>Reaction d'hypersensibilite (allergique) systemique, generalisee, severe, pouvant engager le pronostic vital.</p>
+
+        <h3>Definition clinique de l'anaphylaxie (1 des 3 criteres) :</h3>
+        <ul>
+            <li>Atteinte cutanee ou muqueuse ET au moins 1 des 2 atteites viscrales :
+                <ul>
+                    <li>Respiratoire (dyspnee, bronchospasme)</li>
+                    <li>Hypotension ou mauvaise perfusion d'organe (syncope, collapsus, hypotonie)</li>
+                </ul>
+            </li>
+            <li>2 ou plus des atteites viscrales suivantes survenant rapidement apres exposition a un allergen probable :
+                <ul>
+                    <li>Cutannee (urticaire) ou angioedeme</li>
+                    <li>Respiratoire (dyspnee, spasme...)</li>
+                    <li>Hypotension ou mauvaise perfusion d'organe</li>
+                    <li>Digestive (douleurs abdominales, vomissements)</li>
+                </ul>
+            </li>
+            <li>Hypotension (PAS < 90 mmHg) apres exposition a un allergen connu du patient</li>
+        </ul>
+
+        <h2>Classification</h2>
+        <ul>
+            <li><strong>Urticaire :</strong> signes cutaneomuqueux generalises (erytheme, urticaire avec ou sans angioedeme) sans atteite viscérale</li>
+            <li><strong>Anaphylaxie sans choc :</strong> atteite viscérale modérée (signs cutanmuqueux, hypotension, symptomes gastro-intestinaux, tachycardie inhabituelles, hyperreactivite bronchique)</li>
+            <li><strong>Choc anaphylactique :</strong> atteite viscérale severe (collapsus, tachycardie/bradycardie, bronchospasme, oedeme de Quincke)</li>
+        </ul>
+
+        <h2>Prise en Charge IAO</h2>
+        <ul>
+            <li><strong>Constantes :</strong> FR, PAS, PAD, FC, T°C, SpO2</li>
+            <li><strong>ECG</strong> (detection spasme coronarien)</li>
+        </ul>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>Grade I (urticaire) :</strong> Box</li>
+            <li><strong>Autres grades :</strong> SAUV</li>
+        </ul>
+
+        <h2>Bilan specifique</h2>
+        <ul>
+            <li><strong>Recherche du facteur declenchant :</strong> alimentaire, piqre d'hymenoptere, medicament (AINS), autre</li>
+            <li><strong>Tryptase serique</strong></li>
+            <li><strong>Histamine plasmatique</strong></li>
+        </ul>
+
+        <h2>Traitement</h2>
+        
+        <h3>Arret de l'exposition a l'allergene</h3>
+
+        <h3>Oxygenerapie</h3>
+        <p>Masque 6-8 L/min, objectif SpO2 > 95% si dyspnee</p>
+
+        <h3>Voie veineuse</h3>
+        <p>Serum physiologique (1 500 mL/24h)</p>
+
+        <h3>Adrenaline - selon le grade</h3>
+        <div class="posology">
+            <p><strong>Urticaire isolee :</strong> pas d'adrenaline</p>
+            
+            <p><strong>Anaphylaxie sans choc :</strong> discuter injection adrénaline si symptome severe</p>
+            <p><span class="drug-name">Adrenaline</span></p>
+            <ul>
+                <li><strong>Dose :</strong> diluer 1 ampoule de 1 mg dans 10 mL = 0,1 mg/mL</li>
+                <li><strong>Injecter :</strong> 0,01 mg/kg IM (cuisse)</li>
+                <li><strong>Dose max :</strong> 0,5 mg adulte</li>
+                <li><strong>Renewable :</strong> toutes les 5-15 min si necessaire</li>
+            </ul>
+            
+            <p><strong>Choc anaphylactique :</strong> injecter adrénaline IV</p>
+            <p><span class="drug-name">Adrenaline</span></p>
+            <ul>
+                <li><strong>Dose :</strong> diluer 1 mg dans 20 mL = 0,05 mg/mL</li>
+                <li><strong>Injecter :</strong> bolus de 50 µg IVL toutes les 2 min</li>
+                <li><strong>Puis IVSE :</strong> 0,05 µg/kg/min</li>
+                <li><strong>Adapter le debit</strong> a la pression arterielle</li>
+            </ul>
+            
+            <p><strong>ACR :</strong> reanimation (P15)</p>
+        </div>
+
+        <h3>Remplissage vasculaire</h3>
+        <div class="posology">
+            <p><span class="drug-name">Serum physiologique</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 20 mL/kg en 20 min si hypotension</li>
+            </ul>
+        </div>
+
+        <h3>Antihistaminiques</h3>
+        <div class="posology">
+            <p><strong>Urticaire isolee :</strong></p>
+            <p><span class="drug-name">Dexchlorpheniramine</span> (<span class="drug-commercial">Polaramine</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 10 mg IV ou PO</li>
+            </ul>
+            
+            <p><strong>Anaphylaxie avec ou sans choc :</strong> en relais de l'adrénaline</p>
+            <p><span class="drug-name">Xyzall</span></p>
+            <ul>
+                <li><strong>Dose :</strong> 1 cp matin et soir pendant 10 jours</li>
+            </ul>
+        </div>
+
+        <h3>Corticoides</h3>
+        <div class="posology">
+            <p><strong>Urticaire isolee :</strong> pas de corticoide</p>
+            
+            <p><strong>Anaphylaxie avec ou sans choc :</strong></p>
+            <p><span class="drug-name">Methylprednisolone</span> (<span class="drug-commercial">Solumedrol</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 1 mg/kg IVL ou PO</li>
+            </ul>
+            <p><span class="drug-name">Prednisolone</span> (<span class="drug-commercial">Solupred</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 1 mg/kg/jour PO le matin pendant 3-5 jours</li>
+            </ul>
+        </div>
+
+        <h3>En cas de bronchospasme</h3>
+        <div class="posology">
+            <p><span class="drug-name">Terbutaline</span> (<span class="drug-commercial">Bricanyl</span>)</p>
+            <ul>
+                <li><strong>Dose :</strong> 10 mg en nebulisation</li>
+            </ul>
+        </div>
+
+        <h2>Orientation - Sortie</h2>
+        <ul>
+            <li><strong>Eviction allergene</strong></li>
+            <li><strong>Information sur le risque de rebond</strong></li>
+            <li><strong>Consultation allergologie</strong></li>
+            <li><strong>Declaration reseau allergovigilance</strong></li>
+            <li><strong>Eventuellement prescription d'adrénaline auto-injectable</strong> (Jext/Epipen ou Anapen) avec explications</li>
+        </ul>
+
+        <h2>References</h2>
+        <ul>
+            <li>Simons FE. World Allergy Organization Guidelines for the Assessment and Management of Anaphylaxis. Curr Opin Allergy Clin Immunol 2012 ; 12 : 389-99.</li>
+            <li>Gloaguen A. et al. Prise en charge de l'anaphylaxie en medecine d'urgence. Ann Fr Med Urgences 2016 ; 6 : 342-64.</li>
+        </ul>
+    </div>
+</body>
+</html>

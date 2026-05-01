@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Index des Scores Médicaux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .category {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-left: 4px solid #3498db;
+        }
+        .category h2 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .link-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .link-list li {
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            border-left: 3px solid #3498db;
+        }
+        .link-list li:hover {
+            background-color: #e3f2fd;
+        }
+        .link-list a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+            display: block;
+            transition: color 0.3s;
+        }
+        .link-list a:hover {
+            color: #1a5276;
+            text-decoration: underline;
+        }
+        .search-container {
+            margin-bottom: 20px;
+        }
+#searchInput {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            body { margin: 10px; padding: 0; }
+            .container { padding: 15px; }
+            h1 { font-size: 1.3rem; }
+            h2 { font-size: 1.1rem; }
+            .link-list li a { font-size: 0.95rem; padding: 8px; }
+        }
+        
+        @media (max-width: 480px) {
+            body { margin: 5px; }
+            .container { padding: 10px; border-radius: 6px; }
+            h1 { font-size: 1.1rem; }
+            h2 { font-size: 1rem; }
+            .category { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <a href="../index.html" class="nav-button" style="display: inline-block; padding: 8px 16px; background-color: #1976d2; color: white; text-decoration: none; border-radius: 5px; font-size: 0.9em;">
+                <i class="fas fa-home"></i> Retour à la page d'accueil
+            </a>
+        </div>
+        <h1>Index des Scores Médicaux</h1>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Rechercher un score médical...">
+        </div>
+        
+        <div class="category">
+            <h2>Cardiologie</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Angine de poitrine, echelle de gradation CCS ~ Cardiologie.html">Angine de poitrine, échelle de gradation CCS</a></li>
+                <li><a href="Medicalcul - Classification NYHA ~ Cardiologie.html">Classification NYHA</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Néphrologie</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Clearance Créatinine (CKD-EPI-2009) ~ Néphrologie.html">Clearance Créatinine (CKD-EPI-2009)</a></li>
+                <li><a href="Medicalcul - Clearance Créatinine (CKD-EPI-2021) ~ Néphrologie.html">Clearance Créatinine (CKD-EPI-2021)</a></li>
+                <li><a href="Medicalcul - Clearance Créatinine pédiatrique (Schwartz) ~ Néphrologie.html">Clearance Créatinine pédiatrique (Schwartz)</a></li>
+                <li><a href="Medicalcul - Stades de l'Insuffisance Rénale Aiguë ~ Néphrologie.html">Stades de l'Insuffisance Rénale Aiguë</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Infectiologie</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Critères de Jones (R.A.A.) ~ Infectiologie.html">Critères de Jones (R.A.A.)</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Gynécologie, Obstétrique</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Datation grossesse via LCC ~ Gynécologie, Obstétrique.html">Datation grossesse via LCC</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Brûlés</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Remplissage brûlés graves (adulte) ~ Brûlés.html">Remplissage brûlés graves (adulte)</a></li>
+                <li><a href="Medicalcul - Remplissage brûlés graves (enfant) ~ Brûlés.html">Remplissage brûlés graves (enfant)</a></li>
+                <li><a href="Medicalcul - Surface brûlée, Règle de Wallace ~ Brûlés.html">Surface brûlée, Règle de Wallace</a></li>
+                <li><a href="Medicalcul - Table de Lund et Browder ~ Brûlés.html">Table de Lund et Browder</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Médecine d'Urgence</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Score ABC, Transfusion ~ Médecine d'Urgence.html">Score ABC, Transfusion</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Chirurgie Viscérale</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Score PAS (Pediatric Appendicitis Score) ~ Chirurgie Viscérale.html">Score PAS (Pediatric Appendicitis Score)</a></li>
+                <li><a href="Medicalcul - Score d'Alvarado (MANTRELS) ~ Chirurgie Viscérale.html">Score d'Alvarado (MANTRELS)</a></li>
+                <li><a href="Medicalcul - Score pARC, Appendicite chez l'enfant ~ Chirurgie Viscérale.html">Score pARC, Appendicite chez l'enfant</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Pédiatrie</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Score d'Apgar ~ Pédiatrie.html">Score d'Apgar</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Neurologie</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Score de Glasgow ~ Neurologie.html">Score de Glasgow</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Toxicologie</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Antidotes ~ Toxicologie.html">Antidotes</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Médecine Interne</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - HbA1c vers Glycémie Plasmatique Moyenne ~ Médecine Interne.html">HbA1c vers Glycémie Plasmatique Moyenne</a></li>
+                <li><a href="Medicalcul - Indice HOMA-IR ~ Médecine Interne.html">Indice HOMA-IR</a></li>
+            </ul>
+        </div>
+        
+        <div class="category">
+            <h2>Soins Infirmiers</h2>
+            <ul class="link-list">
+                <li><a href="Medicalcul - Débit P.S.E. ~ Soins Infirmiers.html">Débit P.S.E.</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const links = document.querySelectorAll('.link-list a');
+            
+            searchInput.addEventListener('keyup', function() {
+                const searchTerm = searchInput.value.toLowerCase();
+                
+                links.forEach(function(link) {
+                    const text = link.textContent.toLowerCase();
+                    const listItem = link.parentElement;
+                    
+                    if (text.includes(searchTerm)) {
+                        listItem.style.display = 'block';
+                    } else {
+                        listItem.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

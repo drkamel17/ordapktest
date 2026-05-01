@@ -1,0 +1,6 @@
+{
+  "appId": "com.cat.medical",
+  "appName": "C-A-T Medical App",
+  "webDir": ".",
+  "bundledWebRuntime": false
+}

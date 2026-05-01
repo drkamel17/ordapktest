@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARDENAL - Fiche Médicamenteuse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #37474f 0%, #78909c 100%); color: white; padding: 30px; text-align: center; }
+        .header h1 { font-size: 2.5em; font-weight: 700; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 2px; }
+        .header .subtitle { font-size: 1.2em; opacity: 0.9; font-weight: 300; }
+        .content { padding: 30px; }
+        .section { margin-bottom: 25px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #37474f; }
+        .section-title { font-size: 1.1em; font-weight: 700; color: #37474f; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; gap: 10px; }
+        .section-title::before { content: ''; width: 8px; height: 8px; background: #37474f; border-radius: 50%; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .info-item { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .info-label { font-size: 0.85em; color: #666; font-weight: 500; text-transform: uppercase; margin-bottom: 5px; }
+        .info-value { font-size: 1.1em; color: #333; font-weight: 600; }
+        .warning-box { background: #fff3cd; border: 1px solid #ffc107; border-radius: 10px; padding: 20px; margin: 20px 0; }
+        .warning-box h4 { color: #856404; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        .danger-box { background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 10px; padding: 20px; margin: 20px 0; }
+        .danger-box h4 { color: #721c24; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        .info-box { background: #d1ecf1; border: 1px solid #bee5eb; border-radius: 10px; padding: 20px; margin: 20px 0; }
+        .info-box h4 { color: #0c5460; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        ul { margin-left: 20px; color: #444; }
+        li { margin-bottom: 8px; line-height: 1.6; }
+        .table-container { overflow-x: auto; margin: 15px 0; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background: #37474f; color: white; font-weight: 500; text-transform: uppercase; font-size: 0.9em; }
+        tr:hover { background: #f8f9fa; }
+        .formula { background: #e8f5e9; padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em; color: #2e7d32; text-align: center; margin: 10px 0; }
+        .page-number { text-align: center; padding: 20px; color: #666; font-size: 0.9em; background: #f8f9fa; }
+        @media print { body { background: white; padding: 0; } .container { box-shadow: none; } }
+        @media (max-width: 600px) { .header h1 { font-size: 1.8em; } .content { padding: 15px; } .section { padding: 15px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn" style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:#37474f;color:white;text-decoration:none;border-radius:8px;margin:20px 20px 0;font-weight:600;"><i class="fas fa-arrow-right"></i> Retour</a>
+        <div class="header">
+            <h1>GARDENAL</h1>
+            <p class="subtitle">PHENOBARBITAL</p>
+        </div>
+        <div class="content">
+            <div class="section">
+                <div class="section-title">Informations générales</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Présentation</div>
+                        <div class="info-value">Lyophilisat 40 mg, 200 mg</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Famille</div>
+                        <div class="info-value">Antiépileptique majeur, sédatif et hypnotique</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Incompatibilités physico-chimiques</div>
+                <ul>
+                    <li>Catécholamines</li>
+                    <li>Insuline</li>
+                    <li>SHSC</li>
+                    <li>Morphine</li>
+                    <li>Tétracyclines</li>
+                    <li>Vancomycine</li>
+                    <li>Curares</li>
+                    <li>Solutions acids</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Préparation et dilution</div>
+                <p style="margin-bottom: 15px;"><strong>Solutés compatibles :</strong> Solvant, Eau PPI, NaCl 0,9 %</p>
+                
+                <div class="formula">
+                    IVSE : 200 mg + 4 ml de solvant = 50 mg/ml
+                </div>
+                <p style="margin-top:10px;"><strong>La vitesse d'administration ne doit pas dépasser 100 mg/min</strong></p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Posologie</div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dose</th>
+                                <th>Temps minimum</th>
+                                <th>VIT 99</th>
+                                <th>VIT 80</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>500 mg</td><td>5 min</td><td>6 min</td><td>7 min</td></tr>
+                            <tr><td>600 mg</td><td>6 min</td><td>7 min</td><td>10 min</td></tr>
+                            <tr><td>700 mg</td><td>7 min</td><td>9 min</td><td>12 min</td></tr>
+                            <tr><td>800 mg</td><td>8 min</td><td>9 min</td><td>12 min</td></tr>
+                            <tr><td>1000 mg</td><td>10 min</td><td>10 min</td><td>13 min</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Posologie pédiatrique</div>
+                <ul>
+                    <li><strong>Nouveau-né :</strong> 20 mg/kg en IV sur 30 minutes</li>
+                    <li><strong>Nourrisson :</strong> 15 mg/kg en IV sur 30 minutes</li>
+                    <li><strong>Enfant de plus de 2 ans :</strong> 10 mg/kg en IV sur 30 minutes</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">Effets secondaires et surveillances</div>
+                <ul>
+                    <li>Dyschromatopsie, somnolence</li>
+                    <li>Trouble de la coordination et de l'équilibre</li>
+                    <li>Réactions cutanées (parfois graves)</li>
+                </ul>
+                <p><strong>Surveillance étroite d'un nouvel épisode d'EME</strong></p>
+            </div>
+        </div>
+        <div class="page-number">Page 10/30</div>
+    </div>
+</body>
+</html>

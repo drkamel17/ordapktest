@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCA ST+ - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .drug { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-heartbeat"></i> Syndrome Coronarien Aigu ST+</h1>
+        <p><strong>P133 - F. Lapostolle - Actualisation : 28/9/2018</strong></p>
+        
+        <h2>Definition</h2>
+        <p>Douleur constrictive retrosternale >= 20 min associee a un sus-decalage du segment ST a l'ECG.</p>
+        
+        <h2>Prise en Charge IAO</h2>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>PAS, PAD, FC, FR, T°C, SpO2, Dextro</li>
+            <li>ECG enregistre et interprete dans les 10 minutes apres l'arrivee du patient</li>
+        </ul>
+        
+        <h3>Orientation</h3>
+        <div class="important">
+            <p><strong>SAUV</strong></p>
+            <ul>
+                <li>Defibrillateur pres du brancard</li>
+                <li>Transfert en USIC avec salle de catheterisme : appel Samu</li>
+            </ul>
+        </div>
+        
+        <h2>Prise en Charge Medicale</h2>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>NFS, iono, glycemic</li>
+            <li>Troponine (ne pas attendre le resultat pour debuter le traitement ; dosage uniquement a visee pronostique)</li>
+            <li>Eventuellement : TP, TCA</li>
+        </ul>
+        
+        <h3>Monitorage</h3>
+        <ul>
+            <li>PANI, Scope, SpO2</li>
+            <li>Voie veineuse peripherique</li>
+            <li>Defibrillateur a portee de la main et verifie</li>
+        </ul>
+        
+        <h2>Traitement</h2>
+        
+        <div class="important">
+            <p><strong>Si douleur < 3 h et delai de realisation de l'angioplastie < 60 min ou douleur > 3 h : Transfert en salle de catheterisme (appel Samu)</strong></p>
+        </div>
+        
+        <h3>Antiagregants plaquettaires</h3>
+        <div class="drug">
+            <strong>Aspirine :</strong> 250 mg IVD
+            <br/>ET : <strong>Ticagrelor (Brilique) :</strong> 180 mg PO (2 cps) sauf CI (insuff hepatique)
+            <br/><br/>
+            OU : <strong>Prasugrel (Efient) :</strong> 60 mg PO sauf CI (age > 75 ; poids < 60 kg, ATCD AVC/AIT)
+            <br/><br/>
+            OU, en cas de CI ticagrelor et prasugrel : <strong>Clopidogrel (Plavix) :</strong> 600 mg PO
+        </div>
+        
+        <h3>Anticoagulation</h3>
+        <div class="drug">
+            <strong>Enoxaparine (Lovenox) :</strong> 0,5 mg/kg IVD
+            <br/><br/>
+            OU : <strong>Heparine non fractionnee :</strong> 70 UI/kg IVD sans depasser 4 000 UI
+        </div>
+        
+        <h3>Si douleur < 3 h et delai de realisation de l'angioplastie > 60 min : indication thrombolyse</h3>
+        <div class="warning">
+            <p><strong>Thrombolyse intrahospitaliere en l'absence de CI = tenecteplase (Metalese) :</strong></p>
+            <ul>
+                <li>< 60 kg : 30 mg = 6 mL</li>
+                <li>< 70 kg : 35 mg = 7 mL</li>
+                <li>< 80 kg : 40 mg = 8 mL</li>
+                <li>< 90 kg : 45 mg = 9 mL</li>
+                <li>> 90 kg : 50 mg = 10 mL</li>
+            </ul>
+        </div>
+        
+        <h3>Traitements Adjuvants</h3>
+        
+        <h4>Oxygenotherapie</h4>
+        <div class="drug">
+            <strong>Si saturation inferieure a 90 % :</strong> oxygene par masque a haute concentration
+        </div>
+        
+        <h4>Betabloquant</h4>
+        <div class="drug">
+            <strong>Non systematique</strong>
+            <br/><strong>Tenormine :</strong> 100 mg IVL si FC > 100/min ou troubles du rythme cardiaque en l'absence d'insuffisance cardiaque clinique
+        </div>
+        
+        <h4>Antalgiques</h4>
+        <div class="drug">
+            <strong>Si EVA > 30/100 :</strong> traitement antalgique (P41)
+        </div>
+        
+        <h3>Si EVA > 60/100 : morphine titree 0,1 mg/kg IVD toutes les 5 min</h3>
+        <div class="warning">
+            <strong>Enoxaparine (Lovenox) :</strong> 30 mg IV + 1 mg/kg SC si < 75 ans ou 0,75 mg/kg SC si >= 75 ans
+            <br/><br/>
+            OU : <strong>Heparine non fractionnee</strong> 60 UI/kg sans depasser 4 000 UI
+        </div>
+        
+        <h2>References</h2>
+        <ul>
+            <li>Journees scientifiques de la SFMU. Nancy. Octobre 2018.</li>
+            <li>Guidelines of the European Society of Cardiology, 2017.</li>
+        </ul>
+    </div>
+</body>
+</html>

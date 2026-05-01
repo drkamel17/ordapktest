@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autres Urgences - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .posology { background-color: #e8f4f8; padding: 10px; margin: 10px 0; border-radius: 8px; }
+        .drug-name { font-weight: bold; color: #2c3e50; }
+        .drug-commercial { color: #e74c3c; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-ambulance"></i> Autres Urgences</h1>
+        
+        <h2>Convulsion</h2>
+        <div class="posology">
+            <p><strong>Si 1ere convulsion :</strong></p>
+            <ul>
+                <li>Recherche hypocalcemie, AVC, troubles ioniques</li>
+                <li>ECG</li>
+                <li>TDM cerebral</li>
+            </ul>
+            <p><strong>Si epileptique connu :</strong></p>
+            <ul>
+                <li>Recherche ecart therapeutique</li>
+            </ul>
+            <p><strong>Si pas de crise :</strong></p>
+            <ul>
+                <li>TDM cerebral + bilan urgence + surveillance</li>
+            </ul>
+            <p><strong>Si crise en cours :</strong></p>
+            <ul>
+                <li><span class="drug-name">Diazepam</span> (<span class="drug-commercial">Valium</span>) 1 ampoule IVL</li>
+                <li> Puis <span class="drug-name">Phenobarbital</span> (<span class="drug-commercial">Gardenal</span>) 10 mg/kg IV</li>
+            </ul>
+        </div>
+        
+        <h2>Ingestion de produit caustique</h2>
+        <div class="important">
+            <p><strong>Bilan initial :</strong></p>
+            <ul>
+                <li>Telethorax + ASP</li>
+            </ul>
+        </div>
+        <div class="posology">
+            <p><strong>Si acide :</strong></p>
+            <ul>
+                <li>Arret alimentation</li>
+                <li>Rehydration</li>
+                <li><span class="drug-name">Ranitidine</span> (<span class="drug-commercial">Azantac</span>)</li>
+                <li>Fibroscopie OGD precoce</li>
+            </ul>
+            <p><strong>Si eau de javel :</strong></p>
+            <ul>
+                <li>Arret alimentation</li>
+                <li>Rehydration</li>
+                <li><span class="drug-name">Ranitidine</span> (<span class="drug-commercial">Azantac</span>)</li>
+                <li>Fibroscopie apres 48h</li>
+            </ul>
+        </div>
+        <div class="warning">
+            <p><strong>Traitement preventif :</strong></p>
+            <ul>
+                <li><span class="drug-name">IPP</span> (<span class="drug-commercial">Omeprazole</span>) tritherapie ulcere</li>
+            </ul>
+        </div>
+        
+        <h2>Pic Hypertensif</h2>
+        <div class="posology">
+            <p><strong>Definition :</strong> PAS > 210 mmHg ou PAD > 120 mmHg</p>
+            <p><strong>Regle :</strong> Ne pas abaisser TA plus de 25% en 24h</p>
+            <p><strong>Traitement :</strong></p>
+            <ul>
+                <li><span class="drug-name">Nicardipine</span> (<span class="drug-commercial">Loxen</span>) max 10 mg/h</li>
+                <li>Surveillance continue</li>
+            </ul>
+        </div>
+        
+        <h2>Douleur thoracique</h2>
+        <div class="posology">
+            <p><strong>Bilan :</strong></p>
+            <ul>
+                <li>TA, Glycemie, Telethorax, ECG</li>
+                <li>Avis cardiologue</li>
+            </ul>
+            <p><strong>Si ECG normal :</strong></p>
+            <ul>
+                <li><span class="drug-name">Mg2+</span> 1/2 ampoule IV</li>
+            </ul>
+            <p><strong>Si ECG pathologique :</strong></p>
+            <ul>
+                <li>Troponine, CPK</li>
+            </ul>
+        </div>
+        
+        <h2>Hemorragie digestive</h2>
+        <div class="posology">
+            <p><strong>Bilan urgence (surtout HK) :</strong></p>
+            <ul>
+                <li>NFS, ionogramme, hemostase</li>
+            </ul>
+            <p><strong>Si HK < 25% :</strong></p>
+            <ul>
+                <li>Transfusion</li>
+            </ul>
+            <p><strong>Presentation :</strong></p>
+            <ul>
+                <li>Adresser a gastro pour fibro + hospitalisation</li>
+            </ul>
+            <p><strong>Si saignement actif :</strong></p>
+            <ul>
+                <li>Lavage SSI glace</li>
+            </ul>
+            <p><strong>Si TA basse :</strong></p>
+            <ul>
+                <li><span class="drug-name">Plasmagel</span></li>
+            </ul>
+        </div>
+        
+        <h2>Lieux de consultation</h2>
+        <div class="success">
+            <ul>
+                <li><strong>Nephro et uro :</strong> 08 mai 1945</li>
+                <li><strong>Cardio :</strong> Loussafna</li>
+                <li><strong>Neuro-med :</strong> Astreinte</li>
+                <li><strong>Endocrino :</strong> Astreinte</li>
+                <li><strong>Gastro :</strong> Astreinte</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

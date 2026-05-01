@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT Consultation</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Segoe UI", Tahoma, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%); color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .nav-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .nav-card { background: white; border-radius: 15px; padding: 25px; transition: all 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-decoration: none; color: #333; border-left: 5px solid #8e44ad; }
+        .nav-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-left-color: #9b59b6; }
+        .nav-card h3 { color: #8e44ad; margin-bottom: 10px; }
+        .footer { background: white; padding: 20px; border-radius: 15px; margin-top: 30px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="nav-card" style="display:inline-block; width:auto; margin-bottom:20px; border-left-color:#3498db;">
+            Retour a Conduite a Tenir
+        </a>
+        <div class="header">
+            <h1>CAT Consultation</h1>
+            <p>Guide de Références des Conduites à Tenir en Consultation</p>
+        </div>
+        <div class="nav-grid">
+            <a href="acnes.html" class="nav-card"><h3>Acnés</h3><p>Acne vulgaire</p></a>
+            <a href="adenome-prostate.html" class="nav-card"><h3>Adénome Prostate</h3><p>Hyperplasie prostate</p></a>
+            <a href="allergie.html" class="nav-card"><h3>Allergie</h3><p>Rhinite, urticaire</p></a>
+            <a href="anemie-fer.html" class="nav-card"><h3>Anémie Fer</h3><p>Carence martiale</p></a>
+            <a href="angine.html" class="nav-card"><h3>Angine</h3><p>Pharyngite</p></a>
+            <a href="aphtose.html" class="nav-card"><h3>Aphtose</h3><p>Ulcères buccaux</p></a>
+            <a href="arthrose.html" class="nav-card"><h3>Arthrose</h3><p>Douleurs articulaires</p></a>
+            <a href="asthme.html" class="nav-card"><h3>Asthme</h3><p>Crise asthme</p></a>
+            <a href="basedow.html" class="nav-card"><h3>Basedow</h3><p>Hyperthyroïdie</p></a>
+            <a href="bronchite-chronique.html" class="nav-card"><h3>Bronchite Chronique</h3><p>BPCO</p></a>
+            <a href="brulures.html" class="nav-card"><h3>Brûlures</h3><p>Traitement brûlures</p></a>
+            <a href="candidose.html" class="nav-card"><h3>Candidose</h3><p>Infections candida</p></a>
+            <a href="conjonctivite.html" class="nav-card"><h3>Conjonctivite</h3><p>Inflammation oeil</p></a>
+            <a href="constipation.html" class="nav-card"><h3>Constipation</h3><p>Transit intestinal</p></a>
+            <a href="contraception.html" class="nav-card"><h3>Contraception</h3><p>Methodes contraceptives</p></a>
+            <a href="cystite.html" class="nav-card"><h3>Cystite</h3><p>Infection urinaire</p></a>
+            <a href="depression.html" class="nav-card"><h3>Dépression</h3><p>Troubles humeur</p></a>
+            <a href="dermatophyties.html" class="nav-card"><h3>Dermato mycoses</h3><p>Infections fongiques</p></a>
+            <a href="dermite-seborreique.html" class="nav-card"><h3>Dermite Seborrheique</h3><p>Dermatite</p></a>
+            <a href="diabete.html" class="nav-card"><h3>Diabete</h3><p>Antidiabetiques</p></a>
+            <a href="diarrhee.html" class="nav-card"><h3>Diarrhee</h3><p>Gastro-enterite</p></a>
+            <a href="dysthyroidie.html" class="nav-card"><h3>Dysthyroidie</h3><p>Thyroide</p></a>
+            <a href="ecoute.html" class="nav-card"><h3>Ecoute Medicale</h3><p>Examen clinique</p></a>
+            <a href="fibrome.html" class="nav-card"><h3>Fibrome</h3><p>Fibrome uterine</p></a>
+            <a href="gale.html" class="nav-card"><h3>Gale</h3><p>Infestation gale</p></a>
+            <a href="gastrite.html" class="nav-card"><h3>Gastrite</h3><p>Inflammation gastrique</p></a>
+            <a href="gastro-enterite.html" class="nav-card"><h3>Gastro-enterite</h3><p>Infection digestive</p></a>
+            <a href="goitre.html" class="nav-card"><h3>Goitre</h3><p>Hypertrophie thyroide</p></a>
+            <a href="grippe.html" class="nav-card"><h3>Grippe</h3><p>Infection virale</p></a>
+            <a href="hemorroides.html" class="nav-card"><h3>Hemorroides</h3><p>Crise hemorroïdaire</p></a>
+            <a href="herpes.html" class="nav-card"><h3>Herpes</h3><p>Infections HSV</p></a>
+            <a href="hta.html" class="nav-card"><h3>HTA</h3><p>Hypertension</p></a>
+            <a href="impuissance.html" class="nav-card"><h3>Impuissance</h3><p>Dysfonction erectile</p></a>
+            <a href="insuffisance-cardiaque.html" class="nav-card"><h3>Insuffisance Cardiaque</h3><p>Coeur</p></a>
+            <a href="lombalgie.html" class="nav-card"><h3>Lombalgie</h3><p>Douleurs dos</p></a>
+            <a href="migraine.html" class="nav-card"><h3>Migraine</h3><p>Cephalees</p></a>
+            <a href="obrite.html" class="nav-card"><h3>Obrite</h3><p>Voies lacrymales</p></a>
+            <a href="osteoporose.html" class="nav-card"><h3>Osteoporose</h3><p>Os</p></a>
+            <a href="rgo.html" class="nav-card"><h3>RGO</h3><p>Reflux</p></a>
+            <a href="sinusite.html" class="nav-card"><h3>Sinusite</h3><p>Sinus</p></a>
+            <a href="toux-chronique.html" class="nav-card"><h3>Toux Chronique</h3><p>Toux</p></a>
+            <a href="troisieme-gen.html" class="nav-card"><h3>Troisieme Generation</h3><p>Sujet age</p></a>
+            <a href="verrues.html" class="nav-card"><h3>Verrues</h3><p>Verrues virales</p></a>
+        </div>
+        <div class="footer">
+            <p>CAT Consultation - Guide de References Medicales</p>
+        </div>
+    </div>
+</body>
+</html>

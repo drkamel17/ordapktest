@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVC Ischemique - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-brain"></i> AVC Ischemique</h1>
+        
+        <h2>Definition</h2>
+        <p>Pathologie cerebrale aigue d'origine ischemique responsable d'un deficit neurologique focal et brutal.</p>
+
+        <div class="important">
+            <strong>Test FAST:</strong> Face (deformation du visage), Arm (paralysie du bras), Speech (trouble de la parole), Time (temps d'apparition)
+        </div>
+
+        <h2>Prise en Charge IAO</h2>
+        <ul>
+            <li>Dextro, SpO2, FR, PAS, PAD, FC, T°C</li>
+            <li>ECG</li>
+            <li>Test FAST</li>
+        </ul>
+
+        <h2>Bilan</h2>
+        <ul>
+            <li>NFS</li>
+            <li>Groupe, RAI</li>
+            <li>Glycemie, iono</li>
+            <li>TP, TCA</li>
+            <li>Troponine</li>
+            <li><strong>IRM + ARM intracrânienne</strong> (premiere intention) ou <strong>scanner cerebral + angioscanner</strong></li>
+        </ul>
+
+        <h2>Recherche de l'heure de debut</h2>
+        <ul>
+            <li>Determiner l'heure exacte du debut des symptomes</li>
+            <li>Si heure inconnue: considerer l'heure de decouverte comme heure de debut</li>
+        </ul>
+
+        <h2>Evaluation</h2>
+        <ul>
+            <li>Determiner le score NIHSS</li>
+            <li>Recherche contre-indications a la thrombolyse</li>
+        </ul>
+
+        <h2>Traitement Medical</h2>
+        <h3>Lute contre les aggressions cerebrales</h3>
+        <ul>
+            <li>Hyperthermie: Paracetamol 1 g IVL</li>
+            <li>Hyperglycemie > 1,80 g/L: Protocole insuline</li>
+            <li>Hypoxie: Oxigenotherapie au masque</li>
+            <li>Hypercapnie: Ventilation mechanique</li>
+        </ul>
+
+        <h2>Revascularisation</h2>
+        <h3>Si debut < 6 heures</h3>
+        <div class="warning">
+            <ul>
+                <li>Contacter USINV systematiquement</li>
+                <li>Objectif tensionnel: PAM >= 90 mmHg, PAS < 185 mmHg, PAD < 110 mmHg</li>
+                <li>Si FV/TV: chocs electriques</li>
+            </ul>
+        </div>
+
+        <h3>Thrombolyse IV (debut < 4-5 heures)</h3>
+        <ul>
+            <li>rt-PA: 0,9 mg/kg (max 90 mg)</li>
+            <li>10% en bolus, 90% en perfusion sur 1 heure</li>
+        </ul>
+
+        <h3>Si occlusion proximale ± distale < 6 heures</h3>
+        <ul>
+            <li>Associer thrombectomie</li>
+        </ul>
+
+        <h3>Si CI thrombolyse ou delai > 4-5 heures</h3>
+        <ul>
+            <li>Thrombectomie seule</li>
+        </ul>
+
+        <h3>Si debut > 6 heures et < 24 heures</h3>
+        <ul>
+            <li>Envisager thrombectomie si occlusion proximale avec criteres de Mismatch</li>
+        </ul>
+
+        <h2>Objectif Tensionnel</h2>
+        <ul>
+            <li>PAS < 220 mmHg et PAD < 120 mmHg</li>
+            <li>Loxen (si pas d'hemoragie meningee): debuter a 0,5 mg/h IVSE</li>
+            <li>Objectif: PAS < 140 mmHg en 1 heure</li>
+        </ul>
+
+        <h2>Antiaggregation</h2>
+        <ul>
+            <li>Aspirine: bolus 250 mg IVD, relais 160 mg/j a partir de J1</li>
+        </ul>
+
+        <h2>Anticoagulation Preventive</h2>
+        <ul>
+            <li>Lovenox ou calciparine a dose preventive</li>
+        </ul>
+
+        <div class="success">
+            <strong>References:</strong> AHA/ASA Guidelines 2018
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1446 @@
+ECG 
+Dr.KHERBA_N 
+ECG 
+✅
+️Vailde:1mm=0.04s/1mm=0.1mv 
+▪
+️Vitesse: 25mm/s Voltage: 10mm/mv 
+▪
+️Pas d'inversion : P(+) en D1/P(-) en avR 
+▪
+️QRS (V1....V6)=> un seul sommet  
+▪
+️La ligne de base: isoélectrique (pas de 
+tribulations =parasitage) 
+✅
+️Interprétation générale: 
+▪
+️Rythme: Régulier=> RR constant  
+▪
+️Sinusal: P(+) en DI et DII 
+▪
+️Chaque P doit être suivie par un QRS 
+et chaque QRS doit Précédé par P 
+▪
+️Fréquence: 300/ nb des grands carreaux RR 
+Si rhytme irrégulier: calculer la moyenne de 3RR  
+✅
+️Interprétation spécifique: 
+◾
+️Onde P: présente/positive/petite(2.5mm) 
+Si: Absente: 
+1/Remplacée: Flutter A ou Fibrillation A 
+▪
+️Flutter Atrial: Rythme régulier  
+▪
+️Fibrillation Atriale: Rythme irrégulier  
+2/Non Remplacée: T jonctionnelle  
+(QRS fin <3mm) 
+ou Troubles de rythme ventriculaire TDR 
+(QRS large = ou >3mm) 
+▪
+️ESV: QRS prématuré 
+Maligne: Polymorphe/regroupé/à la 2ème partie 
+de T. 
+▪
+️TV: amplitude constant et durée constante 
+▪
+️TP: amplitude varié et durée constante 
+▪
+️FV: amplitude varié et durée variée 
+▪
+️P ample=> HAD 
+▪
+️P bifide=> HAG 
+◾
+️PR: 3mm<...<5mm 
+▪
+️<3mm=> WFW (Triangle ou angle Delta) 
+▪
+️>5mm=> BAV 1er D 
+▪
+️BAV 2ème D: blocage de P ( pas suivie de QRS ) 
+1/Mobitz 1: allongement de PR + blocage  
+2/Mobitz 2: blocage seul 
+▪
+️BAV 3ème D: tt les P sont bloquées 
+Rythme Atrial et ventriculaire réguliers mais pas 
+le rythme Atrial qui est responsable de 
+ventriculaire.  
+◾
+️QRS: 3mm 
+=ou> 3mm avec un aspect en M (pas W) : Bloc 
+de branche BB 
+▪
+️Si (V1V2): BBD 
+▪
+️Si (V5V6): BBG 
+Ou BBD=> M(V1) /W(V6) 
+BBG=> W(V1)/M(V6) 
+◾
+️Onde Q: pathologique: 
+▪
+️Ample=> >1/4R 
+▪
+️Large=> = ou >1mm 
+▪
+️Absence de R => QS 
+⛔
+️q r st T: pathologique dans au moins 2 D 
+▪
+️DII_DIII_avF: inférieur  
+▪
+️V5_V6_DI_avL: latéral 
+▪
+️V1_V2_V3_V4: antérieur 
+◾
+️Ischémie :  
+▪
+️T ample ou (-) 
+▪
+️ST sus ou sous décalage  
+◾
+️Puis nécrose : 
+▪
+️Q Ample/large/seul  
+▪
+️Rabotage de R(↘️amplitude en V1V2V3V4) 
+◾
+️ST: >2mm/2D/2ECG 
+▪
+️Image en miroir : 
+ST(+) pas forcément a une image en miroir  
+mais ST(-) => image en miroir  
+▪
+️infer(DII DIII avF) # latéral haut(DI avL) 
+▪
+️infer # antérieur(V1V2V3V4) 
+▪
+️antérieur # poster (V7V8V9) 
+▪
+️latéral bas(V5V6) # droit (V1 av3R av4R) 
+◾
+️Onde T (-) en avR 
+▪
+️Elle peut être (-) en V1V2D3 à condition que 
+QRS aussi si non pathologique  
+◾
+️T ample>2/3 ou plat <1/10 => pathologique  
+▪
+️Péricardite  
+▪
+️Ischémie  
+▪
+️Dyskalémie (ample:↗️K / plat ou (-): ↘️K) 
+D'après Dr.Astuce... 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+�
+�Motif : Palpitations  
+Femme de 52ans sans ATCD 
+⚠
+️Interprétation : ACFA 
+=>Rythme irrégulier + Absence d’onde P 
+(Remplacée par des trémulations) 
+▪
+️Tachycardie >100btt/min 
+◾
+️Causes : Valvulopathies, complications 
+thrombœmboliques, Traitement par les 
+bétabloquants ou Amiodarone en IV, 
+Anticoagulants, anémie, Hyperthyroïdie 
+▪
+️Inhibiteur calcique bradycardisant en subligual 
+comme Diltiazem  
+▪
+️Si bien toléré : cliniquement bien stable pas 
+d’hypotension 
+➡
+️Orientation cardiologie pour instaurer un 
+traitement anticoagulant le plus tôt possible 
+(consultation cette semaine) 
+▪
+️Si mal toléré : choc, OAP ..  
+➡
+️Avis cardiologie en urgence pour une 
+cardioversion en urgence 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+�
+�Motif: Palpitations  
+Patiente 37ans 
+Sans ATCD  
+Ta: 110/70  
+Dextro: correct  
+⚠
+️Interprétation: Tachycardie_Sinusale 
+�
+�Clinique: 
+Bénigne FC=100/min 
+Effort, stress, consommation de tabac, café,  
+Fièvre, anémie, déshydratation, crise de 
+panique, Hyperthyroïdie.. 
+✅
+️O2 thérapie  
+1/2amp Mg diluée dans 250 SG5% 
+◾
+️Bilan :🩸 
+▪
+️FNS 
+▪
+️TSH 
+▪
+️DDIMÈRES  
+▪
+️Ionogramme  
+➡
+️Orientation Cardiologie 
+�
+�Motif : Palpitations  
+Sujet jeune sans ATCD 
+Dextro : normal  
+⚠
+️Interprétation : TSV 
+▪
+️Tachycardie supraventriculaire  
+▪
+️TA+++ 
+▪
+️+/_ Massage carotidien  
+▪
+️Manœuvre de Valsalva (vagale) 
+▪
+️Si non réponse et TA correcte (stable) : 
+1cp de bétabloquant ou 2amp de Cordaron en 
+perfusion de SG 5% 
+�
+� Si le malade est en état de choc (instable) : 
+➡
+️cardioversion en urgence 
+⛔
+️Attention : n’introduit jamais la Digoxine 
+dans ce cas ( WPW )  
+▪
+️Après réduction=> ECG ( à rechercher un 
+raccourcissement de l’espace PR) 
+�
+�Motif : Douleur épigastrique  
+Patient 84ans, hypertendu 
+Ta correcte 
+⚠
+️Interprétation : SCA sans sus décalage de 
+ST en V4V5V6 
+▪
+️Ondes T amples=> Hyperkalémie  
+▪
+️ Faire un ECG de 17D=> ça peut être une image 
+en miroir d’un SCA(+) 
+◾
+️Demander : 
+▪
+️Troponines  
+▪
+️Ionogramme 
+BBD 
+=>Aspect en M en V1V2 
+�
+�Motif : Douleur thoracique  
+Patiente de 60ans 
+⚠
+️Interprétation : BBG 
+ Aspect en M en V5V6 
+◾
+️ BBG complet qui peut caché un syndrome 
+coronarien. 
+▪
+️Scope 
+▪
+️Surveillance électrique 
+▪
+️ECG avec D2 long 
+▪
+️Dosage des troponines en urgence 
+�
+�Motif : Toux 
+Un patient de 73ans hypertendu 
+Ta 16/09 
+⚠
+️Interprétation : ESV 
+▪
+️QRS prématuré 
+�
+�Motif : Dyspnée  
+Patient sans ATCD  
+SaO2 : normal  
+Ta : 22/14, FC : 116 
+⚠
+️Interprétation : BBG + TV 
+▪
+️BBG (Aspect en M en V5V6) 
+▪
+️TV (QRS avec amplitude constant et durée 
+constante) 
+ OAP sur SCA st(+) 
+ 
+ 
+ 
+⚠
+️Interprétation : BAV + BBD 
+▪
+️PR allongé mais constant : BAV 1er degré  
+▪
+️QRS en V1 aspect en M : BBD incomplet 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+�
+�Motif : Épigastralgies  
+Homme 61ans, Diabétique 
+Ta : 15/10  
+⚠
+️Interprétation  : Sus décalage de ST en 
+V2V3 
+▪
+️Troubles de repolarisation en territoire 
+inférieur, AVR, V1 
+ Dosage des troponines  
+▪
+️Refaire l’ECG après 10_20min 
+ 
+ 
+ 
+ 
+�
+�Patiente âgé de 65ans hypertendu, mal suivi 
+pour  
+son traitement d'HTA 
+⚠
+️Interprétation: Sous décalage de ST en 
+V4V5V6  
+=> Dosage des troponines  
+▪
+️Refaire l'ECG 
+▪
+️Faut faire les dérivations postérieurs et droites, 
+V7V8V9V1 V3R V4R  
+▪
+️Le sous décalage en V5V6 peut être la miroir 
+d'un sus décalage V1 V3R V4R, ischémie  de la 
+face latérale droite 
+�
+�Motif : Épigastralgies  
+Patient de 40ans, hypertendu, diabétique 
+⚠
+️Interprétation  : Sous décalage de ST en 
+V1V2V3 
+�
+�Motif: Épigastralgies + Douleur thoracique 
+irradie vers l'épaule gauche jusqu'au poignet et 
+le cou 
+⚠
+️Interprétation: Sus décalage en AVR +/_ V1 
++ un sous décalage diffus aux autres dérivations  
+▪
+️Aspect électrique d’une lésion tritronculaire ( 
+équivalent d'un syndrome coronarien à haut 
+risque )  
+✅
+️CAT :  
+▪
+️2 AVS / Scope  
+▪
+️Dosage des troponines  
+◾
+️Dose de charge : Plavix (selon l'âge),  Aspegic 
+250mg, Lovenox (selon le poids)  
+▪
+️Faxez à un centre spécialisé pour la réalisation 
+d'une coronarographie dans les plus brefs 
+délais. 
+�
+�Hospitalisation du patient au service de 
+cardiologie 
+ 
+ 
+�
+�Motif : Épigastralgies  
+Patient âgé de 70ans, hypertendu 
+⚠
+️Interprétation  : BBD 
+�
+�Patiente de 63ans, sans ATCD  
+Ta : 18/08  
+T° : 18.6 
+⚠
+️Interprétation: Sous décalage de ST en 
+V4V5V6 
+ Dosage des troponines en urgence 
+�
+�Un sujet jeune 25ans, sans ATCD  
+Présente une douleur thoracique précordiale 
+sans irradiations ni d’autres signes associés 
+sauf notion d’asthénie depuis une semaine 
+A l’examen clinique patient conscient 
+coopérant en EG moyen SGW 15/15  
+TA : 150/90  
+FC : 84 FR : 24 SaO2 : 97%  
+L’auscultation : propre 
+TLT est normal 
+⚠
+️Interprétation  : BBD en V1V2 
+ Aspect en M 
+ 
+ 
+ 
+�
+�Motif : Douleur thoracique  
+Ta normal  
+Examen normal  
+⚠
+️Interprétation : Sous décalage de ST en 
+antérieur et inférieur  
+▪
+️Faites les dérivations postérieurs (image en 
+miroir) 
+▪
+️Dosage des troponines  
+▪
+️Refaire l’ECG après 10_20min 
+ 
+ 
+⚠
+️Interprétation  : ESV 
+▪
+️QRS prématuré  
+✅
+️CAT : 
+▪
+️Si c’est symptomatique : 
+➡
+️Orientation Cardiologie en urgence 
+�
+�Motif : Un pic d’HTA + Palpitations  
+Patiente 66ans,  d’ATCD d’insuffisance rénale 
+chronique, HTA sous traitement  
+Ta : 190/70 mmhg  
+Fc : 140/min 
+⚠
+️Interprétation  : Tachycardie_jonctionnelle  
+ Absence des ondes P + QRS fins 
+✅
+️CAT : 
+▪
+️1amp de Mg dans 250cc de SG5 % ou SSI 
+Bisoprolol 5mg 
+▪
+️Manœuvre de Valsalva 
+◾
+️Bilan 🩸  
+▪
+️FNS 
+▪
+️Rénal  
+▪
+️Ionogramme 
+�
+�Patient de 55ans, ancien tabagique  
+⚠
+️Interprétation : Wolf Parkinson White WPW 
+➡
+️Orientation Cardiologie en urgence  
+⛔
+️ Risque de FA puis FV et mort subite 
+▪
+️Toute activité sportive est contre indiquée 
+�
+�Motif : Douleur thoracique  
+Patient 70ans, sans  ATCD  
+⚠
+️Interprétation  : BBD + Sous décalage de ST 
+en V1V2  
+▪
+️Dosage des troponines 
+�
+�Homme de 67ans, diabétique et hypertendu 
+qui se plainte de douleurs abdominales et de 
+nausées depuis 24h 
+⚠
+️Interprétation  : STEMI ST(+) en inférieur DII 
+DIII AVF 
+▪
+️ Avec image en miroir en latéral haut DI AVL  
+Mais, on note également un sous-décalage en 
+antérieur V1V2V3 ce qui est à coup sûr l’image 
+en miroir du territoire postérieur.. 
+▪
+️Donc c’est un STEMI postérieur Vrai 
+▪
+️Compléter les dérivations droites et 
+postérieures +++ 
+ 
+ 
+ 
+�
+�Patiente de 66ans, diabétique  
+Elle consulte pour des vomissements et toux  
+Gly : 4 
+Ph (bandelette) : 5 
+CU : cc+++ 
+⚠
+️Interprétation  : Sus  décalage en inférieur 
+D2D3 AVF avec des images en mémoire V5 AVL 
++ BBD aspect en M en V1V2  
+▪
+️Compléter par les dérivations droite et 
+postérieure 
+▪
+️Donner les doses de charge Aspegic et Plavix 
+évacuer rapidement le malade 
+ 
+�
+�Patiente de 62ans, d’ATCD de syndrome du 
+côlon irritable  
+Consulte pour tachycardie  Fc :174 
+Ta : 11/07  
+⚠
+️Interprétation  : TSV + BBD (Aspect en M en 
+V1V2) + ST(-) en antérieur  
+▪
+️Nb : On ne peut pas interpréter un sous ou sus 
+décalage en Tachycardie  
+▪
+️Faut d’abord ↘️ la Fc  
+▪
+️Mg 1amp en IVL si non Bétabloquant ou 
+Cordarone, puis refaire l’ECG 
+�
+�Patient de 84 ans, sans ATCD  
+Douleur thoracique intense non soulager par 
+Perfalgan 
+Ta 120/70, Fc : 75, SaO2 : 99 
+⚠
+️Interprétation  : TachyFA + BBG 
+�
+�Epigastralgies  
+Ta normal 
+Pacemaker  
+⚠
+️Interprétation  : BAV 3 complet (toutes Les 
+ondes P sont bloquées) 
+➡
+️Avis cardiologie en urgence 
+�
+�Dans le cadre du travail d’un sujet de 35ans  
+⚠
+️Interprétation  : BBD 
+�
+�Patient de 61ans aux ATCD de diabète et HTA  
+Il consulte pour une dyspnée et sueurs  
+Ta: 12/8, Dextro: pas de bandelette  
+Auscultation libre   
+⚠
+️Interprétation: Aspect S1Q3=> Embolie 
+pulmonaire  
+▪
+️Dosage: Troponines/DDIMÈRES 
+�
+�Patiente de 76ans, ATCD : DID 
+Cardiopathe avec IDM en 2023  
+Consulte pour douleur thoracique irradiant aux 
+épaules, Toux grasse , TLT fait objectivant un sd 
+interstitiel sous traitement antibiotique  
+⚠
+️Interprétation: Q de nécrose en V1V2 
+▪
+️Séquelles de l'IDM 
+�
+�Sujet âgé hypertendu, il a fait une chute de 
+sa propre hauteur avec plaie du scalp 
+Ta: 10/6 
+Gly: 1.4 g/dl 
+⚠
+️Interprétation : Q de nécrose en DII DIII 
+(Séquelles d'IDM) 
++ T ample (Troubles de repolarisation) 
+=> Ionogramme 
+�
+�Patient de 27ans, sans ATCD  
+Il consulte pour douleur cardiaque avec 
+fourmillements de main gauche  
+⚠
+️Interprétation : Trouble de repolarisation 
+précoce (Bénin) 
+◾
+️Pour TRP : Généralement un sujet jeune, sans 
+FDR : 
+▪
+️Sus décalage concave vers le haut, absence 
+d’images en miroir  
+▪
+️Présence de point « J » 
+▪
+️QRS amples… 
+◾
+️Mais, ça n’élimine pas un sus décalage, plus la 
+clinique ça reste inquiétante.. 
+▪
+️Demande un dosage des troponines pour 
+confirmer et refaire l’ECG 
+�
+�Sujet jeune  
+Diarrhée depuis 1 semaine  
+Présente une lipothymie avec Ta : 09/07  
+⚠
+️Interprétation  : BAV 1er degré 
+ Allongement de l’espace PR 
+�
+�Sujet jeune 
+Ta : 14/ 08  
+Il bois 4 ou 5 bouteilles d’un boisson 
+énergétique 
+Palpitation :  Fc : 134  
+⚠
+️Interprétation : Tachycardie sinusale 
+⚠
+️Interprétation  : Tachycardie 
+Supraventriculaire TSV 
+ Ondes P non visibles 
+▪
+️Manœuvre vagale  
+▪
+️Traitement Bétabloquant 
+�
+�Patiente de 58ans  
+ATCD :cardiopathie non suivie et non 
+documentée, présente des précordialgies  
+SaO2:72, Ta: 120/80, Gly: 3g 
+⚠
+️Interprétation: Sous décalage de ST en 
+antérieur  
+=> Faire les dérivations postérieurs V7V8V9  
+▪
+️Dosage des troponines 
+�
+�Patient âgé hypertendu  
+Douleur thoracique  
+⚠
+️Interprétation: BBG complet  
+Faut le comparer avec un ECG ancien  
+⛔
+️Si non toute BBG de novo = IDM jusqu'au 
+preuve du contraire 
+◾
+️Les blocs de branches soit droite ou gauche 
+généralement cachent les IDM, donc dosage 
+des troponines et une comparaison avec des 
+résultats anciennes s'il existent + Ionogramme 
+(sus décalage, hyperkaliémie: onde T ample) 
+▪
+️Les critères de Sgarbossa (absence dans ve 
+cas) en cas de suspicion d'IDM sur BBG, dans 
+un contexte de douleur thoracique avec un tel 
+terrain, un dosage des troponines est primordial 
+ 
+ 
+ 
+ 
+�
+�Femme de 52ans, sans ATCD 
+Présente des palpitations  
+⚠
+️Interprétation: ACFA 
+=> Ondes P Remplacée par des trémulations + 
+rhytme irrégulier  
+✅
+️CAT: Inhibiteur calcique bradycardisant en 
+subligual comme Diltiazem, car il est en 
+tachycardie  
+▪
+️Si: Stabilisation, pas d'hypotension (bien 
+toléré..) 
+➡
+️ Orientation Cardiologie: pour instaurer un 
+traitement anticoagulant le plus tôt possible 
+(consultation cette semaine) 
+�
+�Si mal toléré : choc, OAP .. 
+➡
+️Avis cardiologie en urgence pour une 
+Cardioversion en urgence 
+�
+�Patient de 66ans, sans ATCD pathologiques 
+consulte pour douleur thoracique  
+⚠
+️Interprétation  : Sus décalage de ST (+) en 
+Septoapical  
++ parasitage  
+▪
+️A refaire l’ECG 
+�
+�Patiente 73ans, hypertendue, sous Sintrom  
+Présente pour précordialgies type brûlure  
+Ta: 13.07 
+⚠
+️Interprétation: Fibrillation auriculaire FA 
++ Sous décalage de ST (-) en latéral bas V4V5V6  
+▪
+️Refaire l'ECG + Dosage des troponines et 
+DDIMÈRES 
+�
+�Patiente de 53ans, aux ATCD HTA, 
+Cardiopathie sous Sintrom 
+Consulte pour des Vertiges suite à une chute 
+sur le sol, douleur thoracique  
+SaO2: 99%, Fc: 75 
+⚠
+️Interprétation: BAV 1er degré, PR>5mm 
+◾
+️Bilan: 🩸 TP/INR 
+�
+�Femme de 40ans, sans ATCD  
+Douleur thoracique irradiant vers le bras gauche 
+⚠
+️Interprétation: Onde T positive en V1V2 et 
+négative dans les autres dérivations 
+précordiales, compléter par un dosages des 
+troponines + Ionogramme 
+�
+�Patiente de 52ans, sans ATCD particuliers 
+⚠
+️Interprétation: ACFA + BBD 
+�
+�Patient de 87ans, ATCD de goitre sous 
+Levothyrox, hypertrophie de la prostate, 
+cardiaque, il présente une dyspnée nocturne 
+avec toux occasionnel, à l'auscultation souffle 
+au foyer pulmonaire  
+Ta: 12/6, SaO2: 97%,  Gly: 1g 
+⚠
+️Interprétation : BBG 
+▪
+️S'il est récent peut cacher un IDM 
+faut le comparer avec un ECG ancien 
+ 
+ 
+ 
+ 
+�
+�Patient de 78ans qui consulte pour faiblesse 
+depuis 48h +/- douleur thoracique et lombaire 
+Ta: 13/08 pour les 02 membres  
+Dextro : 1.45 g/dl 
+Fc: 80bpm 
+SaO2: 94 % 
+ATCD : HTA/Diabète/IDM : stenté en 2013/ 2015 
+⚠
+️Interprétation: Flutter Atrial  
+◾
+️Ondes P Remplacées par des trémulations  
+Rythme régulier  
+▪
+️Comparer avec un ECG ancien  
+▪
+️Dosage des troponines pour éliminer un 
+NSTEMI  
+▪
+️Ionogramme  
+▪
+️Bilan complet 
+�
+�Patient consulte pour une asthénie et des 
+épigastralgie minime, d'ATCD d'HTA 
+Ta: normal. 
+⚠
+️Interprétation: Sous décalage de ST en 
+V1V2V3V4  
+▪
+️Faire les dérivations postérieurs à la recherche 
+d'un STEMI  
+▪
+️Troponines pour éliminer un NSTEMI 
+ 
+ 
+ 
+ 
+�
+�Enfant de 11ans, d'ATCD d’épilepsie  
+Fc: 140  
+Motif: palpitation et asthénie 
+⚠
+️Interprétation: Tachycardie sinusale  
++ BBD physiologique  
+▪
+️Faut ↘️ la Fc puis refaire l'ECG: O2 + Mg 
+FNS 
+�
+�Femme 68ans, Hypertendue 
+⚠
+️Interprétation : ESV 
+▪
+️Faire un DII long 
+ 
+ 
+ 
+ 
+ 
+�
+�Patient de 70ans, sans ATCD 
+Consulte pour des épigastralgies aigues  
+Ta : 160/80  
+⚠
+️Interprétation  : STEMI en antéro-septal 
+V1V2V3 
+▪
+️Faire les dérivations postérieures V7V8V9  
+Ou 
+Syndrome de Wellens : 
+◾
+️C’est l’équivalent d’un syndrome coronarien 
+(manifestation de la sténose de l’IVA) . 
+Électriquement y a 2 manifestations :  
+▪
+️Type 1 : ondes T biphasiques en V1V2V3 
+▪
+️Type 2 : ondes T négatives (les mêmes 
+dérivations sus_citées) 
+✅
+️CAT :  
+▪
+️On le traite comme un NSTEMI avec une 
+coronarographie dans les plus brefs délais 
+�
+�Patient âgé de 46ans, consulte pour 
+palpitations, grand fumeur 
+⚠
+️Interprétation: Tachycardie 
+Supraventriculaire TSV 
+▪
+️Tachycardie + absence d'onde P + rythme 
+régulier 
+�
+�Patient sous Flecaine depuis 2ans  
+Consulte pour malaise et palpitations 
+⚠
+️Interprétation : ACFA 
+�
+�Épigastralgies  
+Ta : 16/8 
+⚠
+️Interprétation: Extrasystoles ESV 
+ 
+ 
+�
+�Femme 54ans , consulte pour fièvre à 39.1 et 
+douleur abdominale  
+gorge : angine  
+auscultation: normal  
+TA: 150/90  
+⚠
+️Interprétation: ESA 
+�
+�Patient de 52ans sous Sintrom  
+Il se présente pour des palpitations et douleurs 
+thoraciques  
+Ta: 16/11 
+⚠
+️Interprétation: ACFA  
+▪
+️Palpitations sont à cause de l'ACFA et la 
+Tachycardie  
+▪
+️Eliminer une ACFA mal tolérée (choc, OAP, 
+AEG..)  
+▪
+️Orientation vers son cardiologue pour 
+ajustement de traitement (si les palpitations 
+sont très gênantes => Diltiazem en sub lingual 
+sur place) 
+▪
+️Troponine pour éliminer une NSTEMI (douleur 
+thoracique) 
+▪
+️O2 thérapie + 1/2 amp Mg diluée dans 200cc 
+SG5% puis refaire ECG 
+�
+�Patient sans ATCD consulte pour des 
+précordialgies 
+⚠
+️Interprétation: STEMI jusqu'à preuve de 
+contraire 
+▪
+️Sus décalage en V1V2V3 (mais pas significatif 
+en V2V3 1mm) 
+▪
+️Image en miroir en inférieur 
+▪
+️Onde Q de nécrose V1V2V3 
+⚠
+️Interprétation : ACFA  
+▪
+️Absence d'onde P  
+▪
+️Trémulations de ligne de base  
+▪
+️Rythme cardiaque irrégulier 
+�
+�Patiente âgée de 43ans, sans ATCD 
+Consulte pour une asthénie avec une 
+senstation de bouffée de chaleur  
+⚠
+️Interprétation : ACFA  
+�
+�Patient âgé de 69ans, HTA connue  
+Ta: 17/10 
+Il consulte pour des précordialgies 
+⚠
+️Interprétation: Troubles de repolarisation 
+T(-) 
+▪
+️ST(-) diffus (peut-être NSTEMI comme peut
+être une hypokaliémie) avec des T(-) très 
+profondes en antérieur [Wellens syndrome] et 
+ondes Q de nécrose en V1V2V3 (STEMI hors 
+délai) 
+▪
+️Diagnostic probable: un syndrome de Wellens 
+avec une Hypokaliémie 
+STEMI en antérieur hors délai 
+✅
+️CAT :  
+▪
+️Mise en condition / Scope  
+▪
+️Ionogramme 
+▪
+️Bilan rénal 
+▪
+️Dosage des troponines 
+◾
+️Dose de charge : 4cp Plavix, 3cp Aspegic et 
+Lovenox en Sc selon le poids 
+⛔
+️On ne thrombolyse pas le NSTEMI   
+➡
+️Coronarographie 
+ 
+ 
+ 
+ 
+ 
+�
+�Patient d'ATCD d'HTA et cardiopathie, venu 
+en dyspnée SaO2 89%  
+Ta: 7/5  
+TLT : OAP 
+⚠
+️Interprétation: BBG + ACFA  
+▪
+️SCA ST+ (masqué par un BBG), compliqué 
+d'un OAP cardiogenique 
+▪
+️Cardiopathie décompensée  
+✅
+️CAT: 
+▪
+️Position demi assise/2VVP/O2/Scope 
+▪
+️Sonde urinaire  
+▪
+️Perfalgan en IVL 
+◾
+️Dosage des Troponines  
+◾
+️Bilan:🩸 
+▪
+️FNS / Gly 
+▪
+️CRP 
+➡
+️Évacuation en urgence 
+⚠
+️Interprétation: Sus décalage en antéro 
+sptale et latéral   
+▪
+️Image en miroir en V1 
+�
+�Patient 79ans, ATCD d'HTA, diabète et 
+cardiopathie  
+Consulte pour une douleur thoracique 
+⚠
+️Interprétation : ST(+) antéro septo apical  
+▪
+️Image en miroir en latéral haut 
+▪
+️Onde Q de nécrose en inférieur 
+◾
+️Dose de charge Plavix Aspegic et Lovenox   
+Antalgique  
+▪
+️Monitoring  
+▪
+️Bilan d'urgence  
+➡
+️Avis cardiologie 
+�
+�Patient âgé de 67ans aux ATCD d’HTA et 
+cardiopathie non documentée  
+Consulte pour une dyspnée et toux sèche  
+Ta : 18/11  
+SaO2 : 95  
+Fc : 99 
+⚠
+️Interprétation: BBG + ACFA 
+◾
+️Rythme irrégulier sans ondes P avec des QRS 
+larges de retard gauche 
+✅
+️CAT : 
+◾
+️Surveillance de Ta/SaO2/AVS/O2 
+◾
+️Dosage des Troponines  
+◾
+️Bilan :🩸 
+▪
+️FNS/Gly 
+▪
+️Urée/Créat  
+➡
+️Evacuation 
+�
+�Un sujet âgé qui consulte pour des vertiges  
+⚠
+️Interprétation: BAV 3eme degré  
+◾
+️P dissocié  du QRS  
+◾
+️PP intervalle régulier  
+◾
+️RR intervalle régulier 
+�
+�Patiente présente épigastralgies  
+Cardiopathie non suivie 
+⚠
+️Interprétation: BBD complet  
+◾
+️QRS large, aspect RR' en V1 V2, et onde S 
+trainante en V5V6 et D2 AVL  
+▪
+️Bilan complet  
+▪
+️Troponines  
+▪
+️DDIMÈRES  
+◾
+️Si RAS cela veut dire que c'est un trouble 
+conductif lié à sa cardiopathie 
+�
+�Patient 60ans ATCD d'IDM ça fait 3ans  
+Consulte pour une Toux productive, sueurs, 
+asthénie depuis hier soir, Pas douleur 
+thoracique 
+⚠
+️Interprétation: BBG + HVG 
+▪
+️Bilan  
+▪
+️Ionogramme  
+◾
+️Il y a une discordance donc on cherche un Sus 
+décalage de plus de 5mm en V1V2V3 pour dire 
+qu'il y a des signes de Sgarbossa positifs et que 
+notre BBG cache un SCA  
+◾
+️Comparaison avec un ECG antérieur, si c'est 
+la même image (BBG ancien)➡️ Abstention  
+◾
+️S'il y a une modification➡️ Troponines 
+�
+�Malade âgé de 67ans diabétique sous ADO, 
+mal équilibré 
+Le diagnostic de PFLA était posé 
+Le jour de contrôle patient stable avec une 
+bonne amélioration clinique ..  
+Pas d'autres symptômes ni signes cliniques 
+alarmantes.. 
+Dextro: 2.7 il ne prend pas son traitement  
+CDU: absence des CC 
+TA : 11/7  
+⚠
+️Interprétation: STEM 
+◾
+️Qui a passé inaperçu, y a déjà l'aspect QS (le 
+malade à fait une nécrose)  
+▪
+️Dosage des troponines  
+▪
+️Dose de charge (Plavix + Aspegic + Lovenox)  
+▪
+️Hospitalisation dans un service de cardiologie  
+▪
+️Thrombolyse n'est pas indiquée 
+⛔
+️Chez les diabétiques➡️ toujours demander 
+un ECG devant une cétose ou un déséquilibre 
+glycémique 
+�
+�Patient sans ATCD, consulte pour une 
+douleur thoracique irradiante vers le bras 
+gauche depuis 11h du matin jusqu'à l'arrivée à 
+4:30h 
+TA: 10/06  
+Fc: 63btms/min Spo2: 97%  
+⚠
+️Interprétation: STEMI inf D2D3 AVF  
+Image en miroir en AVL  
+▪
+️Dose de charge 
+▪
+️Délai dépassé pour la thrombolyse(>12h) 
+➡
+️Evacuation vers service cardiologie pour une 
+angioplastie 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+�
+�Patiente âgée de 40ans, Hypertendu sous 
+traitement, qui consulte pour une douleur 
+rétrosternale intense localisée sans irradiation, 
+non calmée par les antalgiques 
+TA:140/90mmhg FC: 88bpm SaO2: 98% 
+Auscultation cardiopulmonaire : RAS 
+⚠
+️Interprétation: ST (-) (sous décalage en 
+antérieur étendu + inferieur) 
+▪
+️Faites un ECG complet (dérivations 
+postérieurs) à la recherche d'un sus décalage 
+posterieur 
+▪
+️Dosage des Troponines  
+▪
+️Dose de charge (300mg de Aspegic + 4cp 
+Plavix de 75mg ) + injection Lovenox 100ui/kg ou 
+1mg/kg 2/j 
+➡
+️ Orientation cardiologie 
+�
+�Motif: Patiente âgé de 80ans , sans ATCD  
+Elle se présente pour des douleurs thoraciques 
+et épigastriques 
+Ta: 18/09 SaO2: correcte  
+Auscultation: Normal  
+⚠
+️Interprétation: BBG 
+▪
+️TDR secondaires au BBG 
+▪
+️Comparer avec un ECG ancien (Sgarbossa) 
+▪
+️Troponines si douleur typique  
+▪
+️Traiter le pic HTA 
+◾
+️Bilan 🩸  
+▪
+️FNS 
+▪
+️Urée/Créat  
+▪
+️Ionogramme  
+➡
+️ Orientation cardiologie 
+�
+�Motif: Patiente âgée 49ans  
+ATCD: remplacement de la valve mitrale, sous 
+sintrom  
+Présente pour palpitations et douleur légère 
+thoracique  
+⚠
+️Interprétation: BAV III 
+▪
+️Soulager la douleur: Perfalgan  
+▪
+️Mg 1amp diluée dans 250cc SG5  
+◾
+️Bilan 🩸  
+▪
+️FNS 
+▪
+️TSH 
+▪
+️TP/INR 
+▪
+️Ionogramme  
+▪
+️Troponines  
+➡
+️ Avis cardiologie en urgence 
+�
+�Patiente 29ans aux ATCD de CMH non 
+obstructive sous Neocardil 40mg (1/2cp) avec 
+grossesse actuelle évolutive de 20SA, qui se 
+présente pour une douleur thoracique type 
+d'oppression irradiante vers la mâchoire et le 
+bras gauche 
+Ta: 08/06, FC: 180bpm 
+⚠
+️Interprétation: BBG + ACFA  
+◾
+️Rhytme irrégulier  
+◾
+️Aspect rS en V1 et RSR' en V6: BBG 
+◾
+️Sous décalage de ST en V1 
+▪
+️Comparer avec un ECG ancien   
+▪
+️Selon la clinique Ta: 8/6=> ACFA mal tolérée  
+➡
+️ Avis cardiologie en urgence après 
+stabilisation de la patiente :  
+▪
+️Manœuvre modifiée de Valsalva 
+▪
+️Massage carotidien 
+�
+�Patiente de 90ans, Sans ATCD particuliers, 
+qui se présente pour fatigue, sensation de 
+nausées avec 1 épisode de vomissement + 
+épigastralgies.. 
+Ta : 12/06, Dextro : 1,3g/l 
+Auscultation propre, Abdomen souple  
+⚠
+️Interprétation : BBG 
+◾
+️Sus décalage de ST en V1V2 AVR 
+▪
+️Image en miroir en DI DII 
+◾
+️Bilan🩸 
+▪
+️TP/TCK 
+▪
+️Ionogramme 
+▪
+️Troponines  
+1
+️
+⃣Aspegic 300mg en IVD 
+2
+️
+⃣Plavix 1cp 75mg en per Os  
+3
+️
+⃣Lovenox 0.4Ui en Sc 
+➡
+️ Evacuation cardiologie  
+ 
+ 
+ 
+�
+�Patient de 84ans au ATCD de HTA, 
+rétrécissement aortique, BPCO, IR (clairance à 
+30), Insuffisance surrénalienne  
+Motif: Perte de connaissance (légère), nausée, 
+apyrétique  
+Ta: 130/80 mmgh, Dextro 1.25g/l  
+⚠
+️Interprétation: ACFA 
+�
+�Homme de 70ans, hypertendu, diabètique, 
+néphropathe au stade d’hémodialyse, 
+cardiopathe, qui présente des douleurs 
+thoraciques. 
+⚠
+️Interprétation : BBG complet  
+Onde P présente, QRS large à cause du BBG  
++ Rabotage de l’onde R : soit une séquelle d’une 
+STEMI antérieur car il est cardiopathe, soit une 
+STEMI courante  
+Tachycardie 150/min 
+◾
+️Troponines  
+◾
+️Ionogramme  
+�
+�Patient de 86ans, hypertendu  
+consulte pour une douleur thoracique  
+⚠
+️Interprétation: STEMI [IDM] antérieur en 
+V1V2V3  
+BBG complet (IDM jusqu'à preuve du contraire) 
+Aspect en M en latéral gauche V5V6 
+◾
+️Si BBG récent= STEMI 
+◾
+️Si BBG ancien=> On utilise les critères 
+SGARBOSSA 
+▪
+️si (+)=> (majoration de la discordance)=STEMI 
+✅
+️CAT: Hospitalisation  
+◾
+️Monitoring / O2 thérapie  
+▪
+️Perfalgan en perfusion  
+◾
+️Bilan complet: 
+▪
+️FNS/Gly 
+▪
+️TP/TCK 
+▪
+️INR 
+▪
+️Rénal 
+▪
+️Ionogramme  
+▪
+️Troponines  
+◾
+️Dose de charge: 
+▪
+️Plavix + Aspegic + Lovenox  
+➡
+️Evacuation cardiologie 
+�
+�Patiente de 50ans hypertendue diabétique 
+Consulte pour une douleur épigastrique + 
+vomissements  
+⚠
+️Interprétation : Sus décalage en latéral  
+Image en miroir en inférieur  
+�
+�Un homme âgé de 40ans, diabétique, qui se 
+présente pour des épigastralgies depuis hier 
+⚠
+️Interprétation: ESV 
+◾
+️Extrasystoles ventriculaire: dans ce contexte 
+considérer un SCA à présentation atypique jsq'à 
+preuve du contraire 
+▪
+️Refaire ECG après 20min 
+▪
+️Bilan d'urgence  
+▪
+️Troponines  
+▪
+️Ionogramme: Hypokalémie 
+�
+�Patient de 70ans, aux ATCD de trouble de 
+rythme (non documenté), consulte pour des 
+précordialgies  
+Ta : 14/09   Dextro : 1.51  
+⚠
+️Interprétation : ESV 
+▪
+️Refaire ECG 
+▪
+️Antalgique  
+▪
+️Ionogramme + Calcémie  
+Patient aux ATCD d'Hyperthyroïdie sous 
+traitement, consulte pour des palpitations  
+Interprétation: TSV 
+Manœuvres vagales 
+Mg 1amp dans 250cc de SSI 
+ 
+ 
+ 
+�
+�Patiente de 73ans, d'ATCD d'HTA sous 
+traitement  
+Il se présente pour des douleurs au niveau du 
+bras droit depuis une semaine. 
+⚠
+️Interprétation: BBG 
+◾
+️Comparer avec un ECG ancien  
+◾
+️Si nouveau aspect ou douleur typique 
+▪
+️Dosage des troponines  
+➡
+️ Evacuation 
+ 
+ 
+ 
+�
+�Patient de 89ans, sous Sintrom  
+Consulte pour dyspnée de repos  
+Fc : 80 Ta : 150/90  
+⚠
+️Interprétation : Fibrillation Atriale FA 
+▪
+️Un rythme irrégulier et très ralenti 
+▪
+️Absence de l’onde P 
+�
+�Femme 55ans sans ATCD  
+Précordialgies depuis 4h à l'arrivée 
+Ta: 8/5 Dextro: 1.55 
+Troponine négative  
+⚠
+️Interprétation: TSV mal tolérée  
+▪
+️Digoxine 1/2amp à 2 reprises 
+▪
+️Cordarone 2cp 200mg 
+▪
+️Mg 1amp dans 250 SSI9  
+▪
+️Bon état clinique  
+▪
+️Disparition de la douleur, respiration calme 
+▪
+️Lourdeur de membre supérieur droit mais 
+sans paralysie ni autres signes d'AVC 
+◾
+️ECG: ESV 
+Fc: 88/99 
+Patiente de 30ans, consulte pour des 
+douleurs rétrosternales avec irradiation vers le 
+membre supérieur gauche et des 
+fourmillements de mâchoire 
+Ta: 16/10 
+Interprétation: Aspect S1Q3 + Tachycardie 
+sinusale 150btt 
+Dosage DDIMÈRES  
+Angioscanner 
+ 
+ 
+ 
+ 

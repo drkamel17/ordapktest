@@ -1,0 +1,153 @@
+ CAT devant une hyperkaliémie : 
+Diagnostic : = Onde T ample et >pointue  
+                     = Hyperkaliémie 5.5 mmol/l 
+CAT : = Donner immédiatement 1-2 amp de Ca+  de 120mg (si 
+I.renale : à refaire si persistance) 
+         = Selon l’importance de hyperkaliémie : 2càm de Kayexalate 
+dans un grand bol d’eau ou bien sérum glucosé à 30% + 30 UI d’IO 
+ou bien hémodialyse si K+ >7 mmol/l +IRCT 
+CAT devant un OAP : 
+Diagnostic :    = Dyspnée + râles crépitant  
+                        = OAP sur pic hypertensif  
+                        = OAP sur cardiopathie + TA normale voir basse 
+CAT :     = Position demi assise 
+               = Oxygénothérapie  
+               = 40mg  de lasilix (120mg si IRC)  à renouveler 30min ou 1h  
+                  si persistance de l’OAP jusqu’à 160mg à 200mg chez un  
+                  sujet normal et IRC de 120mg (3-4 fois) 
+               = Faire un ECG + Avis de cardio 
+             Si OAP + TA basse : 
+             = Dobutrex : 2amp dans 250cc de SG à 5% jusqu’a  
+               augmentation de la TA puis lasilix  
+ 
+ 
+CAT devant une cétose diabétique : 
+Selon la glycémie et l’acétonurie 
+  = Gly >2.5g/l SSI à 9% + électrolytes 
+  = Gly <2.5g/l SGI à 5% + électrolytes 
+  = Si acétonurie (+)  10UI (IO)en IV/1h 
+  = Si acétonurie (-)  10UI (IO) en SC/4h 
+  Les électrolytes : (adapter les résultats surtout si hypokaliémie)   
+                             2g de Nacl (1amp) 
+                             1g de Kcl (1/2 amp) 
+                             1g de Mg+2 (1/2 amp) 
+                             1g de Ca+2 (1/2 amp) 
+   Si signes d’infection Antibiothérapie : 
+          = Flagyl 500mg/1flacon /8h 
+          = Autres antibiotiques selon type d’infection exp : Claforan /6h 
+Gly >5g/l (HI) : CDU = Cetone (-) : 10UI /IV + Sce pd 1h 
+2.5< Gly <3.5   : CDU = Cetone (-) : 10UI /SC + Sce pd 4h 
+                    Rentre avec observance du trt et vérifier le régime 
+Gly >3.5g/l: CDU = Cetone (-) :10UI en IVD + Sce chaque 1h 
+Gly >2.5g/l     : CDU = Cetone (+) : 10UI /IV + SSI + Eléct 
+                              (dl.abd, nousées, vo, odeur d’haleine) 
+Gly <2.5 g/l    : CDU = Cetone (+) : 10UI /IV + SG + Sce 1h 
+ 
+CAT devant un AVC : 
+Diagnostic : TA ≥ 18/10 (ne pas abaisser la TA avant résultats 
+TDM) 
+                      Troubles neurologiques 
+                             - Aphasie ou Dysarthrie, Céphalées, Flou visuel                                                                                                                              
+                             - Paralysie faciale centrale ou périphérique 
+                             - Déficit moteur : hémiparésie ou hémiplégie  
+CAT : 1)-Hospitalisation au moins 24 à 48h  
+            2)-Bilan complet : bilan d’urgence, ECG, TA, glycémie  
+            3)-TDM cérébral : objectivant  
+                      Hyperdensité : AVC hémorragique  
+                      Hypodensité : AVC ischémique  
+TDM cérébral : Normal suspicion d’AVC ischémique 
+A refaire  48-72h après (l’image va se constituer) 
+            4)-Surveillance : TA, gly : si patient diabétique  
+            5)-Flash de mannitol : 100cc/8h si AVC ischémique  
+                                                 100cc/6h si AVC hémorragique  
+                   N’utilise plus le SGI : risque d’œdème cérébral 
+                   Toujours utiliser le SSI à bas début                                                                                        
+Mannitol : on le donne avant 48h 
+Aspégic : on le donne après 48h 
+             
+ 
+            6)-Ordonnance de sortie : Somazina inj : 1inj/j (relais par 
+                                                             per os= somazina gtt : 2ml*3/j)                                          
+                                                        Aspégic sachet 100mg: 1sachet/j 
+                                                          (AVC isthémique) 
+                                                        Azantac 
+            7)-Lettres à l’astreinte de neuro-med 
+AVC hémorragique : abstention thérapeutique pour la TA sauf si >22 
+AVC isthémique : ↓ la TA mais ne pas dépasser 20% ds le  1e  24h                    
+ 
+CAT devant une convulsion : 
+Si la 1e convulsion :     = Recherche une hypocalcémie  
+                                         = AVC 
+                                         = Troubles ioniques (hyponatrémie, hypoK) 
+                                         = ECG 
+Si sujet épileptique connu :      = Recherche un écart thérapeutique  
+                                                      = un changement thérapeutique  
+                                                      = une cause, une complication  
+Si pas de crise : = TDM cérébral + bilan d’urgence  
+                              = Garder le pour surveillance.  
+                              = Faire un bon intérrogatoire   
+                              = Avis de neuro-med à l’astreinte  
+ 
+Si crise devant nous : = 1amp de valium dilué en IVL 
+                                        =  10mg/kg de Gardénal (dose de charge) 
+  Si crise convulsive à répétition et du mal épileptique : 
+        = Amp de valium dilué (0.1mg/kg/j) en IVL 
+        = 10mg/kg de Gardénal  - Dose de charge pour la ½ 2*/j - Dose d’entretien pour être efficace  
+         = Canule de Guidel  
+  Suce : si notion de convulsion et pas de convulsion devant nous  
+   Mouillance si épileptique connu  
+Attention : il faut éliminer le diagnostic différentiel : 
+                        = Hy 
+                        = Etat d’agitation  
+                  Ne donne pas de valium  
+                    On donne ½ amp de MG+2 dilué en IVL  
+CAT devant une ingestion de produit caustique : 
+Bilan radiologique : Téléthorax + ASP 
+Si acide : = Arrêt d’alimentation orale même de l’eau  
+                     = Réhydratation :   ♠-500cc de SSI à 9 % /2h 
+                                                    ♠-500cc de SG à 5% /2h 
+                                                    ♠-500cc de sérum bicarbonaté /2h 
+                                                    ♠-Électrolytes 
+                     = Azantac : 1amp/4h 
+                     = Fibroscopie OGD +++ 
+Si l’eau de javel ou autres : = Arrêt d’alimentation  
+                                                    = Réhydratation  
+                                                    = Azantac 1amp de 150mg /6h 
+                                                      (dose de charge) puis 1amp 50mg/6h                           
+                                                    = Fibroscopie OGD après 48h  
+                                                       (si normale : reprise Altorol) 
+Traitement : trithérapie de l’ulcère ou IPP seul (OMEPRAZOL) 
+CAT devant un Pic hypertensif : 
+                 PAS >21 ou/et PAD >10         
+ Ne pas abaisser la TA plus de 25% 
+(max : 10cc de loxen /24h + surveillance pendant 15-20min) 
+ 
+TA ≥18/10 sans troubles neurologiques : 
+     = 1cc de Loxen dilué dans 1cc de SG à 5% en IVL pendant 3min 
+     = TA toujours augmenter Même schéma + ECG  
+     = Puis TA augmentée : 20mg de Lasilix 
+     = Ordonnance de sortie :  ♠- Profil tensionnel  
+                                               ♠- loxen cp 50mg : 1cp/j 
+                                               ♠- lettre de consultation en cardio  
+Bilan complet - FO (pr HTA inaugural) - Fonction rénale  - Ionogramme sanguin (NA+, K+) - Chol total, HDL, LDL, TG - FNS complète  - Fonction hépatique (Protides toraux, TP, Alb, TGO, TGP, 
+phosphatase alcaline, BT et conj) 
+ 
+CAT devant une douleur thoracique :   
+TA, Gly, Théléthorax, ECG : Avis de cardio  
+ECG normal : ½ amp de Mg2+  
+ECG pathologique : Troponine, CPK 
+CAT devant une hémorragie digestive : 
+Bilan d’urgence (surtout HK) 
+Si HK <25% = Transfusion  
+Présenter le malade à la gastro pour Fibro 
+Hospitalisation  
+Interrogatoire + Examen clinique + TR + Sonde nasogastrique  
+Si saignement actif = lavage par SSI à 9% glacé 
+TA basse = Plasmagel en attendant la transfusion  
+Si épigastralgie associée = Azantac  
+Recherche la prise d’anticoagulant ou AVK  
+Faire TP, INR ===> Avis de cardio  
+Lieux de consultation :  - Consultation de néphro et uro = 08 mai 1945 - Consultation de cardio = Loussafna - Consultation de neuro-méd = Astreinte au service + 8 -05 -1945 - Consultation d’endocrino = Astreinte au service +c de santé - Consultation de gastro = Astreinte au service + ???? 
+Fonction rénale perturbée au bilan  Demander de 
+néphrologue    
+       

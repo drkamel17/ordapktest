@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicalcul - Stades de l'Insuffisance Rénale Aiguë ~ Néphrologie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .stage-section {
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            background: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .stage-title {
+            color: #e74c3c;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .stage-list {
+            margin-left: 20px;
+        }
+
+        .stage-item {
+            margin: 8px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .interpretation {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+
+        .references {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .references a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            margin: 10px 0;
+        }
+
+        .footer-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #f39c12;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Stades de l'Insuffisance Rénale Aiguë</h1>
+            <p>Néphrologie</p>
+        </div>
+
+        <div class="content-card">
+            <div class="stage-section">
+                <div class="stage-title">Stade 1</div>
+                <ul class="stage-list">
+                    <li class="stage-item">Créatinine : Augmentation > 26 μmol/L (3 mg/L) en 48 h <strong>ou</strong> Augmentation > 50% en 7 jours.</li>
+                    <li class="stage-item">Diurèse : < 0,5 ml/kg/h pendant 6 à 12 heures.</li>
+                </ul>
+            </div>
+
+            <div class="stage-section">
+                <div class="stage-title">Stade 2</div>
+                <ul class="stage-list">
+                    <li class="stage-item">Créatinine : Créatininémie × 2 en 7 jours.</li>
+                    <li class="stage-item">Diurèse : < 0,5 ml/kg/h pendant plus de 12 heures.</li>
+                </ul>
+            </div>
+
+            <div class="stage-section">
+                <div class="stage-title">Stade 3</div>
+                <ul class="stage-list">
+                    <li class="stage-item">Créatinine : Créatininémie × 3 en 7 jours <strong>ou</strong> Créatininémie > 354 μmol/L (40 mg/L) en l'absence de valeur antérieure <strong>ou</strong> Nécessité de débuter la dialyse.</li>
+                    <li class="stage-item">Diurèse : < 0,3 ml/kg/h pendant plus de 24 heures <strong>ou</strong> Anurie ≥ 12 heures.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="interpretation">
+            <strong>Interprétation :</strong><br>
+            Définition de l'Insuffisance Rénale Aiguë selon les critères KDIGO 2012 (Kidney Disease : Improving Global Outcome)
+        </div>
+
+        <div class="references">
+            <strong>Références :</strong><br>
+            • Kidney Disease: Improving Global, Outcomes (KDIGO) Acute Kidney Injury Work Group. KDIGO Clinical Practice Guideline for Acute Kidney Injury. Kidney Int Suppl. mars 2012;2(1):1‑138.<br>
+            • Site internet UroFrance, item 348 : <a href="https://www.urofrance.org/wp-content/uploads/2021/11/item-348-Insuffisance-renale-aigue.pdf">https://www.urofrance.org/wp-content/uploads/2021/11/item-348-Insuffisance-renale-aigue.pdf</a>.
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="index.html">[Racine]</a>
+            </div>
+          
+        </div>
+    </div>
+
+ 
+</body>
+</html>

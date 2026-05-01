@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVC Hemorragique - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-brain"></i> AVC Hemorragique</h1>
+        
+        <h2>Definition</h2>
+        <p>Pathologie cerebrale aigue d'origine hemorragique responsable d'un deficit neurologique focal et brutal.</p>
+
+        <h2>Prise en Charge IAO</h2>
+        <ul>
+            <li>Dextro, SpO2, FR, PAS, PAD, FC, T°C</li>
+            <li>ECG</li>
+            <li>Test FAST</li>
+        </ul>
+
+        <h2>Bilan</h2>
+        <ul>
+            <li>NFS</li>
+            <li>Glycemie, iono, creatinine</li>
+            <li>BHC</li>
+            <li>TP, TCA</li>
+            <li>D-dimeres</li>
+            <li><strong>IRM + ARM intracrânienne</strong> (premiere intention) ou <strong>scanner cerebral + angioscanner</strong></li>
+        </ul>
+
+        <div class="important">
+            <strong>AVIS GRANDE GARDE DE NEUROCHIRURGIE</strong>
+        </div>
+
+        <h2>Lute contre les aggressions cerebrales</h2>
+        <ul>
+            <li>Hyperthermie (> 37,5°C): Paracetamol 1 g IVL</li>
+            <li>Hyperglycemie > 10 mmol/L: Protocole insuline</li>
+            <li>Hypoxie (SpO2 < 94%): Oxigenotherapie au masque ou ventilation mecanique</li>
+            <li>Hypercapnie: Ventilation mecanique (PaCO2 = 30-35 mmHg)</li>
+        </ul>
+
+        <h2>Traitement de l'Hypertension</h2>
+        <ul>
+            <li>Si PAS > 150 mmHg</li>
+            <li>Objectif: PAS < 140 mmHg en 1 heure</li>
+            <li>Si pas d'hemoragie meningee: Nicardipine (Loxen)</li>
+            <li>Commencer a 0,5 mg/h IVSE</li>
+            <li>Incrementer par palier de 0,5 mg/h toutes les 15 min</li>
+            <li>Maximum: 4 mg/h</li>
+        </ul>
+
+        <h2>Monitoring</h2>
+        <ul>
+            <li>PANI toutes les 5 minutes</li>
+            <li>Scope</li>
+            <li>SpO2</li>
+        </ul>
+
+        <h2>Trouble de la coagulation</h2>
+        <ul>
+            <li>Si patient sous AVK: Confidex + Vit K</li>
+            <li>Si patient sous AOD: Antagonisation</li>
+        </ul>
+
+        <h2>Troubles de la conscience</h2>
+        <ul>
+            <li>Si Glasgow <= 8: Intubation (F9)</li>
+            <li>Curarisation systematique</li>
+        </ul>
+
+        <h2>Signes d'engagement</h2>
+        <div class="warning">
+            <ul>
+                <li>Mydriase</li>
+                <li>Enroulement</li>
+            </ul>
+            <strong>Osmotherapie:</strong> Mannitol 20%: 0,25-1 g/kg/6h sur 30 min
+        </div>
+
+        <h2>Orientation</h2>
+        <ul>
+            <li>Neurochirurgie apres avis</li>
+            <li>USC ou reanimation si pas d'indication neurochirurgicale</li>
+        </ul>
+
+        <h2>Anticoagulation</h2>
+        <ul>
+            <li>A partir de la 24e heure en l'absence d'aggravation</li>
+            <li>Lovenox ou calciparine a dose preventive</li>
+        </ul>
+
+        <h2>Score predictif de passage vers la mort encephalique</h2>
+        <ul>
+            <li>GCS < 7 d'emblee ou dans les 3 premieres heures: 1 point</li>
+            <li>Abolition des reflexes photomoteurs, ocephalogiques horizontaux et corniens: 1 point</li>
+            <li>Hematome > 65 cm3: 1 point</li>
+            <li>Engagement trans-tentoriel ou sous la faux: 1 point</li>
+            <li>PAS > 150 mmHg: 1 point</li>
+            <li>Traitement anticoagulant: 1 point</li>
+            <li><strong>Score >= 4:</strong> Possible prelevement</li>
+        </ul>
+
+        <div class="success">
+            <strong>Reference:</strong> SFNV Guidelines 2015
+        </div>
+    </div>
+</body>
+</html>

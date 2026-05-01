@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erysipele - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css-all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        h3 { color: #27ae60; margin-top: 20px; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+        .drug { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 10px 15px; margin: 10px 0; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-user-injured"></i> Erysipele</h1>
+        <p><strong>P48 - F. Adnet - Actualisation : 3/10/2018</strong></p>
+        
+        <h2>Definition</h2>
+        <p>Dermohypodermite aigue non necrosante d'origine bacterienne.</p>
+        
+        <h2>Prise en Charge IAO</h2>
+        
+        <h3>Bilan</h3>
+        <ul>
+            <li>PAS, PAD, FC, FR, T°C, SpO2, Dextro</li>
+            <li>Contante veineuse</li>
+            <li>Evalutation de la douleur : EVA ou EN</li>
+            <li>Examen cutane (limites, porte d'entree, phlyctenes)</li>
+        </ul>
+        
+        <h3>Orientation</h3>
+        <div class="warning">
+            <p><strong>Box</strong></p>
+        </div>
+        
+        <h2>Traitement</h2>
+        
+        <h3>1ere intention (EVA < 60/100)</h3>
+        <div class="drug">
+            <strong>Pristinamycine (Pyostacine) :</strong> 3 g/jour PO en 3 prises pendant 8 jours
+            <br/><br/>
+            OU, si allergie aux macrolides : <strong>Acide fusidique (Fucidine) :</strong> 1,5 g/jour PO
+        </div>
+        
+        <h3>Si signes de gravite (sepsis, immunodepression, terrain fragili)</h3>
+        <div class="drug">
+            <strong>Oxacilline (Bristopen) :</strong> 12 g/24 h (200 mg/kg) en 6 injections/j IV
+            <br/>ET <strong>Gentamicine :</strong> 3 mg/kg/24 h IVL sur 60 minutes
+        </div>
+        
+        <h3>Si allergie severe</h3>
+        <div class="warning">
+            <p>Preferer pristinamycine per os meme si IV difficile, ou associer rifampicine + fluoroquinolones</p>
+        </div>
+        
+        <h3>Si echec apres 48-72h</h3>
+        <p>Reevaluer et rechercher : infection profonde (fasciite necrosante), thrombophlebite, porte d'entree inaccessible, resistances, germes atypiques</p>
+        
+        <h2>Critres d'hospitalisation</h2>
+        <div class="important">
+            <ul>
+                <li>Necessite d'un traitement parenteral</li>
+                <li>Tableau clinique grave</li>
+                <li>Doute diagnostique</li>
+                <li>Signes generaux importants (sepsis)</li>
+                <li>Presence d'une comorbidite</li>
+                <li>Immunodepression</li>
+            </ul>
+        </div>
+        
+        <h2>Orientation</h2>
+        <ul>
+            <li><strong>UHCD :</strong> traitement IV</li>
+            <li><strong>Ambulatoire :</strong> si pas de signes de gravite, compliance au traitement</li>
+        </ul>
+    </div>
+</body>
+</html>

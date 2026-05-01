@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pied Diabetique - URG de Garde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css-all.min.css">
+    <style>
+        :root { --primary-color: #e74c3c; --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); --card-bg: #ffffff; --text-main: #2c3e50; --text-muted: #7f8c8d; }
+        body { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif; background: var(--bg-gradient); margin: 0; padding: 20px; color: var(--text-main); }
+        .container { background-color: var(--card-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); padding: 30px; max-width: 800px; margin: 0 auto; }
+        h1 { text-align: center; color: var(--primary-color); border-bottom: 3px solid var(--primary-color); padding-bottom: 15px; }
+        h2 { color: #2980b9; margin-top: 25px; border-left: 4px solid #2980b9; padding-left: 10px; }
+        .back-link { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 8px; margin-bottom: 25px; font-weight: 600; }
+        .back-link:hover { background-color: #2980b9; }
+        ul { line-height: 1.8; }
+        li { margin-bottom: 8px; }
+        .warning { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0; }
+        .important { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 15px; margin: 15px 0; }
+        .success { background-color: #d4edda; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Retour a la liste</a>
+        
+        <h1><i class="fas fa-socks"></i> Pied Diabetique</h1>
+        
+        <h2>Definition</h2>
+        <p>Ensemble des affections atteignant le pied, directement liées aux conséquences de la maladie diabétique, du mal perforant plantaire « simple » à la nécrose étendue.</p>
+
+        <h2>Facteurs de Gravite</h2>
+        <div class="warning">
+            <strong>Locaux :</strong>
+            <ul>
+                <li>Infection d'une plaie superficielle et récente</li>
+                <li>Atteinte des tissus sous-cutanés (tendons, os) (&lt; 1 mois)</li>
+                <li>Extension rapide</li>
+                <li>Abcès</li>
+                <li>Nécrose</li>
+                <li>Emphysème sous-cutané</li>
+                <li>Dermohypodermite extensive</li>
+            </ul>
+        </div>
+        <div class="important">
+            <strong>Généraux :</strong>
+            <ul>
+                <li>Sepsis</li>
+                <li>Immunodépression</li>
+            </ul>
+        </div>
+
+        <h2>Prise en Charge IAO</h2>
+        <h3>Bilan</h3>
+        <ul>
+            <li>SpO2, FR, PA, FC, T°C, Dextro, cétonémie capillaire</li>
+            <li>ECG</li>
+        </ul>
+        <h3>Examens complémentaires</h3>
+        <ul>
+            <li>CRP, PCT, hémocultures, prélèvements locaux</li>
+            <li>NFS, coagulation</li>
+            <li>Groupe ; RAI</li>
+            <li>Ionogramme, glycémie, créatinémie</li>
+            <li>GDS si signes de gravité</li>
+            <li>Radiographies du pied à la recherche de signes d'ostéite</li>
+            <li>Index de pression systolique ± doppler artériel</li>
+            <li>± angioscanner</li>
+        </ul>
+        <h3>Orientation</h3>
+        <ul>
+            <li><strong>Box</strong> si bonne tolérance hémodynamique/absence d'acidocétose</li>
+            <li><strong>SAUV</strong> sinon</li>
+        </ul>
+
+        <h2>Traitement</h2>
+        <h3>Avis chirurgical si abcès, ostéite, nécrose</h3>
+        <h3>Soins locaux</h3>
+        <ul>
+            <li>Nettoyage, débridement, décharge</li>
+        </ul>
+        <h3>Symptomatique</h3>
+        <ul>
+            <li>Correction d'un choc, rééquilibration hydroéléctrolytique (P67)</li>
+            <li>Maintenir glycémie normale (P37)</li>
+        </ul>
+        <h3>Antibiothérapie après prélèvement (sauf ostéite)</h3>
+        <ul>
+            <li>Pas d'antibiothérapie en l'absence de signes inflammatoires cliniques</li>
+            <li>Pas d'antibiothérapie locale</li>
+        </ul>
+        <h3>Si infection d'une plaie superficielle et récente ou atteinte des tissus sous-cutanés (&lt; 1 mois)</h3>
+        <ul>
+            <li>Amoxicilline + acide clavulanique (Augmentin®) 1 g x 3/jour pendant 10 jours</li>
+            <li>OU clindamycine (Dalacine®) 20 mg/kg en trois administrations/jour pendant 10 jours</li>
+        </ul>
+        <h3>Dermohypodermite extensive</h3>
+        <ul>
+            <li>Oxacilline (Bristopen®) 100 mg/kg en quatre administrations/jour IVL pendant 10 jours</li>
+            <li>Éventuellement gentamicine (Gentalline®)</li>
+        </ul>
+    </div>
+</body>
+</html>
