@@ -212,7 +212,11 @@
       "dest": "/api/recuperer_donnees.js"
     },
     {
-      "src": "(.*)",
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
       "dest": "/$1.html"
     }
   ],
