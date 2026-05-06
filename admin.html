@@ -175,33 +175,50 @@
 </div>
 
 <script>
-let adminPassword = null;
+let adminPass = null;
 
 function verifyPassword() {
   const pass = document.getElementById('admin-pass').value;
-  if (pass === 'DAOUDI') {
-    adminPassword = pass;
-    sessionStorage.setItem('adminPassword', pass);
-    document.getElementById('password-modal').style.display = 'none';
-    document.getElementById('main-content').style.display = 'block';
-    chargerDonnees();
-  } else {
-    alert('Mot de passe incorrect');
+  if (!pass) {
+    alert('Entrez le mot de passe');
+    return;
   }
+  
+  // Vérification côté serveur via API
+  fetch(`/api/save-supabase?verify=true&pass=${encodeURIComponent(pass)}`)
+    .then(res => {
+      if (res.ok) {
+        adminPass = pass;
+        sessionStorage.setItem('adminVerified', 'true');
+        document.getElementById('password-modal').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+        chargerDonnees();
+      } else {
+        alert('Mot de passe incorrect');
+      }
+    })
+    .catch(() => alert('Erreur de connexion'));
 }
 
 // Vérifier si déjà connecté
-if (sessionStorage.getItem('adminPassword') === 'DAOUDI') {
-  adminPassword = 'DAOUDI';
+if (sessionStorage.getItem('adminVerified') === 'true') {
   document.getElementById('password-modal').style.display = 'none';
   document.getElementById('main-content').style.display = 'block';
   window.addEventListener('load', chargerDonnees);
 }
 
 function logout() {
-  sessionStorage.removeItem('adminPassword');
-  adminPassword = null;
+  sessionStorage.removeItem('adminVerified');
+  adminPass = null;
   location.reload();
+}
+
+function getPassword() {
+  if (!adminPass) {
+    adminPass = prompt('Entrez le mot de passe admin pour confirmer:');
+    if (!adminPass) return null;
+  }
+  return adminPass;
 }
 
 async function chargerDonnees() {
@@ -297,11 +314,13 @@ async function chargerCommentairesPending() {
 }
 
 async function confirmerOrdonnance(userId) {
+  const pass = getPassword();
+  if (!pass) return;
   try {
     const response = await fetch('/api/save-supabase', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'confirm', password: adminPassword, data: {}, pendingKey: userId })
+      body: JSON.stringify({ action: 'confirm', password: pass, data: {}, pendingKey: userId })
     });
     const result = await response.json();
     if (result.success) { alert('Ordonnance confirmée!'); chargerOrdonnancesPending(); }
@@ -311,11 +330,13 @@ async function confirmerOrdonnance(userId) {
 
 async function rejeterOrdonnance(userId) {
   if (!confirm('Voulez-vous rejeter cette ordonnance?')) return;
+  const pass = getPassword();
+  if (!pass) return;
   try {
     const response = await fetch('/api/save-supabase', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'reject', password: adminPassword, pendingKey: userId })
+      body: JSON.stringify({ action: 'reject', password: pass, pendingKey: userId })
     });
     const result = await response.json();
     if (result.success) { alert('Ordonnance rejetée!'); chargerOrdonnancesPending(); }
@@ -324,6 +345,8 @@ async function rejeterOrdonnance(userId) {
 }
 
 async function modifierOrdonnance(userId, titre, index) {
+  const pass = getPassword();
+  if (!pass) return;
   try {
     const response = await fetch('/api/save-supabase?pending=true');
     const result = await response.json();
@@ -340,7 +363,7 @@ async function modifierOrdonnance(userId, titre, index) {
     const saveResponse = await fetch('/api/save-supabase', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'modify', password: adminPassword, pendingId: userId, titre: titre, nouveauxMedicaments: medsModifies })
+      body: JSON.stringify({ action: 'modify', password: pass, pendingId: userId, titre: titre, nouveauxMedicaments: medsModifies })
     });
     
     const saveResult = await saveResponse.json();
@@ -350,11 +373,13 @@ async function modifierOrdonnance(userId, titre, index) {
 }
 
 async function confirmerCommentaire(commentId) {
+  const pass = getPassword();
+  if (!pass) return;
   try {
     const response = await fetch('/api/commentaires', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'confirm', password: adminPassword, commentId: commentId })
+      body: JSON.stringify({ action: 'confirm', password: pass, commentId: commentId })
     });
     const result = await response.json();
     if (result.success) { alert('Commentaire confirmé!'); chargerCommentairesPending(); }
@@ -364,11 +389,13 @@ async function confirmerCommentaire(commentId) {
 
 async function rejeterCommentaire(commentId) {
   if (!confirm('Voulez-vous rejeter ce commentaire?')) return;
+  const pass = getPassword();
+  if (!pass) return;
   try {
     const response = await fetch('/api/commentaires', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'reject', password: adminPassword, commentId: commentId })
+      body: JSON.stringify({ action: 'reject', password: pass, commentId: commentId })
     });
     const result = await response.json();
     if (result.success) { alert('Commentaire rejeté!'); chargerCommentairesPending(); }

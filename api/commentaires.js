@@ -80,7 +80,7 @@ export async function POST(request) {
     
     const supabaseUrl = process.env.SUPABASE_URL || DEFAULT_CONFIG.SUPABASE_URL;
     const supabaseKey = process.env.SUPABASE_KEY || DEFAULT_CONFIG.SUPABASE_KEY;
-    const writePassword = process.env.WRITE_PASSWORD || DEFAULT_CONFIG.WRITE_PASSWORD;
+    const writePassword = process.env.WRITE_PASSWORD;
     
     if (!supabaseUrl || !supabaseKey) {
       return new Response(JSON.stringify({ success: false, message: 'Supabase config not set' }), { status: 400, headers: { 'Content-Type': 'application/json' } });
@@ -243,11 +243,23 @@ export async function GET(request) {
   try {
     const supabaseUrl = process.env.SUPABASE_URL || DEFAULT_CONFIG.SUPABASE_URL;
     const supabaseKey = process.env.SUPABASE_KEY || DEFAULT_CONFIG.SUPABASE_KEY;
+    const writePassword = process.env.WRITE_PASSWORD;
     const urlParams = new URL(request.url).searchParams;
     const pending = urlParams.get('pending');
+    const verify = urlParams.get('verify');
+    const pass = urlParams.get('pass');
     
     if (!supabaseUrl || !supabaseKey) {
       return new Response(JSON.stringify({ success: false, message: 'Supabase config not set' }), { status: 400, headers: { 'Content-Type': 'application/json' } });
+    }
+    
+    // API de vérification du mot de passe admin
+    if (verify === 'true' && pass) {
+      const isValid = (pass === writePassword);
+      return new Response(JSON.stringify({ valid: isValid }), { 
+        status: isValid ? 200 : 401, 
+        headers: { 'Content-Type': 'application/json' } 
+      });
     }
     
     // Demander pending (pour admin)
