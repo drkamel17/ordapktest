@@ -272,7 +272,7 @@
         return;
       }
       
-      const isAdmin = sessionStorage.getItem('adminPassword') !== null;
+      const isAdmin = sessionStorage.getItem('adminVerified') === 'true';
       
       let html = '';
       filtered.forEach(c => {
@@ -350,11 +350,8 @@
         return;
       }
       
-      const adminPassword = sessionStorage.getItem('adminPassword');
-      if (!adminPassword) {
-        alert('Session expirée');
-        return;
-      }
+      const adminPass = prompt('Entrez le mot de passe admin:');
+      if (!adminPass) return;
       
       try {
         const response = await fetch('/api/commentaires', {
@@ -362,7 +359,7 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             action: 'reply',
-            password: adminPassword,
+            password: adminPass,
             commentId: commentId,
             reponse: replyText
           })
@@ -383,11 +380,8 @@
     async function deleteComment(commentId) {
       if (!confirm('Voulez-vous vraiment supprimer ce commentaire?')) return;
       
-      const adminPassword = sessionStorage.getItem('adminPassword');
-      if (!adminPassword) {
-        alert('Session expirée');
-        return;
-      }
+      const adminPass = prompt('Entrez le mot de passe admin:');
+      if (!adminPass) return;
       
       try {
         const response = await fetch('/api/commentaires', {
@@ -395,7 +389,7 @@
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             action: 'delete',
-            password: adminPassword,
+            password: adminPass,
             commentId: commentId
           })
         });
