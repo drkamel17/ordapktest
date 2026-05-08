@@ -187,7 +187,18 @@
       const nom = document.getElementById('nom').value.trim();
       let situation = document.getElementById('situation').value;
       const situationAutre = document.getElementById('situation-autre').value.trim();
-      const message = document.getElementById('message').value.trim();
+      const messageOriginal = document.getElementById('message').value.trim();
+      const emojis = {
+        'Médecin': '👨‍⚕️',
+        'Médecin Spécialiste': '👨‍⚕️',
+        'Sage-femme': '👩‍⚕️',
+        'Infirmier': '🏥',
+        'Infirmière': '🏥',
+        'Étudiant': '📚',
+        'default': '💬'
+      };
+      const emoji = emojis[situation] || emojis['default'];
+      const message = emoji + ' ' + messageOriginal;
       
       // Si "Autre" est sélectionné, utiliser le texte tapé par l'utilisateur
       if (situation === 'Autre' && situationAutre) {
