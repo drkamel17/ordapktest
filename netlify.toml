@@ -1,0 +1,32 @@
+[build]
+  functions = "netlify/functions"
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+  from = "/api/save-supabase"
+  to = "/.netlify/functions/save-supabase"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/commentaires"
+  to = "/.netlify/functions/commentaires"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/send-email"
+  to = "/.netlify/functions/send-email"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/config.js"
+  to = "/.netlify/functions/config"
+  status = 200
+  force = true
