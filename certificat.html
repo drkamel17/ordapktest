@@ -352,13 +352,87 @@
             }
         }
 
-        @media (max-width: 1024px) {
+@media (max-width: 1024px) {
             .single-row .form-group {
                 min-width: 100px;
             }
 
             .single-row .form-group:first-child {
                 min-width: 150px;
+            }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            
+            .header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .header h2 {
+                font-size: 1.3rem;
+                text-align: center;
+            }
+            
+            .button-group {
+                grid-template-columns: 1fr;
+            }
+            
+            .settings-header {
+                flex-direction: column;
+            }
+            
+            .settings-header input[type="text"],
+            .settings-header textarea {
+                width: 100%;
+            }
+            
+            .format-buttons {
+                flex-direction: column;
+            }
+            
+            .patient-form-grid .form-row {
+                flex-direction: column;
+            }
+            
+            .form-group {
+                min-width: 100% !important;
+            }
+            
+            .or-divider {
+                padding: 8px 0;
+            }
+            
+            .search-bar {
+                flex-direction: column;
+            }
+            
+            #dataRetrievalButton {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header i {
+                font-size: 1.5em;
+            }
+            
+            .header h2 {
+                font-size: 1.1rem;
+            }
+            
+            .button-group button {
+                padding: 12px 8px;
+                font-size: 0.9em;
+            }
+            
+            .section-title {
+                font-size: 1rem;
             }
         }
     </style>
@@ -449,6 +523,8 @@
             <button onclick="genererLettre()"><i class="fas fa-envelope-open-text"></i> Lettre Médicale</button>
             <button onclick="genererChronique()"><i class="fas fa-heartbeat"></i> Maladie Chronique</button>
             <button onclick="genererNonGrossesse()"><i class="fas fa-female"></i> NON-GROSSESSE</button>
+            <button id="genererMaternite" onclick="ouvrirCertificatMaternite()"><i class="fas fa-baby"></i> Congé
+                Maternité</button>
             <button onclick="genererReprise()"><i class="fas fa-check-circle"></i> Reprise Travail</button>
             <button onclick="genererCvb()"><i class="fas fa-file-medical"></i> CBV</button>
             <button onclick="window.open('prenuptial.html', '_blank')"><i class="fas fa-heart"></i> Certificat
@@ -473,6 +549,7 @@
             <button onclick="ouvrirCertificatMalVision()"><i class="fas fa-eye-slash"></i> Certificat de Mauvaise
                 Vision</button>
             <button onclick="genererCirconcision()"><i class="fas fa-cut"></i> Certificat de Circoncision</button>
+            <button id="genererProfilTensionnel" onclick="genererProfilTensionnel()"><i class="fas fa-heart-pulse"></i> Profil Tensionnel</button>
             <button onclick="window.open('./templates/permis.pdf', '_blank')"><i class="fas fa-id-card"></i> Permis
                 Vierge</button>
         </div>
@@ -508,6 +585,12 @@
             </button>
         </div>
 
+        <!-- PANNEAU ADMIN - Gestion des termes juridiques -->
+        <div style="margin-top: 25px; border-top: 2px solid #e0e0e0; padding-top: 15px; text-align:center;">
+            <button onclick="window.open('admin-termes.html', '_blank')" type="button" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:10px 20px; background-color:#546e7a; color:white; border:none; border-radius:5px; cursor:pointer; font-size:0.9em; width:auto;">
+                <i class="fas fa-cogs"></i> Gestion des termes juridiques
+            </button>
+        </div>
     </div>
 
     <script src="api_auth.js"></script>
@@ -516,6 +599,15 @@
     <script src="hide-print-buttons.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialiser les termes juridiques dans localStorage si absent
+            if (!localStorage.getItem('termesJuridiques')) {
+                fetch('termeslegale.json').then(function(r) { return r.json(); }).then(function(json) {
+                    var data = json.certificat_medico_legal_cbv || json;
+                    localStorage.setItem('termesJuridiquesDefaut', JSON.stringify(data));
+                    localStorage.setItem('termesJuridiques', JSON.stringify(data));
+                }).catch(function() {});
+            }
+
             const today = new Date();
             const day = String(today.getDate()).padStart(2, '0');
             const month = String(today.getMonth() + 1).padStart(2, '0');

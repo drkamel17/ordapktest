@@ -22,6 +22,14 @@ function sauvegarderModifications() {
     });
 }
 
+// Convertir une date ISO (AAAA-MM-JJ, format des inputs date) en format français (JJ/MM/AAAA)
+function convertirDateFr(isoDate) {
+    if (!isoDate) return '';
+    const m = isoDate.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (m) return `${m[3]}/${m[2]}/${m[1]}`;
+    return isoDate;
+}
+
 // Fonction pour charger les données
 function loadData() {
     const polyclinique = localStorage.getItem('polyclinique') || '';
@@ -29,11 +37,25 @@ function loadData() {
     const docteur = localStorage.getItem('docteur') || '';
 
     // Charger les données du patient
-    const patientNomPrenom = localStorage.getItem('patientNomPrenom') || '';
-    const patientAge = localStorage.getItem('patientAge') || '';
-    const patientDateNaissance = localStorage.getItem('patientDateNaissance') || '';
-    const dateCertificat = localStorage.getItem('dateCertificat') || '';
-    const patientNumero = localStorage.getItem('patientNumero') || '';
+    let patientNomPrenom = localStorage.getItem('patientNomPrenom') || '';
+    let patientAge = localStorage.getItem('patientAge') || '';
+    let patientDateNaissance = localStorage.getItem('patientDateNaissance') || '';
+    let dateCertificat = localStorage.getItem('dateCertificat') || '';
+    let patientNumero = localStorage.getItem('patientNumero') || '';
+
+    // Pré-remplir par défaut depuis les valeurs saisies dans ord.html
+    const nomOrd = localStorage.getItem('nom') || '';
+    const prenomOrd = localStorage.getItem('prenom') || '';
+    const ageOrd = localStorage.getItem('age') || '';
+    const dateNaissanceOrd = localStorage.getItem('dateNaissance') || '';
+    const numeroOrd = localStorage.getItem('numero') || '';
+    const dateConsultationOrd = localStorage.getItem('date-consultation') || '';
+
+    if (nomOrd || prenomOrd) patientNomPrenom = `${nomOrd} ${prenomOrd}`.trim();
+    if (ageOrd) patientAge = ageOrd;
+    if (dateNaissanceOrd) patientDateNaissance = convertirDateFr(dateNaissanceOrd);
+    if (numeroOrd) patientNumero = numeroOrd;
+    if (dateConsultationOrd) dateCertificat = convertirDateFr(dateConsultationOrd);
 
     document.getElementById('polyclinique').value = polyclinique;
     document.getElementById('polyclinique-ar').value = polycliniqueAr;
@@ -44,7 +66,12 @@ function loadData() {
     document.getElementById('patientAge').value = patientAge;
     document.getElementById('patientDateNaissance').value = patientDateNaissance;
     document.getElementById('dateCertificat').value = dateCertificat;
-    document.getElementById('patientNumero').value = patientNumero;
+
+    // Vérifier si l'élément patientNumero existe avant de lui assigner une valeur
+    const patientNumeroElement = document.getElementById('patientNumero');
+    if (patientNumeroElement) {
+        patientNumeroElement.value = patientNumero;
+    }
 
     // Si aucune date n'est définie, utiliser la date du jour
     if (!dateCertificat) {
@@ -54,12 +81,6 @@ function loadData() {
         const year = today.getFullYear();
         const formattedDate = `${day}/${month}/${year}`;
         document.getElementById('dateCertificat').value = formattedDate;
-    }
-    
-    // Vérifier si l'élément patientNumero existe avant de lui assigner une valeur
-    const patientNumeroElement = document.getElementById('patientNumero');
-    if (patientNumeroElement) {
-        patientNumeroElement.value = patientNumero;
     }
 
     // Initialiser l'état des boutons de format
@@ -1707,10 +1728,10 @@ function genererChronique() {
                 display: none !important;
             }
 
-            .editable-field, .editable-area {
-                border: none !important;
-            }
-        }
+.editable-field, .editable-area {
+border: none !important;
+}
+}
 
         /* Masquer les contrôles d'impression et de sauvegarde */
         .print-button div[style*="align-items: center"],
@@ -4544,6 +4565,9 @@ display: none;
 .editable-field, .editable-area {
 border: none !important;
 }
+#btnCorriger, #correctionStatus, #correctionsContainer {
+display: none !important;
+}
 }
 </style>
 </head>
@@ -4587,11 +4611,21 @@ ${enteteContent}
     <input type="text" id="descriptionAccident" placeholder="" style="width: 180px; margin: 5px 0;" value=" ">
     </p>
         </p>
-		<p>
-              <textarea placeholder=" " style="width: 580px;height: 100px;"></textarea><br>
-			   ce certificat est établi et remis en mains propre de l'interesse pour
+		<div>
+              <div id="autocompleteWrapper" style="position:relative;display:inline-block;">
+                <textarea id="texteDescription" lang="fr" spellcheck="true" placeholder="Décrivez ici l'état du patient..." style="width: 580px;height: 100px;"></textarea>
+                <div id="autocompleteDropdown" style="display:none;position:absolute;left:0;top:100%;background:#fff;border:1px solid #2196F3;border-radius:4px;max-height:180px;overflow-y:auto;z-index:9999;width:580px;box-shadow:0 4px 12px rgba(0,0,0,0.15);"></div>
+              </div><br>
+              <div style="margin-top: 5px;">
+                <button id="btnCorriger" type="button" style="padding: 5px 12px; font-size: 12px; background-color: #2196F3; color: white; border: none; border-radius: 4px; cursor: pointer; margin-bottom: 5px;">
+                  <i class="fas fa-spell-check"></i> Corriger l'orthographe
+                </button>
+                <span id="correctionStatus" style="font-size: 12px; color: #666; margin-left: 8px;"></span>
+              </div>
+              <div id="correctionsContainer" style="margin-top: 5px; max-height: 200px; overflow-y: auto;"></div>
+			   ce certificat est établi et remis en mains propre de l'intéressé(e) pour
  faire valoir ce que de droit .
-        </p>
+        </div>
         <p style="text-align: right; margin-top: 30px;">
             Dont certificat<br>
             <span class="docteur" style="font-weight: bold;">Dr ${docteur}</span>
@@ -4606,7 +4640,6 @@ ${enteteContent}
 		<button id="saveButtoncbv">Sauvegarder</button>
     </div>
     
-    <script src="certificat-unified-font-size.js"></script>
 
 </body>
 </html>
@@ -4619,16 +4652,170 @@ ${enteteContent}
 
         // Attacher l'événement d'impression directement après la fermeture du document
         newWindow.onload = function () {
-            const printButton = newWindow.document.getElementById('printButton');
-            if (printButton) {
-                printButton.addEventListener('click', function () {
-                    newWindow.print();
-                    
+            var doc = newWindow.document;
+
+            // --- CHARGER LE SCRIPT FONT SIZE ---
+            var fsScript = doc.createElement('script');
+            fsScript.src = 'certificat-unified-font-size.js';
+            doc.head.appendChild(fsScript);
+
+            // --- CHARGER LES TERMES DEPUIS localStorage ---
+            var TERMES = [];
+            try {
+                var termesData = localStorage.getItem('termesJuridiques');
+                if (termesData) {
+                    var parsed = JSON.parse(termesData);
+                    for (var key in parsed) {
+                        if (parsed.hasOwnProperty(key) && Array.isArray(parsed[key])) {
+                            TERMES = TERMES.concat(parsed[key]);
+                        }
+                    }
+                }
+            } catch(e) {}
+
+            var textarea = doc.getElementById('texteDescription');
+            var btnCorriger = doc.getElementById('btnCorriger');
+            var statusEl = doc.getElementById('correctionStatus');
+            var correctionsContainer = doc.getElementById('correctionsContainer');
+            var dropdown = doc.getElementById('autocompleteDropdown');
+
+            if (textarea && dropdown) {
+                textarea.addEventListener('input', function() {
+                    var cursorPos = textarea.selectionStart;
+                    var textBefore = textarea.value.substring(0, cursorPos);
+                    var words = textBefore.split(/[\s\n]/);
+                    var currentWord = words[words.length - 1];
+
+                    if (currentWord.length < 2) { dropdown.style.display = 'none'; return; }
+
+                    var search = currentWord.toLowerCase();
+                    var matches = TERMES.filter(function(t) {
+                        return t.toLowerCase().indexOf(search) !== -1;
+                    }).slice(0, 8);
+
+                    if (matches.length === 0) { dropdown.style.display = 'none'; return; }
+
+                    dropdown.innerHTML = '';
+                    matches.forEach(function(m) {
+                        var item = doc.createElement('div');
+                        item.textContent = m;
+                        item.style.cssText = 'padding:6px 10px;cursor:pointer;font-size:12px;border-bottom:1px solid #eee;';
+                        item.onmouseenter = function() { item.style.background = '#e3f2fd'; };
+                        item.onmouseleave = function() { item.style.background = '#fff'; };
+                        item.onclick = function() {
+                            var after = textarea.value.substring(cursorPos);
+                            var prefix = textarea.value.substring(0, cursorPos - currentWord.length);
+                            textarea.value = prefix + m + after;
+                            dropdown.style.display = 'none';
+                            textarea.focus();
+                            var newPos = prefix.length + m.length;
+                            textarea.setSelectionRange(newPos, newPos);
+                        };
+                        dropdown.appendChild(item);
+                    });
+                    dropdown.style.display = 'block';
+                });
+
+                textarea.addEventListener('blur', function() {
+                    setTimeout(function() { dropdown.style.display = 'none'; }, 200);
                 });
             }
 
-            // Attacher l'événement de sauvegarde
-            const saveButton = newWindow.document.getElementById('saveButtoncbv');
+            if (btnCorriger && textarea && statusEl && correctionsContainer) {
+                btnCorriger.addEventListener('click', function() {
+                    var text = textarea.value.trim();
+                    if (!text) {
+                        statusEl.textContent = 'Veuillez saisir du texte a verifier.';
+                        statusEl.style.color = '#e67e22';
+                        return;
+                    }
+
+                    statusEl.textContent = 'Verification en cours...';
+                    statusEl.style.color = '#2196F3';
+                    correctionsContainer.innerHTML = '';
+
+                    fetch('https://api.languagetool.org/v2/check', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: 'text=' + encodeURIComponent(text) + '&language=fr-FR&enabledOnly=false'
+                    })
+                    .then(function(response) {
+                        if (!response.ok) throw new Error('API error');
+                        return response.json();
+                    })
+                    .then(function(data) {
+                        if (data.matches.length === 0) {
+                            statusEl.textContent = 'Aucune erreur trouvee.';
+                            statusEl.style.color = '#4CAF50';
+                            return;
+                        }
+
+                        statusEl.textContent = data.matches.length + ' erreur(s) trouvee(s).';
+                        statusEl.style.color = '#e74c3c';
+
+                        data.matches.forEach(function(match) {
+                            var div = doc.createElement('div');
+                            div.style.cssText = 'background:#fff3cd;border:1px solid #ffc107;border-radius:4px;padding:8px;margin-bottom:5px;font-size:12px;';
+
+                            var erroneousText = text.substring(match.offset, match.offset + match.length);
+                            var suggestions = match.replacements.slice(0, 5);
+
+                            var html = '<div style="margin-bottom:4px;"><strong style="color:#856404;">&#9888; ' +
+                                match.message + '</strong></div>';
+
+                            html += '<div style="margin-bottom:4px;">Texte : <span style="background:#ffc107;padding:1px 4px;border-radius:2px;">' +
+                                erroneousText + '</span></div>';
+
+                            if (suggestions.length > 0) {
+                                html += '<div style="margin-bottom:2px;">Suggestions :</div>';
+                                suggestions.forEach(function(rep) {
+                                    html += '<button class="suggestion-btn" data-replacement="' +
+                                        rep.value.replace(/"/g, '&quot;') +
+                                        '" data-offset="' + match.offset +
+                                        '" data-length="' + match.length +
+                                        '" style="display:inline-block;padding:2px 8px;margin:2px;font-size:11px;background:#e3f2fd;border:1px solid #2196F3;border-radius:3px;cursor:pointer;">' +
+                                        rep.value + '</button>';
+                                });
+                            }
+
+                            div.innerHTML = html;
+                            correctionsContainer.appendChild(div);
+                        });
+
+                        correctionsContainer.addEventListener('click', function(e) {
+                            var btn = e.target.closest('.suggestion-btn');
+                            if (!btn) return;
+
+                            var replacement = btn.getAttribute('data-replacement');
+                            var offset = parseInt(btn.getAttribute('data-offset'));
+                            var length = parseInt(btn.getAttribute('data-length'));
+                            var currentText = textarea.value;
+
+                            textarea.value = currentText.substring(0, offset) + replacement + currentText.substring(offset + length);
+
+                            statusEl.textContent = 'Correction appliquee.';
+                            statusEl.style.color = '#4CAF50';
+
+                            btn.parentElement.style.display = 'none';
+                        });
+                    })
+                    .catch(function() {
+                        statusEl.textContent = 'Erreur reseau. Reessayez.';
+                        statusEl.style.color = '#e74c3c';
+                    });
+                });
+            }
+
+            // Impression
+            var printButton = doc.getElementById('printButton');
+            if (printButton) {
+                printButton.addEventListener('click', function () {
+                    newWindow.print();
+                });
+            }
+
+            // Sauvegarde
+            var saveButton = doc.getElementById('saveButtoncbv');
             if (saveButton) {
                 saveButton.addEventListener('click', function () {
                     sauvegarderCBV(newWindow);
@@ -5657,11 +5844,11 @@ Confraternellement,<br>
     <button id="printButton">Imprimer la lettre </button>
 </div>
 <script src="print.js"></script>
-<script src="certificat-unified-font-size.js"></script>
+    <script src="certificat-unified-font-size.js"></script>
+
 </body>
 </html>
 `;
-
     const newWindow = window.open("", "_blank");
     newWindow.document.write(certificatContent);
     newWindow.document.close();
@@ -12213,6 +12400,947 @@ ${enteteContent}
             if (printButton) {
                 printButton.addEventListener('click', function () {
                     newWindow.print();
+                });
+            }
+        };
+    } else {
+        console.log("Popup bloquée par le navigateur.");
+    }
+}
+
+// ===================== Congé Maternité =====================
+
+// Fonction pour capitaliser automatiquement les noms et prénoms
+function capitalizeNames(text) {
+    if (!text) return text;
+    return text.toLowerCase().replace(/\b\w/g, letter => letter.toUpperCase());
+}
+
+// Récupérer les informations du patient
+function extractInfo() {
+    const nom = capitalizeNames(localStorage.getItem("nom") || "");
+    const prenom = capitalizeNames(localStorage.getItem("prenom") || "");
+    const dob = localStorage.getItem("dateNaissance") || "";
+    const numero = localStorage.getItem("numero") || "";
+    return { nom, prenom, dob, numero };
+}
+
+// Conversion d'un nombre en toutes lettres (français)
+function nombreEnLettres(n) {
+    n = parseInt(n, 10);
+    if (isNaN(n)) return '';
+    if (n === 0) return 'zéro';
+    const unite = ['', 'un', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix', 'onze', 'douze', 'treize', 'quatorze', 'quinze', 'seize', 'dix-sept', 'dix-huit', 'dix-neuf'];
+    const dizaine = ['', 'dix', 'vingt', 'trente', 'quarante', 'cinquante', 'soixante', 'soixante', 'quatre-vingt', 'quatre-vingt'];
+    const special = {
+        71: 'soixante et onze', 72: 'soixante-douze', 73: 'soixante-treize', 74: 'soixante-quatorze',
+        75: 'soixante-quinze', 76: 'soixante-seize', 77: 'soixante-dix-sept', 78: 'soixante-dix-huit',
+        79: 'soixante-dix-neuf', 81: 'quatre-vingt-un', 91: 'quatre-vingt-onze', 92: 'quatre-vingt-douze',
+        93: 'quatre-vingt-treize', 94: 'quatre-vingt-quatorze', 95: 'quatre-vingt-quinze',
+        96: 'quatre-vingt-seize', 97: 'quatre-vingt-dix-sept', 98: 'quatre-vingt-dix-huit', 99: 'quatre-vingt-dix-neuf'
+    };
+
+    function moinsDeCent(v) {
+        if (v < 20) return unite[v];
+        if (special[v]) return special[v];
+        const d = Math.floor(v / 10);
+        const u = v % 10;
+        if (d === 7) return 'soixante' + (u === 1 ? ' et ' : '-') + unite[10 + u];
+        if (d === 9) return 'quatre-vingt' + (u === 1 ? '-un' : '-' + unite[10 + u]);
+        if (u === 1 && d > 1) return dizaine[d] + ' et un';
+        if (u === 0) return d === 8 ? 'quatre-vingts' : dizaine[d];
+        return dizaine[d] + '-' + unite[u];
+    }
+
+    function troisChiffres(v) {
+        const c = Math.floor(v / 100);
+        const r = v % 100;
+        let res = '';
+        if (c > 0) {
+            res += c === 1 ? 'cent' : unite[c] + ' cent';
+            if (r === 0 && c > 1) res += 's';
+        }
+        if (r > 0) res += (res ? ' ' : '') + moinsDeCent(r);
+        return res;
+    }
+
+    if (n < 100) return moinsDeCent(n);
+    if (n < 1000) return troisChiffres(n);
+    const m = Math.floor(n / 1000);
+    const r = n % 1000;
+    let res = m === 1 ? 'mille' : troisChiffres(m) + ' mille';
+    if (r > 0) res += ' ' + troisChiffres(r);
+    return res;
+}
+
+// Fonction pour générer un certificat de congé de maternité
+function ouvrirCertificatMaternite() {
+    // Récupérer les informations du patient depuis les champs du formulaire certificat.html
+    const patientNomPrenom = document.getElementById('patientNomPrenom').value || '';
+    const patientAge = document.getElementById('patientAge').value || '';
+    const patientDateNaissance = document.getElementById('patientDateNaissance').value || '';
+    const dateCertificatInput = document.getElementById('dateCertificat').value || '';
+
+    // Extraire nom et prénom
+    const nomPrenomArray = patientNomPrenom.split(' ');
+    const nom = nomPrenomArray[nomPrenomArray.length - 1] || '';
+    const prenom = nomPrenomArray.slice(0, -1).join(' ') || '';
+
+    // Âge : utiliser le champ âge, sinon calculer depuis la date de naissance
+    let age = '';
+    const ageMatch = String(patientAge).match(/(\d+)/);
+    if (ageMatch) {
+        age = ageMatch[1];
+    } else if (patientDateNaissance) {
+        const parts = patientDateNaissance.split('/');
+        if (parts.length === 3) {
+            const birthDate = new Date(`${parts[2]}-${parts[1]}-${parts[0]}`);
+            if (!isNaN(birthDate.getTime())) {
+                const today = new Date();
+                let calculatedAge = today.getFullYear() - birthDate.getFullYear();
+                const monthDiff = today.getMonth() - birthDate.getMonth();
+                if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                    calculatedAge--;
+                }
+                age = String(calculatedAge);
+            }
+        }
+    }
+
+    // Date du certificat : utiliser le champ dateCertificat, sinon la date du jour
+    let dateCertificat = dateCertificatInput;
+    if (!dateCertificat || !dateCertificat.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
+        const today = new Date();
+        const day = String(today.getDate()).padStart(2, '0');
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const year = today.getFullYear();
+        dateCertificat = `${day}/${month}/${year}`;
+    }
+
+    const polyclinique = localStorage.getItem('polyclinique') || "";
+    const polycliniqueAr = localStorage.getItem('polyclinique-ar') || "";
+    const docteur = localStorage.getItem('docteur') || "";
+
+    // Vérifier le format choisi
+    const avecEntete = localStorage.getItem('certificatFormat') === 'avecEntete';
+
+    let enteteContent = '';
+    if (avecEntete) {
+        enteteContent = generateHeader();
+    } else {
+        // Espace vide pour garder la meme mise en page
+        enteteContent = '<div style="height: 155px;"></div>';
+    }
+
+    const certificatContent = `
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTIFICAT DE CONGÉ DE MATERNITÉ</title>
+    <style>
+body {
+font-family: Arial, sans-serif;
+padding: 20px;
+background-color: #f9f9f9;
+}
+.certificat {
+background-color: white;
+border: 1px solid #ddd;
+padding: 20px;
+max-width: 600px;
+margin: 0 auto;
+margin-top: 60px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+text-align: center;
+color: #333;
+text-decoration: underline;
+font-size: 20px;
+}
+p {
+line-height: 1.5;
+color: #555;
+}
+.editable-field {
+border-bottom: 1px dashed #666;
+display: inline-block;
+min-width: 50px;
+min-height: 20px;
+padding: 2px 4px;
+margin: 0 3px;
+}
+.print-button {
+text-align: center;
+margin-top: 20px;
+}
+.print-button button {
+padding: 10px 20px;
+font-size: 16px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.print-button button:hover {
+background-color: #0056b3;
+}
+@media print {
+@page {
+    size: A5;
+    margin: 0.2cm 0.2cm 0.2cm 0.2cm;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 10pt !important;
+    line-height: 1.2 !important;
+    background-color: white;
+}
+
+.certificat {
+    border: none;
+    box-shadow: none;
+    margin: 0 !important;
+    padding: 2px 8px !important;
+    max-width: 100% !important;
+}
+
+h1 {
+    font-size: 14pt !important;
+    margin: 5px 0 !important;
+    margin-top: 2cm !important;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    font-size: 9pt !important;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+input#nbJours {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    text-align: center !important;
+    min-width: 20px !important;
+}
+
+input#nbJours::-webkit-inner-spin-button,
+input#nbJours::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input#nbJours::-moz-number-spin-box {
+    -moz-appearance: none;
+}
+
+.print-button {
+    display: none;
+}
+.editable-field, .editable-area {
+    border: none !important;
+}
+
+* {
+    margin-top: 0 !important;
+    margin-bottom: 2px !important;
+}
+
+p {
+    margin: 2px 0 !important;
+    font-size: 9pt !important;
+}
+}
+</style>
+</head>
+<body>
+${enteteContent}
+    <div class="certificat">
+        <h1>CERTIFICAT DE CONGÉ DE MATERNITÉ</h1>
+        <div class="contenu-certificat" style="margin-top: 1.5cm !important;">
+        <p>
+            Je soussigné, Dr <span class="editable-field" contenteditable="true" id="docteur">${docteur}</span>,
+            certifie avoir examiné ce jour la susnommée <span class="editable-field" contenteditable="true" style="min-width: 180px; display: inline-block;">${nom} ${prenom}</span>,
+            âgée de <span class="editable-field" contenteditable="true" style="min-width: 40px; display: inline-block;">${age}</span> ans,
+            déclare qu'elle nécessite d'un congé de maternité de <input type="number" id="nbJours" value="98" min="0" max="9999" style="min-width: 55px; text-align: center; border: 1px solid #ccc; border-radius: 4px; padding: 2px 4px;"> Jours <span id="nbJoursLettres" style="font-style: italic;">
+(Quatre-vingt-dix-huit jours)
+</span> à daté du
+            <span class="editable-field" contenteditable="true" style="min-width: 110px; display: inline-block;">${dateCertificat}</span>,
+            sauf complication.
+        </p>
+        
+        <p style="text-align: right; margin-top: 30px;">
+            Le <input type="text" id="dateCertificat" value="${dateCertificat}" style="width: 150px;">
+        </p>
+        <p style="text-align: right; margin-top: 30px;">
+            Dr <span style="font-weight: bold;">${docteur}</span>
+        </p>
+    </div>
+    <div class="print-button" style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <label for="fontSize" style="font-size: 14px; margin: 0;">Taille du texte:</label>
+            <input type="number" id="fontSize" min="8" max="20" value="14" style="width: 60px; padding: 5px; border: 1px solid #bdbdbd; border-radius: 4px;">
+        </div>
+        <button id="printButton">Imprimer le Certificat</button>
+    </div>
+    
+    <script src="certificat-unified-font-size.js"></script>
+
+</body>
+</html>
+`;
+
+    var newWindow = window.open("", "_blank");
+    if (newWindow) {
+        newWindow.document.write(certificatContent);
+        newWindow.document.close();
+
+        // Attacher l'événement d'impression directement après la fermeture du document
+        newWindow.onload = function () {
+            const printButton = newWindow.document.getElementById('printButton');
+            if (printButton) {
+                printButton.addEventListener('click', function () {
+                    if (newWindow && !newWindow.closed) {
+                        newWindow.print();
+                    }
+                });
+            }
+
+            // Mettre à jour le nombre de jours en toutes lettres quand le chiffre change
+            const inputJours = newWindow.document.getElementById('nbJours');
+            const noteLettres = newWindow.document.getElementById('nbJoursLettres');
+            function majJoursEnLettres() {
+                if (!noteLettres) return;
+                const v = parseInt(inputJours.value, 10);
+                if (isNaN(v) || v < 0) {
+                    noteLettres.textContent = '( ... )';
+                    return;
+                }
+                const texte = nombreEnLettres(v);
+                noteLettres.textContent = '(' + texte.charAt(0).toUpperCase() + texte.slice(1) + ' jours)';
+            }
+            if (inputJours) {
+                inputJours.addEventListener('input', majJoursEnLettres);
+                inputJours.addEventListener('change', majJoursEnLettres);
+            }
+        };
+    } else {
+        console.log("Popup bloquée par le navigateur.");
+    }
+}
+
+// ===================== Profil Tensionnel Hebdomadaire =====================
+
+function genererProfilTensionnel() {
+    const g = function (id) { const el = document.getElementById(id); return el ? el.value.trim() : ''; };
+
+    const patientNomPrenom = g('patientNomPrenom');
+    const patientAge = g('patientAge');
+    const patientDateNaissance = g('patientDateNaissance');
+    const patientNumero = g('patientNumero');
+
+    const escHtml = function (s) {
+        return String(s == null ? '' : s)
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    };
+
+    let nom = '', prenom = '';
+    if (patientNomPrenom) {
+        const parts = patientNomPrenom.split(/\s+/);
+        nom = parts[0] || '';
+        prenom = parts.slice(1).join(' ') || '';
+    }
+
+    const docteur = localStorage.getItem('docteur') || '';
+    // Nom du medecin retenu pour la signature : espaces seuls = champ vide.
+    const nomMedecin = String(docteur).replace(/\s+/g, ' ').trim();
+    // Sans nom, on n'affiche rien du tout (pas de "Dr" isole) et on n'ajoute
+    // pas de "Dr" en double si le nom est deja enregistre avec ce prefixe.
+    // '&nbsp;' reserve la hauteur de la ligne pour que la mise en page reste
+    // identique que le nom du medecin soit saisi ou non.
+    const signatureMedecin = !nomMedecin ? ''
+        : (/^dr\.?\s/i.test(nomMedecin)
+            ? escHtml(nomMedecin)
+            : 'Dr ' + escHtml(nomMedecin));
+    const avecEntete = localStorage.getItem('certificatFormat') === 'avecEntete';
+    const enteteContent = avecEntete ? generateHeader() : '<div style="height: 155px;"></div>';
+
+    // Date initiale de la semaine : aujourd'hui + 1 jour par defaut.
+    // Elle est ecrite dans la 1re ligne du tableau (colonne Date) et reste
+    // modifiable via le calendrier de la barre d'outils, masque a l'impression.
+    const maintenant = new Date();
+    const startDate = new Date(maintenant.getFullYear(), maintenant.getMonth(), maintenant.getDate() + 1);
+
+    const NB_JOURS = 7;
+    const fmtFr = function (d) {
+        return String(d.getDate()).padStart(2, '0') + '/' +
+               String(d.getMonth() + 1).padStart(2, '0') + '/' + d.getFullYear();
+    };
+
+    // Champ patient : si la valeur est vide, laisse une ligne à remplir
+    const champ = function (label, valeur, largeur) {
+        if (valeur) {
+            return '<span><strong>' + label + ' :</strong> ' + escHtml(valeur) + '</span>';
+        }
+        return '<span><strong>' + label + ' :</strong>' +
+               '<span class="editable-field" contenteditable="true" style="min-width:' + largeur + 'px;"></span>' +
+               '</span>';
+    };
+
+    // Si le nom et le prénom sont tous deux vides, on n'affiche que
+    // Nom / Prénom / Âge — les champs administratifs (date de naissance, N°)
+    // sont masqués pour ne pas surcharger la ligne.
+    const champsInfos = (nom || prenom)
+        ? champ('Nom', nom, 130) + champ('Prénom', prenom, 120) + champ('Âge', patientAge, 60) +
+          champ('Né(e) le', patientDateNaissance, 90) + champ('N°', patientNumero, 80)
+        : champ('Nom', nom, 130) + champ('Prénom', prenom, 120) + champ('Âge', patientAge, 60);
+
+    let lignes = '';
+    for (let i = 0; i < NB_JOURS; i++) {
+        const d = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate() + i);
+        const cell = function (cls) {
+            return '<td><input type="text" class="cell ' + cls + '" inputmode="numeric" autocomplete="off"></td>';
+        };
+        lignes +=
+            '<tr>' +
+                '<td><input type="text" class="cell date" value="' + fmtFr(d) + '" placeholder="jj/mm/aaaa" autocomplete="off"></td>' +
+                cell('tas mat') + cell('tad mat') + cell('pouls mat') +
+                cell('tas apr') + cell('tad apr') + cell('pouls apr') +
+            '</tr>';
+    }
+
+    const certificatContent = `
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLEAU DES PROFILS TENSIONNELS</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-size: 11pt;
+}
+.certificat {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 14px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* En-tête officiel : même rendu que les autres certificats, mais sans bordure */
+#head {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 4px !important;
+    margin-bottom: 92px !important;
+}
+/* L'en-tête est en font-size inline (12px) dans generateHeader() : il faut
+   !important pour l'emporter. 16,5 px = même proportion que l'arrêt de travail
+   (12 px sur A5) rapportée à la largeur imprimable A4 (198 mm au lieu de 144 mm). */
+#head, #head div { font-size: 16.5px !important; }
+h1 {
+    text-align: center;
+    color: #333;
+    text-decoration: underline;
+    font-size: 16pt;
+    margin: 0 0 58px 0;
+}
+.info-ligne {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 10pt;
+    color: #333;
+    margin-bottom: 10px;
+    align-items: baseline;
+}
+.info-ligne strong { color: #37474f; }
+/* Champ vide : laisse une ligne pour écrire à la main (ou saisie sur place) */
+.info-ligne .editable-field {
+    display: inline-block;
+    min-width: 60px;
+    min-height: 17px;
+    padding: 0 3px;
+    margin: 0 0 0 4px;
+    border-bottom: 1px dashed #666;
+    vertical-align: bottom;
+}
+.info-ligne .editable-field:focus {
+    outline: none;
+    background: #e3f2fd;
+}
+/* ── Tableau : règles scopingées pour ne pas toucher le tableau de l'en-tête ── */
+.table-tension {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+    table-layout: fixed;
+    background: #fff;
+}
+.table-tension th, .table-tension td {
+    border: 1px solid #333;
+    padding: 3px 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+.table-tension thead th {
+    background-color: #e3f2fd;
+    font-weight: bold;
+    padding: 5px 4px;
+}
+.table-tension thead tr:first-child th { background-color: #1976d2; color: #fff; font-size: 10.5pt; }
+.table-tension th.groupe-apr, .table-tension td.apr { border-left: 2px solid #333; }
+input.cell {
+    width: 100%;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 4px 0;
+    height: 26px;
+    box-sizing: border-box;
+}
+input.cell:focus { outline: none; background: #e3f2fd; }
+.legende {
+    font-size: 8.5pt;
+    color: #555;
+    margin-top: 6px;
+    font-style: italic;
+    line-height: 1.4;
+}
+.observations {
+    margin-top: 12px;
+    font-size: 10pt;
+}
+.obs-box {
+    border: 1px dashed #666;
+    min-height: 55px;
+    padding: 6px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1.5;
+}
+.signature {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 18px;
+    font-size: 10pt;
+    gap: 20px;
+}
+.signature div { flex: 1; }
+.print-button {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.print-button > button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.print-button > button:hover { background-color: #0056b3; }
+/* Calendrier de la date initiale : construit dans la page, donc independant
+   du selecteur natif input[type=date] qui ne s'ouvre pas partout. */
+.calendrier {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 50;
+    margin-top: 6px;
+    width: 238px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .18);
+    font-size: 13px;
+}
+.calendrier[hidden] { display: none; }
+.cal-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.cal-nav span { font-weight: bold; }
+.cal-nav button {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1;
+    color: #333;
+    background: #f1f3f5;
+    border: 1px solid #d3d6da;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cal-nav button:hover { background: #e2e6ea; }
+.cal-semaine, .cal-jours { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; }
+.cal-semaine span { text-align: center; color: #777; font-size: 11px; padding: 2px 0; }
+.cal-jour {
+    padding: 5px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    background: #fff;
+    border: 1px solid #e3e5e8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cal-jour:hover { background: #e3f2fd; border-color: #90caf9; }
+.cal-jour.actif { background: #007bff; border-color: #007bff; color: #fff; font-weight: bold; }
+.cal-pied { display: flex; gap: 6px; margin-top: 6px; }
+.cal-pied button {
+    flex: 1;
+    padding: 5px 0;
+    font-size: 12px;
+    color: #333;
+    background: #f1f3f5;
+    border: 1px solid #d3d6da;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cal-pied button:hover { background: #e2e6ea; }
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 0.6cm;
+    }
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: white;
+        font-size: 11pt !important;
+        line-height: 1.2 !important;
+    }
+    .certificat {
+        border: none;
+        box-shadow: none;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    /* Taille de l en-tete a l impression : meme valeur que le rendu ecran,
+        repetee ici pour rester garantie meme si la reggle globale est modifiee. */
+    #head, #head div { font-size: 16.5px !important; }
+    h1 { font-size: 15pt !important; }
+    .table-tension, .table-tension th, .table-tension td,
+    .info-ligne, .legende, .observations { font-size: 10pt !important; }
+    input.cell {
+        border: none !important;
+        background: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    .table-tension, .table-tension tr { break-inside: avoid; page-break-inside: avoid; }
+    .print-button { display: none !important; }
+    .outil { display: none !important; }
+    #calendrier { display: none !important; }
+    #nbJoursTension { display: none !important; }
+    .table-tension thead { display: table-header-group; }
+}
+</style>
+</head>
+<body>
+${enteteContent}
+<div class="certificat">
+    <h1>TABLEAU DES PROFILS TENSIONNELS</h1>
+
+    <div class="info-ligne">
+        ${champsInfos}
+    </div>
+
+    <table class="table-tension">
+        <thead>
+            <tr>
+                <th rowspan="2" style="width: 14%;">Date</th>
+                <th colspan="3" style="width: 43%;">MATIN</th>
+                <th colspan="3" class="groupe-apr" style="width: 43%;">APRÈS-MIDI</th>
+            </tr>
+            <tr>
+                <th>Systolique</th>
+                <th>Diastolique</th>
+                <th>Pouls</th>
+                <th class="groupe-apr">Systolique</th>
+                <th>Diastolique</th>
+                <th>Pouls</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${lignes}
+        </tbody>
+    </table>
+
+    <div class="legende">
+        Prise de la tension artérielle en position assise, après 5 minutes de repos, bras au niveau du cœur.
+        TAS = tension systolique (mmHg), TAD = tension diastolique (mmHg).
+        Remplir 2 prises par jour (matin / après-midi) pendant <span id="dureeLegende">7 jours</span> consécutifs.
+    </div>
+
+    <div class="observations">
+        <strong>Observations / Traitement en cours :</strong>
+        <div class="obs-box" contenteditable="true"></div>
+    </div>
+
+    <div class="signature">
+        <div style="text-align: right; font-weight: bold;">${signatureMedecin || '&nbsp;'}</div>
+    </div>
+</div>
+
+<div class="print-button" style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
+    <div class="outil" style="display: flex; align-items: center; gap: 8px;">
+        <label for="nbJoursTension" style="font-size: 14px; margin: 0;">Nombre de jours:</label>
+        <input type="number" id="nbJoursTension" min="1" max="31" value="${NB_JOURS}" step="1"
+               style="width: 62px; padding: 5px; text-align: center; border: 1px solid #bdbdbd; border-radius: 4px;">
+    </div>
+    <div class="outil" style="display: flex; align-items: center; gap: 8px; position: relative;">
+        <label for="dateInitiale" style="font-size: 14px; margin: 0;">Date initiale:</label>
+        <input type="text" id="dateInitiale" readonly placeholder="jj/mm/aaaa" title="Cliquer pour ouvrir le calendrier"
+               style="width: 112px; padding: 5px; text-align: center; border: 1px solid #bdbdbd; border-radius: 4px; background: #fff; cursor: pointer;">
+        <div id="calendrier" class="calendrier" hidden>
+            <div class="cal-nav">
+                <button type="button" id="calPrec" title="Mois precedent">&#8249;</button>
+                <span id="calTitre"></span>
+                <button type="button" id="calSuiv" title="Mois suivant">&#8250;</button>
+            </div>
+            <div class="cal-semaine">
+                <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
+            </div>
+            <div id="calJours" class="cal-jours"></div>
+            <div class="cal-pied">
+                <button type="button" id="calAujourdhui">Aujourd hui</button>
+                <button type="button" id="calDemain">Demain</button>
+            </div>
+        </div>
+    </div>
+    <div class="outil" style="display: flex; align-items: center; gap: 8px;">
+        <label for="fontSize" style="font-size: 14px; margin: 0;">Taille du texte:</label>
+        <input type="number" id="fontSize" min="8" max="20" value="11" style="width: 60px; padding: 5px; border: 1px solid #bdbdbd; border-radius: 4px;">
+    </div>
+    <button id="printButton">Imprimer le Tableau</button>
+</div>
+
+<script>
+(function () {
+    /* Champs "Date initiale" et "Nombre de jours" de la barre d'outils.
+       Le calendrier est construit dans la page, donc il s'ouvre partout (le
+       selecteur natif input[type=date] ne fonctionne pas dans tous les
+       environnements). Toute la barre d'outils, calendrier compris, est
+       masquee a l'impression : seuls les resultats sont imprimes. */
+    var MOIS = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin',
+                'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Decembre'];
+    var NB_MIN = 1, NB_MAX = 31;
+
+    function jj(d) { return String(d.getDate()).padStart(2, '0'); }
+    function mm(d) { return String(d.getMonth() + 1).padStart(2, '0'); }
+    function fr(d) { return jj(d) + '/' + mm(d) + '/' + d.getFullYear(); }
+
+    var champ = document.getElementById('dateInitiale');
+    var champNb = document.getElementById('nbJoursTension');
+    var duree = document.getElementById('dureeLegende');
+    var cal = document.getElementById('calendrier');
+    var titre = document.getElementById('calTitre');
+    var grille = document.getElementById('calJours');
+    var corps = document.querySelector('.table-tension tbody');
+    var dateChoisie = null;
+    var vueMois = null;
+
+    /* Nombre de jours retenu : borne a [1, 31] pour ne jamais casser le tableau. */
+    function nbJours() {
+        var n = parseInt(champNb ? champNb.value : '7', 10);
+        if (isNaN(n)) n = 7;
+        return Math.max(NB_MIN, Math.min(NB_MAX, n));
+    }
+
+    function ligneHtml(dateFr) {
+        var cell = function (cls) {
+            return '<td><input type="text" class="cell ' + cls + '" inputmode="numeric" autocomplete="off"></td>';
+        };
+        return '<tr>' +
+            '<td><input type="text" class="cell date" value="' + dateFr + '" placeholder="jj/mm/aaaa" autocomplete="off"></td>' +
+            cell('tas mat') + cell('tad mat') + cell('pouls mat') +
+            cell('tas apr') + cell('tad apr') + cell('pouls apr') +
+            '</tr>';
+    }
+
+    /* Filtre numerique + selection au focus, reattache a chaque reconstruction. */
+    function brancherSaisie() {
+        document.querySelectorAll('.table-tension input.cell').forEach(function (el) {
+            if (el.classList.contains('date')) return;
+            el.addEventListener('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
+            el.addEventListener('focus', function () { this.select(); });
+        });
+    }
+
+    /* Reconstruit le corps du tableau : les valeurs deja saisies sont
+       conservees, les nouvelles lignes demarrent vides. */
+    function construireLignes() {
+        if (!corps || !dateChoisie) return;
+        var saisie = [];
+        corps.querySelectorAll('tr').forEach(function (tr) {
+            saisie.push([].map.call(tr.querySelectorAll('input.cell'), function (i) { return i.value; }));
+        });
+        var n = nbJours();
+        var html = '';
+        for (var i = 0; i < n; i++) {
+            html += ligneHtml(fr(new Date(dateChoisie.getFullYear(), dateChoisie.getMonth(), dateChoisie.getDate() + i)));
+        }
+        corps.innerHTML = html;
+        corps.querySelectorAll('tr').forEach(function (tr, r) {
+            if (!saisie[r]) return;
+            var cells = tr.querySelectorAll('input.cell');
+            // c = 0 est la date : elle est toujours regeneree depuis dateChoisie,
+            // seule la retablir ecraserait la date affichee.
+            for (var c = 1; c < cells.length; c++) {
+                if (saisie[r][c]) cells[c].value = saisie[r][c];
+            }
+        });
+        if (duree) duree.textContent = n > 1 ? n + ' jours' : '1 jour';
+        brancherSaisie();
+    }
+
+    function majDates(base) {
+        document.querySelectorAll('.table-tension input.cell.date').forEach(function (el, i) {
+            el.value = fr(new Date(base.getFullYear(), base.getMonth(), base.getDate() + i));
+        });
+    }
+
+    function choisir(d) {
+        dateChoisie = d;
+        vueMois = new Date(d.getFullYear(), d.getMonth(), 1);
+        if (champ) champ.value = fr(d);
+        construireLignes();
+        fermer();
+    }
+
+    function rendre() {
+        if (!grille || !vueMois) return;
+        titre.textContent = MOIS[vueMois.getMonth()] + ' ' + vueMois.getFullYear();
+        // getDay() renvoie 0 pour le dimanche : la semaine commence le lundi
+        var decalage = (new Date(vueMois.getFullYear(), vueMois.getMonth(), 1).getDay() + 6) % 7;
+        var nbJoursMois = new Date(vueMois.getFullYear(), vueMois.getMonth() + 1, 0).getDate();
+        var html = '';
+        for (var v = 0; v < decalage; v++) html += '<span></span>';
+        for (var j = 1; j <= nbJoursMois; j++) {
+            var actif = dateChoisie && dateChoisie.getDate() === j &&
+                        dateChoisie.getMonth() === vueMois.getMonth() &&
+                        dateChoisie.getFullYear() === vueMois.getFullYear();
+            html += '<button type="button" class="cal-jour' + (actif ? ' actif' : '') + '" data-j="' + j + '">' + j + '</button>';
+        }
+        grille.innerHTML = html;
+    }
+
+    function ouvrir() { if (cal) { cal.hidden = false; rendre(); } }
+    function fermer() { if (cal) cal.hidden = true; }
+
+    if (champ && cal) {
+        champ.addEventListener('click', function () {
+            if (cal.hidden) ouvrir(); else fermer();
+        });
+        champ.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                ouvrir();
+            }
+        });
+    }
+
+    /* Valeur par defaut du tableau : aujourd'hui + 1 jour, puis le nombre de
+       jours demande. Le nombre de jours est applique immediatement, comme la
+       date : aucune validation n est necessaire. */
+    var maintenant = new Date();
+    dateChoisie = new Date(maintenant.getFullYear(), maintenant.getMonth(), maintenant.getDate() + 1);
+    if (champ) champ.value = fr(dateChoisie);
+    if (vueMois === null) vueMois = new Date(dateChoisie.getFullYear(), dateChoisie.getMonth(), 1);
+    construireLignes();
+
+    if (champNb) {
+        /* Uniquement sur "input" : "change" se declenche au blur du champ, donc
+           apres un changement le premier clic dans une cellule reconstruirait
+           le tableau et detruirait la cible du clic (focus et saisie perdus).
+           "input" suffit et applique la valeur a chaque frappe / clic spinner. */
+        champNb.addEventListener('input', construireLignes);
+    }
+
+    var prec = document.getElementById('calPrec');
+    var suiv = document.getElementById('calSuiv');
+    if (prec) prec.addEventListener('click', function () {
+        vueMois = new Date(vueMois.getFullYear(), vueMois.getMonth() - 1, 1);
+        rendre();
+    });
+    if (suiv) suiv.addEventListener('click', function () {
+        vueMois = new Date(vueMois.getFullYear(), vueMois.getMonth() + 1, 1);
+        rendre();
+    });
+    if (grille) grille.addEventListener('click', function (e) {
+        var b = e.target.closest('.cal-jour');
+        if (!b) return;
+        choisir(new Date(vueMois.getFullYear(), vueMois.getMonth(), parseInt(b.getAttribute('data-j'), 10)));
+    });
+    var ajd = document.getElementById('calAujourdhui');
+    var dem = document.getElementById('calDemain');
+    if (ajd) ajd.addEventListener('click', function () {
+        var n = new Date();
+        choisir(new Date(n.getFullYear(), n.getMonth(), n.getDate()));
+    });
+    if (dem) dem.addEventListener('click', function () {
+        var n = new Date();
+        choisir(new Date(n.getFullYear(), n.getMonth(), n.getDate() + 1));
+    });
+    document.addEventListener('click', function (e) {
+        if (!cal || cal.hidden) return;
+        if (cal.contains(e.target) || (champ && e.target === champ)) return;
+        fermer();
+    });
+})();
+</script>
+<script src="certificat-unified-font-size.js"></script>
+</body>
+</html>
+`;
+
+    var newWindow = window.open("", "_blank");
+    if (newWindow) {
+        newWindow.document.write(certificatContent);
+        newWindow.document.close();
+        newWindow.onload = function () {
+            const printButton = newWindow.document.getElementById('printButton');
+            if (printButton) {
+                printButton.addEventListener('click', function () {
+                    if (newWindow && !newWindow.closed) newWindow.print();
                 });
             }
         };
